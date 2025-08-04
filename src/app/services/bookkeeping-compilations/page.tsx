@@ -118,7 +118,7 @@ export default function BookkeepingCompilationsPage() {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">CSRS 4200 Compliance</h3>
               <p className="text-gray-600 mb-4">
                 All compilation engagements performed in accordance with Canadian Standard on Related Services (CSRS) 4200, 
-                "Compilation Engagements."
+                &quot;Compilation Engagements.&quot;
               </p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Proper engagement letters</li>

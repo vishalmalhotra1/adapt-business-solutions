@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Calculator, CheckCircle, DollarSign, ArrowRight, Info } from 'lucide-react'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
@@ -121,7 +121,7 @@ export default function CostEstimatorPage() {
   const [businessSize, setBusinessSize] = useState('small')
   const [estimatedPrice, setEstimatedPrice] = useState(225)
 
-  const calculatePrice = () => {
+  const calculatePrice = useCallback(() => {
     const tier = serviceTiers[selectedTier as keyof typeof serviceTiers]
     let basePrice = (tier.price.min + tier.price.max) / 2
     
@@ -142,12 +142,12 @@ export default function CostEstimatorPage() {
     }
     
     setEstimatedPrice(Math.round(basePrice + addons))
-  }
+  }, [selectedTier, businessSize, selectedServices])
 
   // Calculate price when dependencies change
   useEffect(() => {
     calculatePrice()
-  }, [selectedTier, businessSize, selectedServices])
+  }, [calculatePrice])
 
   return (
     <div className="min-h-screen bg-white">
@@ -251,7 +251,7 @@ export default function CostEstimatorPage() {
               {/* Service Details */}
               <div className="bg-white rounded-xl border border-gray-200 p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  What's Included in {serviceTiers[selectedTier as keyof typeof serviceTiers].name}
+                  What&apos;s Included in {serviceTiers[selectedTier as keyof typeof serviceTiers].name}
                 </h3>
                 <div className="space-y-6">
                   {Object.entries(services).map(([serviceKey, service]) => {

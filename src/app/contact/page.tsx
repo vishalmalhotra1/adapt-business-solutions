@@ -71,7 +71,7 @@ export default function ContactPage() {
               Complete Your Quote Request
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Based on your pricing estimate, let's finalize the details and get you started 
+              Based on your pricing estimate, let&apos;s finalize the details and get you started 
               with our professional CPA services across Canada.
             </p>
           </div>
