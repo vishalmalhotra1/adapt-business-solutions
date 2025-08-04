@@ -13,6 +13,17 @@ export const metadata: Metadata = {
 // This will be populated by our content management system
 const featuredArticles = [
   {
+    id: 'orangeville-tax-planning-checklist-for-2025-business-owners',
+    title: 'Orangeville Tax Planning Checklist for 2025 Business Owners',
+    excerpt: 'As we approach the 2025 tax year, small business accounting in Orangeville requires careful planning and strategic preparation. This comprehensive checklist will help Dufferin County business owners navigate the complexities of tax planning while ensuring compliance with CRA regulations.',
+    category: 'Tax Planning',
+    readTime: '8 min read',
+    publishDate: '2025-08-04',
+    author: 'Adapt Business Solutions CPA Team',
+    featured: true,
+    tags: ['Tax Planning', 'Orangeville', 'Small Business', '2025']
+  },
+  {
     id: 'small-business-tax-deductions-2025',
     title: 'Small Business Tax Deductions You\'re Missing in 2025',
     excerpt: 'Discover overlooked tax deductions that could save your Ontario business thousands. Expert CPA insights on maximizing your tax savings.',
@@ -20,7 +31,7 @@ const featuredArticles = [
     readTime: '8 min read',
     publishDate: '2025-01-15',
     author: 'Adapt Business Solutions',
-    featured: true,
+    featured: false,
     tags: ['Tax Deductions', 'Small Business', 'Ontario', 'CRA']
   },
   {

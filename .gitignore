@@ -4,3 +4,8 @@ node_modules
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Content generator environment files
+content-generator/.env
+content-generator/generated-content/*.json
+!content-generator/generated-content/.gitkeep
