@@ -70,6 +70,9 @@ export default function Navigation() {
             <Link href="/#services" className="text-gray-700 hover:text-primary-600 transition-colors">
               Services
             </Link>
+            <Link href="/blog" className="text-gray-700 hover:text-primary-600 transition-colors">
+              Blog
+            </Link>
             <Link href="/#about" className="text-gray-700 hover:text-primary-600 transition-colors">
               About
             </Link>
@@ -155,6 +158,9 @@ export default function Navigation() {
               </Link>
               <Link href="/#services" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)} role="menuitem">
                 Services
+              </Link>
+              <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)} role="menuitem">
+                Blog
               </Link>
               <Link href="/#about" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)} role="menuitem">
                 About
