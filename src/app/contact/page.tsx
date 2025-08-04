@@ -148,7 +148,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Phone</h4>
-                      <p className="text-gray-600">(437) 772-9598</p>
+                      <a href="tel:437-772-9598" className="text-primary-600 hover:text-primary-700 transition-colors font-medium">(437) 772-9598</a>
                       <p className="text-sm text-gray-500">Monday - Friday, 5 PM - 10 PM EST</p>
                     </div>
                   </div>
@@ -159,7 +159,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600">accountant@adaptbusinesssolutions.com</p>
+                      <a href="mailto:accountant@adaptbusinesssolutions.com" className="text-primary-600 hover:text-primary-700 transition-colors font-medium">accountant@adaptbusinesssolutions.com</a>
                       <p className="text-sm text-gray-500">We respond within 24 hours</p>
                     </div>
                   </div>
@@ -280,7 +280,7 @@ export default function ContactPage() {
                             Error sending message
                           </h3>
                           <div className="mt-2 text-sm text-red-700">
-                            <p>There was a problem sending your message. Please try again or contact us directly at (437) 772-9598.</p>
+                            <p>There was a problem sending your message. Please try again or contact us directly at <a href="tel:437-772-9598" className="text-red-800 hover:text-red-900 font-medium">(437) 772-9598</a>.</p>
                           </div>
                         </div>
                       </div>

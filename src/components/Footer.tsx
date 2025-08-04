@@ -124,11 +124,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <p className="text-gray-300">(437) 772-9598</p>
+                <a href="tel:437-772-9598" className="text-primary-300 hover:text-primary-200 transition-colors">(437) 772-9598</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <p className="text-gray-300">accountant@adaptbusinesssolutions.com</p>
+                <a href="mailto:accountant@adaptbusinesssolutions.com" className="text-primary-300 hover:text-primary-200 transition-colors">accountant@adaptbusinesssolutions.com</a>
               </div>
             </div>
 

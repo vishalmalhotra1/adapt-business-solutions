@@ -463,26 +463,6 @@ export default function CostEstimatorPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-primary-600 to-accent-600 rounded-2xl text-white p-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-            <p className="text-xl mb-8 text-primary-100">
-              Schedule a free consultation to discuss your specific needs and get a personalized quote
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
-                Free Consultation
-              </Link>
-              <Link href="tel:437-772-9598" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                Call Now: (437) 772-9598
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   )
