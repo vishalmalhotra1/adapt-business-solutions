@@ -160,9 +160,17 @@ export default function CostEstimatorPage() {
     return { min: adjustedMin, max: adjustedMax }
   }, [businessSize])
 
-  // Function to get competitor pricing based on business size
+  // Function to get competitor pricing based on business size and service tier
   const getTraditionalFirmsPricing = useCallback(() => {
-    const basePricing = { min: 300, max: 600 }
+    // Base pricing varies by service tier complexity
+    const tierBasePricing: Record<string, { min: number, max: number }> = {
+      foundation: { min: 280, max: 550 },   // Simpler services
+      growth: { min: 350, max: 650 },       // Standard comprehensive services  
+      strategic: { min: 450, max: 800 }     // Advanced strategic services
+    }
+    
+    const basePricing = tierBasePricing[selectedTier] || tierBasePricing.growth
+    
     const sizeMultiplier: Record<string, number> = {
       micro: 0.7,   // Traditional firms might be less efficient for micro
       small: 1.0,   // Base pricing
@@ -174,11 +182,19 @@ export default function CostEstimatorPage() {
     const adjustedMax = Math.round(basePricing.max * sizeMultiplier[businessSize])
     
     return { min: adjustedMin, max: adjustedMax }
-  }, [businessSize])
+  }, [businessSize, selectedTier])
 
-  // Function to get DIY software pricing based on business size
+  // Function to get DIY software pricing based on business size and service tier
   const getDIYSoftwarePricing = useCallback(() => {
-    const basePricing = { min: 50, max: 100 }
+    // Base pricing varies by service tier features needed
+    const tierBasePricing: Record<string, { min: number, max: number }> = {
+      foundation: { min: 40, max: 80 },     // Basic accounting software
+      growth: { min: 60, max: 120 },       // Mid-tier with payroll features
+      strategic: { min: 100, max: 200 }    // Enterprise-level software suites
+    }
+    
+    const basePricing = tierBasePricing[selectedTier] || tierBasePricing.growth
+    
     const sizeMultiplier: Record<string, number> = {
       micro: 0.8,   // Simpler needs
       small: 1.0,   // Base pricing
@@ -190,7 +206,7 @@ export default function CostEstimatorPage() {
     const adjustedMax = Math.round(basePricing.max * sizeMultiplier[businessSize])
     
     return { min: adjustedMin, max: adjustedMax }
-  }, [businessSize])
+  }, [businessSize, selectedTier])
 
   // Calculate price when dependencies change
   useEffect(() => {
