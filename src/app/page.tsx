@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import About from '@/components/About'
+import Locations from '@/components/Locations'
 import Contact from '@/components/Contact'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -29,6 +30,7 @@ export default function HomePage() {
         <Hero />
         <Services />
         <About />
+        <Locations />
         <Contact />
       </main>
       <Footer />

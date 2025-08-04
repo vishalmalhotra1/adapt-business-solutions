@@ -42,70 +42,70 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/services/bookkeeping-compilations" className="text-gray-300 hover:text-white transition-colors">
                   Bookkeeping & Compilations
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/services/tax-preparation" className="text-gray-300 hover:text-white transition-colors">
                   Tax Preparation & Planning
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/services/financial-analysis" className="text-gray-300 hover:text-white transition-colors">
                   Financial Analysis
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/services/payroll" className="text-gray-300 hover:text-white transition-colors">
                   Payroll Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/services/business-consulting" className="text-gray-300 hover:text-white transition-colors">
                   Business Consulting
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/services/corporate-services" className="text-gray-300 hover:text-white transition-colors">
                   Corporate Services
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Service Areas */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Service Areas</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-300 hover:text-white transition-colors">
-                  Home
+                <a href="/locations/orangeville" className="text-gray-300 hover:text-white transition-colors">
+                  Orangeville CPA Services
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-white transition-colors">
-                  About Us
+                <a href="/locations/brampton" className="text-gray-300 hover:text-white transition-colors">
+                  Brampton Accounting
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-300 hover:text-white transition-colors">
-                  Services
+                <a href="/locations/mississauga" className="text-gray-300 hover:text-white transition-colors">
+                  Mississauga CPA
+                </a>
+              </li>
+              <li>
+                <a href="/locations/niagara-region" className="text-gray-300 hover:text-white transition-colors">
+                  Niagara Region Services
                 </a>
               </li>
               <li>
                 <a href="/pricing" className="text-gray-300 hover:text-white transition-colors">
-                  Pricing
+                  Pricing Calculator
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Terms of Service
+                <a href="/contact" className="text-gray-300 hover:text-white transition-colors">
+                  Get Free Quote
                 </a>
               </li>
             </ul>
