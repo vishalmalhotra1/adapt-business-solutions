@@ -24,6 +24,25 @@ export default function Navigation() {
     }
   }, [])
 
+  // Close mobile menu when any link is clicked
+  useEffect(() => {
+    function handleLinkClick(event: MouseEvent) {
+      const target = event.target as HTMLElement
+      // Check if the clicked element is a link or inside a link
+      const link = target.closest('a')
+      if (link && link.href && (link.href.startsWith('/') || link.href.includes(window.location.hostname))) {
+        // This is an internal link, close the mobile menu
+        setIsOpen(false)
+        setIsLocationsOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleLinkClick)
+    return () => {
+      document.removeEventListener('click', handleLinkClick)
+    }
+  }, [])
+
   return (
     <nav className="bg-white shadow-lg fixed w-full z-50" role="navigation" aria-label="Main navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
