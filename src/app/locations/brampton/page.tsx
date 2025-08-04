@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Phone, Mail, MapPin, Clock, Star, CheckCircle } from 'lucide-react'
 
@@ -25,7 +27,7 @@ const jsonLd = {
   "name": "Adapt Business Solutions - Brampton CPA Services",
   "description": "Professional CPA and accounting services for Brampton, Ontario businesses and individuals",
   "url": "https://adaptbusinesssolutions.com/locations/brampton",
-  "telephone": "+1-647-123-4567",
+  "telephone": "+1-437-772-9598",
   "email": "info@adaptbusinesssolutions.com",
   "address": {
     "@type": "PostalAddress",
@@ -57,6 +59,7 @@ const jsonLd = {
 export default function BramptonPage() {
   return (
     <>
+      <Navigation />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -75,11 +78,11 @@ export default function BramptonPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
-                  href="tel:+16471234567"
+                  href="tel:+14377729598"
                   className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
-                  Call (647) 123-4567
+                  Call (437) 772-9598
                 </Link>
                 <Link
                   href="/contact"
@@ -266,8 +269,8 @@ export default function BramptonPage() {
                     <Phone className="w-5 h-5 text-primary-600" />
                     <div>
                       <p className="font-medium text-gray-900">Call Us Today</p>
-                      <Link href="tel:+16471234567" className="text-primary-600 hover:text-primary-700">
-                        (647) 123-4567
+                      <Link href="tel:+14377729598" className="text-primary-600 hover:text-primary-700">
+                        (437) 772-9598
                       </Link>
                     </div>
                   </div>
@@ -332,6 +335,7 @@ export default function BramptonPage() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   )
 }
