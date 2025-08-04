@@ -445,6 +445,36 @@ export default function Article() {
     }
   }
 
+  // Automation control methods
+  startAutomation() {
+    console.log('🚀 Automated content system started!');
+    console.log('⏰ Checking for articles to publish every 15 minutes...');
+    console.log('📝 Generating new content daily at 6:00 AM...');
+    
+    // Check for articles to publish every 15 minutes
+    setInterval(async () => {
+      await this.checkAndPublish();
+    }, 15 * 60 * 1000); // 15 minutes
+
+    // Generate daily content at 6:00 AM
+    const cron = require('node-cron');
+    cron.schedule('0 6 * * 1-5', async () => {
+      console.log('📅 Daily content generation triggered...');
+      await this.generateDailyContent();
+    });
+
+    // Keep the process alive
+    process.on('SIGINT', () => {
+      console.log('\n🛑 Automation stopped by user');
+      process.exit(0);
+    });
+  }
+
+  stopAutomation() {
+    console.log('🛑 Stopping automation...');
+    process.exit(0);
+  }
+
   // Manual methods for testing
   async publishNow() {
     console.log('🚀 Manual publish triggered...');
