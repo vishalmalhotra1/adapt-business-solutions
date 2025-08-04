@@ -9,4 +9,4 @@ echo Press Ctrl+C to stop the automation.
 echo.
 
 cd /d "c:\Users\Visha\Code\Webpages\accounting-company\content-generator"
-node daily-publisher.js start-automation
+node automation.js

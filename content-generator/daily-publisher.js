@@ -71,7 +71,7 @@ class ContentPublisher {
       console.log(`📝 Generating full article: ${contentPlan.title}`);
       
       const response = await openai.chat.completions.create({
-        model: "gpt-4",
+        model: "gpt-3.5-turbo",
         messages: [{
           role: "system",
           content: `You are an expert CPA content writer specializing in Canadian tax law and Ontario business regulations. 

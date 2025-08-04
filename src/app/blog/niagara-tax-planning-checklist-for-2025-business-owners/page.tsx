@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, User } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Orangeville Tax Planning Checklist for 2025 Business Owners | Adapt Business Solutions',
-  description: 'Professional CPA advice for Orangeville businesses. Expert tax planning and accounting services.',
-  keywords: 'Orangeville CPA, tax planning, small business accounting, tax planning',
+  title: 'Niagara Tax Planning Checklist for 2025 Business Owners | Adapt Business Solutions',
+  description: 'Professional CPA advice for Niagara businesses. Expert tax planning and accounting services.',
+  keywords: 'Niagara CPA, tax planning, small business accounting, tax planning',
 }
 
 export default function ArticlePage() {
@@ -32,7 +32,7 @@ export default function ArticlePage() {
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Orangeville Tax Planning Checklist for 2025 Business Owners
+              Niagara Tax Planning Checklist for 2025 Business Owners
             </h1>
             
             <div className="flex items-center text-gray-600 mb-8">
@@ -106,9 +106,9 @@ export default function ArticlePage() {
           </div>
 
           <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
-            <h3 className="text-green-800 font-semibold mb-2">Ready to Optimize Your Orangeville Business?</h3>
+            <h3 className="text-green-800 font-semibold mb-2">Ready to Optimize Your Niagara Business?</h3>
             <p className="text-green-700 mb-4">
-              Our experienced team of CPAs specializes in helping Orangeville businesses minimize their tax burden while maximizing growth opportunities. We understand the unique challenges and provide personalized solutions.
+              Our experienced team of CPAs specializes in helping Niagara businesses minimize their tax burden while maximizing growth opportunities. We understand the unique challenges and provide personalized solutions.
             </p>
             <p className="text-green-700">
               <strong>Call (437) 772-9598</strong> today to schedule your complimentary consultation.

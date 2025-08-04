@@ -15,21 +15,54 @@ const featuredArticles = [
   {
     id: 'orangeville-tax-planning-checklist-for-2025-business-owners',
     title: 'Orangeville Tax Planning Checklist for 2025 Business Owners',
-    excerpt: 'As we approach the 2025 tax year, small business accounting in Orangeville requires careful planning and strategic preparation. This comprehensive checklist will help Dufferin County business owners navigate the complexities of tax planning while ensuring compliance with CRA regulations.',
+    excerpt: 'Essential tax planning deadlines and strategies for Orangeville businesses. Comprehensive CPA guidance for maximizing deductions and ensuring compliance.',
     category: 'Tax Planning',
     readTime: '8 min read',
     publishDate: '2025-08-04',
     author: 'Adapt Business Solutions CPA Team',
     featured: true,
     tags: ['Tax Planning', 'Orangeville', 'Small Business', '2025']
+  },
+  {
+    id: 'brampton-tax-planning-checklist-for-2025-business-owners',
+    title: 'Brampton Tax Planning Checklist for 2025 Business Owners',
+    excerpt: 'Professional tax planning strategies for Brampton businesses. Expert CPA advice for compliance and maximizing tax savings.',
+    category: 'Tax Planning',
+    readTime: '8 min read',
+    publishDate: '2025-08-04',
+    author: 'Adapt Business Solutions CPA Team',
+    featured: false,
+    tags: ['Tax Planning', 'Brampton', 'Small Business', '2025']
+  },
+  {
+    id: 'mississauga-small-business-accounting-guide-for-2025',
+    title: 'Mississauga Small Business Accounting Guide for 2025',
+    excerpt: 'Comprehensive accounting essentials for Mississauga small businesses. Professional guidance for bookkeeping, compliance, and financial management.',
+    category: 'Small Business',
+    readTime: '10 min read',
+    publishDate: '2025-08-04',
+    author: 'Adapt Business Solutions CPA Team',
+    featured: false,
+    tags: ['Small Business', 'Mississauga', 'Accounting', '2025']
+  },
+  {
+    id: 'niagara-tax-planning-checklist-for-2025-business-owners',
+    title: 'Niagara Tax Planning Checklist for 2025 Business Owners',
+    excerpt: 'Tax planning strategies for Niagara Region businesses. Professional CPA insights for hospitality, tourism, and wine industry businesses.',
+    category: 'Tax Planning',
+    readTime: '8 min read',
+    publishDate: '2025-08-04',
+    author: 'Adapt Business Solutions CPA Team',
+    featured: false,
+    tags: ['Tax Planning', 'Niagara', 'Tourism', '2025']
   }
 ]
 
 const categories = [
-  { name: 'Tax Planning', count: 1, icon: Calculator },
-  { name: 'Small Business', count: 0, icon: TrendingUp },
-  { name: 'Compliance', count: 0, icon: FileText },
-  { name: 'Local Business', count: 0, icon: User },
+  { name: 'Tax Planning', count: 4, icon: Calculator },
+  { name: 'Small Business', count: 4, icon: TrendingUp },
+  { name: 'Compliance', count: 2, icon: FileText },
+  { name: 'Local Business', count: 8, icon: User },
 ]
 
 export default function BlogPage() {
