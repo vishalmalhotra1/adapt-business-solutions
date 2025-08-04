@@ -74,7 +74,7 @@ export default function NiagaraRegionPage() {
                 Professional CPA Services in Niagara Region
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-primary-100">
-                Expert accounting and tax solutions for Niagara's thriving business community
+                Expert accounting and tax solutions for Niagara&apos;s thriving business community
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
@@ -132,7 +132,7 @@ export default function NiagaraRegionPage() {
                 Comprehensive CPA Services for Niagara Region
               </h2>
               <p className="text-xl text-gray-600">
-                From wineries to tourism operators, specialized accounting for Niagara's unique economy
+                From wineries to tourism operators, specialized accounting for Niagara&apos;s unique economy
               </p>
             </div>
 
@@ -141,7 +141,7 @@ export default function NiagaraRegionPage() {
                 <CheckCircle className="w-12 h-12 text-primary-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Wine Industry Accounting</h3>
                 <p className="text-gray-600 mb-4">
-                  Specialized CPA services for Niagara's world-renowned wine industry. Inventory, excise taxes, and regulations expertise.
+                  Specialized CPA services for Niagara&apos;s world-renowned wine industry. Inventory, excise taxes, and regulations expertise.
                 </p>
                 <Link href="/services/corporate-services" className="text-primary-600 hover:text-primary-700 font-medium">
                   Learn More →
@@ -174,7 +174,7 @@ export default function NiagaraRegionPage() {
                 <CheckCircle className="w-12 h-12 text-primary-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Manufacturing CFO Services</h3>
                 <p className="text-gray-600 mb-4">
-                  Advanced financial management for Niagara's manufacturing sector. Cost accounting and efficiency analysis.
+                  Advanced financial management for Niagara&apos;s manufacturing sector. Cost accounting and efficiency analysis.
                 </p>
                 <Link href="/services/financial-analysis" className="text-primary-600 hover:text-primary-700 font-medium">
                   Learn More →
@@ -185,7 +185,7 @@ export default function NiagaraRegionPage() {
                 <CheckCircle className="w-12 h-12 text-primary-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Small Business Support</h3>
                 <p className="text-gray-600 mb-4">
-                  Complete bookkeeping and tax services for Niagara's small business community. Personal attention, professional results.
+                  Complete bookkeeping and tax services for Niagara&apos;s small business community. Personal attention, professional results.
                 </p>
                 <Link href="/services/bookkeeping-compilations" className="text-primary-600 hover:text-primary-700 font-medium">
                   Learn More →
@@ -223,7 +223,7 @@ export default function NiagaraRegionPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Regional Expertise</h3>
                       <p className="text-gray-600">
-                        Deep understanding of Niagara's unique business environment, from Brock University partnerships to cross-border commerce.
+                        Deep understanding of Niagara&apos;s unique business environment, from Brock University partnerships to cross-border commerce.
                       </p>
                     </div>
                   </div>
@@ -233,7 +233,7 @@ export default function NiagaraRegionPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Industry Specialization</h3>
                       <p className="text-gray-600">
-                        Proven expertise in wine, tourism, agriculture, and manufacturing - Niagara's key economic drivers.
+                        Proven expertise in wine, tourism, agriculture, and manufacturing - Niagara&apos;s key economic drivers.
                       </p>
                     </div>
                   </div>
@@ -308,7 +308,7 @@ export default function NiagaraRegionPage() {
                 Niagara Region Industries We Serve
               </h2>
               <p className="text-xl text-gray-600">
-                Specialized expertise across Niagara's diverse economic landscape
+                Specialized expertise across Niagara&apos;s diverse economic landscape
               </p>
             </div>
 
@@ -377,7 +377,7 @@ export default function NiagaraRegionPage() {
                 Year-Round Support for Seasonal Businesses
               </h2>
               <p className="text-xl text-gray-600">
-                Understanding Niagara's unique seasonal business cycles
+                Understanding Niagara&apos;s unique seasonal business cycles
               </p>
             </div>
 

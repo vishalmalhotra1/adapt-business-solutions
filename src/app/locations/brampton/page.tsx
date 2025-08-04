@@ -230,7 +230,7 @@ export default function BramptonPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Multilingual Services</h3>
                       <p className="text-gray-600">
-                        Serving Brampton's diverse community with accounting services in multiple languages.
+                        Serving Brampton&apos;s diverse community with accounting services in multiple languages.
                       </p>
                     </div>
                   </div>

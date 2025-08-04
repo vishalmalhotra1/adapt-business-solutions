@@ -72,7 +72,7 @@ export default function MississaugaPage() {
                 Professional CPA Services in Mississauga
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-primary-100">
-                Expert accounting and tax solutions for Canada's sixth-largest city
+                Expert accounting and tax solutions for Canada&apos;s sixth-largest city
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
@@ -115,7 +115,7 @@ export default function MississaugaPage() {
                 <Star className="w-12 h-12 text-primary-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Corporate Expertise</h3>
                 <p className="text-gray-600">
-                  Specialized services for Mississauga's thriving business district and corporate community
+                  Specialized services for Mississauga&apos;s thriving business district and corporate community
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function MississaugaPage() {
                 Comprehensive CPA Services for Mississauga
               </h2>
               <p className="text-xl text-gray-600">
-                From tech startups to established corporations, serving Mississauga's diverse business ecosystem
+                From tech startups to established corporations, serving Mississauga&apos;s diverse business ecosystem
               </p>
             </div>
 
@@ -150,7 +150,7 @@ export default function MississaugaPage() {
                 <CheckCircle className="w-12 h-12 text-primary-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Financial Analysis</h3>
                 <p className="text-gray-600 mb-4">
-                  Advanced financial analysis and reporting for Mississauga's dynamic business environment.
+                  Advanced financial analysis and reporting for Mississauga&apos;s dynamic business environment.
                 </p>
                 <Link href="/services/financial-analysis" className="text-primary-600 hover:text-primary-700 font-medium">
                   Learn More →
@@ -221,7 +221,7 @@ export default function MississaugaPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Corporate District Expertise</h3>
                       <p className="text-gray-600">
-                        Deep understanding of Mississauga's business hubs including Square One, Airport Corporate Centre, and Meadowvale.
+                        Deep understanding of Mississauga&apos;s business hubs including Square One, Airport Corporate Centre, and Meadowvale.
                       </p>
                     </div>
                   </div>
@@ -231,7 +231,7 @@ export default function MississaugaPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Technology Integration</h3>
                       <p className="text-gray-600">
-                        Modern accounting solutions and cloud-based systems perfect for Mississauga's tech-forward businesses.
+                        Modern accounting solutions and cloud-based systems perfect for Mississauga&apos;s tech-forward businesses.
                       </p>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export default function MississaugaPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">International Business Support</h3>
                       <p className="text-gray-600">
-                        Expertise in international tax and accounting matters for Mississauga's globally-connected businesses.
+                        Expertise in international tax and accounting matters for Mississauga&apos;s globally-connected businesses.
                       </p>
                     </div>
                   </div>
@@ -251,7 +251,7 @@ export default function MississaugaPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-2">Scalable Solutions</h3>
                       <p className="text-gray-600">
-                        Services that grow with your business, from startup to enterprise level in Mississauga's competitive market.
+                        Services that grow with your business, from startup to enterprise level in Mississauga&apos;s competitive market.
                       </p>
                     </div>
                   </div>
@@ -306,7 +306,7 @@ export default function MississaugaPage() {
                 Industries We Serve in Mississauga
               </h2>
               <p className="text-xl text-gray-600">
-                Specialized accounting expertise across Mississauga's key business sectors
+                Specialized accounting expertise across Mississauga&apos;s key business sectors
               </p>
             </div>
 
