@@ -15,7 +15,7 @@ export default function Locations() {
       name: 'Brampton',
       href: '/locations/brampton',
       icon: Users,
-      description: 'Diverse business community in Canada&apos;s fastest-growing city',
+      description: 'Diverse business community in Canada\'s fastest-growing city',
       areas: ['Bramalea', 'Heart Lake', 'Sandalwood', 'Georgetown'],
       specialties: ['Corporate Services', 'Multilingual Support', 'Tech Startups']
     },
