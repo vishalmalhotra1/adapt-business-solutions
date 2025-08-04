@@ -1,9 +1,13 @@
 import { PieChart, CheckCircle, TrendingUp, Target } from 'lucide-react'
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export default function BusinessConsultingPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-white">
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
@@ -69,6 +73,8 @@ export default function BusinessConsultingPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      <Footer />
+    </>
   )
 }

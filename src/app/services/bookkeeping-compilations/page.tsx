@@ -1,10 +1,13 @@
 import { Calculator, CheckCircle, FileText, AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export default function BookkeepingCompilationsPage() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Navigation would be here - using existing Navigation component */}
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-white">
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
@@ -195,6 +198,8 @@ export default function BookkeepingCompilationsPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      <Footer />
+    </>
   )
 }

@@ -23,26 +23,33 @@ export default function OrangevillePage() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-white">
+      <div className="pt-16">
         {/* Hero Section */}
-        <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
+        <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Professional CPA Services in <span className="text-primary-600">Orangeville, Ontario</span>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                Professional CPA Services in Orangeville
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              <p className="text-xl md:text-2xl mb-8 text-primary-100">
                 Serving Orangeville businesses with expert virtual CPA services including bookkeeping, 
                 tax preparation, financial analysis, and business consulting. Local expertise with 
                 modern convenience.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/pricing" className="bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition-colors">
-                  Get Your Orangeville Quote
-                </Link>
-                <a href="tel:437-772-9598" className="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link
+                  href="tel:+14377729598"
+                  className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2"
+                >
+                  <Phone className="w-5 h-5" />
                   Call (437) 772-9598
-                </a>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors"
+                >
+                  Get Free Consultation
+                </Link>
               </div>
             </div>
           </div>
@@ -176,7 +183,7 @@ export default function OrangevillePage() {
             </div>
           </div>
         </section>
-      </main>
+      </div>
       <Footer />
     </>
   )

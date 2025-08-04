@@ -1,9 +1,13 @@
 import { Users, CheckCircle, Calendar, Shield } from 'lucide-react'
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 export default function PayrollPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-white">
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
@@ -98,6 +102,8 @@ export default function PayrollPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      <Footer />
+    </>
   )
 }
