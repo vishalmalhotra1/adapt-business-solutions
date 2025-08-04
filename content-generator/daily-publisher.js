@@ -437,13 +437,21 @@ if (require.main === module) {
     case 'generate-daily':
       publisher.generateDailyContent();
       break;
+    case 'start-automation':
+      console.log('🤖 Starting automated content publishing system...');
+      console.log('📅 Will publish articles randomly between 9 AM - 5 PM, Mon-Fri');
+      console.log('⏰ Running continuous automation...');
+      console.log('💡 Press Ctrl+C to stop\n');
+      publisher.startAutomation();
+      break;
     default:
       console.log('🎯 CPA Content Publisher v1.0');
       console.log('Available commands:');
-      console.log('  publish-now     - Generate and publish immediately');
-      console.log('  generate-weekly - Generate weekly content calendar');
-      console.log('  generate-daily  - Generate today\'s content');
-      console.log('\n🤖 Automated scheduler is running...');
+      console.log('  publish-now      - Generate and publish immediately');
+      console.log('  generate-weekly  - Generate weekly content calendar');
+      console.log('  generate-daily   - Generate today\'s content');
+      console.log('  start-automation - Start continuous automated publishing');
+      console.log('\n🤖 To start automation: node daily-publisher.js start-automation');
   }
 }
 
