@@ -1,6 +1,0 @@
-{
-  "/pricing/page": "app/pricing/page.js",
-  "/page": "app/page.js",
-  "/services/tax-preparation/page": "app/services/tax-preparation/page.js",
-  "/contact/page": "app/contact/page.js"
-}
