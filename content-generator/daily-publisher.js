@@ -351,16 +351,61 @@ export default function Article() {
   }
 
   formatArticleContent(content) {
-    // Convert markdown-style content to HTML with Tailwind classes
-    return content
-      .replace(/# (.*)/g, '<h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">$1</h2>')
-      .replace(/## (.*)/g, '<h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">$1</h3>')
-      .replace(/### (.*)/g, '<h4 class="text-lg font-medium text-gray-900 mt-4 mb-2">$1</h4>')
-      .replace(/\\*\\*(.*?)\\*\\*/g, '<strong>$1</strong>')
-      .replace(/\\*(.*?)\\*/g, '<em>$1</em>')
-      .replace(/\\n\\n/g, '</p><p class="mb-4">')
-      .replace(/^/, '<p class="mb-4">')
-      .replace(/$/, '</p>');
+    // Enhanced content formatting with proper card layouts and visual hierarchy
+    let formattedContent = content;
+    
+    // Start with introduction box
+    formattedContent = formattedContent.replace(
+      /^([^#]*?)(?=\n#)/s,
+      '<div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 mb-8"><p class="text-xl text-gray-800 mb-0 leading-relaxed">$1</p></div>'
+    );
+    
+    // Format main sections with cards
+    formattedContent = formattedContent.replace(
+      /# (.*?)\n((?:(?!#)[^\n]*\n?)*)/g,
+      '<div class="bg-white border border-gray-200 rounded-lg p-6 mb-8"><h2 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">$1</h2><div class="space-y-4">$2</div></div>'
+    );
+    
+    // Format subsections with left border accent
+    formattedContent = formattedContent.replace(
+      /## (.*?)\n((?:(?!#)[^\n]*\n?)*)/g,
+      '<div class="border-l-4 border-primary-500 pl-6 mb-6"><h3 class="text-xl font-semibold text-gray-900 mb-3">$1</h3><p class="text-gray-700">$2</p></div>'
+    );
+    
+    // Format smaller headings
+    formattedContent = formattedContent.replace(/### (.*)/g, '<h4 class="text-lg font-medium text-gray-900 mt-4 mb-2">$1</h4>');
+    
+    // Format lists as cards
+    formattedContent = formattedContent.replace(
+      /- (.*?)(?=\n-|\n\n|\n#|$)/g,
+      '<div class="bg-gray-50 rounded-lg p-3 mb-2"><p class="text-sm text-gray-700">• $1</p></div>'
+    );
+    
+    // Format numbered lists
+    formattedContent = formattedContent.replace(
+      /(\d+)\. (.*?)(?=\n\d+\.|\n\n|\n#|$)/g,
+      '<div class="flex items-start space-x-3 mb-3"><span class="bg-primary-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">$1</span><p class="text-sm text-gray-700">$2</p></div>'
+    );
+    
+    // Format emphasis and strong text
+    formattedContent = formattedContent.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-gray-900">$1</strong>');
+    formattedContent = formattedContent.replace(/\*(.*?)\*/g, '<em class="italic text-gray-700">$1</em>');
+    
+    // Format paragraphs
+    formattedContent = formattedContent.replace(/\n\n/g, '</p><p class="mb-4 text-gray-700 leading-relaxed">');
+    
+    // Wrap remaining content in paragraph tags
+    if (!formattedContent.includes('<p>')) {
+      formattedContent = `<p class="mb-4 text-gray-700 leading-relaxed">${formattedContent}</p>`;
+    }
+    
+    // Add call-to-action boxes for important information
+    formattedContent = formattedContent.replace(
+      /Important:(.*?)(?=\n\n|\n#|$)/gi,
+      '<div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6"><div class="flex items-start space-x-2"><span class="text-amber-600 text-xl">⚠️</span><div><h4 class="font-medium text-amber-800 mb-1">Important</h4><p class="text-amber-700 text-sm">$1</p></div></div></div>'
+    );
+    
+    return formattedContent;
   }
 
   async updateBlogIndex(article) {

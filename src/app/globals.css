@@ -36,3 +36,31 @@ body {
 .text-accent-600 {
   color: #16a34a;
 }
+
+/* Custom utility classes for enhanced content formatting */
+.bg-tech-gradient {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.prose h2 {
+  scroll-margin-top: 5rem;
+}
+
+.prose h3 {
+  scroll-margin-top: 5rem;
+}
+
+/* Enhanced focus states for accessibility */
+.focus\:ring-primary-500:focus {
+  --tw-ring-color: #3b82f6;
+}
+
+/* Custom card hover effects */
+.hover-lift {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

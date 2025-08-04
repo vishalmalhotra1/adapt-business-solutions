@@ -63,121 +63,271 @@ export default function OrangevilleTaxPlanningChecklist() {
           </header>
 
           <article className="prose prose-lg max-w-none">
-            <p className="text-xl text-gray-700 mb-6">
-              As we approach the 2025 tax year, <strong>small business accounting in Orangeville</strong> requires careful planning and strategic preparation. This comprehensive checklist will help Dufferin County business owners navigate the complexities of tax planning while ensuring compliance with CRA regulations.
-            </p>
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6 mb-8">
+              <p className="text-xl text-gray-800 mb-0 leading-relaxed">
+                As we approach the 2025 tax year, <strong>small business accounting in Orangeville</strong> requires careful planning and strategic preparation. This comprehensive checklist will help Dufferin County business owners navigate the complexities of tax planning while ensuring compliance with CRA regulations.
+              </p>
+            </div>
 
-            <h2>Essential Tax Planning Deadlines for 2025</h2>
-            <p>
-              Understanding key deadlines is crucial for effective tax planning. Here are the critical dates every Orangeville business owner should mark on their calendar:
-            </p>
-            <ul>
-              <li><strong>March 15, 2026:</strong> Corporate tax return filing deadline for most businesses</li>
-              <li><strong>June 15, 2026:</strong> Personal tax return deadline for business owners</li>
-              <li><strong>Monthly/Quarterly:</strong> GST/HST remittance deadlines</li>
-              <li><strong>15th of each month:</strong> Payroll remittance deadlines</li>
-            </ul>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Essential Tax Planning Deadlines for 2025</h2>
+              <p className="mb-4">
+                Understanding key deadlines is crucial for effective tax planning. Here are the critical dates every Orangeville business owner should mark on their calendar:
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-red-800 mb-2">Corporate Returns</h4>
+                  <p className="text-red-700 text-sm"><strong>March 15, 2026:</strong> Corporate tax return filing deadline for most businesses</p>
+                </div>
+                <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-orange-800 mb-2">Personal Returns</h4>
+                  <p className="text-orange-700 text-sm"><strong>June 15, 2026:</strong> Personal tax return deadline for business owners</p>
+                </div>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-blue-800 mb-2">GST/HST</h4>
+                  <p className="text-blue-700 text-sm"><strong>Monthly/Quarterly:</strong> GST/HST remittance deadlines</p>
+                </div>
+                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                  <h4 className="font-semibold text-green-800 mb-2">Payroll</h4>
+                  <p className="text-green-700 text-sm"><strong>15th of each month:</strong> Payroll remittance deadlines</p>
+                </div>
+              </div>
+            </div>
 
-            <h2>Year-End Tax Strategies for Orangeville Businesses</h2>
-            <p>
-              Strategic year-end planning can significantly impact your tax liability. Consider these proven strategies:
-            </p>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Year-End Tax Strategies for Orangeville Businesses</h2>
+              <p className="mb-6">
+                Strategic year-end planning can significantly impact your tax liability. Consider these proven strategies:
+              </p>
 
-            <h3>1. Capital Asset Management</h3>
-            <p>
-              Review your capital assets and consider timing purchases to maximize depreciation benefits. The Accelerated Investment Incentive (AII) may provide enhanced deductions for eligible assets.
-            </p>
+              <div className="space-y-6">
+                <div className="border-l-4 border-primary-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">1. Capital Asset Management</h3>
+                  <p className="text-gray-700 mb-3">
+                    Review your capital assets and consider timing purchases to maximize depreciation benefits. The Accelerated Investment Incentive (AII) may provide enhanced deductions for eligible assets.
+                  </p>
+                </div>
 
-            <h3>2. Expense Optimization</h3>
-            <p>
-              Ensure all legitimate business expenses are properly documented and claimed. Common overlooked deductions include:
-            </p>
-            <ul>
-              <li>Home office expenses for remote work</li>
-              <li>Vehicle expenses for business use</li>
-              <li>Professional development and training costs</li>
-              <li>Technology and software subscriptions</li>
-            </ul>
+                <div className="border-l-4 border-primary-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">2. Expense Optimization</h3>
+                  <p className="text-gray-700 mb-3">
+                    Ensure all legitimate business expenses are properly documented and claimed. Common overlooked deductions include:
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <p className="text-sm text-gray-700">Home office expenses for remote work</p>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <p className="text-sm text-gray-700">Vehicle expenses for business use</p>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <p className="text-sm text-gray-700">Professional development and training costs</p>
+                    </div>
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <p className="text-sm text-gray-700">Technology and software subscriptions</p>
+                    </div>
+                  </div>
+                </div>
 
-            <h3>3. Income Splitting Opportunities</h3>
-            <p>
-              Explore legitimate income splitting strategies with family members involved in the business, while staying compliant with the Tax on Split Income (TOSI) rules.
-            </p>
+                <div className="border-l-4 border-primary-500 pl-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">3. Income Splitting Opportunities</h3>
+                  <p className="text-gray-700">
+                    Explore legitimate income splitting strategies with family members involved in the business, while staying compliant with the Tax on Split Income (TOSI) rules.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <h2>Local Considerations for Orangeville Businesses</h2>
-            <p>
-              Operating in <strong>Dufferin County</strong> presents unique opportunities and considerations:
-            </p>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Small Business Deductions for Orangeville Entrepreneurs</h2>
+              <p className="mb-6">
+                Maximize your tax savings by taking advantage of all eligible deductions. Our Orangeville CPA team regularly helps local businesses identify these opportunities:
+              </p>
 
-            <h3>Rural and Small Business Deduction</h3>
-            <p>
-              Many Orangeville businesses qualify for the small business deduction, reducing the tax rate on the first $500,000 of active business income to 11.5% (combined federal and Ontario rates).
-            </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-green-800 mb-2">Small Business Deduction</h4>
+                    <p className="text-green-700 text-sm">Eligible businesses can claim up to $500,000 in active business income at the reduced tax rate</p>
+                  </div>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-blue-800 mb-2">Home Office Expenses</h4>
+                    <p className="text-blue-700 text-sm">Deduct reasonable expenses for your home-based business operations</p>
+                  </div>
+                  <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-purple-800 mb-2">Professional Services</h4>
+                    <p className="text-purple-700 text-sm">Legal, accounting, and consulting fees are fully deductible business expenses</p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-indigo-800 mb-2">Equipment & Technology</h4>
+                    <p className="text-indigo-700 text-sm">Computers, software, and business equipment qualify for immediate or depreciated deductions</p>
+                  </div>
+                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-yellow-800 mb-2">Business Travel</h4>
+                    <p className="text-yellow-700 text-sm">Transportation, meals, and accommodation for business purposes</p>
+                  </div>
+                  <div className="bg-teal-50 border border-teal-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-teal-800 mb-2">Marketing & Advertising</h4>
+                    <p className="text-teal-700 text-sm">Website development, social media advertising, and promotional materials</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <h3>Agricultural Business Considerations</h3>
-            <p>
-              Dufferin County&apos;s strong agricultural sector offers specific tax planning opportunities, including farm loss provisions and capital gains deferrals for qualifying farm property.
-            </p>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Local Considerations for Orangeville Businesses</h2>
+              <p className="mb-6">
+                Operating in <strong>Dufferin County</strong> presents unique opportunities and considerations:
+              </p>
 
-            <h2>Technology and Modernization Benefits</h2>
-            <p>
-              The 2025 tax year introduces enhanced incentives for digital transformation:
-            </p>
-            <ul>
-              <li>Digital adoption program tax credits</li>
-              <li>Enhanced depreciation for technology investments</li>
-              <li>Cybersecurity expense deductions</li>
-            </ul>
+              <div className="space-y-6">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-blue-800 mb-3">Rural and Small Business Deduction</h3>
+                  <p className="text-blue-700">
+                    Many Orangeville businesses qualify for the small business deduction, reducing the tax rate on the first $500,000 of active business income to 11.5% (combined federal and Ontario rates).
+                  </p>
+                </div>
 
-            <h2>Action Items by Business Type</h2>
+                <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-green-800 mb-3">Agricultural Business Considerations</h3>
+                  <p className="text-green-700">
+                    Dufferin County's strong agricultural sector offers specific tax planning opportunities, including farm loss provisions and capital gains deferrals for qualifying farm property.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <h3>Professional Services</h3>
-            <ul>
-              <li>Review accounts receivable for bad debt provisions</li>
-              <li>Consider professional liability insurance deductions</li>
-              <li>Plan continuing education expenses</li>
-            </ul>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Technology and Modernization Benefits</h2>
+              <p className="mb-6">
+                The 2025 tax year introduces enhanced incentives for digital transformation:
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-tech-gradient border border-blue-200 rounded-lg p-4 text-center">
+                  <h4 className="font-semibold text-blue-800 mb-2">Digital Adoption Credits</h4>
+                  <p className="text-blue-700 text-sm">Tax credits for digital transformation initiatives</p>
+                </div>
+                <div className="bg-tech-gradient border border-purple-200 rounded-lg p-4 text-center">
+                  <h4 className="font-semibold text-purple-800 mb-2">Enhanced Depreciation</h4>
+                  <p className="text-purple-700 text-sm">Accelerated write-offs for technology investments</p>
+                </div>
+                <div className="bg-tech-gradient border border-indigo-200 rounded-lg p-4 text-center">
+                  <h4 className="font-semibold text-indigo-800 mb-2">Cybersecurity Deductions</h4>
+                  <p className="text-indigo-700 text-sm">Full deductibility for security infrastructure</p>
+                </div>
+              </div>
+            </div>
 
-            <h3>Retail and Hospitality</h3>
-            <ul>
-              <li>Optimize inventory valuation methods</li>
-              <li>Review seasonal expense patterns</li>
-              <li>Consider renovation and improvement deductions</li>
-            </ul>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Action Items by Business Type</h2>
+              <p className="mb-6">
+                Different business types have unique tax planning considerations. Here's what to focus on based on your industry:
+              </p>
 
-            <h3>Manufacturing and Construction</h3>
-            <ul>
-              <li>Maximize equipment depreciation benefits</li>
-              <li>Review warranty and maintenance provisions</li>
-              <li>Consider apprenticeship job creation tax credits</li>
-            </ul>
+              <div className="space-y-6">
+                <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-slate-800 mb-4">Professional Services</h3>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-slate-700">Review accounts receivable for bad debt provisions</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-slate-700">Consider professional liability insurance deductions</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-slate-700">Plan continuing education expenses</p>
+                    </div>
+                  </div>
+                </div>
 
-            <h2>Professional Planning Services</h2>
-            <p>
-              While this checklist provides a comprehensive overview, every business situation is unique. Professional <strong>Orangeville CPA services</strong> can provide personalized strategies that maximize your tax efficiency while ensuring full compliance.
-            </p>
+                <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-orange-800 mb-4">Retail and Hospitality</h3>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-orange-700">Optimize inventory valuation methods</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-orange-700">Review seasonal expense patterns</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-orange-700">Consider renovation and improvement deductions</p>
+                    </div>
+                  </div>
+                </div>
 
-            <h3>When to Seek Professional Help</h3>
-            <p>
-              Consider consulting with a qualified CPA if your business:
-            </p>
-            <ul>
-              <li>Has annual revenue exceeding $200,000</li>
-              <li>Operates across multiple provinces</li>
-              <li>Has complex ownership structures</li>
-              <li>Faces significant changes in 2025 (expansion, acquisition, etc.)</li>
-            </ul>
+                <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">Manufacturing and Construction</h3>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-gray-700">Maximize equipment depreciation benefits</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-gray-700">Review warranty and maintenance provisions</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <p className="text-sm text-gray-700">Consider apprenticeship job creation tax credits</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <h2>Getting Started with Your 2025 Tax Plan</h2>
-            <p>
-              Effective tax planning is an ongoing process, not a year-end scramble. Start implementing these strategies now to maximize your benefits:
-            </p>
-            <ol>
-              <li>Schedule a tax planning consultation with a qualified CPA</li>
-              <li>Review and organize your financial records</li>
-              <li>Implement recommended strategies before year-end</li>
-              <li>Monitor changes in tax legislation throughout the year</li>
-            </ol>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Professional Planning Services</h2>
+              <p className="mb-6">
+                While this checklist provides a comprehensive overview, every business situation is unique. Professional <strong>Orangeville CPA services</strong> can provide personalized strategies that maximize your tax efficiency while ensuring full compliance.
+              </p>
+
+              <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-4">When to Seek Professional Help</h3>
+                <p className="text-amber-700 mb-4">Consider consulting with a qualified CPA if your business:</p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-amber-600">✓</span>
+                    <p className="text-sm text-amber-700">Has annual revenue exceeding $200,000</p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-amber-600">✓</span>
+                    <p className="text-sm text-amber-700">Operates across multiple provinces</p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-amber-600">✓</span>
+                    <p className="text-sm text-amber-700">Has complex ownership structures</p>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-amber-600">✓</span>
+                    <p className="text-sm text-amber-700">Faces significant changes in 2025 (expansion, acquisition, etc.)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-primary-50 border border-primary-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-primary-800 mb-4">Getting Started with Your 2025 Tax Plan</h3>
+                <p className="text-primary-700 mb-4">
+                  Effective tax planning is an ongoing process, not a year-end scramble. Start implementing these strategies now to maximize your benefits:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span className="bg-primary-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</span>
+                    <p className="text-sm text-primary-700">Schedule a tax planning consultation with a qualified CPA</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="bg-primary-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</span>
+                    <p className="text-sm text-primary-700">Review and organize your financial records</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="bg-primary-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</span>
+                    <p className="text-sm text-primary-700">Implement recommended strategies before year-end</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="bg-primary-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</span>
+                    <p className="text-sm text-primary-700">Monitor changes in tax legislation throughout the year</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
               <h3 className="text-green-800 font-semibold mb-2">Ready to Optimize Your 2025 Tax Strategy?</h3>

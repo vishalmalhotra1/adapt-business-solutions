@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://adaptbusinesssolutions.com'),
   title: 'Adapt Business Solutions - CPA Orangeville | Accounting Services Brampton, Mississauga, Niagara',
   description: 'Professional CPA services in Orangeville, Brampton, Mississauga, and Niagara Region. Expert virtual bookkeeping, tax preparation, financial analysis. Serving GTA and surrounding areas. 20-30% more competitive pricing.',
   keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, CPA services GTA, virtual accounting Ontario, small business accountant Orangeville, corporate tax Brampton, financial consulting Mississauga, payroll services Niagara Region, Canadian accountant Ontario',
