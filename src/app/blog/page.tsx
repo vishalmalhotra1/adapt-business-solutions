@@ -22,58 +22,14 @@ const featuredArticles = [
     author: 'Adapt Business Solutions CPA Team',
     featured: true,
     tags: ['Tax Planning', 'Orangeville', 'Small Business', '2025']
-  },
-  {
-    id: 'small-business-tax-deductions-2025',
-    title: 'Small Business Tax Deductions You\'re Missing in 2025',
-    excerpt: 'Discover overlooked tax deductions that could save your Ontario business thousands. Expert CPA insights on maximizing your tax savings.',
-    category: 'Tax Planning',
-    readTime: '8 min read',
-    publishDate: '2025-01-15',
-    author: 'Adapt Business Solutions',
-    featured: false,
-    tags: ['Tax Deductions', 'Small Business', 'Ontario', 'CRA']
-  },
-  {
-    id: 'cra-audit-triggers-2025',
-    title: 'CRA Audit Red Flags: What Triggers an Audit in 2025',
-    excerpt: 'Learn the common triggers that put businesses on CRA\'s radar and how to audit-proof your company.',
-    category: 'Compliance',
-    readTime: '6 min read',
-    publishDate: '2025-01-12',
-    author: 'Adapt Business Solutions',
-    featured: false,
-    tags: ['CRA Audit', 'Compliance', 'Business Protection']
-  },
-  {
-    id: 'brampton-business-grants-2025',
-    title: 'Brampton Business Grants and Tax Credits Available in 2025',
-    excerpt: 'Complete guide to government funding opportunities for Brampton businesses, including application tips.',
-    category: 'Local Business',
-    readTime: '10 min read',
-    publishDate: '2025-01-10',
-    author: 'Adapt Business Solutions',
-    featured: false,
-    tags: ['Brampton', 'Business Grants', 'Government Funding']
-  },
-  {
-    id: 'gst-hst-changes-2025',
-    title: 'GST/HST Changes for 2025: What Ontario Businesses Need to Know',
-    excerpt: 'Stay compliant with the latest GST/HST updates affecting Ontario businesses this year.',
-    category: 'Tax Updates',
-    readTime: '7 min read',
-    publishDate: '2025-01-08',
-    author: 'Adapt Business Solutions',
-    featured: false,
-    tags: ['GST/HST', 'Tax Updates', 'Ontario Business']
   }
 ]
 
 const categories = [
-  { name: 'Tax Planning', count: 12, icon: Calculator },
-  { name: 'Small Business', count: 18, icon: TrendingUp },
-  { name: 'Compliance', count: 8, icon: FileText },
-  { name: 'Local Business', count: 15, icon: User },
+  { name: 'Tax Planning', count: 1, icon: Calculator },
+  { name: 'Small Business', count: 0, icon: TrendingUp },
+  { name: 'Compliance', count: 0, icon: FileText },
+  { name: 'Local Business', count: 0, icon: User },
 ]
 
 export default function BlogPage() {
@@ -201,50 +157,69 @@ export default function BlogPage() {
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Recent Articles</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {recentPosts.map((article) => (
-                <article key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="p-6">
-                    <div className="flex items-center mb-3">
-                      <span className="bg-primary-100 text-primary-800 px-2 py-1 rounded text-xs font-medium">
-                        {article.category}
-                      </span>
-                      <span className="ml-2 text-gray-500 text-xs">{article.readTime}</span>
-                    </div>
-                    
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                      {article.title}
-                    </h3>
-                    
-                    <p className="text-gray-600 mb-4 line-clamp-3">
-                      {article.excerpt}
-                    </p>
-                    
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Calendar className="w-4 h-4 mr-1" />
-                        {new Date(article.publishDate).toLocaleDateString()}
+            
+            {recentPosts.length > 0 ? (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {recentPosts.map((article) => (
+                  <article key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="p-6">
+                      <div className="flex items-center mb-3">
+                        <span className="bg-primary-100 text-primary-800 px-2 py-1 rounded text-xs font-medium">
+                          {article.category}
+                        </span>
+                        <span className="ml-2 text-gray-500 text-xs">{article.readTime}</span>
                       </div>
-                      <Link
-                        href={`/blog/${article.id}`}
-                        className="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center"
-                      >
-                        Read More
-                        <ArrowRight className="ml-1 w-3 h-3" />
-                      </Link>
+                      
+                      <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                        {article.title}
+                      </h3>
+                      
+                      <p className="text-gray-600 mb-4 line-clamp-3">
+                        {article.excerpt}
+                      </p>
+                      
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center text-sm text-gray-500">
+                          <Calendar className="w-4 h-4 mr-1" />
+                          {new Date(article.publishDate).toLocaleDateString()}
+                        </div>
+                        <Link
+                          href={`/blog/${article.id}`}
+                          className="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center"
+                        >
+                          Read More
+                          <ArrowRight className="ml-1 w-3 h-3" />
+                        </Link>
+                      </div>
                     </div>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <div className="max-w-md mx-auto">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">More Articles Coming Soon</h3>
+                  <p className="text-gray-600 mb-6">
+                    Our automated content system is generating fresh, SEO-optimized articles daily. 
+                    Check back soon for more expert CPA insights tailored to your local business needs.
+                  </p>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <p className="text-blue-800 text-sm">
+                      <strong>Coming this week:</strong> Tax planning guides for Brampton, Mississauga, and Niagara Region businesses, 
+                      plus seasonal compliance reminders and local business insights.
+                    </p>
                   </div>
-                </article>
-              ))}
-            </div>
+                </div>
+              </div>
+            )}
             
             <div className="text-center mt-12">
               <Link
-                href="/blog/all"
-                className="inline-flex items-center bg-primary-600 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+                href="#"
+                className="inline-flex items-center bg-gray-300 text-gray-500 px-8 py-3 rounded-lg cursor-not-allowed font-semibold"
+                onClick={(e) => e.preventDefault()}
               >
-                View All Articles
-                <ArrowRight className="ml-2 w-4 h-4" />
+                More Articles Coming Soon
               </Link>
             </div>
           </div>
