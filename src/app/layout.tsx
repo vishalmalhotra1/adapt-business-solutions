@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Adapt Business Solutions - CPA | Virtual Accounting Services Canada',
-  description: 'Professional CPA services across Canada. Expert bookkeeping, tax preparation, financial analysis, and business consulting. 20-30% more competitive than traditional firms. Get your instant quote today!',
-  keywords: 'CPA Canada, virtual accounting, bookkeeping services, tax preparation, financial analysis, business consulting, Canadian accountant, online CPA, small business accounting, corporate tax, payroll services',
+  title: 'Adapt Business Solutions - CPA Orangeville | Accounting Services Brampton, Mississauga, Niagara',
+  description: 'Professional CPA services in Orangeville, Brampton, Mississauga, and Niagara Region. Expert virtual bookkeeping, tax preparation, financial analysis. Serving GTA and surrounding areas. 20-30% more competitive pricing.',
+  keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, CPA services GTA, virtual accounting Ontario, small business accountant Orangeville, corporate tax Brampton, financial consulting Mississauga, payroll services Niagara Region, Canadian accountant Ontario',
   authors: [{ name: 'Adapt Business Solutions' }],
   creator: 'Adapt Business Solutions',
   publisher: 'Adapt Business Solutions',
@@ -23,22 +23,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_CA',
     url: 'https://adaptbusinesssolutions.com',
-    title: 'Adapt Business Solutions - Professional CPA Services Across Canada',
-    description: 'Expert virtual CPA services for Canadian businesses. Competitive pricing, professional expertise, Canada-wide availability. Book your free consultation today!',
+    title: 'Adapt Business Solutions - Professional CPA Services Orangeville, Brampton, Mississauga, Niagara',
+    description: 'Expert virtual CPA services for businesses in Orangeville, Brampton, Mississauga, and Niagara Region. Competitive pricing, professional expertise, Ontario-wide availability.',
     siteName: 'Adapt Business Solutions',
     images: [
       {
         url: 'https://adaptbusinesssolutions.com/images/logo.avif',
         width: 1200,
         height: 630,
-        alt: 'Adapt Business Solutions - Professional CPA Services',
+        alt: 'Adapt Business Solutions - Professional CPA Services Ontario',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Adapt Business Solutions - Professional CPA Services Canada',
-    description: 'Expert virtual CPA services for Canadian businesses. Get competitive quotes for bookkeeping, tax prep, and financial consulting.',
+    title: 'Adapt Business Solutions - CPA Services Orangeville, Brampton, Mississauga, Niagara',
+    description: 'Expert virtual CPA services for Ontario businesses. Serving Orangeville, Brampton, Mississauga, and Niagara Region with competitive quotes.',
     images: ['https://adaptbusinesssolutions.com/images/logo.avif'],
   },
   alternates: {
@@ -72,18 +72,67 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AccountingService",
               "name": "Adapt Business Solutions",
-              "description": "Professional CPA and accounting services across Canada. Virtual bookkeeping, tax preparation, financial analysis, and business consulting.",
+              "description": "Professional CPA and accounting services in Orangeville, Brampton, Mississauga, and Niagara Region. Virtual bookkeeping, tax preparation, financial analysis, and business consulting.",
               "url": "https://adaptbusinesssolutions.com",
               "telephone": "+1-437-772-9598",
               "email": "accountant@adaptbusinesssolutions.com",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "CA",
-                "addressRegion": "Virtual Practice - Canada Wide"
+                "addressRegion": "ON",
+                "addressLocality": "Orangeville",
+                "postalCode": "L9W"
               },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Orangeville",
+                  "containedInPlace": {
+                    "@type": "State",
+                    "name": "Ontario"
+                  }
+                },
+                {
+                  "@type": "City", 
+                  "name": "Brampton",
+                  "containedInPlace": {
+                    "@type": "State",
+                    "name": "Ontario"
+                  }
+                },
+                {
+                  "@type": "City",
+                  "name": "Mississauga", 
+                  "containedInPlace": {
+                    "@type": "State",
+                    "name": "Ontario"
+                  }
+                },
+                {
+                  "@type": "Place",
+                  "name": "Niagara Region",
+                  "containedInPlace": {
+                    "@type": "State", 
+                    "name": "Ontario"
+                  }
+                },
+                {
+                  "@type": "Place",
+                  "name": "Greater Toronto Area",
+                  "containedInPlace": {
+                    "@type": "State",
+                    "name": "Ontario"
+                  }
+                }
+              ],
               "serviceArea": {
-                "@type": "Country",
-                "name": "Canada"
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "43.9201",
+                  "longitude": "-80.0947"
+                },
+                "geoRadius": "100000"
               },
               "priceRange": "$100-$450",
               "currenciesAccepted": "CAD",

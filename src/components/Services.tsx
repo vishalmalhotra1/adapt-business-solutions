@@ -52,11 +52,11 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4" itemProp="name">
-            Comprehensive Financial Services
+            Professional CPA Services for Orangeville & GTA Businesses
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto" itemProp="description">
-            From basic bookkeeping to strategic financial planning, we provide a full suite 
-            of accounting services tailored to your business needs.
+            Serving businesses in Orangeville, Brampton, Mississauga, and Niagara Region with 
+            comprehensive accounting services from basic bookkeeping to strategic financial planning.
           </p>
         </header>
 

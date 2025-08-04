@@ -9,18 +9,18 @@ export default function About() {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                About Adapt Business Solutions
+                Serving Orangeville & Greater Toronto Area
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                As a virtual CPA practice, Adapt Business Solutions has been serving the financial 
-                needs of businesses and individuals across Canada for 2 years. We combine 
-                traditional accounting expertise with modern technology to deliver exceptional results 
-                from coast to coast.
+                As a virtual CPA practice based in Ontario, Adapt Business Solutions has been serving 
+                businesses in Orangeville, Brampton, Mississauga, and the Niagara Region for 2 years. 
+                We combine local market knowledge with modern technology to deliver exceptional 
+                accounting services throughout the GTA and surrounding areas.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Our virtual service model allows us to provide personalized, professional accounting 
-                services to clients nationwide. We believe in building long-term relationships based 
-                on trust, integrity, and results - regardless of your location in Canada.
+                services to Ontario businesses at competitive rates. We understand the unique needs 
+                of businesses in our region and are committed to helping them thrive.
               </p>
             </div>
 

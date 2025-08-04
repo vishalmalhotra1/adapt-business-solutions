@@ -7,11 +7,12 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Get In Touch
+            Contact Your Local Ontario CPA
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-            Ready to take control of your finances? Start with our pricing calculator to get 
-            an instant estimate for our professional CPA services.
+            Serving businesses in Orangeville, Brampton, Mississauga, and Niagara Region. 
+            Start with our pricing calculator to get an instant estimate for professional 
+            CPA services in your area.
           </p>
           <div className="flex justify-center">
             <Link 
@@ -59,8 +60,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Service Area</h4>
-                    <p className="text-gray-600">Virtual Practice<br />Serving All of Canada</p>
-                    <p className="text-sm text-gray-500">Remote consultations available</p>
+                    <p className="text-gray-600">Orangeville, Brampton, Mississauga<br />Niagara Region & GTA</p>
+                    <p className="text-sm text-gray-500">Virtual consultations across Ontario</p>
                   </div>
                 </div>
 

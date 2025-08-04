@@ -10,13 +10,13 @@ export default function Hero() {
           <div className="space-y-8">
             <header className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight" itemProp="name">
-                Empowering Growth,{' '}
-                <span className="text-primary-600">Ensuring Value</span>
+                Your Trusted CPA in{' '}
+                <span className="text-primary-600">Orangeville & GTA</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed" itemProp="description">
-                Your trusted CPA in financial excellence. We provide comprehensive 
-                bookkeeping, compilations, tax planning, and financial strategy services to help your 
-                business thrive across Canada.
+                Professional CPA services for businesses in Orangeville, Brampton, Mississauga, and Niagara Region. 
+                We provide comprehensive bookkeeping, tax planning, and financial strategy services to help your 
+                Ontario business thrive with competitive virtual solutions.
               </p>
             </header>
 

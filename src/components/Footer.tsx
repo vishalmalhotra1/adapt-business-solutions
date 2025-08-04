@@ -118,8 +118,8 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <p>Virtual Practice</p>
-                  <p>Serving All of Canada</p>
+                  <p>Orangeville, Ontario</p>
+                  <p>Serving GTA & Niagara Region</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -137,7 +137,7 @@ export default function Footer() {
               <div className="text-sm text-gray-300 space-y-1">
                 <p>Mon - Fri: 5:00 PM - 10:00 PM EST</p>
                 <p>Weekend: Closed</p>
-                <p>Available Canada-Wide</p>
+                <p>Serving Ontario Businesses</p>
               </div>
             </div>
           </div>
