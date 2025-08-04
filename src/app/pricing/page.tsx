@@ -160,6 +160,38 @@ export default function CostEstimatorPage() {
     return { min: adjustedMin, max: adjustedMax }
   }, [businessSize])
 
+  // Function to get competitor pricing based on business size
+  const getTraditionalFirmsPricing = useCallback(() => {
+    const basePricing = { min: 300, max: 600 }
+    const sizeMultiplier: Record<string, number> = {
+      micro: 0.7,   // Traditional firms might be less efficient for micro
+      small: 1.0,   // Base pricing
+      medium: 1.4,  // Higher overhead for medium businesses
+      large: 2.0    // Significantly higher for large businesses
+    }
+    
+    const adjustedMin = Math.round(basePricing.min * sizeMultiplier[businessSize])
+    const adjustedMax = Math.round(basePricing.max * sizeMultiplier[businessSize])
+    
+    return { min: adjustedMin, max: adjustedMax }
+  }, [businessSize])
+
+  // Function to get DIY software pricing based on business size
+  const getDIYSoftwarePricing = useCallback(() => {
+    const basePricing = { min: 50, max: 100 }
+    const sizeMultiplier: Record<string, number> = {
+      micro: 0.8,   // Simpler needs
+      small: 1.0,   // Base pricing
+      medium: 1.5,  // Need more advanced features
+      large: 2.2    // Enterprise-level software costs
+    }
+    
+    const adjustedMin = Math.round(basePricing.min * sizeMultiplier[businessSize])
+    const adjustedMax = Math.round(basePricing.max * sizeMultiplier[businessSize])
+    
+    return { min: adjustedMin, max: adjustedMax }
+  }, [businessSize])
+
   // Calculate price when dependencies change
   useEffect(() => {
     calculatePrice()
@@ -384,7 +416,7 @@ export default function CostEstimatorPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl p-8 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Traditional Firms</h3>
-              <div className="text-3xl font-bold text-gray-600 mb-4">$300-600</div>
+              <div className="text-3xl font-bold text-gray-600 mb-4">${getTraditionalFirmsPricing().min}-${getTraditionalFirmsPricing().max}</div>
               <p className="text-gray-600 mb-4">Per month for similar services</p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>• Higher overhead costs</li>
@@ -418,7 +450,7 @@ export default function CostEstimatorPage() {
 
             <div className="bg-white rounded-xl p-8 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">DIY Software</h3>
-              <div className="text-3xl font-bold text-gray-600 mb-4">$50-100</div>
+              <div className="text-3xl font-bold text-gray-600 mb-4">${getDIYSoftwarePricing().min}-${getDIYSoftwarePricing().max}</div>
               <p className="text-gray-600 mb-4">Per month + your time</p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>• Time-intensive learning</li>
