@@ -193,7 +193,7 @@ export default function OrangevilleTaxPlanningChecklist() {
                 <div className="bg-green-50 border border-green-200 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-green-800 mb-3">Agricultural Business Considerations</h3>
                   <p className="text-green-700">
-                    Dufferin County's strong agricultural sector offers specific tax planning opportunities, including farm loss provisions and capital gains deferrals for qualifying farm property.
+                    Dufferin County&apos;s strong agricultural sector offers specific tax planning opportunities, including farm loss provisions and capital gains deferrals for qualifying farm property.
                   </p>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export default function OrangevilleTaxPlanningChecklist() {
             <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b border-gray-200">Action Items by Business Type</h2>
               <p className="mb-6">
-                Different business types have unique tax planning considerations. Here's what to focus on based on your industry:
+                Different business types have unique tax planning considerations. Here&apos;s what to focus on based on your industry:
               </p>
 
               <div className="space-y-6">

@@ -214,13 +214,9 @@ export default function BlogPage() {
             )}
             
             <div className="text-center mt-12">
-              <Link
-                href="#"
-                className="inline-flex items-center bg-gray-300 text-gray-500 px-8 py-3 rounded-lg cursor-not-allowed font-semibold"
-                onClick={(e) => e.preventDefault()}
-              >
+              <span className="inline-flex items-center bg-gray-300 text-gray-500 px-8 py-3 rounded-lg cursor-not-allowed font-semibold">
                 More Articles Coming Soon
-              </Link>
+              </span>
             </div>
           </div>
         </section>
