@@ -144,6 +144,22 @@ export default function CostEstimatorPage() {
     setEstimatedPrice(Math.round(basePrice + addons))
   }, [selectedTier, businessSize, selectedServices])
 
+  // Function to get size-adjusted price range for display
+  const getSizeAdjustedPriceRange = useCallback((tierKey: string) => {
+    const tier = serviceTiers[tierKey as keyof typeof serviceTiers]
+    const sizeMultiplier: Record<string, number> = {
+      micro: 0.8,
+      small: 1.0,
+      medium: 1.3,
+      large: 1.6
+    }
+    
+    const adjustedMin = Math.round(tier.price.min * sizeMultiplier[businessSize])
+    const adjustedMax = Math.round(tier.price.max * sizeMultiplier[businessSize])
+    
+    return { min: adjustedMin, max: adjustedMax }
+  }, [businessSize])
+
   // Calculate price when dependencies change
   useEffect(() => {
     calculatePrice()
@@ -212,7 +228,9 @@ export default function CostEstimatorPage() {
               <div className="bg-white rounded-xl border border-gray-200 p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Service Package</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {Object.entries(serviceTiers).map(([key, tier]) => (
+                  {Object.entries(serviceTiers).map(([key, tier]) => {
+                    const adjustedPrice = getSizeAdjustedPriceRange(key)
+                    return (
                     <div
                       key={key}
                       className={`relative p-6 rounded-lg border-2 cursor-pointer transition-all ${
@@ -240,11 +258,12 @@ export default function CostEstimatorPage() {
                       <h4 className="font-bold text-gray-900 mb-2">{tier.name}</h4>
                       <p className="text-sm text-gray-600 mb-4">{tier.description}</p>
                       <div className="text-2xl font-bold text-primary-600">
-                        ${tier.price.min} - ${tier.price.max}
+                        ${adjustedPrice.min} - ${adjustedPrice.max}
                         <span className="text-sm text-gray-500 font-normal">/month</span>
                       </div>
                     </div>
-                  ))}
+                    )
+                  })}
                 </div>
               </div>
 
@@ -387,7 +406,7 @@ export default function CostEstimatorPage() {
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-4">Adapt Business Solutions</h3>
-              <div className="text-3xl font-bold mb-4">${serviceTiers[selectedTier as keyof typeof serviceTiers].price.min}-${serviceTiers[selectedTier as keyof typeof serviceTiers].price.max}</div>
+              <div className="text-3xl font-bold mb-4">${getSizeAdjustedPriceRange(selectedTier).min}-${getSizeAdjustedPriceRange(selectedTier).max}</div>
               <p className="text-primary-100 mb-4">Per month with more features</p>
               <ul className="space-y-2 text-sm text-primary-100">
                 <li>• Virtual efficiency savings</li>
