@@ -21,6 +21,9 @@ export default function ContactPage() {
     selectedServices: ''
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
   // Check if we have pricing data from URL params or localStorage
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search)
@@ -45,11 +48,61 @@ export default function ContactPage() {
     }
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData)
-    alert('Thank you for your inquiry! We will contact you within 24 hours.')
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      // Prepare form data for Formspree
+      const formPayload = new FormData()
+      formPayload.append('firstName', formData.firstName)
+      formPayload.append('lastName', formData.lastName)
+      formPayload.append('email', formData.email)
+      formPayload.append('phone', formData.phone)
+      formPayload.append('service', formData.service)
+      formPayload.append('message', formData.message)
+      
+      // Add pricing data if available
+      if (formData.estimatedPrice) {
+        formPayload.append('estimatedPrice', formData.estimatedPrice)
+        formPayload.append('selectedTier', formData.selectedTier)
+        formPayload.append('businessSize', formData.businessSize)
+        formPayload.append('selectedServices', formData.selectedServices)
+      }
+
+      const response = await fetch('https://formspree.io/f/mqalykql', {
+        method: 'POST',
+        body: formPayload,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: '',
+          estimatedPrice: '',
+          selectedTier: '',
+          businessSize: '',
+          selectedServices: ''
+        })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -191,6 +244,48 @@ export default function ContactPage() {
                   <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                     Get Your Detailed Quote
                   </h3>
+                  
+                  {/* Success Message */}
+                  {submitStatus === 'success' && (
+                    <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0">
+                          <svg className="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="ml-3">
+                          <h3 className="text-sm font-medium text-green-800">
+                            Message sent successfully!
+                          </h3>
+                          <div className="mt-2 text-sm text-green-700">
+                            <p>Thank you for your inquiry! We will contact you within 24 hours with a detailed proposal.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Error Message */}
+                  {submitStatus === 'error' && (
+                    <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                      <div className="flex items-center">
+                        <div className="flex-shrink-0">
+                          <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="ml-3">
+                          <h3 className="text-sm font-medium text-red-800">
+                            Error sending message
+                          </h3>
+                          <div className="mt-2 text-sm text-red-700">
+                            <p>There was a problem sending your message. Please try again or contact us directly at (437) 772-9598.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -298,10 +393,23 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-primary-600 text-white px-6 py-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center justify-center group"
+                  disabled={isSubmitting}
+                  className="w-full bg-primary-600 text-white px-6 py-4 rounded-lg hover:bg-primary-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors flex items-center justify-center group"
                 >
-                  Request Detailed Quote
-                  <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  {isSubmitting ? (
+                    <>
+                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending Message...
+                    </>
+                  ) : (
+                    <>
+                      Request Detailed Quote
+                      <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </>
+                  )}
                 </button>
               </form>
               </>
