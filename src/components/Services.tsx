@@ -48,54 +48,57 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50" itemScope itemType="https://schema.org/Service">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <header className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4" itemProp="name">
             Comprehensive Financial Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto" itemProp="description">
             From basic bookkeeping to strategic financial planning, we provide a full suite 
             of accounting services tailored to your business needs.
           </p>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
-              <div 
+              <article 
                 key={index}
                 className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-primary-600"
+                itemScope 
+                itemType="https://schema.org/Service"
               >
                 <div className="mb-6">
                   <div className="bg-primary-100 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                     <IconComponent className="h-8 w-8 text-primary-600" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-3" itemProp="name">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed" itemProp="description">
                     {service.description}
                   </p>
                 </div>
 
-                <div className="space-y-2">
+                <ul className="space-y-2" itemProp="serviceType">
                   {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center text-sm text-gray-700">
+                    <li key={featureIndex} className="flex items-center text-sm text-gray-700">
                       <div className="w-2 h-2 bg-primary-600 rounded-full mr-3"></div>
                       {feature}
-                    </div>
+                    </li>
                   ))}
-                </div>
+                </ul>
 
                 <Link 
                   href={service.link}
                   className="mt-6 text-primary-600 font-semibold hover:text-primary-700 transition-colors inline-block"
+                  itemProp="url"
                 >
                   Learn More →
                 </Link>
-              </div>
+              </article>
             )
           })}
         </div>

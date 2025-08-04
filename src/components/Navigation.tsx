@@ -9,18 +9,19 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full z-50">
+    <nav className="bg-white shadow-lg fixed w-full z-50" role="navigation" aria-label="Main navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/">
+              <Link href="/" aria-label="Adapt Business Solutions - Home">
                 <Image 
                   src="/images/logo.avif" 
-                  alt="Adapt Business Solutions Logo" 
+                  alt="Adapt Business Solutions - Professional CPA Services Logo" 
                   width={160} 
                   height={60}
                   className="h-10 w-auto cursor-pointer"
+                  priority
                 />
               </Link>
             </div>
@@ -50,6 +51,9 @@ export default function Navigation() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-primary-600"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -58,21 +62,24 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <Link href="/" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)}>
+          <div className="md:hidden" id="mobile-menu">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t"
+                 role="menu" 
+                 aria-orientation="vertical" 
+                 aria-labelledby="mobile-menu">
+              <Link href="/" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)} role="menuitem">
                 Home
               </Link>
-              <Link href="/#services" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)}>
+              <Link href="/#services" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)} role="menuitem">
                 Services
               </Link>
-              <Link href="/#about" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)}>
+              <Link href="/#about" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)} role="menuitem">
                 About
               </Link>
-              <Link href="/pricing" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)}>
+              <Link href="/pricing" className="block px-3 py-2 text-gray-700 hover:text-primary-600" onClick={() => setIsOpen(false)} role="menuitem">
                 Pricing
               </Link>
-              <Link href="/pricing" className="block w-full text-left bg-primary-600 text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-colors" onClick={() => setIsOpen(false)}>
+              <Link href="/pricing" className="block w-full text-left bg-primary-600 text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition-colors" onClick={() => setIsOpen(false)} role="menuitem">
                 Get Started
               </Link>
             </div>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Phone, Mail, MapPin, Clock, Send, Calculator, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import Head from 'next/head'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -114,8 +115,19 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
+    <>
+      <Head>
+        <title>Contact Us - Get Your CPA Quote | Adapt Business Solutions</title>
+        <meta name="description" content="Contact Adapt Business Solutions for professional CPA services. Get detailed quotes for bookkeeping, tax preparation, and financial consulting. Call (437) 772-9598 or email us." />
+        <meta name="keywords" content="contact CPA Canada, accounting quote request, bookkeeping consultation, tax preparation contact, financial services inquiry" />
+        <link rel="canonical" href="https://adaptbusinesssolutions.com/contact" />
+        <meta property="og:title" content="Contact Professional CPA Services | Adapt Business Solutions" />
+        <meta property="og:description" content="Get in touch for expert CPA services across Canada. Free consultations available. Professional accounting, bookkeeping, and tax services." />
+        <meta property="og:url" content="https://adaptbusinesssolutions.com/contact" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <div className="min-h-screen bg-white">
+        <Navigation />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
@@ -420,6 +432,7 @@ export default function ContactPage() {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }

@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://adaptbusinesssolutions.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to access the site
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Important pages for SEO
+Allow: /
+Allow: /pricing
+Allow: /contact
+Allow: /services/

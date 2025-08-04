@@ -3,22 +3,22 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-16 bg-gradient-to-br from-primary-50 to-white">
+    <section id="home" className="pt-16 bg-gradient-to-br from-primary-50 to-white" itemScope itemType="https://schema.org/ProfessionalService">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <header className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight" itemProp="name">
                 Empowering Growth,{' '}
                 <span className="text-primary-600">Ensuring Value</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed" itemProp="description">
                 Your trusted CPA in financial excellence. We provide comprehensive 
                 bookkeeping, compilations, tax planning, and financial strategy services to help your 
                 business thrive across Canada.
               </p>
-            </div>
+            </header>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/pricing" className="bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center justify-center group">

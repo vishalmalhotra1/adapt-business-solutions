@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Calculator, CheckCircle, DollarSign, ArrowRight, Info } from 'lucide-react'
 import Link from 'next/link'
+import Head from 'next/head'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -214,8 +215,19 @@ export default function CostEstimatorPage() {
   }, [calculatePrice])
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
+    <>
+      <Head>
+        <title>Pricing Calculator - Adapt Business Solutions | Get Instant CPA Quote</title>
+        <meta name="description" content="Get instant pricing for professional CPA services. Calculate costs for bookkeeping, tax prep, and financial consulting. 20-30% more competitive than traditional firms." />
+        <meta name="keywords" content="CPA pricing calculator, accounting services cost, bookkeeping prices Canada, tax preparation fees, financial consulting rates" />
+        <link rel="canonical" href="https://adaptbusinesssolutions.com/pricing" />
+        <meta property="og:title" content="CPA Services Pricing Calculator - Instant Quotes | Adapt Business Solutions" />
+        <meta property="og:description" content="Calculate your accounting service costs instantly. Professional CPA services starting from $100/month. Get personalized quotes for your business size." />
+        <meta property="og:url" content="https://adaptbusinesssolutions.com/pricing" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <div className="min-h-screen bg-white">
+        <Navigation />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
@@ -480,6 +492,7 @@ export default function CostEstimatorPage() {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
