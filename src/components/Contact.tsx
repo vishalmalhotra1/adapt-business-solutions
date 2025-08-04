@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Calculator, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Contact() {
@@ -88,105 +88,42 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Get Quote CTA */}
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              Send Us a Message
+              Get Your Personalized Quote
             </h3>
             
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder="Doe"
-                  />
-                </div>
+            <div className="text-center space-y-6">
+              <div className="bg-primary-50 rounded-lg p-6">
+                <Calculator className="h-12 w-12 text-primary-600 mx-auto mb-4" />
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                  Start with Our Pricing Calculator
+                </h4>
+                <p className="text-gray-600 mb-4">
+                  Get an instant estimate tailored to your business needs and size. 
+                  Our interactive calculator provides transparent pricing for all our services.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1 mb-6">
+                  <li>• Instant price estimates</li>
+                  <li>• Customized for your business size</li>
+                  <li>• No hidden fees or surprises</li>
+                  <li>• Compare service packages</li>
+                </ul>
               </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="(437) 772-9598"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                  Service Interested In
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                >
-                  <option value="">Select a service</option>
-                  <option value="bookkeeping">Bookkeeping & Accounting</option>
-                  <option value="tax">Tax Preparation & Planning</option>
-                  <option value="payroll">Payroll Services</option>
-                  <option value="consulting">Business Consulting</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="Tell us about your needs..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-primary-600 text-white px-6 py-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center justify-center group"
+              
+              <Link 
+                href="/pricing"
+                className="w-full bg-primary-600 text-white px-6 py-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center justify-center group inline-flex"
               >
-                Send Message
-                <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </form>
+                Start Your Quote
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              
+              <p className="text-sm text-gray-500">
+                Takes less than 2 minutes • No commitment required
+              </p>
+            </div>
           </div>
         </div>
       </div>

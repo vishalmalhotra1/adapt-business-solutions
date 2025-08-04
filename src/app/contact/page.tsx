@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Phone, Mail, MapPin, Clock, Send, Calculator } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, Calculator, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -161,9 +162,35 @@ export default function ContactPage() {
                 </div>
               )}
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                {formData.estimatedPrice ? 'Get Your Detailed Quote' : 'Send Us a Message'}
-              </h3>
+              {!formData.estimatedPrice ? (
+                // Redirect to pricing if no estimate
+                <div className="text-center space-y-6 py-8">
+                  <div className="bg-primary-50 rounded-lg p-8">
+                    <Calculator className="h-16 w-16 text-primary-600 mx-auto mb-4" />
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                      Start with Your Personalized Quote
+                    </h3>
+                    <p className="text-gray-600 mb-6 max-w-md mx-auto">
+                      To provide you with the most accurate service proposal, please start with our pricing calculator to get an instant estimate tailored to your business needs.
+                    </p>
+                    <Link 
+                      href="/pricing"
+                      className="inline-flex items-center bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition-colors group"
+                    >
+                      Get Your Quote First
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <p className="text-sm text-gray-500 mt-4">
+                      Takes less than 2 minutes • No commitment required
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                // Show contact form for users with pricing
+                <>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                    Get Your Detailed Quote
+                  </h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -273,10 +300,12 @@ export default function ContactPage() {
                   type="submit"
                   className="w-full bg-primary-600 text-white px-6 py-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center justify-center group"
                 >
-                  {formData.estimatedPrice ? 'Request Detailed Quote' : 'Send Message'}
+                  Request Detailed Quote
                   <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </form>
+              </>
+            )}
             </div>
           </div>
         </div>
