@@ -15,6 +15,9 @@ class ManualPublisher {
     // Ensure directory exists
     fs.ensureDirSync(articleDir);
     
+    // Format content first to avoid template string issues
+    const formattedContent = this.formatContent(article.content);
+    
     const pageContent = `import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -77,7 +80,7 @@ export default function ArticlePage() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="prose prose-lg max-w-none">
-            ${this.formatContent(article.content)}
+            ${formattedContent}
           </div>
 
           <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
