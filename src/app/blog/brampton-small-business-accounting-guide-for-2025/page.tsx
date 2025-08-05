@@ -82,7 +82,7 @@ export default function ArticlePage() {
 
             <p>
               <strong>3. Regular Financial Monitoring</strong><br/>
-              Review your financial statements monthly to understand your business's performance. Monitor 
+              Review your financial statements monthly to understand your business&apos;s performance. Monitor 
               cash flow, profit margins, and expenses to make informed business decisions.
             </p>
 
