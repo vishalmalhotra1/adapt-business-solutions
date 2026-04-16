@@ -1,77 +1,23 @@
 /**
- * Daily Blog Generator
+ * Daily Blog Generator — FREE version (no API costs)
  * Called by GitHub Actions daily cron job.
- * Uses Claude API to generate SEO-optimized CPA blog posts for Ontario businesses.
+ * Rotates through pre-written posts in blog-data.mjs — zero API spend.
  *
- * Requires: ANTHROPIC_API_KEY environment variable
  * Usage: node scripts/generate-blog.mjs
  */
 
-import Anthropic from '@anthropic-ai/sdk'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { BLOG_POSTS } from './blog-data.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
 
-// ─── Topic seeds (rotated by day-of-year to ensure variety) ──────────────────
-const TOPIC_SEEDS = [
-  'Ontario payroll source deductions: what small businesses must remit to CRA',
-  'HST Quick Method election: pros, cons, and when to switch',
-  'CRA My Business Account setup and features for Ontario businesses',
-  'Principal residence exemption: rules Ontario homeowners need to know',
-  'RRSP vs TFSA strategy for self-employed Canadians in Ontario',
-  'Holding company in Ontario: tax advantages and setup costs',
-  'SR&ED tax credits for Ontario small businesses and startups',
-  'Ontario minimum wage and payroll compliance for small employers',
-  'Business expense claims for home-based businesses in Ontario',
-  'CRA installment payments: who must pay and how to calculate',
-  'T4 preparation guide for Ontario small business owners',
-  'Corporate year-end tax planning checklist for Ontario CCPCs',
-  'GST/HST audit triggers and how to prepare your records',
-  'Ontario apprenticeship training tax credit for small business',
-  'Intercompany transactions and transfer pricing basics for SMEs',
-  'Capital gains vs business income: the key distinctions in Canada',
-  'Ontario digital business expenses and software deductions',
-  'CRA prescribed interest rates and installment interest planning',
-  'Shareholder loans: tax traps and rules Ontario business owners must know',
-  'Ontario regional opportunities investment tax credit',
-  'T2 corporate tax return: key schedules Ontario businesses must file',
-  'Automobile benefit and standby charge calculations for employees',
-  'Lifetime capital gains exemption: qualifying small business shares in Ontario',
-  'Ontario Co-operative Education tax credit for employers',
-  'Business-use-of-home expenses for Ontario consultants and contractors',
-  'Deemed disposition on death: tax planning for Ontario business owners',
-  'Non-capital losses and how Ontario businesses can carry them back or forward',
-  'Ontario small business tax rates 2025: federal + provincial breakdown',
-  'CRA charity donation receipts: rules for Ontario business donors',
-  'Late filing penalties and interest in Canada: how to minimize them',
-  'Ontario employer health tax (EHT) exemptions for small businesses',
-  'Independent contractor vs employee: CRA tests and Ontario risks',
-  'CEBA loan repayment and tax implications for Ontario businesses',
-  'Passive income trap: how it affects the small business deduction in Ontario',
-  'Electronic records and CRA audit readiness for Ontario businesses',
-  'Income splitting strategies for Ontario family businesses post-TOSI rules',
-  'Ontario Film and Television Tax Credit and creative industry accounting',
-  'CRA voluntary disclosure program: fix past errors before an audit',
-  'Rent expense deductions for Ontario businesses in commercial leases',
-  'Ontario employer obligations for T4A slips and contractor payments',
-]
-
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-function slugify(str) {
-  return str
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .slice(0, 80)
-}
-
 function escapeJSX(str) {
+  if (!str) return ''
   return str
     .replace(/&/g, '&amp;')
     .replace(/"/g, '&quot;')
@@ -84,73 +30,21 @@ function todayISO() {
   return new Date().toISOString().split('T')[0]
 }
 
-function getTopicForToday() {
+function getPostForToday(existingSlugs) {
   const start = new Date(new Date().getFullYear(), 0, 0)
   const dayOfYear = Math.floor((Date.now() - start.getTime()) / 86400000)
-  return TOPIC_SEEDS[dayOfYear % TOPIC_SEEDS.length]
-}
 
-// ─── Claude generation ────────────────────────────────────────────────────────
-
-async function generatePost(client, topic, existingSlugs) {
-  console.log(`Generating blog post on: "${topic}"`)
-
-  const prompt = `You are a senior CPA (Chartered Professional Accountant) at a virtual accounting firm in Orangeville, Ontario, Canada. Write a comprehensive, SEO-optimized blog article for Ontario small business owners about:
-
-TOPIC: ${topic}
-
-Today's date: ${todayISO()}
-Existing posts (do NOT duplicate these topics): ${existingSlugs.join(', ')}
-
-Return ONLY a valid JSON object with this exact structure (no markdown, no code fences, just raw JSON):
-
-{
-  "title": "Full SEO title (50-60 chars ideal)",
-  "slug": "url-slug-lowercase-hyphens",
-  "metaTitle": "SEO meta title with | Adapt Business Solutions suffix",
-  "metaDescription": "150-160 character SEO meta description targeting Ontario business owners",
-  "keywords": "5-8 comma-separated keywords targeting Ontario/Canada searches",
-  "category": "one of: Tax Planning | Bookkeeping | Corporate Services | Business Strategy | HST & GST | Payroll | CRA Compliance",
-  "excerpt": "2-3 sentence blog index excerpt (engaging, informative)",
-  "readTime": "X min read",
-  "intro": "Strong opening paragraph (2-3 sentences) that hooks the reader and states what they will learn",
-  "sections": [
-    {
-      "heading": "Section heading (H2)",
-      "paragraph1": "First paragraph content",
-      "paragraph2": "Optional second paragraph (empty string if not needed)",
-      "bullets": ["bullet point 1", "bullet point 2", "bullet point 3"],
-      "callout": "Optional highlighted tip or important note (empty string if not needed)"
+  // Find the next post that hasn't been published yet
+  // Try up to BLOG_POSTS.length rotations to find an unpublished one
+  for (let offset = 0; offset < BLOG_POSTS.length; offset++) {
+    const candidate = BLOG_POSTS[(dayOfYear + offset) % BLOG_POSTS.length]
+    if (!existingSlugs.includes(candidate.slug)) {
+      return candidate
     }
-  ],
-  "conclusion": "Closing paragraph summarizing key takeaways",
-  "ctaHeading": "Call-to-action section heading",
-  "ctaBody": "1-2 sentence CTA body text"
-}
+  }
 
-Requirements:
-- Write 5-7 substantive sections with real Canadian tax/accounting details
-- Include specific CRA rules, rates, or deadlines where relevant
-- Every section should have 2-3 bullet points minimum
-- Use at least 2 callouts (tips or important notices)
-- Mention Ontario specifically where relevant
-- Naturally reference Adapt Business Solutions services without being salesy
-- Content must be 100% accurate for Canada/Ontario tax law as of 2025
-- The disclaimer will be added automatically - do NOT include one in the content`
-
-  const response = await client.messages.create({
-    model: 'claude-opus-4-6',
-    max_tokens: 6000,
-    messages: [{ role: 'user', content: prompt }],
-  })
-
-  const text = response.content[0].text.trim()
-
-  // Extract JSON - handle case where Claude wraps in code fences anyway
-  const jsonMatch = text.match(/\{[\s\S]*\}/)
-  if (!jsonMatch) throw new Error('Claude did not return valid JSON')
-
-  return JSON.parse(jsonMatch[0])
+  // All posts have been published — cycle back from the start
+  return BLOG_POSTS[dayOfYear % BLOG_POSTS.length]
 }
 
 // ─── JSX page builder ─────────────────────────────────────────────────────────
@@ -306,6 +200,12 @@ function updateSitemap(slug, date) {
   const sitemapPath = path.join(ROOT, 'public', 'sitemap.xml')
   let xml = fs.readFileSync(sitemapPath, 'utf-8')
 
+  // Don't add duplicate entries
+  if (xml.includes(`/blog/${slug}`)) {
+    console.log(`  ✓ sitemap.xml already contains /blog/${slug}`)
+    return
+  }
+
   const newEntry = `
   <url>
     <loc>https://adaptbusinesssolutions.com/blog/${slug}</loc>
@@ -314,7 +214,6 @@ function updateSitemap(slug, date) {
     <priority>0.6</priority>
   </url>`
 
-  // Insert before closing </urlset>
   xml = xml.replace('</urlset>', `${newEntry}\n</urlset>`)
   fs.writeFileSync(sitemapPath, xml)
   console.log(`  ✓ sitemap.xml updated`)
@@ -325,6 +224,12 @@ function updateSitemap(slug, date) {
 function updatePostsRegistry(data, date) {
   const registryPath = path.join(ROOT, 'src', 'data', 'auto-blog-posts.json')
   const existing = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
+
+  // Don't add duplicates
+  if (existing.some(p => p.id === data.slug)) {
+    console.log(`  ✓ auto-blog-posts.json already has "${data.slug}"`)
+    return
+  }
 
   existing.push({
     id: data.slug,
@@ -341,54 +246,34 @@ function updatePostsRegistry(data, date) {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
-async function main() {
-  const apiKey = process.env.ANTHROPIC_API_KEY
-  if (!apiKey) {
-    console.error('ERROR: ANTHROPIC_API_KEY environment variable not set.')
-    console.error('Add it as a GitHub Actions secret named ANTHROPIC_API_KEY.')
-    process.exit(1)
-  }
-
-  const client = new Anthropic({ apiKey })
-
+function main() {
   // Get existing slugs to avoid duplicates
   const registryPath = path.join(ROOT, 'src', 'data', 'auto-blog-posts.json')
   const existing = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
   const existingSlugs = existing.map(p => p.id)
 
-  // Pick topic
-  const topic = getTopicForToday()
+  // Pick today's post from the pre-written library
+  const data = getPostForToday(existingSlugs)
   const date = todayISO()
 
-  try {
-    // Generate content
-    const data = await generatePost(client, topic, existingSlugs)
+  console.log(`Publishing blog post: "${data.title}"`)
 
-    // Validate slug uniqueness
-    if (existingSlugs.includes(data.slug)) {
-      data.slug = `${data.slug}-${date}`
-    }
+  // Write page file
+  const pageDir = path.join(ROOT, 'src', 'app', 'blog', data.slug)
+  fs.mkdirSync(pageDir, { recursive: true })
+  const pagePath = path.join(pageDir, 'page.tsx')
+  fs.writeFileSync(pagePath, buildPageTSX(data, date))
+  console.log(`  ✓ Created: src/app/blog/${data.slug}/page.tsx`)
 
-    // Write page file
-    const pageDir = path.join(ROOT, 'src', 'app', 'blog', data.slug)
-    fs.mkdirSync(pageDir, { recursive: true })
-    const pagePath = path.join(pageDir, 'page.tsx')
-    fs.writeFileSync(pagePath, buildPageTSX(data, date))
-    console.log(`  ✓ Created: src/app/blog/${data.slug}/page.tsx`)
+  // Update registry
+  updatePostsRegistry(data, date)
 
-    // Update registry
-    updatePostsRegistry(data, date)
+  // Update sitemap
+  updateSitemap(data.slug, date)
 
-    // Update sitemap
-    updateSitemap(data.slug, date)
-
-    console.log(`\n✅ Blog post generated: "${data.title}"`)
-    console.log(`   URL: /blog/${data.slug}`)
-    console.log(`   Category: ${data.category}`)
-  } catch (err) {
-    console.error('ERROR generating blog post:', err.message)
-    process.exit(1)
-  }
+  console.log(`\n✅ Blog post published: "${data.title}"`)
+  console.log(`   URL: /blog/${data.slug}`)
+  console.log(`   Category: ${data.category}`)
 }
 
 main()
