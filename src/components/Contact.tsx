@@ -1,130 +1,108 @@
-import { Phone, Mail, MapPin, Clock, Calculator, ArrowRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Contact Your Local Ontario CPA
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Contact</p>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-4">
+            Get in Touch
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-            Serving businesses in Orangeville, Brampton, Mississauga, and Niagara Region. 
-            Start with our pricing calculator to get an instant estimate for professional 
-            CPA services in your area.
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Ready to simplify your finances? Start with our pricing calculator for an instant
+            estimate, or reach out directly.
           </p>
-          <div className="flex justify-center">
-            <Link 
-              href="/pricing" 
-              className="bg-primary-600 text-white px-8 py-3 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
-            >
-              Get Your Free Estimate
-            </Link>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+          {/* Contact Info */}
           <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                Contact Information
-              </h3>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <a href="tel:437-772-9598" className="text-primary-600 hover:text-primary-700 transition-colors font-medium">(437) 772-9598</a>
-                    <p className="text-sm text-gray-500">Monday - Friday, 5 PM - 10 PM EST</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Email</h4>
-                    <a href="mailto:accountant@adaptbusinesssolutions.com" className="text-primary-600 hover:text-primary-700 transition-colors font-medium">accountant@adaptbusinesssolutions.com</a>
-                    <p className="text-sm text-gray-500">We respond within 24 hours</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Service Area</h4>
-                    <p className="text-gray-600">Orangeville, Brampton, Mississauga<br />Niagara Region & GTA</p>
-                    <p className="text-sm text-gray-500">Virtual consultations across Ontario</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary-100 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Business Hours</h4>
-                    <div className="text-gray-600 space-y-1">
-                      <p>Monday - Friday: 5:00 PM - 10:00 PM EST</p>
-                      <p>Saturday & Sunday: Closed</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="flex items-start gap-4">
+              <div className="bg-gold-50 p-3 flex-shrink-0">
+                <Phone className="h-5 w-5 text-gold" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-navy mb-1">Phone</h4>
+                <a href="tel:437-772-9598" className="text-gold hover:text-gold-hover font-medium transition-colors">
+                  (437) 772-9598
+                </a>
+                <p className="text-sm text-gray-500 mt-1">Monday–Friday, 5 PM – 10 PM EST</p>
               </div>
             </div>
 
-            <div className="bg-primary-50 p-6 rounded-lg">
-              <h4 className="font-semibold text-primary-900 mb-3">Virtual Consultations</h4>
-              <p className="text-primary-700 mb-2">
-                Schedule secure video consultations at your convenience
-              </p>
-              <p className="text-primary-600 font-semibold">Available Canada-Wide</p>
+            <div className="flex items-start gap-4">
+              <div className="bg-gold-50 p-3 flex-shrink-0">
+                <Mail className="h-5 w-5 text-gold" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-navy mb-1">Email</h4>
+                <a
+                  href="mailto:accountant@adaptbusinesssolutions.com"
+                  className="text-gold hover:text-gold-hover font-medium transition-colors break-all"
+                >
+                  accountant@adaptbusinesssolutions.com
+                </a>
+                <p className="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="bg-gold-50 p-3 flex-shrink-0">
+                <MapPin className="h-5 w-5 text-gold" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-navy mb-1">Service Area</h4>
+                <p className="text-gray-600">Orangeville, Brampton, Mississauga</p>
+                <p className="text-gray-600">Niagara Region, Erin, Mono &amp; more</p>
+                <p className="text-sm text-gray-500 mt-1">Virtual consultations across Ontario</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="bg-gold-50 p-3 flex-shrink-0">
+                <Clock className="h-5 w-5 text-gold" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-navy mb-1">Business Hours</h4>
+                <p className="text-gray-600">Monday–Friday: 5:00 PM – 10:00 PM EST</p>
+                <p className="text-gray-600">Saturday &amp; Sunday: Closed</p>
+              </div>
             </div>
           </div>
 
-          {/* Get Quote CTA */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              Get Your Personalized Quote
+          {/* CTA Card */}
+          <div className="bg-white border border-gray-100 shadow-sm p-8">
+            <h3 className="font-serif text-2xl font-bold text-navy mb-3">
+              Start with a Free Estimate
             </h3>
-            
-            <div className="text-center space-y-6">
-              <div className="bg-primary-50 rounded-lg p-6">
-                <Calculator className="h-12 w-12 text-primary-600 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  Start with Our Pricing Calculator
-                </h4>
-                <p className="text-gray-600 mb-4">
-                  Get an instant estimate tailored to your business needs and size. 
-                  Our interactive calculator provides transparent pricing for all our services.
-                </p>
-                <ul className="text-sm text-gray-600 space-y-1 mb-6">
-                  <li>• Instant price estimates</li>
-                  <li>• Customized for your business size</li>
-                  <li>• No hidden fees or surprises</li>
-                  <li>• Compare service packages</li>
-                </ul>
-              </div>
-              
-              <Link 
-                href="/pricing"
-                className="w-full bg-primary-600 text-white px-6 py-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center justify-center group inline-flex"
-              >
-                Start Your Quote
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              
-              <p className="text-sm text-gray-500">
-                Takes less than 2 minutes • No commitment required
-              </p>
-            </div>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Use our interactive pricing calculator to get an instant monthly estimate
+              tailored to your business size and service needs. Transparent, no-surprise pricing.
+            </p>
+            <ul className="space-y-2 mb-8">
+              {[
+                'Instant price estimates',
+                'Customized for your business size',
+                'No hidden fees or commitments',
+                'Compare service packages',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-sm text-gray-600">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/pricing"
+              className="block w-full bg-navy hover:bg-navy-light text-white font-semibold py-4 text-center transition-colors"
+            >
+              Calculate Your Quote
+            </Link>
+            <p className="text-xs text-gray-400 text-center mt-3">
+              Takes less than 2 minutes · No commitment required
+            </p>
           </div>
         </div>
       </div>

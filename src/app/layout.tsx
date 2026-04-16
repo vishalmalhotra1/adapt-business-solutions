@@ -1,12 +1,26 @@
 import type { Metadata } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/next"
 import './globals.css'
 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+  weight: ['400', '600', '700'],
+})
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://adaptbusinesssolutions.com'),
-  title: 'Adapt Business Solutions - CPA Orangeville | Accounting Services Brampton, Mississauga, Niagara',
-  description: 'Professional CPA services in Orangeville, Brampton, Mississauga, and Niagara Region. Expert virtual bookkeeping, tax preparation, financial analysis. Serving GTA and surrounding areas. 20-30% more competitive pricing.',
-  keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, CPA services GTA, virtual accounting Ontario, small business accountant Orangeville, corporate tax Brampton, financial consulting Mississauga, payroll services Niagara Region, Canadian accountant Ontario',
+  title: 'Adapt Business Solutions - CPA Services Ontario | Orangeville, Brampton, Mississauga',
+  description: 'Expert virtual CPA services for Ontario small businesses. Tax planning, bookkeeping, financial analysis and more across the GTA and beyond. Serving Orangeville, Brampton, Mississauga, Niagara and surrounding communities.',
+  keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, CPA services GTA, virtual accounting Ontario, small business accountant Ontario, corporate tax Ontario',
   authors: [{ name: 'Adapt Business Solutions' }],
   creator: 'Adapt Business Solutions',
   publisher: 'Adapt Business Solutions',
@@ -25,8 +39,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_CA',
     url: 'https://adaptbusinesssolutions.com',
-    title: 'Adapt Business Solutions - Professional CPA Services Orangeville, Brampton, Mississauga, Niagara',
-    description: 'Expert virtual CPA services for businesses in Orangeville, Brampton, Mississauga, and Niagara Region. Competitive pricing, professional expertise, Ontario-wide availability.',
+    title: 'Adapt Business Solutions - Professional CPA Services Ontario',
+    description: 'Expert virtual CPA services for Ontario businesses. Serving Orangeville, Brampton, Mississauga, Niagara and beyond with competitive, professional accounting.',
     siteName: 'Adapt Business Solutions',
     images: [
       {
@@ -39,15 +53,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Adapt Business Solutions - CPA Services Orangeville, Brampton, Mississauga, Niagara',
-    description: 'Expert virtual CPA services for Ontario businesses. Serving Orangeville, Brampton, Mississauga, and Niagara Region with competitive quotes.',
+    title: 'Adapt Business Solutions - CPA Services Ontario',
+    description: 'Expert virtual CPA services for Ontario businesses. Competitive pricing, professional expertise.',
     images: ['https://adaptbusinesssolutions.com/images/logo.avif'],
   },
   alternates: {
     canonical: 'https://adaptbusinesssolutions.com',
   },
   verification: {
-    google: 'your-google-verification-code', // You'll need to add this from Google Search Console
+    google: 'your-google-verification-code',
   },
 }
 
@@ -57,14 +71,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en-CA">
+    <html lang="en-CA" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <link rel="canonical" href="https://adaptbusinesssolutions.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#1e40af" />
+        <meta name="theme-color" content="#0d1b2a" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="geo.region" content="CA" />
+        <meta name="geo.region" content="CA-ON" />
         <meta name="geo.country" content="Canada" />
         <meta name="dc.language" content="en-CA" />
         <script
@@ -86,90 +100,19 @@ export default function RootLayout({
                 "postalCode": "L9W"
               },
               "areaServed": [
-                {
-                  "@type": "City",
-                  "name": "Orangeville",
-                  "containedInPlace": {
-                    "@type": "State",
-                    "name": "Ontario"
-                  }
-                },
-                {
-                  "@type": "City", 
-                  "name": "Brampton",
-                  "containedInPlace": {
-                    "@type": "State",
-                    "name": "Ontario"
-                  }
-                },
-                {
-                  "@type": "City",
-                  "name": "Mississauga", 
-                  "containedInPlace": {
-                    "@type": "State",
-                    "name": "Ontario"
-                  }
-                },
-                {
-                  "@type": "Place",
-                  "name": "Niagara Region",
-                  "containedInPlace": {
-                    "@type": "State", 
-                    "name": "Ontario"
-                  }
-                },
-                {
-                  "@type": "Place",
-                  "name": "Greater Toronto Area",
-                  "containedInPlace": {
-                    "@type": "State",
-                    "name": "Ontario"
-                  }
-                }
+                { "@type": "City", "name": "Orangeville" },
+                { "@type": "City", "name": "Brampton" },
+                { "@type": "City", "name": "Mississauga" },
+                { "@type": "Place", "name": "Niagara Region" },
+                { "@type": "City", "name": "Erin" },
+                { "@type": "City", "name": "Mono" },
+                { "@type": "City", "name": "Grand Valley" },
+                { "@type": "City", "name": "Shelburne" },
+                { "@type": "City", "name": "Amaranth" }
               ],
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "43.9201",
-                  "longitude": "-80.0947"
-                },
-                "geoRadius": "100000"
-              },
               "priceRange": "$100-$450",
               "currenciesAccepted": "CAD",
-              "paymentAccepted": ["Cash", "Credit Card", "Electronic Transfer"],
               "availableLanguage": "English",
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Accounting Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Bookkeeping Services",
-                      "description": "Professional bookkeeping and financial record management"
-                    }
-                  },
-                  {
-                    "@type": "Offer", 
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Tax Preparation",
-                      "description": "Personal and corporate tax preparation and planning"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service", 
-                      "name": "Financial Analysis",
-                      "description": "Business financial analysis and consulting"
-                    }
-                  }
-                ]
-              },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

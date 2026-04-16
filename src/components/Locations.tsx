@@ -1,119 +1,101 @@
 import Link from 'next/link'
-import { MapPin, Users, Building, Grape } from 'lucide-react'
+import { MapPin } from 'lucide-react'
+
+const locations = [
+  {
+    name: 'Orangeville',
+    href: '/locations/orangeville',
+    desc: 'Our home base in Dufferin County, serving the heart of the region.',
+  },
+  {
+    name: 'Brampton',
+    href: '/locations/brampton',
+    desc: "Expert services for Canada's fastest-growing city businesses.",
+  },
+  {
+    name: 'Mississauga',
+    href: '/locations/mississauga',
+    desc: 'Corporate and SME accounting for the GTA business district.',
+  },
+  {
+    name: 'Niagara Region',
+    href: '/locations/niagara-region',
+    desc: 'Specialists in wine, tourism, and agriculture industry accounting.',
+  },
+  {
+    name: 'Erin',
+    href: '/locations/erin',
+    desc: 'Personalized CPA services for Erin businesses and residents.',
+  },
+  {
+    name: 'Mono',
+    href: '/locations/mono',
+    desc: 'Virtual accounting built for Mono Township small businesses.',
+  },
+  {
+    name: 'Grand Valley',
+    href: '/locations/grand-valley',
+    desc: 'Local expertise for businesses in Grand Valley and Dufferin County.',
+  },
+  {
+    name: 'Shelburne',
+    href: '/locations/shelburne',
+    desc: 'Trusted CPA services for Shelburne businesses and entrepreneurs.',
+  },
+  {
+    name: 'Amaranth',
+    href: '/locations/amaranth',
+    desc: 'Comprehensive accounting services for Amaranth Township.',
+  },
+]
 
 export default function Locations() {
-  const locations = [
-    {
-      name: 'Orangeville',
-      href: '/locations/orangeville',
-      icon: Building,
-      description: 'Small business hub serving the heart of Dufferin County',
-      areas: ['Shelburne', 'Mono', 'Amaranth', 'Grand Valley'],
-      specialties: ['Small Business', 'Agriculture', 'Local Services']
-    },
-    {
-      name: 'Brampton',
-      href: '/locations/brampton',
-      icon: Users,
-      description: 'Diverse business community in Canada\'s fastest-growing city',
-      areas: ['Bramalea', 'Heart Lake', 'Sandalwood', 'Georgetown'],
-      specialties: ['Corporate Services', 'Multilingual Support', 'Tech Startups']
-    },
-    {
-      name: 'Mississauga',
-      href: '/locations/mississauga',
-      icon: Building,
-      description: 'Corporate headquarters and business district expertise',
-      areas: ['Square One', 'Port Credit', 'Streetsville', 'Meadowvale'],
-      specialties: ['Corporate Tax', 'Financial Analysis', 'International Business']
-    },
-    {
-      name: 'Niagara Region',
-      href: '/locations/niagara-region',
-      icon: Grape,
-      description: 'Wine industry and tourism business specialists',
-      areas: ['St. Catharines', 'Niagara Falls', 'Welland', 'NOTL'],
-      specialties: ['Wine Industry', 'Tourism', 'Agriculture', 'Manufacturing']
-    }
-  ]
-
   return (
-    <section id="locations" className="py-16 bg-gray-50">
+    <section id="locations" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-16">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">
+            Service Areas
+          </p>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-4">
             Proudly Serving Ontario Communities
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Local expertise with regional reach. Our CPA services extend across key Ontario markets, 
-            providing specialized accounting solutions tailored to each community&apos;s unique business landscape.
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Local expertise, virtual convenience. We serve businesses across the GTA, Dufferin
+            County, and Niagara Region — wherever you are in Ontario, we are here for you.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {locations.map((location) => {
-            const IconComponent = location.icon
-            return (
-              <div key={location.name} className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-                <div className="flex items-center mb-4">
-                  <IconComponent className="w-8 h-8 text-primary-600 mr-3" />
-                  <h3 className="text-xl font-semibold text-gray-900">{location.name}</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {locations.map((loc) => (
+            <Link
+              key={loc.name}
+              href={loc.href}
+              className="group border border-gray-100 p-6 hover:border-gold hover:shadow-md transition-all"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div className="bg-gold-50 p-2">
+                  <MapPin className="h-4 w-4 text-gold" />
                 </div>
-                
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                  {location.description}
-                </p>
-
-                <div className="mb-4">
-                  <h4 className="text-sm font-medium text-gray-900 mb-2">Service Areas:</h4>
-                  <div className="flex flex-wrap gap-1">
-                    {location.areas.map((area) => (
-                      <span key={area} className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
-                        {area}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="mb-6">
-                  <h4 className="text-sm font-medium text-gray-900 mb-2">Specialties:</h4>
-                  <div className="flex flex-wrap gap-1">
-                    {location.specialties.map((specialty) => (
-                      <span key={specialty} className="text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded">
-                        {specialty}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <Link
-                  href={location.href}
-                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm"
-                >
-                  <MapPin className="w-4 h-4 mr-1" />
-                  Learn More
-                </Link>
+                <h3 className="font-serif text-lg font-semibold text-navy group-hover:text-gold transition-colors">
+                  {loc.name}
+                </h3>
               </div>
-            )
-          })}
+              <p className="text-gray-500 text-sm leading-relaxed mb-4">{loc.desc}</p>
+              <span className="text-gold text-sm font-semibold group-hover:text-gold-hover transition-colors">
+                View Local CPA Services →
+              </span>
+            </Link>
+          ))}
         </div>
 
         <div className="text-center mt-12">
-          <div className="bg-white rounded-lg shadow-md p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Can&apos;t Find Your Area?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              We serve clients throughout Southern Ontario. Even if your location isn&apos;t listed above, 
-              we&apos;d love to discuss how we can help your business thrive.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-            >
-              Contact Us Today
+          <p className="text-gray-500 text-sm">
+            Not listed? We serve all of Ontario virtually.{' '}
+            <Link href="/pricing" className="text-gold hover:text-gold-hover font-semibold">
+              Get in touch →
             </Link>
-          </div>
+          </p>
         </div>
       </div>
     </section>

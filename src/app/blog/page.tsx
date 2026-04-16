@@ -2,282 +2,292 @@ import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
-import { Calendar, User, ArrowRight, TrendingUp, FileText, Calculator } from 'lucide-react'
+import { Calendar, ArrowRight, Clock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'CPA Blog | Tax Tips & Business Advice | Adapt Business Solutions',
-  description: 'Expert CPA insights, tax tips, and business advice for Ontario businesses. Latest accounting updates from Orangeville, Brampton, Mississauga & Niagara Region.',
-  keywords: 'CPA blog, tax tips Ontario, small business accounting advice, CRA updates, business tax planning',
+  title: 'CPA Blog | Tax Tips & Accounting Advice for Ontario Businesses | Adapt Business Solutions',
+  description: 'Expert CPA insights, tax tips, and business accounting advice for Ontario small business owners. Latest guides on incorporation, tax deductions, bookkeeping, and CRA compliance.',
+  keywords: 'CPA blog Ontario, tax tips small business, accounting advice Ontario, CRA audit guide, incorporation Ontario, bookkeeping tips Canada',
+  alternates: { canonical: 'https://adaptbusinesssolutions.com/blog' },
 }
 
-// This will be populated by our content management system
-const featuredArticles = [
+const featuredPosts = [
+  {
+    id: 'ontario-small-business-tax-deductions-2025',
+    title: 'Small Business Tax Deductions in Ontario: The Complete 2025 Guide',
+    excerpt: 'A comprehensive walkthrough of every major deduction available to Ontario small business owners — from home office to vehicle expenses, meals, and professional fees. Maximize your refund and stay CRA-compliant.',
+    category: 'Tax Planning',
+    readTime: '10 min read',
+    date: '2025-08-05',
+    featured: true,
+  },
+  {
+    id: 'how-to-incorporate-business-ontario',
+    title: 'How to Incorporate a Business in Ontario: Step-by-Step',
+    excerpt: 'Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense to incorporate.',
+    category: 'Corporate Services',
+    readTime: '8 min read',
+    date: '2025-08-05',
+    featured: false,
+  },
+  {
+    id: 'bookkeeping-tips-sole-proprietors-canada',
+    title: 'Bookkeeping Tips for Sole Proprietors in Canada',
+    excerpt: 'The most practical bookkeeping habits for self-employed Canadians. Separate your accounts, track every expense, understand HST thresholds, and choose the right accounting software.',
+    category: 'Bookkeeping',
+    readTime: '7 min read',
+    date: '2025-08-05',
+    featured: false,
+  },
+  {
+    id: 'how-to-avoid-cra-audit-ontario',
+    title: 'How to Avoid a CRA Audit: What Ontario Business Owners Need to Know',
+    excerpt: 'CRA audits are avoidable. Learn the most common audit triggers — unreported income, excessive expenses, repeated losses — and the record-keeping practices that keep your business protected.',
+    category: 'Tax Planning',
+    readTime: '9 min read',
+    date: '2025-08-05',
+    featured: false,
+  },
+]
+
+const locationPosts = [
   {
     id: 'orangeville-tax-planning-checklist-for-2025-business-owners',
     title: 'Orangeville Tax Planning Checklist for 2025 Business Owners',
     excerpt: 'Essential tax planning deadlines and strategies for Orangeville businesses. Comprehensive CPA guidance for maximizing deductions and ensuring compliance.',
-    category: 'Tax Planning',
+    category: 'Local Guides',
     readTime: '8 min read',
-    publishDate: '2025-08-04',
-    author: 'Adapt Business Solutions CPA Team',
-    featured: true,
-    tags: ['Tax Planning', 'Orangeville', 'Small Business', '2025']
+    date: '2025-08-04',
   },
   {
     id: 'brampton-tax-planning-checklist-for-2025-business-owners',
-    title: 'Brampton Tax Planning Checklist for 2025 Business Owners',
-    excerpt: 'Professional tax planning strategies for Brampton businesses. Expert CPA advice for compliance and maximizing tax savings.',
-    category: 'Tax Planning',
+    title: 'Brampton Tax Planning Checklist for 2025',
+    excerpt: 'Professional tax planning strategies for Brampton businesses. Expert CPA advice for compliance and maximizing tax savings in Canada\'s fastest-growing city.',
+    category: 'Local Guides',
     readTime: '8 min read',
-    publishDate: '2025-08-04',
-    author: 'Adapt Business Solutions CPA Team',
-    featured: false,
-    tags: ['Tax Planning', 'Brampton', 'Small Business', '2025']
+    date: '2025-08-04',
   },
   {
     id: 'mississauga-small-business-accounting-guide-for-2025',
     title: 'Mississauga Small Business Accounting Guide for 2025',
     excerpt: 'Comprehensive accounting essentials for Mississauga small businesses. Professional guidance for bookkeeping, compliance, and financial management.',
-    category: 'Small Business',
+    category: 'Local Guides',
     readTime: '10 min read',
-    publishDate: '2025-08-04',
-    author: 'Adapt Business Solutions CPA Team',
-    featured: false,
-    tags: ['Small Business', 'Mississauga', 'Accounting', '2025']
+    date: '2025-08-04',
   },
   {
     id: 'niagara-tax-planning-checklist-for-2025-business-owners',
-    title: 'Niagara Tax Planning Checklist for 2025 Business Owners',
-    excerpt: 'Tax planning strategies for Niagara Region businesses. Professional CPA insights for hospitality, tourism, and wine industry businesses.',
-    category: 'Tax Planning',
+    title: 'Niagara Region Tax Planning Checklist for 2025',
+    excerpt: 'Tax planning strategies tailored for Niagara Region businesses in hospitality, tourism, wine, and agriculture.',
+    category: 'Local Guides',
     readTime: '8 min read',
-    publishDate: '2025-08-04',
-    author: 'Adapt Business Solutions CPA Team',
-    featured: false,
-    tags: ['Tax Planning', 'Niagara', 'Tourism', '2025']
-  }
+    date: '2025-08-04',
+  },
+  {
+    id: 'brampton-small-business-accounting-guide-for-2025',
+    title: 'Brampton Small Business Accounting Guide for 2025',
+    excerpt: 'A full-scope accounting guide for Brampton entrepreneurs covering bookkeeping, payroll, corporate tax, and HST.',
+    category: 'Local Guides',
+    readTime: '10 min read',
+    date: '2025-08-04',
+  },
+  {
+    id: 'mississauga-tax-planning-checklist-for-2025-business-owners',
+    title: 'Mississauga Tax Planning Checklist for 2025',
+    excerpt: 'Year-end tax planning checklist tailored for Mississauga corporations and SMEs operating in the GTA business district.',
+    category: 'Local Guides',
+    readTime: '8 min read',
+    date: '2025-08-04',
+  },
+  {
+    id: 'niagara-small-business-accounting-guide-for-2025',
+    title: 'Niagara Small Business Accounting Guide for 2025',
+    excerpt: 'Complete accounting guidance for Niagara businesses in the wine, tourism, and agriculture sectors.',
+    category: 'Local Guides',
+    readTime: '10 min read',
+    date: '2025-08-04',
+  },
+  {
+    id: 'orangeville-small-business-accounting-guide-for-2025',
+    title: 'Orangeville Small Business Accounting Guide for 2025',
+    excerpt: 'Comprehensive financial management guide for Orangeville entrepreneurs covering all aspects of small business accounting.',
+    category: 'Local Guides',
+    readTime: '10 min read',
+    date: '2025-08-04',
+  },
 ]
 
-const categories = [
-  { name: 'Tax Planning', count: 4, icon: Calculator },
-  { name: 'Small Business', count: 4, icon: TrendingUp },
-  { name: 'Compliance', count: 2, icon: FileText },
-  { name: 'Local Business', count: 8, icon: User },
-]
+const featured = featuredPosts.find(p => p.featured)!
+const recentGeneral = featuredPosts.filter(p => !p.featured)
+
+function formatDate(d: string) {
+  return new Date(d).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
+}
 
 export default function BlogPage() {
-  const featuredPost = featuredArticles.find(article => article.featured)
-  const recentPosts = featuredArticles.filter(article => !article.featured)
-
   return (
     <>
       <Navigation />
       <div className="pt-16">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                CPA Insights & Tax Tips
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-primary-100">
-                Expert accounting advice for Ontario businesses from certified CPAs
-              </p>
-              <div className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg inline-block font-semibold">
-                📝 New articles published daily • Always up-to-date with CRA changes
-              </div>
-            </div>
+
+        {/* Hero */}
+        <section className="hero-pattern text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">
+              Expert Insights
+            </p>
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">
+              CPA Insights &amp; Tax Tips
+            </h1>
+            <p className="text-navy-100 text-lg max-w-2xl mx-auto">
+              Practical accounting and tax advice for Ontario business owners — from a certified CPA.
+            </p>
           </div>
         </section>
 
         {/* Disclaimer */}
-        <section className="bg-gray-50 py-6">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-lg p-6 border-l-4 border-yellow-400">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <svg className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div className="ml-3">
-                  <p className="text-sm text-gray-700">
-                    <strong>Professional Disclaimer:</strong> The information provided in these articles is for educational purposes only and does not constitute professional accounting, tax, or legal advice. 
-                    In accordance with CPA Ontario standards, readers should consult with a qualified CPA for advice specific to their situation. 
-                    Tax laws and regulations change frequently, and this content may not reflect the most current updates.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div className="bg-gray-50 border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <p className="text-xs text-gray-500">
+              <strong>Professional Disclaimer:</strong> Articles are for educational purposes only and do not constitute professional accounting, tax, or legal advice. Consult a qualified CPA for advice specific to your situation. Tax laws change frequently — content may not reflect the most current updates.
+            </p>
           </div>
-        </section>
+        </div>
 
         {/* Featured Article */}
-        {featuredPost && (
-          <section className="py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Article</h2>
-                <p className="text-xl text-gray-600">Latest insights from our CPA experts</p>
-              </div>
-              
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden max-w-4xl mx-auto">
-                <div className="p-8">
-                  <div className="flex items-center mb-4">
-                    <span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium">
-                      {featuredPost.category}
-                    </span>
-                    <span className="ml-4 text-gray-500 text-sm flex items-center">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {new Date(featuredPost.publishDate).toLocaleDateString()}
-                    </span>
-                    <span className="ml-4 text-gray-500 text-sm">{featuredPost.readTime}</span>
-                  </div>
-                  
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                    {featuredPost.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                    {featuredPost.excerpt}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {featuredPost.tags.map((tag) => (
-                      <span key={tag} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <Link
-                    href={`/blog/${featuredPost.id}`}
-                    className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
-                  >
-                    Read Full Article
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-6">Featured Article</p>
+            <div className="grid lg:grid-cols-2 gap-10 items-center border border-gray-100 shadow-sm p-8 lg:p-12">
+              <div>
+                <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 mb-4">
+                  {featured.category}
+                </span>
+                <h2 className="font-serif text-2xl lg:text-3xl font-bold text-navy mb-4 leading-tight">
+                  {featured.title}
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-6">{featured.excerpt}</p>
+                <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3.5 h-3.5" />
+                    {formatDate(featured.date)}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Clock className="w-3.5 h-3.5" />
+                    {featured.readTime}
+                  </span>
                 </div>
+                <Link
+                  href={`/blog/${featured.id}`}
+                  className="inline-flex items-center bg-navy hover:bg-navy-light text-white font-semibold px-6 py-3 transition-colors group"
+                >
+                  Read Full Article
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+              <div className="bg-gold-50 p-8 border-l-4 border-gold">
+                <h3 className="font-serif text-lg font-bold text-navy mb-3">What You Will Learn</h3>
+                <ul className="space-y-2">
+                  {[
+                    'Home office deduction strategies',
+                    'Vehicle and travel expense rules',
+                    'Meals, entertainment, and client gifts',
+                    'Equipment and CCA deductions',
+                    'Professional fees and subscriptions',
+                    'HST and GST input tax credits',
+                  ].map(item => (
+                    <li key={item} className="flex items-center gap-2 text-sm text-gray-700">
+                      <span className="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
-        {/* Categories */}
+        {/* Recent General Articles */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Browse by Category</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {categories.map((category) => {
-                const IconComponent = category.icon
-                return (
-                  <Link
-                    key={category.name}
-                    href={`/blog/category/${category.name.toLowerCase().replace(' ', '-')}`}
-                    className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
-                  >
-                    <IconComponent className="w-8 h-8 text-primary-600 mx-auto mb-3" />
-                    <h3 className="font-semibold text-gray-900 mb-1">{category.name}</h3>
-                    <p className="text-gray-500 text-sm">{category.count} articles</p>
-                  </Link>
-                )
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* Recent Articles */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Recent Articles</h2>
-            
-            {recentPosts.length > 0 ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {recentPosts.map((article) => (
-                  <article key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div className="p-6">
-                      <div className="flex items-center mb-3">
-                        <span className="bg-primary-100 text-primary-800 px-2 py-1 rounded text-xs font-medium">
-                          {article.category}
-                        </span>
-                        <span className="ml-2 text-gray-500 text-xs">{article.readTime}</span>
-                      </div>
-                      
-                      <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                        {article.title}
-                      </h3>
-                      
-                      <p className="text-gray-600 mb-4 line-clamp-3">
-                        {article.excerpt}
-                      </p>
-                      
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center text-sm text-gray-500">
-                          <Calendar className="w-4 h-4 mr-1" />
-                          {new Date(article.publishDate).toLocaleDateString()}
-                        </div>
-                        <Link
-                          href={`/blog/${article.id}`}
-                          className="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center"
-                        >
-                          Read More
-                          <ArrowRight className="ml-1 w-3 h-3" />
-                        </Link>
-                      </div>
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">General Guides</p>
+            <h2 className="font-serif text-2xl font-bold text-navy mb-10">Essential CPA Guides for Ontario Businesses</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {recentGeneral.map(post => (
+                <article key={post.id} className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="p-6">
+                    <span className="inline-block bg-gold-50 text-gold border border-gold text-xs font-bold px-2 py-0.5 mb-3">
+                      {post.category}
+                    </span>
+                    <h3 className="font-serif text-lg font-bold text-navy mb-3 leading-snug">
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
+                    <div className="flex items-center justify-between text-xs text-gray-400">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" />
+                        {formatDate(post.date)}
+                      </span>
+                      <span>{post.readTime}</span>
                     </div>
-                  </article>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-12">
-                <div className="max-w-md mx-auto">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">More Articles Coming Soon</h3>
-                  <p className="text-gray-600 mb-6">
-                    Our automated content system is generating fresh, SEO-optimized articles daily. 
-                    Check back soon for more expert CPA insights tailored to your local business needs.
-                  </p>
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <p className="text-blue-800 text-sm">
-                      <strong>Coming this week:</strong> Tax planning guides for Brampton, Mississauga, and Niagara Region businesses, 
-                      plus seasonal compliance reminders and local business insights.
-                    </p>
+                    <Link
+                      href={`/blog/${post.id}`}
+                      className="mt-4 inline-flex items-center text-gold hover:text-gold-hover font-semibold text-sm transition-colors"
+                    >
+                      Read More <ArrowRight className="ml-1 w-3.5 h-3.5" />
+                    </Link>
                   </div>
-                </div>
-              </div>
-            )}
-            
-            <div className="text-center mt-12">
-              <span className="inline-flex items-center bg-gray-300 text-gray-500 px-8 py-3 rounded-lg cursor-not-allowed font-semibold">
-                More Articles Coming Soon
-              </span>
+                </article>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Newsletter Signup */}
-        <section className="py-16 bg-primary-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Stay Updated with Tax Tips & Business Insights
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              Get weekly CPA insights delivered to your inbox. No spam, just valuable business advice.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
-              />
-              <button className="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-semibold">
-                Subscribe
-              </button>
+        {/* Location Guides */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">Local Guides</p>
+            <h2 className="font-serif text-2xl font-bold text-navy mb-10">City-Specific Accounting Guides</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {locationPosts.map(post => (
+                <article key={post.id} className="border border-gray-100 hover:border-gold hover:shadow-md transition-all p-5">
+                  <span className="inline-block bg-navy text-white text-xs font-medium px-2 py-0.5 mb-3">
+                    {post.category}
+                  </span>
+                  <h3 className="font-serif text-sm font-bold text-navy mb-2 leading-snug">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-500 text-xs leading-relaxed mb-3 line-clamp-2">{post.excerpt}</p>
+                  <Link
+                    href={`/blog/${post.id}`}
+                    className="text-gold hover:text-gold-hover font-semibold text-xs transition-colors inline-flex items-center"
+                  >
+                    Read <ArrowRight className="ml-1 w-3 h-3" />
+                  </Link>
+                </article>
+              ))}
             </div>
-            <p className="text-sm text-gray-500 mt-4">
-              Join 500+ Ontario business owners receiving our insights
-            </p>
           </div>
         </section>
+
+        {/* CTA */}
+        <section className="py-16 bg-navy">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-serif text-2xl font-bold text-white mb-3">
+              Want Personalized Tax Advice for Your Business?
+            </h2>
+            <p className="text-navy-100 mb-6">
+              General articles are helpful — but nothing replaces a conversation with your own CPA.
+            </p>
+            <Link
+              href="/pricing"
+              className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors"
+            >
+              Book a Free Consultation
+            </Link>
+          </div>
+        </section>
+
       </div>
       <Footer />
     </>

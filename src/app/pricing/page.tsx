@@ -1,9 +1,8 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { Calculator, CheckCircle, DollarSign, ArrowRight, Info } from 'lucide-react'
+import { CheckCircle, ArrowRight, Info } from 'lucide-react'
 import Link from 'next/link'
-import Head from 'next/head'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -11,488 +10,320 @@ const serviceTiers = {
   foundation: {
     name: 'Foundation Finance Suite',
     price: { min: 100, max: 190 },
-    color: 'primary',
     description: 'Perfect for small businesses and startups',
-    popular: false
+    popular: false,
   },
   growth: {
     name: 'Growth Navigator Pack',
     price: { min: 190, max: 260 },
-    color: 'accent',
     description: 'Ideal for growing businesses',
-    popular: true
+    popular: true,
   },
   strategic: {
     name: 'Strategic Data Vanguard',
     price: { min: 260, max: 450 },
-    color: 'primary',
     description: 'Comprehensive solution for established businesses',
-    popular: false
-  }
+    popular: false,
+  },
 }
 
 const services = {
   bookkeeping: {
     name: 'Bookkeeping Services',
-    foundation: {
-      items: ['Initial Setup and Consultation', 'Transaction Recording', 'Accounts Payable/Receivable Management', 'Monthly Bank Reconciliations'],
-      included: true
-    },
-    growth: {
-      items: ['All Foundation features', 'Monthly Payroll Processing', 'Enhanced reporting'],
-      included: true
-    },
-    strategic: {
-      items: ['All Growth features', 'Advanced analytics', 'Custom dashboards'],
-      included: true
-    }
+    foundation: { items: ['Initial Setup & Consultation', 'Transaction Recording', 'Accounts Payable/Receivable', 'Monthly Bank Reconciliations'], included: true },
+    growth: { items: ['All Foundation features', 'Monthly Payroll Processing', 'Enhanced reporting'], included: true },
+    strategic: { items: ['All Growth features', 'Advanced analytics', 'Custom dashboards'], included: true },
   },
   accounting: {
     name: 'Accounting Services',
-    foundation: {
-      items: ['Quarterly Financial Reporting'],
-      included: false
-    },
-    growth: {
-      items: ['Monthly Financial Reporting', 'Annual Budgeting and Forecasting', 'Semi-Annual Financial Analysis'],
-      included: true
-    },
-    strategic: {
-      items: ['Monthly Financial Reporting', 'Monthly Budgeting and Forecasting', 'Monthly Financial Analysis', 'Monthly Cost Accounting'],
-      included: true
-    }
+    foundation: { items: ['Quarterly Financial Reporting'], included: false },
+    growth: { items: ['Monthly Financial Reporting', 'Annual Budgeting & Forecasting', 'Semi-Annual Financial Analysis'], included: true },
+    strategic: { items: ['Monthly Financial Reporting', 'Monthly Budgeting & Forecasting', 'Monthly Financial Analysis', 'Monthly Cost Accounting'], included: true },
   },
   taxation: {
     name: 'Taxation Services',
-    foundation: {
-      items: ['T1 Filing ($40-120)', 'T2 Filing ($300-1500)', 'Annual HST/GST Filing'],
-      included: true
-    },
-    growth: {
-      items: ['All Foundation tax services', 'Quarterly HST/GST Filing'],
-      included: true
-    },
-    strategic: {
-      items: ['All Growth tax services', 'Advanced tax planning', 'Quarterly HST/GST Filing'],
-      included: true
-    }
+    foundation: { items: ['T1 Filing ($40–120)', 'T2 Filing ($300–1500)', 'Annual HST/GST Filing'], included: true },
+    growth: { items: ['All Foundation tax services', 'Quarterly HST/GST Filing'], included: true },
+    strategic: { items: ['All Growth tax services', 'Advanced tax planning', 'Quarterly HST/GST Filing'], included: true },
   },
   compilation: {
     name: 'Financial Statement Preparation',
-    foundation: {
-      items: ['Compilation Engagements (Add-on)'],
-      included: false,
-      addon: true
-    },
-    growth: {
-      items: ['Annual Compilation Engagements (Notice to Reader)'],
-      included: true
-    },
-    strategic: {
-      items: ['Annual Compilation Engagements (Notice to Reader)', 'Review Engagements (Available)'],
-      included: true
-    }
+    foundation: { items: ['Compilation Engagements (Add-on)'], included: false, addon: true },
+    growth: { items: ['Annual Compilation Engagements (Notice to Reader)'], included: true },
+    strategic: { items: ['Annual Compilation Engagements (Notice to Reader)', 'Review Engagements (Available)'], included: true },
   },
   analytics: {
-    name: 'Data Analytics and Studies',
-    foundation: {
-      items: ['Data Collection and Management'],
-      included: true
-    },
-    growth: {
-      items: ['Data Collection and Management', 'Performance Dashboards'],
-      included: true
-    },
-    strategic: {
-      items: ['All Growth features', 'Predictive Analytics', 'Custom Reports and Studies'],
-      included: true
-    }
-  }
+    name: 'Data Analytics & Studies',
+    foundation: { items: ['Data Collection & Management'], included: true },
+    growth: { items: ['Data Collection & Management', 'Performance Dashboards'], included: true },
+    strategic: { items: ['All Growth features', 'Predictive Analytics', 'Custom Reports & Studies'], included: true },
+  },
 }
 
-export default function CostEstimatorPage() {
+export default function PricingPage() {
   const [selectedTier, setSelectedTier] = useState('growth')
-  const [selectedServices, setSelectedServices] = useState({
-    bookkeeping: true,
-    accounting: true,
-    taxation: true,
-    compilation: true,
-    analytics: false
-  })
   const [businessSize, setBusinessSize] = useState('small')
   const [estimatedPrice, setEstimatedPrice] = useState(225)
+  const [selectedServices] = useState({ bookkeeping: true, accounting: true, taxation: true, compilation: true, analytics: false })
+
+  const sizeMultiplier: Record<string, number> = { micro: 0.8, small: 1.0, medium: 1.3, large: 1.6 }
+
+  const getSizeAdjustedPriceRange = useCallback((tierKey: string) => {
+    const tier = serviceTiers[tierKey as keyof typeof serviceTiers]
+    const m = sizeMultiplier[businessSize]
+    return { min: Math.round(tier.price.min * m), max: Math.round(tier.price.max * m) }
+  }, [businessSize])
+
+  const getTraditionalFirmsPricing = useCallback(() => {
+    const base: Record<string, { min: number; max: number }> = { foundation: { min: 280, max: 550 }, growth: { min: 350, max: 650 }, strategic: { min: 450, max: 800 } }
+    const m: Record<string, number> = { micro: 0.7, small: 1.0, medium: 1.4, large: 2.0 }
+    const b = base[selectedTier] || base.growth
+    return { min: Math.round(b.min * m[businessSize]), max: Math.round(b.max * m[businessSize]) }
+  }, [businessSize, selectedTier])
+
+  const getDIYSoftwarePricing = useCallback(() => {
+    const base: Record<string, { min: number; max: number }> = { foundation: { min: 40, max: 80 }, growth: { min: 60, max: 120 }, strategic: { min: 100, max: 200 } }
+    const m: Record<string, number> = { micro: 0.8, small: 1.0, medium: 1.5, large: 2.2 }
+    const b = base[selectedTier] || base.growth
+    return { min: Math.round(b.min * m[businessSize]), max: Math.round(b.max * m[businessSize]) }
+  }, [businessSize, selectedTier])
 
   const calculatePrice = useCallback(() => {
     const tier = serviceTiers[selectedTier as keyof typeof serviceTiers]
-    let basePrice = (tier.price.min + tier.price.max) / 2
-    
-    // Adjust based on business size
-    const sizeMultiplier: Record<string, number> = {
-      micro: 0.8,
-      small: 1.0,
-      medium: 1.3,
-      large: 1.6
-    }
-    
-    basePrice *= sizeMultiplier[businessSize]
-    
-    // Add-ons
-    let addons = 0
-    if (selectedServices.analytics && selectedTier === 'foundation') {
-      addons += 50
-    }
-    
-    setEstimatedPrice(Math.round(basePrice + addons))
-  }, [selectedTier, businessSize, selectedServices])
+    let base = (tier.price.min + tier.price.max) / 2
+    base *= sizeMultiplier[businessSize]
+    setEstimatedPrice(Math.round(base))
+  }, [selectedTier, businessSize])
 
-  // Function to get size-adjusted price range for display
-  const getSizeAdjustedPriceRange = useCallback((tierKey: string) => {
-    const tier = serviceTiers[tierKey as keyof typeof serviceTiers]
-    const sizeMultiplier: Record<string, number> = {
-      micro: 0.8,
-      small: 1.0,
-      medium: 1.3,
-      large: 1.6
-    }
-    
-    const adjustedMin = Math.round(tier.price.min * sizeMultiplier[businessSize])
-    const adjustedMax = Math.round(tier.price.max * sizeMultiplier[businessSize])
-    
-    return { min: adjustedMin, max: adjustedMax }
-  }, [businessSize])
+  useEffect(() => { calculatePrice() }, [calculatePrice])
 
-  // Function to get competitor pricing based on business size and service tier
-  const getTraditionalFirmsPricing = useCallback(() => {
-    // Base pricing varies by service tier complexity
-    const tierBasePricing: Record<string, { min: number, max: number }> = {
-      foundation: { min: 280, max: 550 },   // Simpler services
-      growth: { min: 350, max: 650 },       // Standard comprehensive services  
-      strategic: { min: 450, max: 800 }     // Advanced strategic services
-    }
-    
-    const basePricing = tierBasePricing[selectedTier] || tierBasePricing.growth
-    
-    const sizeMultiplier: Record<string, number> = {
-      micro: 0.7,   // Traditional firms might be less efficient for micro
-      small: 1.0,   // Base pricing
-      medium: 1.4,  // Higher overhead for medium businesses
-      large: 2.0    // Significantly higher for large businesses
-    }
-    
-    const adjustedMin = Math.round(basePricing.min * sizeMultiplier[businessSize])
-    const adjustedMax = Math.round(basePricing.max * sizeMultiplier[businessSize])
-    
-    return { min: adjustedMin, max: adjustedMax }
-  }, [businessSize, selectedTier])
-
-  // Function to get DIY software pricing based on business size and service tier
-  const getDIYSoftwarePricing = useCallback(() => {
-    // Base pricing varies by service tier features needed
-    const tierBasePricing: Record<string, { min: number, max: number }> = {
-      foundation: { min: 40, max: 80 },     // Basic accounting software
-      growth: { min: 60, max: 120 },       // Mid-tier with payroll features
-      strategic: { min: 100, max: 200 }    // Enterprise-level software suites
-    }
-    
-    const basePricing = tierBasePricing[selectedTier] || tierBasePricing.growth
-    
-    const sizeMultiplier: Record<string, number> = {
-      micro: 0.8,   // Simpler needs
-      small: 1.0,   // Base pricing
-      medium: 1.5,  // Need more advanced features
-      large: 2.2    // Enterprise-level software costs
-    }
-    
-    const adjustedMin = Math.round(basePricing.min * sizeMultiplier[businessSize])
-    const adjustedMax = Math.round(basePricing.max * sizeMultiplier[businessSize])
-    
-    return { min: adjustedMin, max: adjustedMax }
-  }, [businessSize, selectedTier])
-
-  // Calculate price when dependencies change
-  useEffect(() => {
-    calculatePrice()
-  }, [calculatePrice])
+  const tierKeys = Object.keys(serviceTiers) as Array<keyof typeof serviceTiers>
 
   return (
     <>
-      <Head>
-        <title>Pricing Calculator - Adapt Business Solutions | Get Instant CPA Quote</title>
-        <meta name="description" content="Get instant pricing for professional CPA services. Calculate costs for bookkeeping, tax prep, and financial consulting. 20-30% more competitive than traditional firms." />
-        <meta name="keywords" content="CPA pricing calculator, accounting services cost, bookkeeping prices Canada, tax preparation fees, financial consulting rates" />
-        <link rel="canonical" href="https://adaptbusinesssolutions.com/pricing" />
-        <meta property="og:title" content="CPA Services Pricing Calculator - Instant Quotes | Adapt Business Solutions" />
-        <meta property="og:description" content="Calculate your accounting service costs instantly. Professional CPA services starting from $100/month. Get personalized quotes for your business size." />
-        <meta property="og:url" content="https://adaptbusinesssolutions.com/pricing" />
-        <meta property="og:type" content="website" />
-      </Head>
+      <Navigation />
       <div className="min-h-screen bg-white">
-        <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Calculator className="h-10 w-10 text-primary-600" />
-            </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Service Cost Estimator
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get an instant estimate for your accounting and bookkeeping needs. 
-              Our competitive pricing is designed to provide exceptional value for Canadian businesses.
+
+        {/* Hero */}
+        <section className="hero-pattern pt-16 text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Transparent Pricing</p>
+            <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">Service Cost Estimator</h1>
+            <p className="text-navy-100 text-lg max-w-2xl mx-auto">
+              Get an instant monthly estimate for professional CPA services tailored to your business size and needs.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Cost Estimator Tool */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            
-            {/* Configuration Panel */}
-            <div className="lg:col-span-2 space-y-8">
-              
-              {/* Business Size Selection */}
-              <div className="bg-gray-50 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Business Size</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {[
-                    { key: 'micro', label: 'Micro Business', desc: '1-5 employees' },
-                    { key: 'small', label: 'Small Business', desc: '6-20 employees' },
-                    { key: 'medium', label: 'Medium Business', desc: '21-50 employees' },
-                    { key: 'large', label: 'Large Business', desc: '50+ employees' }
-                  ].map((size) => (
-                    <button
-                      key={size.key}
-                      onClick={() => {
-                        setBusinessSize(size.key)
-                        calculatePrice()
-                      }}
-                      className={`p-4 rounded-lg border-2 transition-all ${
-                        businessSize === size.key
-                          ? 'border-primary-600 bg-primary-50'
-                          : 'border-gray-200 hover:border-primary-300'
-                      }`}
-                    >
-                      <div className="font-semibold text-gray-900">{size.label}</div>
-                      <div className="text-sm text-gray-600">{size.desc}</div>
-                    </button>
-                  ))}
+        {/* Estimator */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+              {/* Config */}
+              <div className="lg:col-span-2 space-y-8">
+
+                {/* Business Size */}
+                <div className="border border-gray-100 shadow-sm p-8">
+                  <h3 className="font-serif text-xl font-bold text-navy mb-6">Business Size</h3>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    {[
+                      { key: 'micro', label: 'Micro', desc: '1–5 employees' },
+                      { key: 'small', label: 'Small', desc: '6–20 employees' },
+                      { key: 'medium', label: 'Medium', desc: '21–50 employees' },
+                      { key: 'large', label: 'Large', desc: '50+ employees' },
+                    ].map(size => (
+                      <button
+                        key={size.key}
+                        onClick={() => setBusinessSize(size.key)}
+                        className={`p-4 border-2 text-left transition-all ${businessSize === size.key ? 'border-gold bg-gold-50' : 'border-gray-200 hover:border-gold-hover'}`}
+                      >
+                        <div className="font-semibold text-navy text-sm">{size.label}</div>
+                        <div className="text-xs text-gray-500">{size.desc}</div>
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
 
-              {/* Service Tier Selection */}
-              <div className="bg-white rounded-xl border border-gray-200 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Service Package</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {Object.entries(serviceTiers).map(([key, tier]) => {
-                    const adjustedPrice = getSizeAdjustedPriceRange(key)
-                    return (
-                    <div
-                      key={key}
-                      className={`relative p-6 rounded-lg border-2 cursor-pointer transition-all ${
-                        selectedTier === key
-                          ? 'border-primary-600 bg-primary-50 shadow-lg'
-                          : 'border-gray-200 hover:border-primary-300 hover:shadow-md'
-                      } ${tier.popular ? 'ring-2 ring-accent-500 ring-opacity-50' : ''}`}
-                      onClick={() => {
-                        setSelectedTier(key)
-                        calculatePrice()
-                      }}
-                    >
-                      {tier.popular && (
-                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                          <div className="bg-gradient-to-r from-accent-500 to-accent-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                            <div className="flex items-center space-x-1">
-                              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                              </svg>
-                              <span>Most Popular</span>
+                {/* Service Tier */}
+                <div className="border border-gray-100 shadow-sm p-8">
+                  <h3 className="font-serif text-xl font-bold text-navy mb-6">Service Package</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {tierKeys.map(key => {
+                      const tier = serviceTiers[key]
+                      const price = getSizeAdjustedPriceRange(key)
+                      return (
+                        <div
+                          key={key}
+                          onClick={() => setSelectedTier(key)}
+                          className={`relative p-6 border-2 cursor-pointer transition-all ${selectedTier === key ? 'border-gold bg-gold-50 shadow-md' : 'border-gray-200 hover:border-gold-hover'}`}
+                        >
+                          {tier.popular && (
+                            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                              <span className="bg-gold text-navy text-xs font-bold px-3 py-1">Most Popular</span>
                             </div>
+                          )}
+                          <h4 className="font-serif font-bold text-navy mb-1 text-sm">{tier.name}</h4>
+                          <p className="text-xs text-gray-500 mb-3">{tier.description}</p>
+                          <div className="font-bold text-navy text-lg">
+                            ${price.min}–${price.max}
+                            <span className="text-xs text-gray-500 font-normal">/mo</span>
                           </div>
                         </div>
-                      )}
-                      <h4 className="font-bold text-gray-900 mb-2">{tier.name}</h4>
-                      <p className="text-sm text-gray-600 mb-4">{tier.description}</p>
-                      <div className="text-2xl font-bold text-primary-600">
-                        ${adjustedPrice.min} - ${adjustedPrice.max}
-                        <span className="text-sm text-gray-500 font-normal">/month</span>
-                      </div>
-                    </div>
-                    )
-                  })}
+                      )
+                    })}
+                  </div>
+                </div>
+
+                {/* Included Services */}
+                <div className="border border-gray-100 shadow-sm p-8">
+                  <h3 className="font-serif text-xl font-bold text-navy mb-6">
+                    What&apos;s Included — {serviceTiers[selectedTier as keyof typeof serviceTiers].name}
+                  </h3>
+                  <div className="space-y-5">
+                    {Object.entries(services).map(([key, service]) => {
+                      const tierData = (service as unknown as Record<string, { items: string[]; included: boolean; addon?: boolean }>)[selectedTier]
+                      return (
+                        <div key={key} className="border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                          <div className="flex items-center justify-between mb-2">
+                            <h4 className="font-semibold text-navy text-sm">{service.name}</h4>
+                            {tierData.included ? (
+                              <CheckCircle className="h-5 w-5 text-gold flex-shrink-0" />
+                            ) : (
+                              <span className="text-xs text-gray-400 bg-gray-100 px-2 py-0.5">
+                                {tierData.addon ? 'Add-on' : 'Not Included'}
+                              </span>
+                            )}
+                          </div>
+                          <ul className="space-y-1">
+                            {tierData.items.map((item: string) => (
+                              <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
+                                <span className="w-1.5 h-1.5 bg-gold rounded-full mt-1.5 flex-shrink-0" />
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
               </div>
 
-              {/* Service Details */}
-              <div className="bg-white rounded-xl border border-gray-200 p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  What&apos;s Included in {serviceTiers[selectedTier as keyof typeof serviceTiers].name}
-                </h3>
-                <div className="space-y-6">
-                  {Object.entries(services).map(([serviceKey, service]) => {
-                    const tierData = (service as any)[selectedTier]
-                    return (
-                      <div key={serviceKey} className="border-b border-gray-100 pb-6 last:border-b-0">
-                        <div className="flex items-start justify-between mb-3">
-                          <h4 className="font-semibold text-gray-900">{service.name}</h4>
-                          {tierData.included ? (
-                            <CheckCircle className="h-6 w-6 text-primary-600 flex-shrink-0" />
-                          ) : (
-                            <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">
-                              {tierData.addon ? 'Add-on Available' : 'Not Included'}
-                            </span>
-                          )}
-                        </div>
-                        <ul className="space-y-2">
-                          {tierData.items.map((item: string, index: number) => (
-                            <li key={index} className="flex items-start space-x-2">
-                              <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-gray-600">{item}</span>
-                            </li>
-                          ))}
+              {/* Price Summary */}
+              <div className="lg:col-span-1">
+                <div className="sticky top-20">
+                  <div className="bg-navy text-white p-8">
+                    <h3 className="font-serif text-xl font-bold mb-6">Your Estimate</h3>
+                    <div className="space-y-3 text-sm mb-6">
+                      <div className="flex justify-between">
+                        <span className="text-navy-100">Package:</span>
+                        <span className="font-medium text-sm text-right ml-2">{serviceTiers[selectedTier as keyof typeof serviceTiers].name}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-navy-100">Size:</span>
+                        <span className="font-medium capitalize">{businessSize}</span>
+                      </div>
+                    </div>
+                    <div className="border-t border-navy-medium pt-6 mb-6">
+                      <p className="text-navy-100 text-sm mb-1">Estimated Monthly Cost</p>
+                      <div className="font-serif text-4xl font-bold text-gold">
+                        ${estimatedPrice}
+                        <span className="text-lg font-normal text-white">/mo</span>
+                      </div>
+                      <p className="text-navy-100 text-xs mt-2">*Final pricing confirmed at consultation</p>
+                    </div>
+                    <div className="space-y-3">
+                      <Link
+                        href={`/contact?price=${estimatedPrice}&tier=${encodeURIComponent(selectedTier)}&size=${encodeURIComponent(businessSize)}&services=${encodeURIComponent(Object.entries(selectedServices).filter(([, s]) => s).map(([k]) => k).join(', '))}`}
+                        className="w-full bg-gold hover:bg-gold-hover text-navy font-semibold py-4 flex items-center justify-center gap-2 transition-colors group"
+                      >
+                        Get Detailed Quote
+                        <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                      <a
+                        href="tel:437-772-9598"
+                        className="w-full border-2 border-white text-white hover:bg-white hover:text-navy font-semibold py-3 flex items-center justify-center transition-colors text-sm"
+                      >
+                        Call (437) 772-9598
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="bg-gold-50 border border-gold p-5 mt-4">
+                    <div className="flex items-start gap-3">
+                      <Info className="h-5 w-5 text-gold mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-navy text-sm mb-2">Why Choose Our Pricing?</h4>
+                        <ul className="text-xs text-gray-700 space-y-1">
+                          <li>• 20–30% more competitive than traditional firms</li>
+                          <li>• Virtual delivery reduces overhead costs</li>
+                          <li>• Transparent, all-inclusive pricing</li>
+                          <li>• No hidden fees or surprise charges</li>
                         </ul>
                       </div>
-                    )
-                  })}
-                </div>
-              </div>
-            </div>
-
-            {/* Price Summary */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-8">
-                <div className="bg-primary-600 text-white rounded-xl p-8">
-                  <h3 className="text-2xl font-bold mb-6">Your Estimate</h3>
-                  
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between">
-                      <span>Package:</span>
-                      <span className="font-semibold">{serviceTiers[selectedTier as keyof typeof serviceTiers].name}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Business Size:</span>
-                      <span className="font-semibold capitalize">{businessSize}</span>
-                    </div>
-                  </div>
-
-                  <div className="border-t border-primary-500 pt-6 mb-8">
-                    <div className="flex items-center justify-between">
-                      <span className="text-lg">Estimated Monthly Cost:</span>
-                    </div>
-                    <div className="text-4xl font-bold mt-2">
-                      ${estimatedPrice}
-                      <span className="text-lg font-normal">/month</span>
-                    </div>
-                    <p className="text-primary-100 text-sm mt-2">
-                      *Final pricing may vary based on specific requirements
-                    </p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <Link 
-                      href={`/contact?price=${estimatedPrice}&tier=${encodeURIComponent(selectedTier)}&size=${encodeURIComponent(businessSize)}&services=${encodeURIComponent(Object.entries(selectedServices).filter(([_, selected]) => selected).map(([service, _]) => service).join(', '))}`}
-                      className="w-full bg-white text-primary-600 px-6 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors flex items-center justify-center group"
-                    >
-                      Get Detailed Quote
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                    <Link 
-                      href="tel:437-772-9598"
-                      className="w-full border-2 border-white text-white px-6 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center block"
-                    >
-                      Call (437) 772-9598
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Competitive Advantage */}
-                <div className="bg-accent-50 rounded-xl p-6 mt-6">
-                  <div className="flex items-start space-x-3">
-                    <Info className="h-6 w-6 text-accent-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-accent-900 mb-2">Why Choose Our Pricing?</h4>
-                      <ul className="text-sm text-accent-800 space-y-1">
-                        <li>• 20-30% more competitive than traditional firms</li>
-                        <li>• Virtual delivery reduces overhead costs</li>
-                        <li>• Transparent, all-inclusive pricing</li>
-                        <li>• No hidden fees or surprise charges</li>
-                        <li>• Scale up or down as your business grows</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Pricing Comparison */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">How We Compare</h2>
-            <p className="text-lg text-gray-600">
-              See how our competitive pricing stacks up against traditional accounting firms
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Traditional Firms</h3>
-              <div className="text-3xl font-bold text-gray-600 mb-4">${getTraditionalFirmsPricing().min}-${getTraditionalFirmsPricing().max}</div>
-              <p className="text-gray-600 mb-4">Per month for similar services</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Higher overhead costs</li>
-                <li>• Hourly billing surprises</li>
-                <li>• Limited availability</li>
-                <li>• Geographic constraints</li>
-              </ul>
+        {/* Comparison */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-2xl font-bold text-navy mb-2">How We Compare</h2>
+              <p className="text-gray-600">See how our pricing stacks up against alternatives</p>
             </div>
-
-            <div className="bg-primary-600 text-white rounded-xl p-8 text-center relative shadow-xl">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-900 px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                  <div className="flex items-center space-x-1">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                    </svg>
-                    <span>Best Value</span>
-                  </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white border border-gray-100 p-8 text-center">
+                <h3 className="font-semibold text-gray-700 mb-3">Traditional Firms</h3>
+                <div className="font-serif text-3xl font-bold text-gray-500 mb-3">
+                  ${getTraditionalFirmsPricing().min}–${getTraditionalFirmsPricing().max}
                 </div>
+                <p className="text-gray-500 text-sm mb-4">Per month for similar services</p>
+                <ul className="text-sm text-gray-500 space-y-1 text-left">
+                  <li>• Higher overhead costs</li>
+                  <li>• Hourly billing surprises</li>
+                  <li>• Limited availability</li>
+                </ul>
               </div>
-              <h3 className="text-xl font-semibold mb-4">Adapt Business Solutions</h3>
-              <div className="text-3xl font-bold mb-4">${getSizeAdjustedPriceRange(selectedTier).min}-${getSizeAdjustedPriceRange(selectedTier).max}</div>
-              <p className="text-primary-100 mb-4">Per month with more features</p>
-              <ul className="space-y-2 text-sm text-primary-100">
-                <li>• Virtual efficiency savings</li>
-                <li>• Transparent fixed pricing</li>
-                <li>• Canada-wide availability</li>
-                <li>• Modern technology stack</li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-xl p-8 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">DIY Software</h3>
-              <div className="text-3xl font-bold text-gray-600 mb-4">${getDIYSoftwarePricing().min}-${getDIYSoftwarePricing().max}</div>
-              <p className="text-gray-600 mb-4">Per month + your time</p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Time-intensive learning</li>
-                <li>• Risk of errors</li>
-                <li>• No professional guidance</li>
-                <li>• Limited compliance support</li>
-              </ul>
+              <div className="bg-navy text-white p-8 text-center relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-gold text-navy text-xs font-bold px-3 py-1">Best Value</span>
+                </div>
+                <h3 className="font-semibold mb-3">Adapt Business Solutions</h3>
+                <div className="font-serif text-3xl font-bold text-gold mb-3">
+                  ${getSizeAdjustedPriceRange(selectedTier).min}–${getSizeAdjustedPriceRange(selectedTier).max}
+                </div>
+                <p className="text-navy-100 text-sm mb-4">Per month with more features</p>
+                <ul className="text-sm text-navy-100 space-y-1 text-left">
+                  <li>• Virtual efficiency savings</li>
+                  <li>• Transparent fixed pricing</li>
+                  <li>• Canada-wide availability</li>
+                </ul>
+              </div>
+              <div className="bg-white border border-gray-100 p-8 text-center">
+                <h3 className="font-semibold text-gray-700 mb-3">DIY Software</h3>
+                <div className="font-serif text-3xl font-bold text-gray-500 mb-3">
+                  ${getDIYSoftwarePricing().min}–${getDIYSoftwarePricing().max}
+                </div>
+                <p className="text-gray-500 text-sm mb-4">Per month + your time</p>
+                <ul className="text-sm text-gray-500 space-y-1 text-left">
+                  <li>• Time-intensive learning</li>
+                  <li>• Risk of errors</li>
+                  <li>• No professional guidance</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <Footer />
       </div>
+      <Footer />
     </>
   )
 }

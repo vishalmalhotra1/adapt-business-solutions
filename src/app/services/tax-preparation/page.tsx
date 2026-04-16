@@ -1,278 +1,216 @@
+import type { Metadata } from 'next'
 import { FileText, CheckCircle, Calendar, Shield, DollarSign } from 'lucide-react'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: 'Tax Preparation & Planning | Adapt Business Solutions',
+  description: 'Professional tax preparation and strategic tax planning for Ontario individuals and businesses. T1 personal, T2 corporate, HST/GST returns. CRA-compliant CPA services.',
+  alternates: { canonical: 'https://adaptbusinesssolutions.com/services/tax-preparation' },
+}
+
+const personalItems = [
+  { title: 'T1 Personal Tax Returns', desc: 'Complete preparation of personal income tax returns for all provinces.' },
+  { title: 'Self-Employment Income', desc: 'Proper reporting of business income, expenses, and CCA calculations.' },
+  { title: 'Investment Income & Capital Gains', desc: 'Optimization of investment income reporting and capital gains treatment.' },
+  { title: 'Rental Property Income', desc: 'Complete rental income and expense reporting with depreciation schedules.' },
+]
+
+const corporateItems = [
+  { title: 'T2 Corporate Tax Returns', desc: 'Complete corporate tax preparation for all business structures.' },
+  { title: 'Small Business Deduction', desc: 'Maximizing small business deduction and CCPC benefits.' },
+  { title: 'SR&ED Tax Credits', desc: 'Scientific research and development tax credit applications and optimization.' },
+  { title: 'Provincial Corporate Tax', desc: 'Multi-jurisdictional corporate tax compliance.' },
+]
+
+const planningCards = [
+  {
+    icon: DollarSign,
+    title: 'Income Splitting Strategies',
+    body: 'Legitimate income splitting techniques to reduce overall family tax burden while complying with attribution rules.',
+    bullets: ['Spousal RRSP contributions', 'Family trust structures', 'Pension income splitting'],
+  },
+  {
+    icon: Calendar,
+    title: 'Year-End Planning',
+    body: 'Strategic year-end planning to optimize current year tax position and prepare for future tax obligations.',
+    bullets: ['Capital gains/loss harvesting', 'Expense timing optimization', 'RRSP contribution planning'],
+  },
+  {
+    icon: Shield,
+    title: 'Estate Planning',
+    body: 'Tax-efficient estate planning strategies to minimize tax on death and maximize wealth transfer to beneficiaries.',
+    bullets: ['Estate freeze techniques', 'Charitable giving strategies', 'Trust planning'],
+  },
+]
 
 export default function TaxPreparationPage() {
   return (
     <>
       <Navigation />
       <div className="min-h-screen bg-white">
-      
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FileText className="h-10 w-10 text-primary-600" />
+
+        {/* Hero */}
+        <section className="hero-pattern pt-16 text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="bg-gold bg-opacity-20 w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <FileText className="h-8 w-8 text-gold" />
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Tax Preparation & Planning
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive tax services for individuals and businesses across Canada, 
-              ensuring compliance with CRA requirements and maximizing tax efficiency.
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Core Service</p>
+            <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">Tax Preparation &amp; Planning</h1>
+            <p className="text-navy-100 text-lg max-w-3xl mx-auto">
+              Comprehensive tax services for individuals and businesses across Canada, ensuring CRA compliance and maximizing tax efficiency.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Service Categories */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Personal Tax */}
-            <div className="bg-gray-50 rounded-xl p-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Personal Tax Returns</h2>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">T1 Personal Tax Returns</h3>
-                    <p className="text-gray-600">Complete preparation of personal income tax returns for all provinces</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Self-Employment Income</h3>
-                    <p className="text-gray-600">Proper reporting of business income, expenses, and CCA calculations</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Investment Income & Capital Gains</h3>
-                    <p className="text-gray-600">Optimization of investment income reporting and capital gains treatment</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Rental Property Income</h3>
-                    <p className="text-gray-600">Complete rental income and expense reporting with depreciation schedules</p>
-                  </div>
+        {/* Personal & Corporate */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div className="bg-gray-50 p-8">
+                <h2 className="font-serif text-2xl font-bold text-navy mb-6">Personal Tax Returns</h2>
+                <div className="space-y-5">
+                  {personalItems.map(item => (
+                    <div key={item.title} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-gold mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold text-navy">{item.title}</h3>
+                        <p className="text-gray-600 text-sm mt-0.5">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
 
-            {/* Corporate Tax */}
-            <div className="bg-primary-50 rounded-xl p-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Corporate Tax Returns</h2>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <FileText className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">T2 Corporate Tax Returns</h3>
-                    <p className="text-gray-600">Complete corporate tax preparation for all business structures</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <FileText className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Small Business Deduction</h3>
-                    <p className="text-gray-600">Maximizing small business deduction and CCPC benefits</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <FileText className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Scientific Research & Development</h3>
-                    <p className="text-gray-600">SR&ED tax credit applications and optimization</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <FileText className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Provincial Corporate Tax</h3>
-                    <p className="text-gray-600">Multi-jurisdictional corporate tax compliance</p>
-                  </div>
+              <div className="bg-gold-50 border border-gold p-8">
+                <h2 className="font-serif text-2xl font-bold text-navy mb-6">Corporate Tax Returns</h2>
+                <div className="space-y-5">
+                  {corporateItems.map(item => (
+                    <div key={item.title} className="flex items-start gap-3">
+                      <FileText className="h-5 w-5 text-gold mt-0.5 flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold text-navy">{item.title}</h3>
+                        <p className="text-gray-600 text-sm mt-0.5">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Tax Planning Services */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Strategic Tax Planning
-            </h2>
-            <p className="text-lg text-gray-600">
-              Proactive tax planning strategies to minimize tax liability and maximize after-tax income
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <DollarSign className="h-8 w-8 text-primary-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Income Splitting Strategies</h3>
-              <p className="text-gray-600 mb-4">
-                Legitimate income splitting techniques to reduce overall family tax burden while 
-                complying with attribution rules.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Spousal RRSP contributions</li>
-                <li>• Family trust structures</li>
-                <li>• Pension income splitting</li>
-              </ul>
+        {/* Strategic Tax Planning */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">Proactive Approach</p>
+              <h2 className="font-serif text-3xl font-bold text-navy mb-3">Strategic Tax Planning</h2>
+              <p className="text-gray-600">Proactive strategies to minimize tax liability and maximize after-tax income.</p>
             </div>
-
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <Calendar className="h-8 w-8 text-primary-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Year-End Planning</h3>
-              <p className="text-gray-600 mb-4">
-                Strategic year-end planning to optimize current year tax position and 
-                prepare for future tax obligations.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Capital gains/loss harvesting</li>
-                <li>• Expense timing optimization</li>
-                <li>• RRSP contribution planning</li>
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <Shield className="h-8 w-8 text-primary-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Estate Planning</h3>
-              <p className="text-gray-600 mb-4">
-                Tax-efficient estate planning strategies to minimize tax on death and 
-                maximize wealth transfer to beneficiaries.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Estate freeze techniques</li>
-                <li>• Charitable giving strategies</li>
-                <li>• Trust planning</li>
-              </ul>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {planningCards.map(({ icon: Icon, title, body, bullets }) => (
+                <div key={title} className="bg-white border border-gray-100 shadow-sm p-6">
+                  <div className="bg-gold-50 w-10 h-10 flex items-center justify-center mb-4">
+                    <Icon className="h-5 w-5 text-gold" />
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-navy mb-3">{title}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{body}</p>
+                  <ul className="space-y-1.5">
+                    {bullets.map(b => (
+                      <li key={b} className="flex items-center gap-2 text-sm text-gray-600">
+                        <span className="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* GST/HST Services */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-accent-50 rounded-2xl p-12">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">GST/HST Services</h2>
-              <p className="text-lg text-gray-600">
-                Complete GST/HST compliance and optimization services
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-900">GST/HST Returns</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Monthly, quarterly, and annual GST/HST returns</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Input tax credit optimization</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Place of supply determinations</span>
-                  </li>
-                </ul>
+        {/* GST/HST */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gold-50 border border-gold p-10">
+              <div className="text-center mb-8">
+                <h2 className="font-serif text-2xl font-bold text-navy mb-2">GST/HST Services</h2>
+                <p className="text-gray-600">Complete GST/HST compliance and optimization services.</p>
               </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-900">GST/HST Registration</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Voluntary and mandatory registration assistance</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Quick Method election analysis</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Multi-provincial registration coordination</span>
-                  </li>
-                </ul>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="font-semibold text-navy mb-4">GST/HST Returns</h3>
+                  <ul className="space-y-3">
+                    {['Monthly, quarterly, and annual GST/HST returns', 'Input tax credit optimization', 'Place of supply determinations'].map(item => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
+                        <CheckCircle className="h-4 w-4 text-gold mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-navy mb-4">GST/HST Registration</h3>
+                  <ul className="space-y-3">
+                    {['Voluntary and mandatory registration assistance', 'Quick Method election analysis', 'Multi-provincial registration coordination'].map(item => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
+                        <CheckCircle className="h-4 w-4 text-gold mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CRA Representation */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">CRA Representation</h2>
-            <p className="text-lg text-gray-600">
-              Professional representation for CRA audits, objections, and disputes
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Audit Defense</h3>
-              <p className="text-gray-600">Complete representation during CRA audits with professional advocacy</p>
+        {/* CRA Representation */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">We Have You Covered</p>
+              <h2 className="font-serif text-2xl font-bold text-navy">CRA Representation</h2>
             </div>
-            
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FileText className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Notice of Objection</h3>
-              <p className="text-gray-600">Filing objections and appeals to challenge CRA assessments</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Voluntary Disclosure</h3>
-              <p className="text-gray-600">Voluntary disclosure program applications for penalty and interest relief</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              {[
+                { icon: Shield, title: 'Audit Defense', desc: 'Complete representation during CRA audits with professional advocacy.' },
+                { icon: FileText, title: 'Notice of Objection', desc: 'Filing objections and appeals to challenge CRA assessments.' },
+                { icon: Calendar, title: 'Voluntary Disclosure', desc: 'Voluntary disclosure program applications for penalty and interest relief.' },
+              ].map(({ icon: Icon, title, desc }) => (
+                <div key={title} className="bg-white border border-gray-100 shadow-sm p-6">
+                  <div className="bg-gold-50 w-12 h-12 flex items-center justify-center mx-auto mb-4">
+                    <Icon className="h-6 w-6 text-gold" />
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-navy mb-2">{title}</h3>
+                  <p className="text-gray-600 text-sm">{desc}</p>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact CTA */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary-600 rounded-2xl text-white p-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Maximize Your Tax Efficiency</h2>
-            <p className="text-xl mb-8 text-primary-100">
-              Get an instant price estimate first, then schedule a consultation to discuss your tax preparation and planning needs
-            </p>
+        {/* CTA */}
+        <section className="py-16 bg-navy">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-serif text-2xl font-bold text-white mb-3">Maximize Your Tax Efficiency</h2>
+            <p className="text-navy-100 mb-8">Get an instant price estimate, then schedule a consultation about your tax needs.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/pricing" className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+              <Link href="/pricing" className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">
                 Get Price Estimate
               </Link>
-              <Link href="tel:437-772-9598" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+              <a href="tel:437-772-9598" className="inline-block border-2 border-white text-white hover:bg-white hover:text-navy font-semibold px-8 py-4 transition-colors">
                 Call (437) 772-9598
-              </Link>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-    <Footer />
+        </section>
+
+      </div>
+      <Footer />
     </>
   )
 }

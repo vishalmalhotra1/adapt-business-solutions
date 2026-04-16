@@ -1,164 +1,128 @@
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+          {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center">
-              <Image 
-                src="/images/logo.avif" 
-                alt="Adapt Business Solutions Logo" 
-                width={160} 
-                height={60}
-                className="h-8 w-auto brightness-0 invert"
-              />
-            </div>
-            <p className="text-gray-300 leading-relaxed">
-              Empowering Growth, Ensuring Value – Your trusted CPA in financial excellence. 
-              Virtual accounting practice serving clients across Canada.
+            <Image
+              src="/images/logo.avif"
+              alt="Adapt Business Solutions"
+              width={150}
+              height={56}
+              className="h-9 w-auto brightness-0 invert"
+            />
+            <p className="text-navy-100 text-sm leading-relaxed">
+              Empowering Growth, Ensuring Value. Virtual CPA practice serving Ontario businesses
+              with professional accounting, tax, and financial strategy.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Facebook className="h-5 w-5" />
+            <div className="space-y-2 text-sm">
+              <a href="tel:437-772-9598" className="flex items-center gap-2 text-navy-100 hover:text-gold transition-colors">
+                <Phone className="h-4 w-4 flex-shrink-0" />
+                (437) 772-9598
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="mailto:accountant@adaptbusinesssolutions.com" className="flex items-center gap-2 text-navy-100 hover:text-gold transition-colors break-all">
+                <Mail className="h-4 w-4 flex-shrink-0" />
+                accountant@adaptbusinesssolutions.com
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
+              <div className="flex items-start gap-2 text-navy-100">
+                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" />
+                <span>Orangeville, ON · Serving GTA &amp; Ontario</span>
+              </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Services</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="/services/bookkeeping-compilations" className="text-gray-300 hover:text-white transition-colors">
-                  Bookkeeping & Compilations
-                </a>
-              </li>
-              <li>
-                <a href="/services/tax-preparation" className="text-gray-300 hover:text-white transition-colors">
-                  Tax Preparation & Planning
-                </a>
-              </li>
-              <li>
-                <a href="/services/financial-analysis" className="text-gray-300 hover:text-white transition-colors">
-                  Financial Analysis
-                </a>
-              </li>
-              <li>
-                <a href="/services/payroll" className="text-gray-300 hover:text-white transition-colors">
-                  Payroll Services
-                </a>
-              </li>
-              <li>
-                <a href="/services/business-consulting" className="text-gray-300 hover:text-white transition-colors">
-                  Business Consulting
-                </a>
-              </li>
-              <li>
-                <a href="/services/corporate-services" className="text-gray-300 hover:text-white transition-colors">
-                  Corporate Services
-                </a>
-              </li>
+              {[
+                { label: 'Bookkeeping & Compilations', href: '/services/bookkeeping-compilations' },
+                { label: 'Tax Preparation & Planning', href: '/services/tax-preparation' },
+                { label: 'Financial Analysis', href: '/services/financial-analysis' },
+                { label: 'Payroll Services', href: '/services/payroll' },
+                { label: 'Business Consulting', href: '/services/business-consulting' },
+                { label: 'Corporate Services', href: '/services/corporate-services' },
+              ].map(link => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-navy-100 hover:text-gold transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Service Areas */}
+          {/* Locations */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Service Areas</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Locations</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="/locations/orangeville" className="text-gray-300 hover:text-white transition-colors">
-                  Orangeville CPA Services
-                </a>
-              </li>
-              <li>
-                <a href="/locations/brampton" className="text-gray-300 hover:text-white transition-colors">
-                  Brampton Accounting
-                </a>
-              </li>
-              <li>
-                <a href="/locations/mississauga" className="text-gray-300 hover:text-white transition-colors">
-                  Mississauga CPA
-                </a>
-              </li>
-              <li>
-                <a href="/locations/niagara-region" className="text-gray-300 hover:text-white transition-colors">
-                  Niagara Region Services
-                </a>
-              </li>
-              <li>
-                <a href="/pricing" className="text-gray-300 hover:text-white transition-colors">
-                  Pricing Calculator
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="text-gray-300 hover:text-white transition-colors">
-                  Get Free Quote
-                </a>
-              </li>
+              {[
+                { label: 'Orangeville', href: '/locations/orangeville' },
+                { label: 'Brampton', href: '/locations/brampton' },
+                { label: 'Mississauga', href: '/locations/mississauga' },
+                { label: 'Niagara Region', href: '/locations/niagara-region' },
+                { label: 'Erin', href: '/locations/erin' },
+                { label: 'Mono', href: '/locations/mono' },
+                { label: 'Grand Valley', href: '/locations/grand-valley' },
+                { label: 'Shelburne', href: '/locations/shelburne' },
+                { label: 'Amaranth', href: '/locations/amaranth' },
+              ].map(link => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-navy-100 hover:text-gold transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Hours & Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary-400 mt-1 flex-shrink-0" />
-                <div className="text-gray-300">
-                  <p>Orangeville, Ontario</p>
-                  <p>Serving GTA & Niagara Region</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <a href="tel:437-772-9598" className="text-primary-300 hover:text-primary-200 transition-colors">(437) 772-9598</a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary-400 flex-shrink-0" />
-                <a href="mailto:accountant@adaptbusinesssolutions.com" className="text-primary-300 hover:text-primary-200 transition-colors">accountant@adaptbusinesssolutions.com</a>
-              </div>
+            <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Hours &amp; Info</h3>
+            <div className="space-y-3 text-sm text-navy-100">
+              <p>
+                <span className="font-medium text-white">Virtual Consultations</span><br />
+                Available Canada-Wide
+              </p>
+              <p>
+                <span className="font-medium text-white">Business Hours</span><br />
+                Mon–Fri: 5:00 PM – 10:00 PM EST<br />
+                Sat–Sun: Closed
+              </p>
+              <p>
+                <span className="font-medium text-white">Pricing</span><br />
+                Starting from $100/month<br />
+                Transparent, flat-fee packages
+              </p>
             </div>
-
-            <div className="mt-6">
-              <h4 className="font-semibold mb-2">Virtual Consultations</h4>
-              <div className="text-sm text-gray-300 space-y-1">
-                <p>Mon - Fri: 5:00 PM - 10:00 PM EST</p>
-                <p>Weekend: Closed</p>
-                <p>Serving Ontario Businesses</p>
-              </div>
+            <div className="mt-5">
+              <Link
+                href="/pricing"
+                className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold text-sm px-5 py-2.5 transition-colors"
+              >
+                Book Consultation
+              </Link>
             </div>
           </div>
+
         </div>
+      </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm">
-              © 2025 Adapt Business Solutions. All rights reserved.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors">
-                Cookie Policy
-              </a>
-            </div>
+      {/* Bottom Bar */}
+      <div className="border-t border-navy-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-navy-100 text-xs">
+            &copy; {new Date().getFullYear()} Adapt Business Solutions. All rights reserved.
+          </p>
+          <div className="flex gap-6 text-xs">
+            <a href="#" className="text-navy-100 hover:text-gold transition-colors">Privacy Policy</a>
+            <a href="#" className="text-navy-100 hover:text-gold transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

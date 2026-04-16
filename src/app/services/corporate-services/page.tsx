@@ -1,126 +1,141 @@
+import type { Metadata } from 'next'
 import { Briefcase, CheckCircle, FileText, Shield } from 'lucide-react'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: 'Corporate Services | Adapt Business Solutions',
+  description: 'Professional corporate services including business incorporation, compliance, and regulatory filings for Ontario businesses. Federal and provincial corporation support.',
+  alternates: { canonical: 'https://adaptbusinesssolutions.com/services/corporate-services' },
+}
+
+const cards = [
+  {
+    icon: Briefcase,
+    title: 'Business Incorporation',
+    body: 'Complete incorporation services for federal and provincial corporations, from name search to registered office.',
+    bullets: ['Articles of Incorporation', 'Corporate name searches', 'Registered office services', 'Share structure design'],
+  },
+  {
+    icon: Shield,
+    title: 'Corporate Compliance',
+    body: 'Ongoing compliance and corporate governance support to keep your corporation in good standing.',
+    bullets: ['Annual returns', 'Corporate resolutions', 'Minute book maintenance', 'Director/officer changes'],
+  },
+  {
+    icon: FileText,
+    title: 'Regulatory Filings',
+    body: 'Professional regulatory filing services and documentation for all stages of your corporation\'s life.',
+    bullets: ['Corporate amendments', 'Extra-provincial registrations', 'Business name registrations', 'Dissolution services'],
+  },
+]
 
 export default function CorporateServicesPage() {
   return (
     <>
       <Navigation />
       <div className="min-h-screen bg-white">
-      
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Briefcase className="h-10 w-10 text-primary-600" />
+
+        {/* Hero */}
+        <section className="hero-pattern pt-16 text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="bg-gold bg-opacity-20 w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <Briefcase className="h-8 w-8 text-gold" />
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Corporate Services
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive corporate services including business incorporation, ongoing compliance, 
-              and regulatory filings to support your business operations across Canada.
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Core Service</p>
+            <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">Corporate Services</h1>
+            <p className="text-navy-100 text-lg max-w-3xl mx-auto">
+              Comprehensive corporate services including business incorporation, ongoing compliance, and regulatory filings to support your business operations across Canada.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Services Grid */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <div className="bg-gray-50 rounded-xl p-8">
-              <Briefcase className="h-10 w-10 text-primary-600 mb-6" />
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Business Incorporation</h3>
-              <p className="text-gray-600 mb-6">
-                Complete incorporation services for federal and provincial corporations.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Articles of Incorporation</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Corporate name searches</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Registered office services</span>
-                </li>
-              </ul>
+        {/* Services Grid */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {cards.map(({ icon: Icon, title, body, bullets }) => (
+                <div key={title} className="border border-gray-100 shadow-sm p-8 hover:border-gold transition-colors">
+                  <div className="bg-gold-50 w-12 h-12 flex items-center justify-center mb-5">
+                    <Icon className="h-6 w-6 text-gold" />
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-navy mb-3">{title}</h3>
+                  <p className="text-gray-600 text-sm mb-5">{body}</p>
+                  <ul className="space-y-2">
+                    {bullets.map(b => (
+                      <li key={b} className="flex items-center gap-2 text-sm text-gray-600">
+                        <CheckCircle className="h-4 w-4 text-gold flex-shrink-0" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-
-            <div className="bg-primary-50 rounded-xl p-8">
-              <Shield className="h-10 w-10 text-primary-600 mb-6" />
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Corporate Compliance</h3>
-              <p className="text-gray-600 mb-6">
-                Ongoing compliance and corporate governance support.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Annual returns</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Corporate resolutions</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Minute book maintenance</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-accent-50 rounded-xl p-8">
-              <FileText className="h-10 w-10 text-accent-600 mb-6" />
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Regulatory Filings</h3>
-              <p className="text-gray-600 mb-6">
-                Professional regulatory filing services and documentation.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Corporate amendments</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Extra-provincial registrations</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-accent-600 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700">Dissolution services</span>
-                </li>
-              </ul>
-            </div>
-
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact CTA */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary-600 rounded-2xl text-white p-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Need Corporate Services?</h2>
-            <p className="text-xl mb-8 text-primary-100">
-              Get an instant price estimate first, then let us handle your corporate compliance and regulatory requirements
-            </p>
+        {/* Federal vs Provincial */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">Making the Right Choice</p>
+              <h2 className="font-serif text-2xl font-bold text-navy">Federal vs. Provincial Incorporation</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white border border-gray-100 shadow-sm p-8">
+                <h3 className="font-serif text-xl font-bold text-navy mb-4">Federal Incorporation</h3>
+                <ul className="space-y-3">
+                  {[
+                    'Name protection across all provinces',
+                    'Flexibility to operate in any province',
+                    'Preferred for national expansion plans',
+                    'Administered under the Canada Business Corporations Act',
+                  ].map(item => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
+                      <CheckCircle className="h-4 w-4 text-gold mt-0.5 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-gold-50 border border-gold p-8">
+                <h3 className="font-serif text-xl font-bold text-navy mb-4">Ontario (Provincial) Incorporation</h3>
+                <ul className="space-y-3">
+                  {[
+                    'Lower registration costs and simpler maintenance',
+                    'Ideal for businesses operating only in Ontario',
+                    'Administered under the Business Corporations Act (Ontario)',
+                    'Faster processing times for most filings',
+                  ].map(item => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
+                      <CheckCircle className="h-4 w-4 text-gold mt-0.5 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 bg-navy">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-serif text-2xl font-bold text-white mb-3">Need Corporate Services?</h2>
+            <p className="text-navy-100 mb-8">Get an instant price estimate, then let us handle your corporate compliance.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/pricing" className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+              <Link href="/pricing" className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">
                 Get Price Estimate
               </Link>
-              <Link href="tel:437-772-9598" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+              <a href="tel:437-772-9598" className="inline-block border-2 border-white text-white hover:bg-white hover:text-navy font-semibold px-8 py-4 transition-colors">
                 Call (437) 772-9598
-              </Link>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
       </div>
       <Footer />
     </>
