@@ -17,10 +17,23 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Small Business Tax Deductions in Ontario: The Complete 2025 Guide',
+  description: 'A comprehensive guide to every major tax deduction available to Ontario small business owners in 2025.',
+  datePublished: '2025-08-05',
+  dateModified: '2025-08-05',
+  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/ontario-small-business-tax-deductions-2025' },
+}
+
 export default function OntarioTaxDeductionsPage() {
   return (
     <>
       <Navigation />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="pt-16 min-h-screen bg-white">
 
         {/* Hero */}

@@ -17,10 +17,23 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'How to Avoid a CRA Audit: What Ontario Business Owners Need to Know',
+  description: 'Common CRA audit triggers and record-keeping practices that protect your Ontario business.',
+  datePublished: '2025-08-05',
+  dateModified: '2025-08-05',
+  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/how-to-avoid-cra-audit-ontario' },
+}
+
 export default function CRAAuditPage() {
   return (
     <>
       <Navigation />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="pt-16 min-h-screen bg-white">
 
         {/* Hero */}

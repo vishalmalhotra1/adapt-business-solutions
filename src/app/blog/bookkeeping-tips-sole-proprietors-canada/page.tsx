@@ -17,10 +17,23 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Bookkeeping Tips for Sole Proprietors in Canada',
+  description: 'The most practical bookkeeping habits for self-employed Canadians — separate accounts, expense tracking, HST, and software.',
+  datePublished: '2025-08-05',
+  dateModified: '2025-08-05',
+  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/bookkeeping-tips-sole-proprietors-canada' },
+}
+
 export default function BookkeepingTipsSoleProprietorsPage() {
   return (
     <>
       <Navigation />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="pt-16 min-h-screen bg-white">
 
         {/* Hero */}

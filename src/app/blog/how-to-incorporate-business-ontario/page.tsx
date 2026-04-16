@@ -17,10 +17,23 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'How to Incorporate a Business in Ontario: Step-by-Step',
+  description: 'Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, and timelines.',
+  datePublished: '2025-08-05',
+  dateModified: '2025-08-05',
+  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/how-to-incorporate-business-ontario' },
+}
+
 export default function IncorporateOntarioPage() {
   return (
     <>
       <Navigation />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="pt-16 min-h-screen bg-white">
 
         {/* Hero */}

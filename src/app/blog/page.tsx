@@ -3,6 +3,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Calendar, ArrowRight, Clock } from 'lucide-react'
+import { autoBlogPosts } from '@/data/auto-blog-posts'
 
 export const metadata: Metadata = {
   title: 'CPA Blog | Tax Tips & Accounting Advice for Ontario Businesses | Adapt Business Solutions',
@@ -269,6 +270,44 @@ export default function BlogPage() {
             </div>
           </div>
         </section>
+
+        {/* Auto-Generated Latest Articles */}
+        {autoBlogPosts.length > 0 && (
+          <section className="py-16 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">Fresh Content</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mb-10">Latest Articles</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {autoBlogPosts.slice().reverse().slice(0, 9).map(post => (
+                  <article key={post.id} className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="p-6">
+                      <span className="inline-block bg-gold-50 text-gold border border-gold text-xs font-bold px-2 py-0.5 mb-3">
+                        {post.category}
+                      </span>
+                      <h3 className="font-serif text-lg font-bold text-navy mb-3 leading-snug">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
+                      <div className="flex items-center justify-between text-xs text-gray-400">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          {formatDate(post.date)}
+                        </span>
+                        <span>{post.readTime}</span>
+                      </div>
+                      <Link
+                        href={`/blog/${post.id}`}
+                        className="mt-4 inline-flex items-center text-gold hover:text-gold-hover font-semibold text-sm transition-colors"
+                      >
+                        Read More <ArrowRight className="ml-1 w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="py-16 bg-navy">
