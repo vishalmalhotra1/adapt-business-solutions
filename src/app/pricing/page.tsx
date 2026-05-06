@@ -108,10 +108,28 @@ export default function PricingPage() {
         <section className="hero-pattern pt-16 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Transparent Pricing</p>
-            <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">Service Cost Estimator</h1>
+            <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">Honest, Flat-Fee Pricing</h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto">
-              Get an instant monthly estimate for professional CPA services tailored to your business size and needs.
+              No hourly billing surprises. Flat fees for incorporation, monthly CPA packages sized to your business.
             </p>
+          </div>
+        </section>
+
+        {/* Incorporation Callout */}
+        <section className="bg-gold py-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div>
+                <p className="font-serif text-2xl font-bold text-navy">Incorporate Your Ontario Business — $299 + Gov Fees</p>
+                <p className="text-navy text-sm mt-1 opacity-80">Articles of incorporation · Minute book · CRA Business Number · Named or numbered · Federal or provincial</p>
+              </div>
+              <Link
+                href="/services/incorporation"
+                className="flex-shrink-0 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-3 transition-colors whitespace-nowrap"
+              >
+                See Incorporation Details
+              </Link>
+            </div>
           </div>
         </section>
 

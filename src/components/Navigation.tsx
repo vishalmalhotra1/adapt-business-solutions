@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const serviceLinks = [
+  { name: 'Incorporation — $299 + Gov Fees', href: '/services/incorporation' },
   { name: 'Bookkeeping & Compilations', href: '/services/bookkeeping-compilations' },
   { name: 'Tax Preparation & Planning', href: '/services/tax-preparation' },
   { name: 'Financial Analysis', href: '/services/financial-analysis' },

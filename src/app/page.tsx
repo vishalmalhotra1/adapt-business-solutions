@@ -8,9 +8,9 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Adapt Accounting Services — CPA Services Ontario | Orangeville, Brampton, Mississauga',
-  description: 'Expert virtual CPA services for Ontario small businesses. Tax planning, bookkeeping, financial analysis and more — serving Orangeville, Brampton, Mississauga, Niagara, Erin, Shelburne and beyond.',
-  keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, small business accountant GTA, corporate tax Ontario, CPA Erin, CPA Shelburne',
+  title: 'Adapt Accounting Services — Incorporate in Ontario $299 | CPA Services Ontario',
+  description: 'CPA incorporation services in Ontario for $299 + government fees. Also: bookkeeping, T1/T2 tax, T1135 cross-border, and payroll. Serving Orangeville, Brampton, Mississauga, GTA and all of Ontario.',
+  keywords: 'incorporate in Ontario, CPA incorporation Ontario, incorporation services Ontario, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Ontario, T1135 cross-border tax, professional corporation Ontario, PREC Ontario',
   openGraph: {
     title: 'Adapt Accounting Services — Professional CPA Services Ontario',
     description: 'Expert virtual CPA services for Ontario businesses. Tax planning, bookkeeping, financial consulting. Serving the GTA and surrounding communities.',
@@ -56,18 +56,17 @@ export default function HomePage() {
         <section className="bg-navy py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gold mb-4">
-              Ready to Take Control of Your Finances?
+              Ready to Incorporate or Take Control of Your Finances?
             </h2>
             <p className="text-navy-100 text-lg mb-8 leading-relaxed">
-              Join over 30 Ontario business owners who trust Adapt Accounting Services for their
-              bookkeeping, tax, and financial strategy needs.
+              Incorporate your Ontario business for $299 + government fees, or join over 30 business owners who trust Adapt Accounting Services for bookkeeping, tax, and financial strategy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/pricing"
+                href="/services/incorporation"
                 className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors"
               >
-                Get Your Free Consultation
+                Incorporate — $299 + Gov Fees
               </Link>
               <a
                 href="tel:437-772-9598"

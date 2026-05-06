@@ -42,6 +42,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 text-sm tracking-wide uppercase">Services</h3>
             <ul className="space-y-2">
               {[
+                { label: 'Incorporation Services', href: '/services/incorporation' },
                 { label: 'Bookkeeping & Compilations', href: '/services/bookkeeping-compilations' },
                 { label: 'Tax Preparation & Planning', href: '/services/tax-preparation' },
                 { label: 'Financial Analysis', href: '/services/financial-analysis' },
