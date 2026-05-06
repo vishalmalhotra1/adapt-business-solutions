@@ -8,7 +8,7 @@ import BlogAllPosts from '@/components/BlogAllPosts'
 import type { BlogPostEntry } from '@/components/BlogAllPosts'
 
 export const metadata: Metadata = {
-  title: 'CPA Blog | Tax Tips & Accounting Advice for Ontario Businesses | Adapt Business Solutions',
+  title: 'CPA Blog | Tax Tips & Accounting Advice for Ontario Businesses | Adapt Accounting Services',
   description: 'Expert CPA insights, tax tips, and business accounting advice for Ontario small business owners. Latest guides on incorporation, tax deductions, bookkeeping, and CRA compliance.',
   keywords: 'CPA blog Ontario, tax tips small business, accounting advice Ontario, CRA audit guide, incorporation Ontario, bookkeeping tips Canada',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog' },

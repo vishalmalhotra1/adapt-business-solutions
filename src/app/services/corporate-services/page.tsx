@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Corporate Services | Adapt Business Solutions',
+  title: 'Corporate Services | Adapt Accounting Services',
   description: 'Professional corporate services including business incorporation, compliance, and regulatory filings for Ontario businesses. Federal and provincial corporation support.',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/corporate-services' },
 }

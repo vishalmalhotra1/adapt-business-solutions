@@ -5,7 +5,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Brampton | Professional Accounting & Tax Services | Adapt Business Solutions',
+  title: 'CPA Brampton | Professional Accounting & Tax Services | Adapt Accounting Services',
   description: 'Expert CPA services in Brampton, Ontario. Professional accounting, tax preparation, bookkeeping, and business consulting for Brampton businesses. Virtual CPA — serving all of Brampton.',
   keywords: 'CPA Brampton, accountant Brampton, tax preparation Brampton, bookkeeping Brampton',
   openGraph: {
@@ -88,7 +88,7 @@ export default function BramptonPage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Brampton Businesses Choose Adapt Business Solutions
+                  Why Brampton Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

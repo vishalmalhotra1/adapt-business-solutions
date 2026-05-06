@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Tax Preparation & Planning | Adapt Business Solutions',
+  title: 'Tax Preparation & Planning | Adapt Accounting Services',
   description: 'Professional tax preparation and strategic tax planning for Ontario individuals and businesses. T1 personal, T2 corporate, HST/GST returns. CRA-compliant CPA services.',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/tax-preparation' },
 }

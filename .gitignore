@@ -9,3 +9,4 @@ node_modules
 content-generator/.env
 content-generator/generated-content/*.json
 !content-generator/generated-content/.gitkeep
+.vercel

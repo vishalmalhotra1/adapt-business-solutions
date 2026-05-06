@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, User, MapPin, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Niagara Small Business Accounting Guide for 2025 | Adapt Business Solutions',
+  title: 'Niagara Small Business Accounting Guide for 2025 | Adapt Accounting Services',
   description: 'Specialized accounting guide for Niagara Region small businesses. Tourism, agriculture, and manufacturing focus.',
   keywords: 'Niagara accounting, small business CPA, tourism accounting, agriculture bookkeeping',
 }
@@ -38,7 +38,7 @@ export default function ArticlePage() {
             <div className="flex items-center text-gray-600 mb-8">
               <div className="flex items-center mr-6">
                 <User className="w-4 h-4 mr-2" />
-                <span>Adapt Business Solutions CPA Team</span>
+                <span>Adapt Accounting Services CPA Team</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -360,6 +360,16 @@ export default function ArticlePage() {
               <li>Manufacturing supply chain partnerships</li>
               <li>Technology sharing and development initiatives</li>
             </ul>
+
+            <div className="bg-gray-50 border border-gray-200 p-6 my-8">
+              <h3 className="font-semibold text-navy mb-4">Our Services for Niagara Region Businesses</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Monthly bookkeeping for Niagara businesses</li>
+                <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Industry-specific tax filings for Niagara</li>
+                <li><Link href="/services/payroll" className="text-gold hover:text-gold-hover font-medium">→ Payroll Services</Link> — Payroll management for seasonal businesses</li>
+                <li><Link href="/locations/niagara-region" className="text-gold hover:text-gold-hover font-medium">→ CPA Services in Niagara Region</Link> — How we serve Niagara businesses</li>
+              </ul>
+            </div>
 
             <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
               <h4 className="text-green-800 font-semibold mb-2">Specialized CPA Services for Niagara Region</h4>

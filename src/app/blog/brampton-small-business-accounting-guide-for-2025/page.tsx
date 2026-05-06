@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, User } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Brampton Small Business Accounting Guide for 2025 | Adapt Business Solutions',
+  title: 'Brampton Small Business Accounting Guide for 2025 | Adapt Accounting Services',
   description: 'Professional CPA advice for Brampton businesses. Expert tax planning and accounting services.',
   keywords: 'Brampton CPA, tax planning, small business accounting, small business',
 }
@@ -38,7 +38,7 @@ export default function ArticlePage() {
             <div className="flex items-center text-gray-600 mb-8">
               <div className="flex items-center mr-6">
                 <User className="w-4 h-4 mr-2" />
-                <span>Adapt Business Solutions CPA Team</span>
+                <span>Adapt Accounting Services CPA Team</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -161,6 +161,16 @@ export default function ArticlePage() {
               <li>Improve financial reporting and analysis</li>
               <li>Focus on growing your business while we handle the numbers</li>
             </ul>
+
+            <div className="bg-gray-50 border border-gray-200 p-6 my-8">
+              <h3 className="font-semibold text-navy mb-4">Our Services for Brampton Businesses</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Monthly bookkeeping for Brampton small businesses</li>
+                <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — T1, T2, and HST filings</li>
+                <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link> — Understand your business performance</li>
+                <li><Link href="/locations/brampton" className="text-gold hover:text-gold-hover font-medium">→ CPA Services in Brampton</Link> — Learn how we serve Brampton businesses</li>
+              </ul>
+            </div>
 
             <div className="bg-gray-50 border-l-4 border-primary-400 p-6 my-8">
               <h4 className="text-gray-800 font-semibold mb-2">Need Professional Assistance?</h4>

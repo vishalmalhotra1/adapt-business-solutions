@@ -5,11 +5,11 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Orangeville | Adapt Business Solutions | Local Accountant',
+  title: 'CPA Orangeville | Adapt Accounting Services | Local Accountant',
   description: 'Professional CPA and accounting services in Orangeville, Ontario. Expert bookkeeping, tax preparation, financial analysis for Orangeville businesses. Local virtual CPA services.',
   keywords: 'CPA Orangeville, accountant Orangeville Ontario, bookkeeping Orangeville, tax preparation Orangeville',
   openGraph: {
-    title: 'CPA Services Orangeville Ontario | Adapt Business Solutions',
+    title: 'CPA Services Orangeville Ontario | Adapt Accounting Services',
     description: 'Professional CPA services for Orangeville businesses. Expert bookkeeping, tax preparation, and financial consulting.',
     url: 'https://adaptbusinesssolutions.com/locations/orangeville',
     type: 'website',
@@ -86,7 +86,7 @@ export default function OrangevillePage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Orangeville Businesses Choose Adapt Business Solutions
+                  Why Orangeville Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

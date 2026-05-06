@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'How to Incorporate a Business in Ontario: Step-by-Step | Adapt Business Solutions',
+  title: 'How to Incorporate a Business in Ontario: Step-by-Step | Adapt Accounting Services',
   description: 'Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense.',
   keywords: 'how to incorporate Ontario, business incorporation Ontario, federal vs provincial incorporation, articles of incorporation Ontario, CCPC Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/how-to-incorporate-business-ontario' },
@@ -24,8 +24,8 @@ const jsonLd = {
   description: 'Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, and timelines.',
   datePublished: '2025-08-05',
   dateModified: '2025-08-05',
-  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
-  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/how-to-incorporate-business-ontario' },
 }
 
@@ -49,7 +49,7 @@ export default function IncorporateOntarioPage() {
             <p className="text-navy-100 text-lg">
               Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense.
             </p>
-            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 8 min read · By Adapt Business Solutions CPA</p>
+            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 8 min read · By Adapt Accounting Services CPA</p>
           </div>
         </section>
 
@@ -151,6 +151,15 @@ export default function IncorporateOntarioPage() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 These costs need to be weighed against the tax savings. At modest income levels, the accounting costs may outweigh the tax benefits — which is why the $80,000–$100,000 net income threshold is often cited as the breakeven point.
               </p>
+
+              <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
+                <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/services/corporate-services" className="text-gold hover:text-gold-hover font-medium">→ Corporate Services</Link> — Incorporation, minute books, and annual filings</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Corporate T2 returns and tax planning</li>
+                  <li><Link href="/services/business-consulting" className="text-gold hover:text-gold-hover font-medium">→ Business Consulting</Link> — Is incorporation right for you?</li>
+                </ul>
+              </div>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Should You Incorporate? Let&apos;s Talk Through Your Situation</h3>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Bookkeeping Tips for Sole Proprietors in Canada | Adapt Business Solutions',
+  title: 'Bookkeeping Tips for Sole Proprietors in Canada | Adapt Accounting Services',
   description: 'The most practical bookkeeping habits for self-employed Canadians. Separate accounts, track expenses, understand HST thresholds, and choose the right accounting software.',
   keywords: 'bookkeeping sole proprietor Canada, self-employed bookkeeping tips, HST threshold Canada, accounting software small business Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/bookkeeping-tips-sole-proprietors-canada' },
@@ -24,8 +24,8 @@ const jsonLd = {
   description: 'The most practical bookkeeping habits for self-employed Canadians — separate accounts, expense tracking, HST, and software.',
   datePublished: '2025-08-05',
   dateModified: '2025-08-05',
-  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
-  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/bookkeeping-tips-sole-proprietors-canada' },
 }
 
@@ -49,7 +49,7 @@ export default function BookkeepingTipsSoleProprietorsPage() {
             <p className="text-navy-100 text-lg">
               The most practical bookkeeping habits for self-employed Canadians — from separating your accounts to understanding the HST threshold and choosing the right software.
             </p>
-            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 7 min read · By Adapt Business Solutions CPA</p>
+            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 7 min read · By Adapt Accounting Services CPA</p>
           </div>
         </section>
 
@@ -150,6 +150,15 @@ export default function BookkeepingTipsSoleProprietorsPage() {
                   </li>
                 ))}
               </ul>
+
+              <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
+                <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Monthly bookkeeping handled for you</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — HST filings and T1 returns</li>
+                  <li><Link href="/services/payroll" className="text-gold hover:text-gold-hover font-medium">→ Payroll Services</Link> — CPP remittances and payroll management</li>
+                </ul>
+              </div>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Get Your Bookkeeping Off Your Plate</h3>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Small Business Tax Deductions in Ontario: The Complete 2025 Guide | Adapt Business Solutions',
+  title: 'Small Business Tax Deductions in Ontario: The Complete 2025 Guide | Adapt Accounting Services',
   description: 'A comprehensive guide to every major tax deduction available to Ontario small business owners in 2025 — home office, vehicle, meals, equipment, professional fees, and more.',
   keywords: 'Ontario small business tax deductions 2025, home office deduction Canada, vehicle expense CRA, CCA deductions Ontario, HST input tax credits',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/ontario-small-business-tax-deductions-2025' },
@@ -24,8 +24,8 @@ const jsonLd = {
   description: 'A comprehensive guide to every major tax deduction available to Ontario small business owners in 2025.',
   datePublished: '2025-08-05',
   dateModified: '2025-08-05',
-  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
-  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/ontario-small-business-tax-deductions-2025' },
 }
 
@@ -49,7 +49,7 @@ export default function OntarioTaxDeductionsPage() {
             <p className="text-navy-100 text-lg">
               A comprehensive walkthrough of every major deduction available to Ontario small business owners — from home office to vehicle expenses, meals, and professional fees.
             </p>
-            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 10 min read · By Adapt Business Solutions CPA</p>
+            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 10 min read · By Adapt Accounting Services CPA</p>
           </div>
         </section>
 
@@ -150,6 +150,15 @@ export default function OntarioTaxDeductionsPage() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 Cloud-based accounting software like QuickBooks or FreshBooks makes this significantly easier, allowing you to photograph receipts immediately and categorize expenses in real time.
               </p>
+
+              <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
+                <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Maximize every deduction with a CPA</li>
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Organized records for audit-proof filings</li>
+                  <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link> — Understand your true profit after deductions</li>
+                </ul>
+              </div>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Get Professional Tax Help for Your Ontario Business</h3>

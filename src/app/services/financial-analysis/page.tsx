@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Financial Analysis & Reporting | Adapt Business Solutions',
+  title: 'Financial Analysis & Reporting | Adapt Accounting Services',
   description: 'Comprehensive financial analysis, budget forecasting, and performance reporting for Ontario businesses. Data-driven insights from a certified CPA.',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/financial-analysis' },
 }

@@ -5,7 +5,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Niagara Region | Professional Accounting & Tax Services | Adapt Business Solutions',
+  title: 'CPA Niagara Region | Professional Accounting & Tax Services | Adapt Accounting Services',
   description: 'Expert virtual CPA services for Niagara Region businesses. Tax preparation, bookkeeping, and financial consulting for St. Catharines, Niagara Falls, Welland, and all of Niagara.',
   keywords: 'CPA Niagara, accountant St Catharines, tax preparation Niagara Falls, bookkeeping Niagara Region, CPA Welland',
   openGraph: {
@@ -88,7 +88,7 @@ export default function NiagaraRegionPage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Niagara Region Businesses Choose Adapt Business Solutions
+                  Why Niagara Region Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

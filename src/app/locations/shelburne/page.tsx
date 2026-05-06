@@ -5,11 +5,11 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Shelburne | Accounting & Tax Services | Adapt Business Solutions',
+  title: 'CPA Shelburne | Accounting & Tax Services | Adapt Accounting Services',
   description: 'Professional virtual CPA services for Shelburne, Ontario businesses. Tax preparation, bookkeeping, and financial consulting for Shelburne and Dufferin County.',
   keywords: 'CPA Shelburne Ontario, accountant Shelburne, tax preparation Shelburne, bookkeeping Shelburne Dufferin',
   openGraph: {
-    title: 'CPA Services Shelburne, Ontario | Adapt Business Solutions',
+    title: 'CPA Services Shelburne, Ontario | Adapt Accounting Services',
     description: 'Professional CPA services for Shelburne businesses. Bookkeeping, tax preparation, and financial consulting.',
     url: 'https://adaptbusinesssolutions.com/locations/shelburne',
     type: 'website',
@@ -86,7 +86,7 @@ export default function ShelburnePage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Shelburne Businesses Choose Adapt Business Solutions
+                  Why Shelburne Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

@@ -5,7 +5,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Mississauga | Professional Accounting & Tax Services | Adapt Business Solutions',
+  title: 'CPA Mississauga | Professional Accounting & Tax Services | Adapt Accounting Services',
   description: 'Expert virtual CPA services in Mississauga, Ontario. Bookkeeping, tax preparation, corporate tax, and financial analysis for Mississauga businesses. Serving Square One, Port Credit, and all of Mississauga.',
   keywords: 'CPA Mississauga, accountant Mississauga, tax preparation Mississauga, bookkeeping Mississauga, corporate tax Mississauga',
   openGraph: {
@@ -88,7 +88,7 @@ export default function MississaugaPage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Mississauga Businesses Choose Adapt Business Solutions
+                  Why Mississauga Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

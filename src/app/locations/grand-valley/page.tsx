@@ -5,11 +5,11 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Grand Valley | Accounting & Tax Services | Adapt Business Solutions',
+  title: 'CPA Grand Valley | Accounting & Tax Services | Adapt Accounting Services',
   description: 'Professional virtual CPA services for Grand Valley, Ontario businesses. Tax preparation, bookkeeping, and financial consulting for Grand Valley and East Luther Grand Valley Township.',
   keywords: 'CPA Grand Valley Ontario, accountant Grand Valley, tax preparation Grand Valley, bookkeeping Dufferin County',
   openGraph: {
-    title: 'CPA Services Grand Valley, Ontario | Adapt Business Solutions',
+    title: 'CPA Services Grand Valley, Ontario | Adapt Accounting Services',
     description: 'Professional CPA services for Grand Valley businesses. Bookkeeping, tax preparation, and financial consulting.',
     url: 'https://adaptbusinesssolutions.com/locations/grand-valley',
     type: 'website',
@@ -86,7 +86,7 @@ export default function GrandValleyPage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Grand Valley Businesses Choose Adapt Business Solutions
+                  Why Grand Valley Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

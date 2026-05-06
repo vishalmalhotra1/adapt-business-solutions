@@ -8,11 +8,11 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Adapt Business Solutions — CPA Services Ontario | Orangeville, Brampton, Mississauga',
+  title: 'Adapt Accounting Services — CPA Services Ontario | Orangeville, Brampton, Mississauga',
   description: 'Expert virtual CPA services for Ontario small businesses. Tax planning, bookkeeping, financial analysis and more — serving Orangeville, Brampton, Mississauga, Niagara, Erin, Shelburne and beyond.',
   keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, small business accountant GTA, corporate tax Ontario, CPA Erin, CPA Shelburne',
   openGraph: {
-    title: 'Adapt Business Solutions — Professional CPA Services Ontario',
+    title: 'Adapt Accounting Services — Professional CPA Services Ontario',
     description: 'Expert virtual CPA services for Ontario businesses. Tax planning, bookkeeping, financial consulting. Serving the GTA and surrounding communities.',
     url: 'https://adaptbusinesssolutions.com',
     type: 'website',
@@ -59,7 +59,7 @@ export default function HomePage() {
               Ready to Take Control of Your Finances?
             </h2>
             <p className="text-navy-100 text-lg mb-8 leading-relaxed">
-              Join over 30 Ontario business owners who trust Adapt Business Solutions for their
+              Join over 30 Ontario business owners who trust Adapt Accounting Services for their
               bookkeeping, tax, and financial strategy needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -5,11 +5,11 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Amaranth | Accounting & Tax Services | Adapt Business Solutions',
+  title: 'CPA Amaranth | Accounting & Tax Services | Adapt Accounting Services',
   description: 'Professional virtual CPA services for Amaranth Township, Ontario businesses. Tax preparation, bookkeeping, and financial consulting for Amaranth and Dufferin County.',
   keywords: 'CPA Amaranth Ontario, accountant Amaranth Township, tax preparation Amaranth, bookkeeping Dufferin County',
   openGraph: {
-    title: 'CPA Services Amaranth, Ontario | Adapt Business Solutions',
+    title: 'CPA Services Amaranth, Ontario | Adapt Accounting Services',
     description: 'Professional CPA services for Amaranth Township businesses. Bookkeeping, tax preparation, and financial consulting.',
     url: 'https://adaptbusinesssolutions.com/locations/amaranth',
     type: 'website',
@@ -86,7 +86,7 @@ export default function AmaranthPage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Amaranth Businesses Choose Adapt Business Solutions
+                  Why Amaranth Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

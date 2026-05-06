@@ -18,12 +18,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://adaptbusinesssolutions.com'),
-  title: 'Adapt Business Solutions - CPA Services Ontario | Orangeville, Brampton, Mississauga',
+  title: 'Adapt Accounting Services - CPA Services Ontario | Orangeville, Brampton, Mississauga',
   description: 'Expert virtual CPA services for Ontario small businesses. Tax planning, bookkeeping, financial analysis and more across the GTA and beyond. Serving Orangeville, Brampton, Mississauga, Niagara and surrounding communities.',
   keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, CPA services GTA, virtual accounting Ontario, small business accountant Ontario, corporate tax Ontario',
-  authors: [{ name: 'Adapt Business Solutions' }],
-  creator: 'Adapt Business Solutions',
-  publisher: 'Adapt Business Solutions',
+  authors: [{ name: 'Adapt Accounting Services' }],
+  creator: 'Adapt Accounting Services',
+  publisher: 'Adapt Accounting Services',
   robots: {
     index: true,
     follow: true,
@@ -39,21 +39,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_CA',
     url: 'https://adaptbusinesssolutions.com',
-    title: 'Adapt Business Solutions - Professional CPA Services Ontario',
+    title: 'Adapt Accounting Services - Professional CPA Services Ontario',
     description: 'Expert virtual CPA services for Ontario businesses. Serving Orangeville, Brampton, Mississauga, Niagara and beyond with competitive, professional accounting.',
-    siteName: 'Adapt Business Solutions',
+    siteName: 'Adapt Accounting Services',
     images: [
       {
         url: 'https://adaptbusinesssolutions.com/images/logo.avif',
         width: 1200,
         height: 630,
-        alt: 'Adapt Business Solutions - Professional CPA Services Ontario',
+        alt: 'Adapt Accounting Services - Professional CPA Services Ontario',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Adapt Business Solutions - CPA Services Ontario',
+    title: 'Adapt Accounting Services - CPA Services Ontario',
     description: 'Expert virtual CPA services for Ontario businesses. Competitive pricing, professional expertise.',
     images: ['https://adaptbusinesssolutions.com/images/logo.avif'],
   },
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     canonical: 'https://adaptbusinesssolutions.com',
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'e290c92527c070d9',
   },
 }
 
@@ -87,7 +87,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AccountingService",
-              "name": "Adapt Business Solutions",
+              "name": "Adapt Accounting Services",
               "description": "Professional CPA and accounting services in Orangeville, Brampton, Mississauga, and Niagara Region. Virtual bookkeeping, tax preparation, financial analysis, and business consulting.",
               "url": "https://adaptbusinesssolutions.com",
               "telephone": "+1-437-772-9598",
@@ -120,6 +120,13 @@ export default function RootLayout({
                 "closes": "22:00",
                 "timeZone": "America/Toronto"
               },
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://adaptbusinesssolutions.com/images/logo.avif",
+                "width": 300,
+                "height": 112
+              },
+              "image": "https://adaptbusinesssolutions.com/images/logo.avif",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.9",

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, User, Factory, Briefcase } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Orangeville Tax Planning Checklist for 2025 Business Owners | Adapt Business Solutions',
+  title: 'Orangeville Tax Planning Checklist for 2025 Business Owners | Adapt Accounting Services',
   description: 'Strategic tax planning for Orangeville business owners. Manufacturing, retail, and service business tax optimization.',
   keywords: 'Orangeville tax planning, business tax checklist, manufacturing tax, CPA services',
 }
@@ -38,7 +38,7 @@ export default function ArticlePage() {
             <div className="flex items-center text-gray-600 mb-8">
               <div className="flex items-center mr-6">
                 <User className="w-4 h-4 mr-2" />
-                <span>Adapt Business Solutions CPA Team</span>
+                <span>Adapt Accounting Services CPA Team</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -371,6 +371,16 @@ export default function ArticlePage() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            <div className="bg-gray-50 border border-gray-200 p-6 my-8">
+              <h3 className="font-semibold text-navy mb-4">Our Services for Orangeville Businesses</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Strategic tax planning for Orangeville business owners</li>
+                <li><Link href="/services/corporate-services" className="text-gold hover:text-gold-hover font-medium">→ Corporate Services</Link> — Incorporation and corporate tax filings</li>
+                <li><Link href="/services/business-consulting" className="text-gold hover:text-gold-hover font-medium">→ Business Consulting</Link> — Grow your Orangeville business with expert guidance</li>
+                <li><Link href="/locations/orangeville" className="text-gold hover:text-gold-hover font-medium">→ CPA Services in Orangeville</Link> — Your local Orangeville CPA</li>
+              </ul>
             </div>
 
             <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">

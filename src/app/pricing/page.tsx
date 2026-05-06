@@ -295,7 +295,7 @@ export default function PricingPage() {
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span className="bg-gold text-navy text-xs font-bold px-3 py-1">Best Value</span>
                 </div>
-                <h3 className="font-semibold mb-3">Adapt Business Solutions</h3>
+                <h3 className="font-semibold mb-3">Adapt Accounting Services</h3>
                 <div className="font-serif text-3xl font-bold text-gold mb-3">
                   ${getSizeAdjustedPriceRange(selectedTier).min}–${getSizeAdjustedPriceRange(selectedTier).max}
                 </div>

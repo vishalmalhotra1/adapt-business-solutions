@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Bookkeeping & Compilation Services | Adapt Business Solutions',
+  title: 'Bookkeeping & Compilation Services | Adapt Accounting Services',
   description: 'Professional bookkeeping and compilation engagement services for Ontario small businesses. CPA Canada CSRS 4200 compliant. Serving Orangeville, Brampton, Mississauga and all of Ontario.',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/bookkeeping-compilations' },
 }

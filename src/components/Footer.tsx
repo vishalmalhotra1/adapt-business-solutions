@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Image
               src="/images/logo.avif"
-              alt="Adapt Business Solutions"
+              alt="Adapt Accounting Services"
               width={150}
               height={56}
               className="h-9 w-auto brightness-0 invert"
@@ -101,13 +101,20 @@ export default function Footer() {
                 Transparent, flat-fee packages
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 flex flex-col gap-4">
               <Link
                 href="/pricing"
                 className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold text-sm px-5 py-2.5 transition-colors"
               >
                 Book Consultation
               </Link>
+              <Image
+                src="/images/cpa-ontario-logo.png"
+                alt="CPA Ontario Registered Firm"
+                width={120}
+                height={48}
+                className="w-auto h-12 object-contain"
+              />
             </div>
           </div>
 
@@ -118,7 +125,7 @@ export default function Footer() {
       <div className="border-t border-navy-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-navy-100 text-xs">
-            &copy; {new Date().getFullYear()} Adapt Business Solutions. All rights reserved.
+            &copy; {new Date().getFullYear()} Adapt Accounting Services. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs">
             <a href="#" className="text-navy-100 hover:text-gold transition-colors">Privacy Policy</a>

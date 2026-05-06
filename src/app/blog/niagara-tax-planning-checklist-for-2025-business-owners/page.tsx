@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, User, Grape, Waves } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Niagara Tax Planning Checklist for 2025 Business Owners | Adapt Business Solutions',
+  title: 'Niagara Tax Planning Checklist for 2025 Business Owners | Adapt Accounting Services',
   description: 'Specialized tax planning for Niagara Region businesses. Tourism, agriculture, and manufacturing tax strategies.',
   keywords: 'Niagara tax planning, tourism tax, agriculture tax, wine tax, business CPA',
 }
@@ -38,7 +38,7 @@ export default function ArticlePage() {
             <div className="flex items-center text-gray-600 mb-8">
               <div className="flex items-center mr-6">
                 <User className="w-4 h-4 mr-2" />
-                <span>Adapt Business Solutions CPA Team</span>
+                <span>Adapt Accounting Services CPA Team</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -328,6 +328,16 @@ export default function ArticlePage() {
               <li>Employee share ownership plans (ESOPs)</li>
               <li>Strategic buyer vs. financial buyer considerations</li>
             </ul>
+
+            <div className="bg-gray-50 border border-gray-200 p-6 my-8">
+              <h3 className="font-semibold text-navy mb-4">Our Services for Niagara Region Businesses</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Tax planning for Niagara&apos;s diverse industries</li>
+                <li><Link href="/services/corporate-services" className="text-gold hover:text-gold-hover font-medium">→ Corporate Services</Link> — Incorporation and annual filings</li>
+                <li><Link href="/services/business-consulting" className="text-gold hover:text-gold-hover font-medium">→ Business Consulting</Link> — Strategic planning for Niagara businesses</li>
+                <li><Link href="/locations/niagara-region" className="text-gold hover:text-gold-hover font-medium">→ CPA Services in Niagara Region</Link> — How we serve Niagara businesses</li>
+              </ul>
+            </div>
 
             <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
               <h4 className="text-green-800 font-semibold mb-2">Expert Tax Planning for Niagara Region Businesses</h4>

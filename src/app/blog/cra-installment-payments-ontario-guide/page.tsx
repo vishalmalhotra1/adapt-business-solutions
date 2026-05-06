@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'CRA Tax Installment Payments Ontario 2025 | Adapt Business Solutions',
+  title: 'CRA Tax Installment Payments Ontario 2025 | Adapt Accounting Services',
   description: 'Do you owe quarterly tax installments to the CRA? Learn who must pay, the four installment due dates, three calculation methods, and how to avoid interest charges.',
   keywords: 'CRA installment payments Ontario, quarterly tax installments Canada, no-calculation method installments, tax installment interest CRA',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/cra-installment-payments-ontario-guide' },
@@ -27,12 +27,12 @@ const jsonLd = {
   dateModified: '2026-04-16',
   author: {
     '@type': 'Organization',
-    name: 'Adapt Business Solutions',
+    name: 'Adapt Accounting Services',
     url: 'https://adaptbusinesssolutions.com',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Adapt Business Solutions',
+    name: 'Adapt Accounting Services',
     url: 'https://adaptbusinesssolutions.com',
   },
   mainEntityOfPage: {
@@ -61,7 +61,7 @@ export default function BlogPostPage() {
             <h1 className="font-serif text-3xl lg:text-4xl font-bold mb-4 leading-tight">
               CRA Installment Payments: Who Owes Them and How to Calculate
             </h1>
-            <p className="text-navy-100 text-sm mt-4">Published 2026-04-16 &middot; 7 min read &middot; By Adapt Business Solutions CPA</p>
+            <p className="text-navy-100 text-sm mt-4">Published 2026-04-16 &middot; 7 min read &middot; By Adapt Accounting Services CPA</p>
           </div>
         </section>
 
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Accounting Services or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -191,6 +191,14 @@ export default function BlogPostPage() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 Installment payments are a manageable obligation once you understand the rules. The key is never missing a due date, and choosing the right calculation method based on whether your income is growing or shrinking. A CPA can set up a payment schedule tailored to your actual income so you never overpay unnecessarily.
               </p>
+
+              <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
+                <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — CRA instalment planning tailored to your income</li>
+                  <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link> — Cash flow forecasting so instalments never catch you off guard</li>
+                </ul>
+              </div>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Tired of CRA Installment Surprises?</h3>

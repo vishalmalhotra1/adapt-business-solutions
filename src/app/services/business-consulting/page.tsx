@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Business Consulting | Adapt Business Solutions',
+  title: 'Business Consulting | Adapt Accounting Services',
   description: 'Strategic business consulting for Ontario small businesses. Process optimization, growth planning, and financial strategy from a certified CPA. Virtual consultations available.',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/business-consulting' },
 }

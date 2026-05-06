@@ -5,11 +5,11 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CPA Mono | Accounting & Tax Services | Adapt Business Solutions',
+  title: 'CPA Mono | Accounting & Tax Services | Adapt Accounting Services',
   description: 'Professional virtual CPA services for Mono, Ontario businesses. Tax preparation, bookkeeping, and financial consulting for Mono Township and Dufferin County.',
   keywords: 'CPA Mono Ontario, accountant Mono, tax preparation Mono Township, bookkeeping Dufferin County',
   openGraph: {
-    title: 'CPA Services Mono, Ontario | Adapt Business Solutions',
+    title: 'CPA Services Mono, Ontario | Adapt Accounting Services',
     description: 'Professional CPA services for Mono Township businesses. Bookkeeping, tax preparation, and financial consulting.',
     url: 'https://adaptbusinesssolutions.com/locations/mono',
     type: 'website',
@@ -86,7 +86,7 @@ export default function MonoPage() {
               <div>
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Choose Us</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-8">
-                  Why Mono Businesses Choose Adapt Business Solutions
+                  Why Mono Businesses Choose Adapt Accounting Services
                 </h2>
                 <div className="space-y-5">
                   {whyUs.map(item => (

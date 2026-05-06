@@ -5,7 +5,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Payroll Services | Adapt Business Solutions',
+  title: 'Payroll Services | Adapt Accounting Services',
   description: 'Complete payroll management for Ontario businesses. Accurate processing, CRA remittances, T4 preparation, and full compliance with Canadian employment standards.',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/payroll' },
 }

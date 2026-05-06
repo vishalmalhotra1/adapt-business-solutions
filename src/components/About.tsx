@@ -31,10 +31,10 @@ export default function About() {
               Why Choose Us
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-6">
-              The Adapt Business Solutions Difference
+              The Adapt Accounting Services Difference
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Adapt Business Solutions is a virtual CPA practice built for the modern Ontario
+              Adapt Accounting Services is a virtual CPA practice built for the modern Ontario
               business owner. We combine rigorous professional standards with a data analytics
               background to deliver insights — not just reports.
             </p>
@@ -68,7 +68,7 @@ export default function About() {
               <blockquote className="text-sm text-gray-600 italic">
                 &ldquo;Empowering Growth, Ensuring Value — your trusted CPA in financial excellence.&rdquo;
               </blockquote>
-              <p className="text-xs text-gray-400 mt-2">— Adapt Business Solutions</p>
+              <p className="text-xs text-gray-400 mt-2">— Adapt Accounting Services</p>
             </div>
           </div>
 

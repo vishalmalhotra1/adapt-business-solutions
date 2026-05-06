@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, User } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Brampton Tax Planning Checklist for 2025 Business Owners | Adapt Business Solutions',
+  title: 'Brampton Tax Planning Checklist for 2025 Business Owners | Adapt Accounting Services',
   description: 'Essential tax planning strategies for Brampton business owners. Maximize deductions and ensure compliance.',
   keywords: 'Brampton tax planning, business tax checklist, CPA services, tax deductions',
 }
@@ -38,7 +38,7 @@ export default function ArticlePage() {
             <div className="flex items-center text-gray-600 mb-8">
               <div className="flex items-center mr-6">
                 <User className="w-4 h-4 mr-2" />
-                <span>Adapt Business Solutions CPA Team</span>
+                <span>Adapt Accounting Services CPA Team</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -160,6 +160,16 @@ export default function ArticlePage() {
               <li><strong>Retail:</strong> Inventory management and seasonal planning</li>
               <li><strong>Technology:</strong> R&amp;D credits and intellectual property strategies</li>
             </ul>
+
+            <div className="bg-gray-50 border border-gray-200 p-6 my-8">
+              <h3 className="font-semibold text-navy mb-4">Our Services for Brampton Businesses</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Strategic tax planning for Brampton business owners</li>
+                <li><Link href="/services/corporate-services" className="text-gold hover:text-gold-hover font-medium">→ Corporate Services</Link> — Incorporation and corporate tax filings</li>
+                <li><Link href="/services/business-consulting" className="text-gold hover:text-gold-hover font-medium">→ Business Consulting</Link> — Business structure and growth strategy</li>
+                <li><Link href="/locations/brampton" className="text-gold hover:text-gold-hover font-medium">→ CPA Services in Brampton</Link> — How we serve Brampton businesses</li>
+              </ul>
+            </div>
 
             <div className="bg-green-50 border-l-4 border-green-400 p-6 my-8">
               <h4 className="text-green-800 font-semibold mb-2">Ready to Optimize Your Tax Strategy?</h4>

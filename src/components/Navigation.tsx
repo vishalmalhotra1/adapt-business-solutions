@@ -73,10 +73,10 @@ export default function Navigation() {
           <div className="flex justify-between items-center h-16">
 
             {/* Logo */}
-            <Link href="/" onClick={closeAll} aria-label="Adapt Business Solutions - Home">
+            <Link href="/" onClick={closeAll} aria-label="Adapt Accounting Services - Home">
               <Image
                 src="/images/logo.avif"
-                alt="Adapt Business Solutions"
+                alt="Adapt Accounting Services"
                 width={160}
                 height={60}
                 className="h-10 w-auto brightness-0 invert"
@@ -189,7 +189,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center p-5 border-b border-navy-light">
           <Image
             src="/images/logo.avif"
-            alt="Adapt Business Solutions"
+            alt="Adapt Accounting Services"
             width={130}
             height={50}
             className="h-8 w-auto brightness-0 invert"

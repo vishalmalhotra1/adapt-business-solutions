@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'How to Avoid a CRA Audit: What Ontario Business Owners Need to Know | Adapt Business Solutions',
+  title: 'How to Avoid a CRA Audit: What Ontario Business Owners Need to Know | Adapt Accounting Services',
   description: 'CRA audits are avoidable. Learn the most common audit triggers — unreported income, excessive expenses, repeated losses — and the record-keeping practices that protect your Ontario business.',
   keywords: 'CRA audit Ontario, how to avoid CRA audit, CRA audit triggers Canada, record keeping CRA, business audit Canada',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/how-to-avoid-cra-audit-ontario' },
@@ -24,8 +24,8 @@ const jsonLd = {
   description: 'Common CRA audit triggers and record-keeping practices that protect your Ontario business.',
   datePublished: '2025-08-05',
   dateModified: '2025-08-05',
-  author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
-  publisher: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
+  author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
+  publisher: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://adaptbusinesssolutions.com/blog/how-to-avoid-cra-audit-ontario' },
 }
 
@@ -49,7 +49,7 @@ export default function CRAAuditPage() {
             <p className="text-navy-100 text-lg">
               CRA audits are largely avoidable. Learn the most common audit triggers, what the CRA is actually looking for, and the record-keeping practices that keep your business protected.
             </p>
-            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 9 min read · By Adapt Business Solutions CPA</p>
+            <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 9 min read · By Adapt Accounting Services CPA</p>
           </div>
         </section>
 
@@ -173,6 +173,14 @@ export default function CRAAuditPage() {
                   </li>
                 ))}
               </ul>
+
+              <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
+                <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — CRA-compliant filings that reduce audit risk</li>
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Clean records that hold up under CRA scrutiny</li>
+                </ul>
+              </div>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Protect Your Business with Professional CPA Support</h3>

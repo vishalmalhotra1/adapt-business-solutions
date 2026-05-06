@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/Visha/adapt-business-solutions/src -name \"globals.css\" -exec cat {} \\\\;)",
+      "Bash(npm run *)",
+      "Bash(cat vercel.json)",
+      "Bash(ls -la .vercel)",
+      "Bash(npx vercel *)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(l.Lightbulb ? 'Lightbulb exists' : 'Lightbulb MISSING'\\)\")",
+      "Bash(node -e \"require\\('./scripts/generate-blog.mjs'\\)\")",
+      "Bash(npm install *)",
+      "Bash(node *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "WebFetch(domain:adaptbusinesssolutions.com)"
+    ]
+  }
+}

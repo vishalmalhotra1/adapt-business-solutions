@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'HST Quick Method Election Ontario 2025 | Adapt Business Solutions',
+  title: 'HST Quick Method Election Ontario 2025 | Adapt Accounting Services',
   description: 'The HST Quick Method lets Ontario small businesses remit a flat percentage of sales instead of tracking every ITC. Learn who qualifies, the rates, and whether it saves you money.',
   keywords: 'HST Quick Method Ontario, GST HST small business Canada, HST remittance rate Ontario, input tax credits vs Quick Method',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/hst-quick-method-ontario-small-business' },
@@ -27,12 +27,12 @@ const jsonLd = {
   dateModified: '2026-04-16',
   author: {
     '@type': 'Organization',
-    name: 'Adapt Business Solutions',
+    name: 'Adapt Accounting Services',
     url: 'https://adaptbusinesssolutions.com',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Adapt Business Solutions',
+    name: 'Adapt Accounting Services',
     url: 'https://adaptbusinesssolutions.com',
   },
   mainEntityOfPage: {
@@ -61,7 +61,7 @@ export default function BlogPostPage() {
             <h1 className="font-serif text-3xl lg:text-4xl font-bold mb-4 leading-tight">
               HST Quick Method: Save Time and Possibly Money on Your HST Returns
             </h1>
-            <p className="text-navy-100 text-sm mt-4">Published 2026-04-16 &middot; 7 min read &middot; By Adapt Business Solutions CPA</p>
+            <p className="text-navy-100 text-sm mt-4">Published 2026-04-16 &middot; 7 min read &middot; By Adapt Accounting Services CPA</p>
           </div>
         </section>
 
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Accounting Services or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -170,6 +170,14 @@ export default function BlogPostPage() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 The HST Quick Method is one of the most underused tax simplification tools available to Ontario small business owners. For service businesses especially, it reduces bookkeeping complexity and often results in meaningful tax savings. Run the numbers with a CPA before your next HST filing.
               </p>
+
+              <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
+                <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — HST filings and Quick Method elections</li>
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Monthly records to support your HST remittances</li>
+                </ul>
+              </div>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Not Sure If Quick Method Is Right for You?</h3>
