@@ -41,7 +41,7 @@ export default function BlogPostPage() {
             <Link href="/blog" className="inline-flex items-center text-gold hover:text-gold-hover text-sm font-medium mb-6 transition-colors">
               <ArrowLeft className="h-4 w-4 mr-1" /> Back to Blog
             </Link>
-            <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 mb-4">Tax Planning</span>
+            <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 mb-4">ABA Practices</span>
             <h1 className="font-serif text-3xl lg:text-4xl font-bold mb-4 leading-tight">
               Tax Deductions for Ontario ABA Business Owners: Every Legitimate Claim
             </h1>
@@ -59,8 +59,36 @@ export default function BlogPostPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Running an ABA therapy business involves a very specific set of expenses — clinical materials, assessment tools, supervision hours, professional development, and often significant vehicle use for in-home or community-based therapy. Many of these costs are fully deductible against your business income, but only if they are categorized and documented correctly. This guide walks through the most important deduction categories for Ontario ABA practice owners.
+                Running an ABA therapy business involves a very specific set of expenses — clinical materials, assessment tools, supervision hours, professional development, and often significant vehicle use for in-home or community-based therapy. Many of these costs are fully deductible against your business income, but only if they are categorized and documented correctly. This guide walks through the most important deduction categories for Ontario ABA practice owners — both incorporated and sole proprietor.
               </p>
+
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">CPBAO Fees and Professional Dues</h2>
+              <p className="text-gray-700 leading-relaxed">Regulatory fees paid to maintain your ability to practice are among the most clearly deductible expenses for a CPBAO-registered behaviour analyst. These are professional dues directly required to earn your income.</p>
+              <ul className="space-y-2 my-4">
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
+                  CPBAO annual registration fee: fully deductible as professional dues
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
+                  CPBAO professional corporation Certificate of Authorization fees ($350 initial, $250 annual): deductible as a business expense
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
+                  BACB certification and recertification fees: fully deductible
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
+                  ONTABA membership fees: deductible as professional dues
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
+                  Liability insurance premiums required by CPBAO: fully deductible
+                </li>
+              </ul>
+              <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
+                <p className="text-sm text-gray-700">Categorize all regulatory and professional dues separately in your bookkeeping. CRA allows a deduction for dues paid to maintain professional status — these are clean, well-supported deductions that should never be missed.</p>
+              </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Clinical Materials, Assessments, and Therapy Supplies</h2>
               <p className="text-gray-700 leading-relaxed">The tangible tools and materials used in delivering ABA therapy are fully deductible as business expenses. This includes everything you purchase specifically for client work.</p>
@@ -79,27 +107,27 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Augmentative and alternative communication (AAC) devices purchased for client use: may be capital cost (CCA) or deductible depending on ownership structure
+                  AAC devices purchased for client-use programs: may be capital (CCA Class 8) depending on cost and ownership
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Tablet devices used primarily for data collection and client programs: CCA Class 50
+                  Tablet devices used primarily for data collection: CCA Class 50 (55% declining balance)
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Documentation tip: Keep receipts organized by client or program type where possible. If CRA questions a supply deduction, you want to be able to explain how it was used in your practice.</p>
+                <p className="text-sm text-gray-700">Documentation tip: Keep receipts organized by client or program type where possible. If CRA questions a supply deduction, you want to be able to explain how it was used in your clinical practice.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Clinical Software and Practice Management Tools</h2>
-              <p className="text-gray-700 leading-relaxed">ABA practices rely on software for data collection, program management, billing, and telehealth delivery. All legitimate business software subscriptions are fully deductible in the year paid.</p>
+              <p className="text-gray-700 leading-relaxed">ABA practices rely heavily on software for data collection, program management, billing, and telehealth. All legitimate business software subscriptions are fully deductible in the year paid.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  ABA data collection software (CentralReach, Catalyst, Motivity): 100% deductible
+                  ABA data collection platforms (CentralReach, Catalyst, Motivity): 100% deductible
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Telehealth platforms (if used for remote ABA sessions): deductible
+                  Telehealth platforms for remote ABA sessions: deductible
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -107,20 +135,20 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Accounting software (QuickBooks, FreshBooks): deductible
+                  Accounting software (QuickBooks, FreshBooks, Wave): deductible
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Video conferencing subscriptions: deductible (business-use portion)
+                  Video conferencing tools (business-use portion): deductible
                 </li>
               </ul>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Vehicle Expenses for In-Home and Community-Based ABA</h2>
-              <p className="text-gray-700 leading-relaxed">ABA therapy is frequently delivered in clients&apos; homes, community settings, schools, and day programs. Vehicle travel between your home office (or clinic base) and client locations is a legitimate business expense — but the CRA has strict rules on how to calculate and document it.</p>
+              <p className="text-gray-700 leading-relaxed">ABA therapy is frequently delivered in clients&apos; homes, schools, community settings, and day programs. Travel between your home office (or clinic base) and client locations is a legitimate deduction — but CRA rules on documentation are strict.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Deduct the business-use percentage of total vehicle operating costs (fuel, insurance, maintenance, registration)
+                  Deduct the business-use percentage of all vehicle costs (fuel, insurance, maintenance, registration)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -128,105 +156,80 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Keep a mileage log: date, destination, purpose, kilometres for every business trip
+                  Keep a mileage log: date, destination, purpose, and km for every business trip
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Commuting from home to a fixed clinic is NOT deductible — only travel between work locations or to client sites
+                  Travel from home to a fixed clinic is NOT deductible — only travel between work locations or to client sites
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Mileage log requirement: CRA will disallow vehicle expense claims without a contemporaneous mileage log. Use a free mileage tracking app (MileIQ, TripLog) to auto-record every business trip. This is the single most important documentation habit for mobile ABA practitioners.</p>
+                <p className="text-sm text-gray-700">Mileage log is mandatory: CRA will disallow vehicle claims without a contemporaneous log. Use MileIQ or TripLog to auto-track every trip. For mobile ABA practitioners doing 15–20 home visits per week, the vehicle deduction can easily exceed $5,000–$10,000 annually.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Professional Development, Supervision, and Continuing Education</h2>
-              <p className="text-gray-700 leading-relaxed">BCBAs, RBTs, and behaviour technicians require ongoing professional development to maintain certifications. These costs are directly connected to your income-earning activities and are fully deductible.</p>
+              <p className="text-gray-700 leading-relaxed">BCBAs and behaviour technicians require ongoing CEUs to maintain certification. These costs are directly tied to your ability to earn income and are fully deductible.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  BACB recertification fees and BCBA exam fees: deductible
+                  CEU courses, workshops, webinars: fully deductible including registration fees
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  CEU courses, workshops, and conferences: fully deductible including registration fees
+                  ABAI and ONTABA conference costs: registration, airfare, hotel, and 50% of meals
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Conference travel (ABAI, ONTABA): airfare, hotel, and meals (50% for meals)
+                  Clinical supervision costs paid to a supervising BCBA: deductible as professional fees
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Clinical supervision costs paid to a supervisor: deductible as a professional expense
+                  Textbooks, journal subscriptions, and ABA publications: deductible
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Textbooks, journal subscriptions, and professional publications: deductible
+                  BCBA exam prep materials and exam fees: deductible
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">BACB membership fees are deductible as professional dues. ONTABA membership is also deductible. These should be categorized as &quot;professional dues and memberships&quot; in your bookkeeping.</p>
+                <p className="text-sm text-gray-700">BACB CE tracking: Keep your BACB CE transcript as backup documentation. If CRA ever audits your professional development deductions, a detailed CE record showing what courses were taken and why they relate to your practice is strong supporting evidence.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Home Office Deduction for ABA Practice Owners</h2>
-              <p className="text-gray-700 leading-relaxed">If you manage your practice administration, write programs, prepare reports, or conduct telehealth sessions from a home office, you can deduct a portion of your home costs as a business expense.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">The calculation is straightforward: calculate the percentage of your home used exclusively for business (office area ÷ total home area) and apply that percentage to eligible home costs.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Home Office and Staff Costs</h2>
+              <p className="text-gray-700 leading-relaxed">If you write programs, prepare reports, conduct telehealth sessions, or manage administration from a home office, a portion of your home costs is deductible. For practices with staff, wages and contractor fees are your largest deduction category.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Eligible costs: rent, utilities, internet, home insurance, property tax (if you own)
+                  Home office: deduct the percentage of your home (by area) used regularly and exclusively for business — applied to rent, utilities, internet, and insurance
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Calculation: home office area ÷ total home area × annual eligible costs
+                  Incorporated owners: have the corporation pay you office rent under a written lease (creates a corporate deduction)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  The office space must be used regularly and exclusively for business
+                  Employee salaries and wages: fully deductible plus employer CPP and EI
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  For incorporated owners: the corporation can pay you rent for the office space (with a proper lease agreement)
+                  Contractor payments: deductible with T4A issued for payments over $500
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
+                  Vulnerable sector check and criminal record check fees for new hires: deductible
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Incorporated ABA owner tip: Rather than claiming home office expenses personally, have your corporation pay you a monthly office rental (e.g., $400–$800/month). This creates a corporate deduction, and your personal rental income may be sheltered by your basic personal amount or real home costs.</p>
-              </div>
-
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Staff and Contractor Costs for Multi-Therapist Practices</h2>
-              <p className="text-gray-700 leading-relaxed">If your ABA practice employs or contracts RBTs, behaviour technicians, or other clinical staff, those costs are among your largest deductions.</p>
-              <ul className="space-y-2 my-4">
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Employee salaries and wages: fully deductible (plus employer CPP and EI)
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Contractor payments: deductible when properly structured (T4A required for contractors paid over $500)
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Staff training and supervision hours: deductible as operating expenses
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Criminal record check and vulnerable sector screening fees: deductible
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Employee benefits (health, dental, group insurance): generally deductible as staff costs
-                </li>
-              </ul>
-              <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">RBT contractor vs employee risk: Many ABA practices hire RBTs as contractors for flexibility — but the CRA&apos;s four-factor test often classifies them as employees, particularly when they work exclusively for your practice, follow your clinical protocols, and use your materials. Misclassification can trigger back CPP, EI, and penalties. Get a CPA review of your RBT arrangements.</p>
+                <p className="text-sm text-gray-700">RBT contractor risk: CRA frequently reclassifies RBTs as employees when they work exclusively for one practice, follow your protocols, and use your materials. Misclassification triggers back CPP, EI, and penalties. Have a CPA review your RBT arrangements before an audit raises the issue.</p>
               </div>
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                ABA practice owners have a rich set of legitimate deductions — but only if they are tracked, categorized, and documented throughout the year. The worst outcome is having deductible expenses that cannot be claimed because the records are missing or incomplete. Set up a bookkeeping system from day one that captures every category specific to your practice, and work with a CPA who understands what ABA businesses spend money on.
+                ABA practice owners have a rich and specific set of legitimate deductions — CPBAO fees, clinical software, mileage, CE costs, and staff expenses. The key is tracking them all year round in a bookkeeping system designed for your practice, not a generic one. Work with a CPA who knows what ABA businesses spend money on so nothing is missed at tax time.
               </p>
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Stop Missing Deductions in Your ABA Practice</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Adapt Business Solutions handles bookkeeping and tax for Ontario ABA practice owners. We know your expense categories, your contractor risks, and your industry — so you claim every deduction you are entitled to. Book a free consultation.
+                  Adapt Business Solutions handles bookkeeping and tax for Ontario ABA practice owners. We know your expense categories, your CPBAO obligations, and your contractor risks. Book a free consultation.
                 </p>
                 <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   Get a Free Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

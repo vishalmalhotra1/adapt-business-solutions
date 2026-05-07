@@ -5,13 +5,13 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'HST on ABA Therapy Services Ontario 2025 | Adapt Business Solutions CPA',
-  description: 'Is ABA therapy subject to HST in Ontario? The answer depends on who provides the service, how it is delivered, and whether OAP funding is involved. A CPA breaks it down.',
-  keywords: 'HST ABA therapy Ontario, GST exempt ABA services Canada, ABA therapy HST taxable Ontario, behaviour analyst HST registration Ontario',
+  title: 'HST on ABA Therapy Services Ontario 2025: CRA Rules | Adapt Business Solutions CPA',
+  description: 'Is ABA therapy HST-exempt in Ontario? Under CRA GI-113, most ABA and IBI therapy for autism qualifies for HST exemption. Learn the three pathways, what remains taxable, and how OAP funding fits in.',
+  keywords: 'HST ABA therapy Ontario exempt, CRA GI-113 ABA autism training HST, OAP funding HST exempt Ontario, behaviour analyst HST registration Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/hst-aba-therapy-services-ontario' },
   openGraph: {
-    title: 'HST and ABA Therapy Services in Ontario: What Is Taxable and What Is Not',
-    description: 'Is ABA therapy subject to HST in Ontario? The answer depends on who provides the service, how it is delivered, and whether OAP funding is involved. A CPA breaks it down.',
+    title: 'HST and ABA Therapy in Ontario: The CRA&apos;s Actual Rules for Behaviour Analysts',
+    description: 'Is ABA therapy HST-exempt in Ontario? Under CRA GI-113, most ABA and IBI therapy for autism qualifies for HST exemption. Learn the three pathways, what remains taxable, and how OAP funding fits in.',
     url: 'https://adaptbusinesssolutions.com/blog/hst-aba-therapy-services-ontario',
     type: 'article',
     publishedTime: '2026-05-07',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'HST and ABA Therapy Services in Ontario: What Is Taxable and What Is Not',
-  description: 'Is ABA therapy subject to HST in Ontario? The answer depends on who provides the service, how it is delivered, and whether OAP funding is involved. A CPA breaks it down.',
+  headline: 'HST and ABA Therapy in Ontario: The CRA&apos;s Actual Rules for Behaviour Analysts',
+  description: 'Is ABA therapy HST-exempt in Ontario? Under CRA GI-113, most ABA and IBI therapy for autism qualifies for HST exemption. Learn the three pathways, what remains taxable, and how OAP funding fits in.',
   datePublished: '2026-05-07',
   dateModified: '2026-05-07',
   author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
@@ -41,9 +41,9 @@ export default function BlogPostPage() {
             <Link href="/blog" className="inline-flex items-center text-gold hover:text-gold-hover text-sm font-medium mb-6 transition-colors">
               <ArrowLeft className="h-4 w-4 mr-1" /> Back to Blog
             </Link>
-            <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 mb-4">HST &amp; GST</span>
+            <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 mb-4">ABA Practices</span>
             <h1 className="font-serif text-3xl lg:text-4xl font-bold mb-4 leading-tight">
-              HST and ABA Therapy Services in Ontario: What Is Taxable and What Is Not
+              HST and ABA Therapy in Ontario: The CRA&apos;s Actual Rules for Behaviour Analysts
             </h1>
             <p className="text-navy-100 text-sm mt-4">Published 2026-05-07 &middot; 8 min read &middot; By Adapt Business Solutions CPA</p>
           </div>
@@ -59,150 +59,137 @@ export default function BlogPostPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                When it comes to HST, ABA therapy in Ontario sits in genuinely complex territory. Unlike a retail sale or a consulting engagement — where the HST answer is straightforward — the taxability of ABA therapy services depends on who is providing the service, what credentials they hold, how the service is described on the invoice, and how the client is paying. This guide provides a framework for thinking through the HST question for your ABA practice, with the strong caveat that individual situations require professional review.
+                HST on ABA therapy is one of the most misunderstood tax issues for Ontario behaviour analysts. Many practitioners either charge 13% HST when they do not have to — passing an unnecessary cost to families — or fail to analyze their position at all and run the risk of CRA liability. The good news: the CRA has issued specific guidance on ABA and autism therapy in GI-113, and most direct ABA therapy for autism qualifies for HST exemption. Here is what that actually means for your practice.
               </p>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The General Rule: Healthcare Services and HST Exemptions</h2>
-              <p className="text-gray-700 leading-relaxed">Under the Excise Tax Act, certain healthcare services are exempt from GST/HST. This means no HST is charged to the client, and the service provider cannot claim input tax credits (ITCs) on expenses related to exempt supplies.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">The key exempt categories relevant to ABA practices are: services rendered by certain regulated health practitioners, and services for individuals with a disability when supplied by a government-funded organization.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The CRA&apos;s Specific Exemption: GI-113 and Autism Training</h2>
+              <p className="text-gray-700 leading-relaxed">The CRA published GST/HST Info Sheet GI-113 specifically addressing ABA and Intensive Behavioural Intervention (IBI) therapy for autism. Under Section 14 of Part II of Schedule V of the Excise Tax Act, supplies of training services specially designed to assist individuals with autism are exempt from HST.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">Critically, the exemption does not require the provider to be a physician, psychologist, or any specific regulated health professional. BCBAs and ABA practitioners can qualify.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Exempt supplies: no HST charged, no ITCs on related expenses
+                  Legal basis: Section 14, Part II, Schedule V of the Excise Tax Act
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Taxable supplies: 13% HST charged, full ITCs claimed on business expenses
+                  What qualifies: training specially designed to assist individuals with autism in coping with or alleviating the effects of autism
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Zero-rated: 0% HST charged but ITCs still available (rare in ABA context)
+                  Provider requirement: none — does not need to be a regulated health professional
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  The category determines both what you charge clients AND what you can recover on your purchases
+                  Scope: covers the entire package of services — therapy, assessment, program development, and supervision are treated as one supply
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">The exemption is not automatic. You must analyze your specific services against the CRA criteria — the fact that your service is beneficial or medically necessary does not automatically make it HST-exempt.</p>
+                <p className="text-sm text-gray-700">Key rule: The training must not be similar to training ordinarily given to persons who do not have autism. Standard educational or recreational programming does not qualify — ABA/IBI designed specifically for autism does.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">When ABA Services May Be HST-Exempt</h2>
-              <p className="text-gray-700 leading-relaxed">ABA therapy services provided by a Registered Psychologist, or under the direct supervision of a regulated practitioner in specific circumstances, may qualify for the healthcare exemption under Schedule V, Part II of the Excise Tax Act.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">Additionally, services provided to individuals with disabilities by qualifying government-funded non-profit organizations may be exempt under a different provision.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Three Pathways to HST Exemption</h2>
+              <p className="text-gray-700 leading-relaxed">To claim the exemption, one of three conditions must be satisfied. Most ABA practices will qualify through at least one of these pathways — and OAP-funded practices often qualify automatically through the third.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Services by a Registered Psychologist: potentially exempt under the regulated health practitioner exemption
+                  Pathway 1 — Professional certification: A practitioner, medical practitioner, social worker, or registered nurse certifies in writing that the ABA training is appropriate for the individual. BCBAs can certify as practitioners.
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Services funded by a qualifying government program delivered by a non-profit: potentially exempt
+                  Pathway 2 — Prescribed person certification: A prescribed person or class member certifies appropriateness under prescribed conditions.
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Supervised services where the supervisor is a regulated practitioner: depends on specific facts
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Direct OAP-funded services meeting specific criteria: may be exempt
+                  Pathway 3 — Government funding evidence: The provider receives satisfactory evidence that payment comes from a government or organization administering a disability assistance program. OAP funding qualifies here.
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Important: BCBA certification alone does not qualify you for the healthcare service exemption in most cases. The CRA exemptions are tied to specific regulated health professions defined in provincial legislation — and as of 2025, Behaviour Analysis is a newly regulated profession whose HST treatment is still being clarified.</p>
+                <p className="text-sm text-gray-700">OAP-funded practices: If your revenue comes from OAP funding, Pathway 3 applies — the government funding itself is satisfactory evidence of the exemption. This means OAP-funded ABA therapy is HST-exempt without needing any additional written certification.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">When ABA Services Are Likely Taxable at 13%</h2>
-              <p className="text-gray-700 leading-relaxed">In many common ABA practice structures, services are taxable at 13% HST. This includes most private pay ABA therapy delivered by BCBAs operating independently.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Is Included in the Exempt Supply</h2>
+              <p className="text-gray-700 leading-relaxed">A key ruling from the CRA is that the entire package of ABA services — not just direct therapy hours — is treated as a single supply for HST purposes. This means ancillary elements are also exempt when the main service qualifies.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Private pay ABA therapy by a BCBA operating as an independent business: likely taxable
+                  Direct ABA therapy sessions: exempt (core service)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Consulting, training, or supervision services billed to another ABA provider: taxable
+                  Assessments and program development: exempt (part of the single supply)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  School-based ABA consulting or program development: taxable
+                  Clinical supervision of the therapy program: exempt (part of the single supply)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Corporate ABA training programs (workplace behavior, staff training): taxable
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Any service where the provider is NOT a regulated health practitioner under the specific CRA exemption definitions
+                  Additional fees for ancillary services within the program: exempt as part of the service consideration
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">If your services are taxable, you must register for HST once revenues exceed $30,000 and charge 13% on all invoices. The upside: you can fully claim ITCs on your practice expenses — equipment, software, professional development, rent, and contractor costs.</p>
+                <p className="text-sm text-gray-700">Practical implication: You do not need to split your invoice into &quot;exempt therapy&quot; and &quot;taxable supervision.&quot; The CRA treats it all as one supply — if the conditions are met for the therapy, the whole invoice is exempt.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Mixed-Supply Problem for Multi-Service ABA Practices</h2>
-              <p className="text-gray-700 leading-relaxed">Many Ontario ABA practices offer a mix of direct therapy, supervision, consultation, and training services. When a practice has both exempt and taxable supplies, the HST rules become significantly more complex.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Remains Taxable at 13% HST</h2>
+              <p className="text-gray-700 leading-relaxed">Not all services provided by an ABA practitioner are exempt. The exemption is specific to training for individuals with autism (or their personal caregivers). Other ABA-adjacent services fall outside the exemption.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  ITCs must be apportioned between exempt and taxable activities
+                  Professional consultation billed to another ABA provider or school board: taxable
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Common expenses (rent, admin staff, software) must be allocated by use
+                  Staff training and RBT supervision billed to an employer (not a client): taxable
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Input tax credit restrictions apply to expenses related to exempt supplies
+                  ABA services for conditions other than autism: taxable (GI-113 is autism-specific)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Mixed-use tracking requires careful bookkeeping from the start
+                  Corporate training or workplace behavior consulting: taxable
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
+                  Training provided to professional caregivers (as opposed to personal caregivers): taxable
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Documentation matters: If your practice delivers both exempt (e.g., supervised services under a regulated practitioner) and taxable (e.g., independent BCBA consultation) services, keeping detailed time and billing records by service type is essential for supporting your HST allocation.</p>
+                <p className="text-sm text-gray-700">Mixed practice: If your practice provides both exempt ABA services (for autism clients) and taxable services (staff training, consultation), you have a mixed-supply situation. You must apportion input tax credits between exempt and taxable activities. A CPA should set up this tracking from the start.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Adapt Business Solutions Does for ABA Practices on HST</h2>
-              <p className="text-gray-700 leading-relaxed">Given the complexity of HST for ABA services, our engagement with ABA practice owners on this issue includes a structured analysis specific to your practice model.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What This Means for HST Registration and Invoicing</h2>
+              <p className="text-gray-700 leading-relaxed">If all or most of your revenue is from exempt ABA therapy for autism, you may not need to register for HST at all — even if revenues exceed $30,000. Exempt suppliers do not charge HST, but they also cannot claim input tax credits on their business expenses.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Review your credential structure and determine which services likely qualify for exemption
+                  Primarily exempt revenue: likely no HST registration required; no HST charged to clients
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Analyze your OAP funding agreements for HST implications
+                  No ITCs available on expenses related to exempt supplies (equipment, software, rent proportionate to exempt services)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Register your practice for HST (if taxable) and set up invoice templates that comply with CRA requirements
+                  Mixed exempt and taxable revenue: register for HST, charge on taxable services only, apportion ITCs
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Implement bookkeeping categories that track exempt vs taxable revenue separately
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  File your HST returns accurately and manage ITC claims
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Represent you if CRA questions your HST treatment
+                  Invoices for exempt services: do not include HST — show $0 HST or note &quot;HST exempt under Schedule V&quot;
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">We have analyzed HST positions for ABA practices across a range of structures — solo BCBA, group practice, and multi-disciplinary clinics. We will give you a clear answer on your specific situation, not a generic response.</p>
+                <p className="text-sm text-gray-700">We handle HST position analysis for ABA practices across a range of structures — OAP-only, private pay only, and mixed. We determine whether registration is required, set up your invoicing correctly, and ensure your position is defensible if CRA ever reviews it.</p>
               </div>
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                HST compliance for ABA therapy services in Ontario requires careful analysis of your specific credentials, service types, client funding sources, and practice structure. Getting it wrong in either direction creates CRA risk — either unpaid HST liability or missed ITC claims. This is not an area to navigate alone. A CPA who understands ABA practice structures can give you a defensible HST position and implement the right systems from day one.
+                The CRA has specifically addressed ABA and autism therapy in GI-113 — and the answer is more favourable than most practitioners realize. Direct ABA therapy for autism is exempt from HST under three clear pathways, OAP funding automatically satisfies the government evidence pathway, and the entire service package (therapy, assessments, supervision) is treated as one exempt supply. Understanding this correctly saves your clients money and keeps your practice compliant.
               </p>
               <div className="bg-navy p-8 mt-10">
-                <h3 className="font-serif text-xl font-bold text-white mb-3">Not Sure About HST for Your ABA Practice?</h3>
+                <h3 className="font-serif text-xl font-bold text-white mb-3">Get Your ABA Practice HST Position Right</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Adapt Business Solutions provides HST analysis and compliance services specifically for Ontario ABA therapy practices. Book a consultation — we will review your service mix and give you a clear, defensible answer.
+                  Adapt Business Solutions analyzes HST for Ontario ABA practices — OAP-funded, private pay, and mixed. We give you a clear, defensible position and set up your invoicing correctly. Book a free consultation.
                 </p>
                 <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   Get a Free Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

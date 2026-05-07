@@ -5,13 +5,13 @@ import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Payroll for ABA Practices Ontario 2025: BCBAs, RBTs &amp; OAP Funding | Adapt Business Solutions',
-  description: 'Running payroll for your Ontario ABA practice? Learn how to handle BCBA and RBT payroll, the employee vs contractor question, OAP funding flow, and CRA remittance obligations.',
-  keywords: 'ABA practice payroll Ontario, RBT BCBA employee contractor Ontario, OAP funding payroll, behaviour analyst payroll CRA Ontario',
+  title: 'Payroll for ABA Practices Ontario 2025: BCBAs, RBTs &amp; OAP | Adapt Business Solutions',
+  description: 'Running payroll for your Ontario ABA practice? Learn the employee vs contractor rules for RBTs, how OAP funding flows, director liability risks, and CRA remittance obligations for behaviour analysts.',
+  keywords: 'ABA practice payroll Ontario, RBT BCBA employee contractor Ontario, OAP funding payroll CRA, behaviour analyst payroll compliance Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/payroll-aba-practice-ontario-bcba-rbt' },
   openGraph: {
-    title: 'Payroll for Ontario ABA Practices: BCBAs, RBTs, and Managing OAP Funding',
-    description: 'Running payroll for your Ontario ABA practice? Learn how to handle BCBA and RBT payroll, the employee vs contractor question, OAP funding flow, and CRA remittance obligations.',
+    title: 'Payroll for Ontario ABA Practices: BCBAs, RBTs, OAP Funding, and CRA Compliance',
+    description: 'Running payroll for your Ontario ABA practice? Learn the employee vs contractor rules for RBTs, how OAP funding flows, director liability risks, and CRA remittance obligations for behaviour analysts.',
     url: 'https://adaptbusinesssolutions.com/blog/payroll-aba-practice-ontario-bcba-rbt',
     type: 'article',
     publishedTime: '2026-05-07',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Payroll for Ontario ABA Practices: BCBAs, RBTs, and Managing OAP Funding',
-  description: 'Running payroll for your Ontario ABA practice? Learn how to handle BCBA and RBT payroll, the employee vs contractor question, OAP funding flow, and CRA remittance obligations.',
+  headline: 'Payroll for Ontario ABA Practices: BCBAs, RBTs, OAP Funding, and CRA Compliance',
+  description: 'Running payroll for your Ontario ABA practice? Learn the employee vs contractor rules for RBTs, how OAP funding flows, director liability risks, and CRA remittance obligations for behaviour analysts.',
   datePublished: '2026-05-07',
   dateModified: '2026-05-07',
   author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
@@ -41,9 +41,9 @@ export default function BlogPostPage() {
             <Link href="/blog" className="inline-flex items-center text-gold hover:text-gold-hover text-sm font-medium mb-6 transition-colors">
               <ArrowLeft className="h-4 w-4 mr-1" /> Back to Blog
             </Link>
-            <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 mb-4">Payroll</span>
+            <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 mb-4">ABA Practices</span>
             <h1 className="font-serif text-3xl lg:text-4xl font-bold mb-4 leading-tight">
-              Payroll for Ontario ABA Practices: BCBAs, RBTs, and Managing OAP Funding
+              Payroll for Ontario ABA Practices: BCBAs, RBTs, OAP Funding, and CRA Compliance
             </h1>
             <p className="text-navy-100 text-sm mt-4">Published 2026-05-07 &middot; 9 min read &middot; By Adapt Business Solutions CPA</p>
           </div>
@@ -59,72 +59,72 @@ export default function BlogPostPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                An ABA practice that grows beyond a solo practitioner quickly faces one of the most complicated payroll environments in the Ontario small business landscape. You may have full-time BCBAs on salary, part-time RBTs on hourly rates, contracted supervisors, and revenue streams split between OAP-funded hours and private pay clients. Each combination creates specific payroll, tax, and CRA remittance obligations. This guide walks through the core payroll decisions every Ontario ABA practice owner needs to understand.
+                An ABA practice that grows beyond a solo practitioner quickly faces one of the most complicated payroll environments in the Ontario small business landscape. You may have BCBAs on salary, part-time RBTs on hourly rates, contracted supervisors, and revenue split between OAP-funded and private pay clients. Each combination creates specific payroll, tax, and CRA obligations. This guide covers the decisions that matter most — and the risks that can hurt you if you get them wrong.
               </p>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Employee vs Contractor for RBTs and Behaviour Technicians</h2>
-              <p className="text-gray-700 leading-relaxed">The most consequential payroll decision in an ABA practice is how to classify your registered behaviour technicians (RBTs) and behaviour technicians. Many ABA practices default to contractor arrangements for flexibility and cost savings — but this classification carries significant CRA risk.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">The CRA&apos;s four-factor test (control, tools, chance of profit/loss, integration) frequently classifies ABA support workers as employees, not contractors — particularly when they work exclusively for your practice, follow your clinical protocols, serve your clients, and use your materials and data systems.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Employee vs Contractor for RBTs: The Highest-Risk Classification in ABA</h2>
+              <p className="text-gray-700 leading-relaxed">The most consequential payroll decision in an ABA practice is how to classify your registered behaviour technicians (RBTs) and behaviour technicians. Most ABA practices default to contractor arrangements for cost and scheduling flexibility — but this carries serious CRA risk.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">The CRA&apos;s four-factor test (control, tools, chance of profit/loss, integration) routinely classifies ABA support workers as employees — particularly when they work exclusively for one practice, follow clinical protocols set by that practice, serve that practice&apos;s clients, and use that practice&apos;s data systems and materials.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Control: you dictate session times, client assignments, and clinical approach → employee indicator
+                  Control: you assign sessions, set hours, and direct clinical approach → strong employee indicator
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Tools: you provide the materials, data system, and client programs → employee indicator
+                  Tools: you provide the data system, materials, and client programs → employee indicator
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Integration: their work is core to your service delivery, not an independent trade → employee indicator
+                  Integration: their work is core to your service, not an independent trade → employee indicator
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  If reclassified: you owe back CPP (employer and employee portions), EI (employer portion), and penalties
+                  If reclassified: you owe back CPP (both employer and employee portions), EI (employer portion), plus penalties and interest
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Director liability: If your ABA corporation is reclassified and owes back payroll source deductions, you as a director are personally liable for those amounts — plus interest and penalties. This is one of the most common and serious tax risks for ABA practice owners.</p>
+                <p className="text-sm text-gray-700">Director liability: As a director of your ABA professional corporation, you are personally liable for unremitted payroll source deductions if the corporation fails to pay them. This personal liability survives even if the corporation is wound down. It is one of the most serious financial risks for ABA practice owners.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">When Contractor Status Can Be Legitimate for ABA Staff</h2>
-              <p className="text-gray-700 leading-relaxed">There are genuine contractor arrangements in the ABA industry — but they require the worker to actually operate as an independent business. The following factors support legitimate contractor status.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">When Contractor Status Can Be Legitimate for ABA Practitioners</h2>
+              <p className="text-gray-700 leading-relaxed">There are genuine independent contractor arrangements in the ABA industry — but they require the worker to actually operate as an independent business. These factors support legitimate contractor status.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  The RBT or BCBA has their own business registration or operates through a corporation
+                  The BCBA or RBT has their own business registration, corporation, or HST number
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  They work for multiple ABA practices or clients simultaneously
+                  They work for multiple practices or clients simultaneously
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  They set their own hours and can accept or decline assignments
+                  They can accept or decline assignments and set their own schedule
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  They supply their own materials or operate within their own clinical frameworks
+                  They supply their own materials, data systems, or clinical frameworks
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  They bear financial risk — if a session is cancelled, they absorb the loss without a guaranteed rate
+                  They absorb financial risk — cancelled sessions are their loss, not yours
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Practical tip: If your contracted RBTs work exclusively for you, on your schedule, using your materials, with your clients — they are almost certainly employees in CRA&apos;s eyes regardless of your contract language. Convert them to employees proactively, rather than after a CRA audit.</p>
+                <p className="text-sm text-gray-700">Practical test: If a contracted RBT works exclusively for you, follows your protocols, uses your data system, and works on your schedule — they are almost certainly an employee in CRA&apos;s view regardless of what the contract says. Convert proactively rather than after a CRA audit.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Setting Up Payroll for Your ABA Practice</h2>
-              <p className="text-gray-700 leading-relaxed">Once you have determined which staff are employees, you need to set up a payroll system before the first pay run. This involves registering a payroll account with the CRA and implementing a system to calculate, withhold, and remit source deductions.</p>
+              <p className="text-gray-700 leading-relaxed">Once you have determined which staff are employees, you must set up payroll before the first pay run. For a CPBAO professional corporation, the payroll account is registered under the corporation&apos;s Business Number.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Register for a CRA payroll account (RP program account) before first payroll
+                  Register for a CRA payroll account (RP program account) before the first payroll
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Collect TD1 Personal Tax Credits Return from each employee at hire
+                  Collect a signed TD1 Personal Tax Credits Return from each employee at hire
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -132,84 +132,84 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Remit to CRA by the 15th of the following month (regular remitter)
+                  Remit source deductions by the 15th of the following month (regular remitter schedule)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Issue T4 slips to all employees by the last day of February
+                  Issue T4 slips to all employees and file T4 Summary with CRA by the last day of February
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">New hire paperwork: Beyond the TD1, ensure every ABA employee completes a Record of Employment (ROE) when they leave or have an interruption of earnings. Failure to issue ROEs within 5 days of the interruption is a CRA compliance issue.</p>
+                <p className="text-sm text-gray-700">Record of Employment: Issue an ROE within 5 calendar days of any interruption of earnings — departure, termination, or extended leave. Failure to issue ROEs on time is a separate CRA compliance issue that affects your employees&apos; EI eligibility.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How OAP Funding Flows Through Your Practice</h2>
-              <p className="text-gray-700 leading-relaxed">Ontario Autism Program (OAP) funding is paid directly to families, who then pay registered service providers for therapy hours. Understanding how OAP funding flows through your practice is important for both revenue recognition and payroll planning.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How OAP Funding Flows Through Your Incorporated Practice</h2>
+              <p className="text-gray-700 leading-relaxed">Ontario Autism Program (OAP) funding is directed to families, who pay registered ABA service providers for therapy hours. When your practice is incorporated, the corporation becomes the OAP-registered service provider — payments go to the corporate account.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  OAP funding goes to the family (or to your practice if you are an OAP-registered provider)
+                  Update your OAP service provider registration to reflect the corporation as the provider entity
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Invoice the family or the OAP portal for therapy hours at your approved rate
+                  Invoice families or the OAP portal under the corporation&apos;s name and HST/business number
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Revenue should be recorded when services are delivered, not when payment arrives
+                  OAP-funded sessions are corporate revenue — recognize it when services are delivered
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  OAP-funded hours paid to RBTs are employment income — full payroll obligations apply
+                  OAP-funded ABA therapy for autism qualifies for HST exemption (Pathway 3 of CRA GI-113)
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Keep OAP-funded sessions and private pay sessions tracked separately in your bookkeeping
+                  Hours worked by RBTs on OAP-funded sessions are still employment income if they are employees
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">OAP funding and HST: Invoices to families using OAP funds must be consistent with your HST position. If your services are taxable, families paying out of OAP funds receive an invoice with HST — which affects their effective hourly rate from funding. Discuss with your CPA before setting your rate structure.</p>
+                <p className="text-sm text-gray-700">Bookkeeping separation: Track OAP-funded revenue and private pay revenue in separate income categories. This is essential for HST apportionment (if you have mixed supplies), for OAP reporting, and for understanding the true profitability of each revenue stream.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Adapt Business Solutions Does for ABA Practice Payroll</h2>
-              <p className="text-gray-700 leading-relaxed">Payroll for a multi-therapist ABA practice has enough complexity that most practice owners benefit significantly from professional payroll management. Our ABA-specific payroll engagement includes:</p>
+              <p className="text-gray-700 leading-relaxed">Payroll for a multi-therapist ABA practice has enough complexity that most practice owners benefit significantly from professional management. Our ABA-specific payroll service includes:</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Initial setup: CRA payroll account registration, TD1 collection, pay schedule design
+                  Initial setup: CRA payroll account (RP) registration, TD1 collection, pay schedule design
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Classification review: analyze your RBT and BCBA arrangements against CRA criteria
+                  Classification review: analyze your RBT and BCBA arrangements against the CRA four-factor test
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Monthly payroll processing: calculate source deductions, prepare pay stubs, remit to CRA
+                  Monthly payroll: calculate source deductions, prepare pay stubs, remit to CRA on time
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  OAP tracking: separate bookkeeping for OAP-funded vs private pay revenue
+                  OAP tracking: separate bookkeeping for OAP-funded vs private pay revenue streams
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Year-end: T4 and T4A preparation for all employees and contractors
+                  Year-end: T4 preparation for employees and T4A for legitimate contractors
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  CRA representation: if your worker classification is ever questioned, we defend your position
+                  CRA defence: if your worker classification is questioned, we defend your position with documentation
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">We understand the ABA staffing model — the mix of full-time clinical supervisors, part-time therapists, and contracted specialists. You do not need to explain your billing structure to us. We have set this up before.</p>
+                <p className="text-sm text-gray-700">We understand the ABA staffing model — full-time clinical supervisors, part-time therapists, contracted specialists, and the OAP billing cycle. You do not need to explain your practice structure to us. We have built this for ABA owners before.</p>
               </div>
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Payroll is one of the highest-risk compliance areas for Ontario ABA practices — primarily because of the contractor vs employee classification issue with RBTs and behaviour technicians. Getting this right from the start protects you from personal director liability, CRA penalties, and the disruption of a payroll audit. The cost of professional payroll management is small compared to the risk of getting it wrong.
+                Payroll compliance is one of the highest-risk areas for Ontario ABA practices. The RBT contractor classification issue is the most common — and most costly — mistake. OAP funding adds bookkeeping complexity that most general accountants are not equipped to handle. And as a director of your professional corporation, the consequences of getting payroll wrong follow you personally. Get this right from the start.
               </p>
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Let Us Handle Payroll for Your ABA Practice</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Adapt Business Solutions manages payroll, CRA remittances, and T4 filing for Ontario ABA practices. We understand your workforce model and protect you from the contractor classification risks specific to the ABA industry. Book a free consultation.
+                  Adapt Business Solutions manages payroll, source deduction remittances, OAP revenue tracking, and T4 filing for Ontario ABA practices. We protect you from the contractor classification risks specific to your industry. Book a free consultation.
                 </p>
                 <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   Get a Free Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
