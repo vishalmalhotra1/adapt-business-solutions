@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
-import { Calendar, ArrowRight, Clock } from 'lucide-react'
+import { Calendar, ArrowRight, Clock, Brain } from 'lucide-react'
 import { autoBlogPosts } from '@/data/auto-blog-posts'
 import BlogAllPosts from '@/components/BlogAllPosts'
 import type { BlogPostEntry } from '@/components/BlogAllPosts'
@@ -346,6 +346,70 @@ export default function BlogPage() {
                   ))}
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ABA Practices Hub */}
+        <section className="py-16 bg-navy">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-3">
+              <Brain className="w-5 h-5 text-gold" />
+              <p className="text-gold text-sm font-semibold tracking-widest uppercase">Specialty Focus</p>
+            </div>
+            <h2 className="font-serif text-3xl font-bold text-white mb-2">ABA Practice Accounting</h2>
+            <p className="text-navy-100 text-base mb-10 max-w-2xl">
+              CPA guides written specifically for Ontario behaviour analysts, BCBA practice owners, and ABA therapy businesses — covering incorporation, HST, tax deductions, payroll, and OAP funding.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  id: 'incorporating-aba-practice-ontario-behaviour-analysts',
+                  title: 'Incorporating Your ABA Practice',
+                  excerpt: 'Why BCBAs can incorporate as standard Ontario corporations, the real tax savings, OAP funding implications, and what we do for ABA owners.',
+                  icon: '🏢',
+                  tag: 'Incorporation',
+                },
+                {
+                  id: 'hst-aba-therapy-services-ontario',
+                  title: 'HST & ABA Therapy Services',
+                  excerpt: 'Is your ABA revenue taxable at 13%? A plain-language analysis of when ABA services are exempt, when they are taxable, and how OAP funding affects your HST position.',
+                  icon: '📋',
+                  tag: 'HST & Tax',
+                },
+                {
+                  id: 'tax-deductions-aba-business-owners-ontario',
+                  title: 'Tax Deductions for ABA Owners',
+                  excerpt: 'Every legitimate deduction for ABA practice owners — clinical software, mileage for home visits, BACB fees, CE conferences, RBT costs, and home office strategies.',
+                  icon: '💰',
+                  tag: 'Tax Planning',
+                },
+                {
+                  id: 'payroll-aba-practice-ontario-bcba-rbt',
+                  title: 'Payroll: BCBAs, RBTs & OAP',
+                  excerpt: 'The employee vs contractor question for RBTs, OAP funding flow, CRA remittance obligations, and the director liability risk most ABA owners do not know about.',
+                  icon: '👥',
+                  tag: 'Payroll',
+                },
+              ].map(post => (
+                <Link key={post.id} href={`/blog/${post.id}`} className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-gold/50 p-6 transition-all flex flex-col">
+                  <span className="text-3xl mb-3">{post.icon}</span>
+                  <span className="inline-block bg-gold text-navy text-xs font-bold px-2 py-0.5 mb-3 self-start">{post.tag}</span>
+                  <h3 className="font-serif text-lg font-bold text-white mb-3 leading-snug group-hover:text-gold transition-colors">{post.title}</h3>
+                  <p className="text-navy-100 text-sm leading-relaxed flex-1">{post.excerpt}</p>
+                  <div className="flex items-center gap-1 text-gold text-sm font-semibold mt-4">
+                    Read Guide <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p className="text-navy-100 text-sm">
+                We are the CPA firm that understands your practice — OAP funding, BACB requirements, RBT payroll, and ABA-specific tax strategy.
+              </p>
+              <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors whitespace-nowrap group">
+                Book ABA Consultation <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
         </section>

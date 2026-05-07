@@ -30,5 +30,45 @@
     "category": "Payroll",
     "readTime": "6 min read",
     "date": "2026-05-07"
+  },
+  {
+    "id": "hst-registration-new-ontario-business",
+    "title": "HST Registration for New Ontario Businesses: What You Need to Know",
+    "excerpt": "HST registration is mandatory once you hit $30,000 in revenue — but voluntarily registering earlier can actually save you money. Here is everything a new Ontario business needs to know.",
+    "category": "HST & GST",
+    "readTime": "8 min read",
+    "date": "2026-05-07"
+  },
+  {
+    "id": "incorporating-aba-practice-ontario-behaviour-analysts",
+    "title": "Incorporating Your ABA Practice in Ontario: What Behaviour Analysts Need to Know",
+    "excerpt": "Running an ABA therapy practice as a sole proprietor in Ontario leaves significant tax savings on the table. Here is exactly what incorporating means for behaviour analysts — the benefits, the structure, and what Adapt Business Solutions does for ABA owners.",
+    "category": "ABA Practices",
+    "readTime": "9 min read",
+    "date": "2026-05-07"
+  },
+  {
+    "id": "hst-aba-therapy-services-ontario",
+    "title": "HST and ABA Therapy Services in Ontario: What Is Taxable and What Is Not",
+    "excerpt": "HST on ABA therapy is one of the most misunderstood tax issues for Ontario behaviour analysts. Getting it wrong — either charging HST when you should not, or not charging when you should — creates significant CRA liability. Here is how to get it right.",
+    "category": "ABA Practices",
+    "readTime": "8 min read",
+    "date": "2026-05-07"
+  },
+  {
+    "id": "tax-deductions-aba-business-owners-ontario",
+    "title": "Tax Deductions for Ontario ABA Business Owners: Every Legitimate Claim",
+    "excerpt": "ABA practice owners have a wide range of legitimate business deductions that most general accountants miss. This guide covers every major expense category specific to the ABA industry — so you never leave money on the table.",
+    "category": "ABA Practices",
+    "readTime": "8 min read",
+    "date": "2026-05-07"
+  },
+  {
+    "id": "payroll-aba-practice-ontario-bcba-rbt",
+    "title": "Payroll for Ontario ABA Practices: BCBAs, RBTs, and Managing OAP Funding",
+    "excerpt": "Payroll is one of the most operationally complex parts of running an ABA practice in Ontario — especially when you mix employees, contractors, OAP-funded hours, and private pay clients. Here is how to get it right.",
+    "category": "ABA Practices",
+    "readTime": "9 min read",
+    "date": "2026-05-07"
   }
 ]
