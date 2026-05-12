@@ -41,49 +41,21 @@ const painPoints = [
   },
 ]
 
-const services = [
-  {
-    name: 'CPBAO-Compliant Incorporation',
-    price: '$299 + gov fees',
-    description: 'Full CPBAO professional corporation setup — OBCA incorporation plus Certificate of Authorization support. Gov fees include ~$326 for filing + NUANS, plus the $350 CPBAO CoA application fee (separate). We handle every step.',
-    includes: [
-      'NUANS name search (CPBAO naming rules)',
-      'OBCA articles of incorporation',
-      'CPBAO-compliant share structure',
-      'Certificate of Authorization application support',
-      'CRA accounts: corporate tax, HST, payroll',
-      'OAP provider transition support',
-    ],
-    highlight: false,
-  },
-  {
-    name: 'Monthly Bookkeeping',
-    price: '$399 / month',
-    description: 'Month-end reconciliation, invoice tracking, expense categorization for ABA-specific deductions, HST filing, and clean records for your T2. Everything you need to stop worrying about the books.',
-    includes: [
-      'Monthly bank reconciliation',
-      'ABA-specific expense categorization',
-      'Invoice and receivables tracking',
-      'HST/GST filing',
-      'Payroll for RBTs and staff',
-      'Monthly financial summary',
-    ],
-    highlight: true,
-  },
-  {
-    name: 'Annual Tax',
-    price: 'From $299',
-    description: 'Corporate T2, personal T1, T1135 for foreign assets, and full CRA compliance — all filed by a licensed CPA Ontario. We file electronically and handle CRA correspondence.',
-    includes: [
-      'T2 corporate income tax return',
-      'T1 personal income tax return',
-      'T1135 foreign property (if applicable)',
-      'T4 / T5 slips for you and staff',
-      'EFILE-certified filing',
-      'CRA correspondence support',
-    ],
-    highlight: false,
-  },
+const incorporationIncludes = [
+  'NUANS name search (CPBAO naming rules)',
+  'OBCA articles of incorporation',
+  'CPBAO-compliant share structure (registrant-only)',
+  'Certificate of Authorization application support',
+  'CRA accounts: corporate tax (RC), HST (RT), payroll (RP)',
+  'OAP provider transition support',
+  'Corporate minute book',
+]
+
+const incorporationCosts = [
+  { label: 'Adapt professional fee', amount: '$299' },
+  { label: 'Ontario gov fees (NUANS + filing + CPR)', amount: '~$326' },
+  { label: 'CPBAO Certificate of Authorization', amount: '$350' },
+  { label: 'Total all-in (excl. insurance)', amount: '~$975' },
 ]
 
 const abaBlogPosts = [
@@ -135,7 +107,7 @@ const howItWorks = [
   {
     step: '03',
     title: 'Incorporate (if it makes sense)',
-    desc: 'We handle everything — NUANS, articles, minute book, CRA accounts. Done in days, not weeks. $299 + government fees.',
+    desc: 'We handle NUANS, OBCA articles, CPBAO Certificate of Authorization application, CRA accounts, and OAP transition. Done in days, not weeks. Our fee: $299 + gov &amp; CPBAO fees (~$975 all-in).',
   },
   {
     step: '04',
@@ -269,43 +241,90 @@ export default function ABAPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {services.map((service) => (
-                <div
-                  key={service.name}
-                  className={`flex flex-col p-8 border-t-4 ${service.highlight ? 'bg-navy text-white border-t-teal-400 shadow-xl' : 'bg-white border-t-gold shadow-sm'}`}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+              {/* Incorporation card — ABA-specific, full detail */}
+              <div className="bg-white border-t-4 border-t-teal-500 shadow-sm p-8 flex flex-col">
+                <span className="inline-block bg-teal-500 text-white text-xs font-bold px-3 py-1 mb-4 self-start">ABA-Specific</span>
+                <h3 className="font-serif text-2xl font-bold text-navy mb-1">CPBAO-Compliant Incorporation</h3>
+                <p className="text-3xl font-bold text-gold mb-1">$299 <span className="text-base font-normal text-gray-500">Adapt fee</span></p>
+                <p className="text-sm text-gray-500 mb-5">+ government &amp; CPBAO fees (see breakdown below)</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Full CPBAO professional corporation setup — OBCA incorporation, Certificate of Authorization application, CRA accounts, and OAP provider transition. We handle every step so nothing falls through.
+                </p>
+
+                {/* What&apos;s included */}
+                <h4 className="font-semibold text-navy text-sm mb-3">What&apos;s included:</h4>
+                <ul className="space-y-2 mb-7">
+                  {incorporationIncludes.map(item => (
+                    <li key={item} className="flex items-start gap-2 text-sm">
+                      <CheckCircle className="h-4 w-4 text-teal-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-600">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Cost breakdown */}
+                <h4 className="font-semibold text-navy text-sm mb-3">Total cost breakdown:</h4>
+                <div className="bg-gray-50 border border-gray-200 divide-y divide-gray-200 mb-7">
+                  {incorporationCosts.map((row, i) => (
+                    <div key={row.label} className={`flex justify-between items-center px-4 py-2.5 text-sm ${i === incorporationCosts.length - 1 ? 'bg-navy text-white font-bold' : ''}`}>
+                      <span className={i === incorporationCosts.length - 1 ? 'text-white' : 'text-gray-600'}>{row.label}</span>
+                      <span className={i === incorporationCosts.length - 1 ? 'text-gold' : 'font-semibold text-navy'}>{row.amount}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  href="https://calendly.com/accountant-brhd/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-400 text-white font-semibold py-3 px-6 transition-colors group mt-auto"
                 >
-                  {service.highlight && (
-                    <span className="inline-block bg-teal-400 text-navy text-xs font-bold px-3 py-1 mb-4 self-start">Most Popular</span>
-                  )}
-                  <h3 className={`font-serif text-xl font-bold mb-1 ${service.highlight ? 'text-white' : 'text-navy'}`}>
-                    {service.name}
-                  </h3>
-                  <p className={`text-2xl font-bold mb-4 ${service.highlight ? 'text-teal-400' : 'text-gold'}`}>
-                    {service.price}
+                  Book Incorporation Call
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+
+              {/* Ongoing services — link to pricing page */}
+              <div className="flex flex-col gap-6">
+                <div className="bg-navy text-white p-8">
+                  <h3 className="font-serif text-xl font-bold mb-2">Ongoing Bookkeeping &amp; Tax</h3>
+                  <p className="text-navy-100 text-sm leading-relaxed mb-6">
+                    After incorporation, we offer monthly bookkeeping packages and annual T2/T1 tax filing — all tailored to ABA practices (OAP revenue, RBT payroll, ABA-specific deductions). Pricing is based on your business size and the services you need.
                   </p>
-                  <p className={`text-sm leading-relaxed mb-6 flex-1 ${service.highlight ? 'text-navy-100' : 'text-gray-600'}`}>
-                    {service.description}
-                  </p>
-                  <ul className="space-y-2 mb-8">
-                    {service.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-sm">
-                        <CheckCircle className={`h-4 w-4 mt-0.5 flex-shrink-0 ${service.highlight ? 'text-teal-400' : 'text-gold'}`} />
-                        <span className={service.highlight ? 'text-navy-100' : 'text-gray-600'}>{item}</span>
+                  <ul className="space-y-2 mb-7 text-sm text-navy-100">
+                    {[
+                      'Monthly bookkeeping from $100/mo',
+                      'ABA-specific expense categorization',
+                      'RBT payroll &amp; OAP revenue tracking',
+                      'HST/GST filing',
+                      'Annual T2 corporate + T1 personal tax',
+                      'T4/T5 slips, CRA correspondence',
+                    ].map(item => (
+                      <li key={item} className="flex items-start gap-2">
+                        <CheckCircle className="h-4 w-4 text-teal-400 mt-0.5 flex-shrink-0" />
+                        <span dangerouslySetInnerHTML={{ __html: item }} />
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href="https://calendly.com/accountant-brhd/30min"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center justify-center font-semibold py-3 px-6 transition-colors group ${service.highlight ? 'bg-teal-500 hover:bg-teal-400 text-white' : 'bg-navy hover:bg-navy-light text-white'}`}
+                  <Link
+                    href="/pricing"
+                    className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold py-3 px-6 transition-colors group"
                   >
-                    Book a Call
+                    See Full Pricing &amp; Packages
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                  </Link>
                 </div>
-              ))}
+
+                <div className="bg-gold-50 border border-gold/30 p-6">
+                  <p className="font-semibold text-navy text-sm mb-2">Annual CPBAO renewal — we remind you</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Your corporation&apos;s Certificate of Authorization renews every year ($250). As an ongoing client, we track your renewal date and remind you before it lapses — because a lapsed CoA means your corporation cannot legally practice ABA in Ontario.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
