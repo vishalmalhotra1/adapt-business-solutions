@@ -18,9 +18,9 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://adaptbusinesssolutions.com'),
-  title: 'Adapt Accounting Services - CPA Services Ontario | Orangeville, Brampton, Mississauga',
-  description: 'Expert virtual CPA services for Ontario small businesses. Tax planning, bookkeeping, financial analysis and more across the GTA and beyond. Serving Orangeville, Brampton, Mississauga, Niagara and surrounding communities.',
-  keywords: 'CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Niagara, CPA services GTA, virtual accounting Ontario, small business accountant Ontario, corporate tax Ontario',
+  title: 'Adapt Accounting Services — CPA for ABA Practitioners & Ontario Businesses',
+  description: 'CPA services for ABA practitioners, small business owners, and Ontario professionals. Incorporate for $299 + gov fees. Bookkeeping, T1/T2 tax, CPBAO compliance, OAP payroll. Virtual, Canada-wide.',
+  keywords: 'CPA for ABA practitioners, BCBA incorporation Canada, behavior analyst CPA, CPBAO compliance, ABA tax strategy, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, professional corporation Ontario, incorporate Ontario $299',
   authors: [{ name: 'Adapt Accounting Services' }],
   creator: 'Adapt Accounting Services',
   publisher: 'Adapt Accounting Services',
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_CA',
     url: 'https://adaptbusinesssolutions.com',
-    title: 'Adapt Accounting Services - Professional CPA Services Ontario',
-    description: 'Expert virtual CPA services for Ontario businesses. Serving Orangeville, Brampton, Mississauga, Niagara and beyond with competitive, professional accounting.',
+    title: 'Adapt Accounting Services — CPA for ABA Practitioners & Ontario Businesses',
+    description: 'CPA for ABA practitioners, small business owners, and Ontario professionals. Incorporate for $299. Bookkeeping, tax, CPBAO compliance, virtual Canada-wide.',
     siteName: 'Adapt Accounting Services',
     images: [
       {
@@ -88,7 +88,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AccountingService",
               "name": "Adapt Accounting Services",
-              "description": "Professional CPA and accounting services in Orangeville, Brampton, Mississauga, and Niagara Region. Virtual bookkeeping, tax preparation, financial analysis, and business consulting.",
+              "description": "CPA services specializing in ABA practitioners, behavior analysts, and Ontario small businesses. Virtual bookkeeping, incorporation, tax preparation, CPBAO compliance, and OAP payroll. Serving Canada-wide.",
               "url": "https://adaptbusinesssolutions.com",
               "telephone": "+1-437-772-9598",
               "email": "accountant@adaptbusinesssolutions.com",

@@ -103,12 +103,14 @@ export default function Footer() {
               </p>
             </div>
             <div className="mt-5 flex flex-col gap-4">
-              <Link
-                href="/pricing"
+              <a
+                href="https://calendly.com/accountant-brhd/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold text-sm px-5 py-2.5 transition-colors"
               >
                 Book Consultation
-              </Link>
+              </a>
               <Image
                 src="/images/cpa-ontario-logo.png"
                 alt="CPA Ontario Registered Firm"

@@ -3,14 +3,17 @@ import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import About from '@/components/About'
+import ABACallout from '@/components/ABACallout'
 import Locations from '@/components/Locations'
+import BlogPreview from '@/components/BlogPreview'
+import GoogleReviews from '@/components/GoogleReviews'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Adapt Accounting Services — Incorporate in Ontario $299 | CPA Services Ontario',
-  description: 'CPA incorporation services in Ontario for $299 + government fees. Also: bookkeeping, T1/T2 tax, T1135 cross-border, and payroll. Serving Orangeville, Brampton, Mississauga, GTA and all of Ontario.',
-  keywords: 'incorporate in Ontario, CPA incorporation Ontario, incorporation services Ontario, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, tax preparation Ontario, T1135 cross-border tax, professional corporation Ontario, PREC Ontario',
+  title: 'Adapt Accounting Services — CPA for ABA Practitioners & Ontario Businesses | Incorporate $299',
+  description: 'CPA services for ABA practitioners, small business owners, and Ontario professionals. Incorporate for $299 + gov fees. Bookkeeping, T1/T2 tax, CPBAO compliance, OAP payroll. Virtual, Canada-wide.',
+  keywords: 'CPA for ABA practitioners, BCBA incorporation Canada, ABA accountant Ontario, incorporate in Ontario, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, professional corporation Ontario, CPBAO compliance',
   openGraph: {
     title: 'Adapt Accounting Services — Professional CPA Services Ontario',
     description: 'Expert virtual CPA services for Ontario businesses. Tax planning, bookkeeping, financial consulting. Serving the GTA and surrounding communities.',
@@ -50,7 +53,10 @@ export default function HomePage() {
 
         <Services />
         <About />
+        <ABACallout />
         <Locations />
+        <BlogPreview />
+        <GoogleReviews />
 
         {/* CTA Banner */}
         <section className="bg-navy py-20">
@@ -62,12 +68,14 @@ export default function HomePage() {
               Incorporate your Ontario business for $299 + government fees, or join over 30 business owners who trust Adapt Accounting Services for bookkeeping, tax, and financial strategy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/services/incorporation"
+              <a
+                href="https://calendly.com/accountant-brhd/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors"
               >
-                Incorporate — $299 + Gov Fees
-              </Link>
+                Book Free Consultation
+              </a>
               <a
                 href="tel:437-772-9598"
                 className="inline-block border-2 border-white text-white hover:bg-white hover:text-navy font-semibold px-8 py-4 transition-colors"

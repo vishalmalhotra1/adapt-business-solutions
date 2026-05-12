@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const serviceLinks = [
+  { name: '⭐ ABA Practitioners', href: '/services/aba-practitioners' },
   { name: 'Incorporation — $299 + Gov Fees', href: '/services/incorporation' },
   { name: 'Bookkeeping & Compilations', href: '/services/bookkeeping-compilations' },
   { name: 'Tax Preparation & Planning', href: '/services/tax-preparation' },
@@ -154,12 +155,14 @@ export default function Navigation() {
                 About
               </Link>
 
-              <Link
-                href="/pricing"
+              <a
+                href="https://calendly.com/accountant-brhd/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gold hover:bg-gold-hover text-navy font-semibold px-5 py-2 text-sm transition-colors"
               >
                 Book Consultation
-              </Link>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -258,13 +261,15 @@ export default function Navigation() {
           </Link>
 
           <div className="pt-4">
-            <Link
-              href="/pricing"
+            <a
+              href="https://calendly.com/accountant-brhd/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full bg-gold hover:bg-gold-hover text-navy font-semibold py-3 text-center text-sm transition-colors"
               onClick={closeAll}
             >
               Book Consultation
-            </Link>
+            </a>
           </div>
 
           <div className="pt-6 space-y-2 text-xs text-navy-100">

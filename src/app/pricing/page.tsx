@@ -5,6 +5,7 @@ import { CheckCircle, ArrowRight, Info } from 'lucide-react'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import CalendlyEmbed from '@/components/CalendlyEmbed'
 
 const serviceTiers = {
   foundation: {
@@ -252,13 +253,15 @@ export default function PricingPage() {
                       <p className="text-navy-100 text-xs mt-2">*Final pricing confirmed at consultation</p>
                     </div>
                     <div className="space-y-3">
-                      <Link
-                        href={`/contact?price=${estimatedPrice}&tier=${encodeURIComponent(selectedTier)}&size=${encodeURIComponent(businessSize)}&services=${encodeURIComponent(Object.entries(selectedServices).filter(([, s]) => s).map(([k]) => k).join(', '))}`}
+                      <a
+                        href="https://calendly.com/accountant-brhd/30min"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-full bg-gold hover:bg-gold-hover text-navy font-semibold py-4 flex items-center justify-center gap-2 transition-colors group"
                       >
-                        Get Detailed Quote
+                        Book Free Consultation
                         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Link>
+                      </a>
                       <a
                         href="tel:437-772-9598"
                         className="w-full border-2 border-white text-white hover:bg-white hover:text-navy font-semibold py-3 flex items-center justify-center transition-colors text-sm"
@@ -337,6 +340,22 @@ export default function PricingPage() {
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Calendly Section */}
+        <section className="py-20 bg-navy">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Free Consultation</p>
+              <h2 className="font-serif text-3xl font-bold text-white mb-4">
+                Book Your Free 30-Minute Consultation
+              </h2>
+              <p className="text-navy-100 max-w-xl mx-auto">
+                We&apos;ll review your situation, confirm your pricing, and answer any questions. No obligation.
+              </p>
+            </div>
+            <CalendlyEmbed height={650} />
           </div>
         </section>
 
