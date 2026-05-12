@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, AlertCircle, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'CPA for ABA Practitioners in Canada — Incorporation & Tax Strategy | Adapt',
-  description: 'Expert CPA services for behavior analysts. Professional corporation incorporation, CPBAO compliance, ABA tax deductions, OAP payroll. $299 incorporation. Virtual, Canada-wide.',
+  description: 'Expert CPA services for behavior analysts. CPBAO-compliant professional corporation, Certificate of Authorization support, ABA tax deductions, OAP payroll. Virtual, Canada-wide.',
   keywords: 'ABA practitioner CPA, BCBA incorporation Canada, behavior analyst accounting, CPBAO compliance, Ontario ABA tax, RBT payroll, OAP funding accounting, professional corporation BCBA',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/aba-practitioners' },
   openGraph: {
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 const painPoints = [
   {
     question: 'Should I incorporate as a Professional Corporation?',
-    answer: 'Probably yes — but the threshold depends on your income. Most BCBAs earning $80K+ save thousands annually by incorporating. The PC structure lets you control when you pay personal tax, split income, and defer taxes inside the corporation.',
+    answer: 'Probably yes — but the threshold depends on your income. Most BCBAs earning $80K+ save thousands annually through tax deferral. Income left inside the corporation is taxed at ~12.2% vs. your personal marginal rate of up to 53.5%. Note: unlike general corporations, ABA professional corporations cannot split income with a non-registrant spouse — all shareholders must be CPBAO registrants.',
   },
   {
-    question: 'What exactly is CPBAO compliance?',
-    answer: 'CPBAO (College of Psychologists and Behaviour Analysts of Ontario) regulates who can call themselves a behaviour analyst. For tax purposes, it means your practice structure must respect professional regulations — but it doesn\'t prevent incorporation the way medical PCs do.',
+    question: 'What exactly is CPBAO compliance for a professional corporation?',
+    answer: 'CPBAO-registered behaviour analysts who want to practice through a corporation must obtain a Certificate of Authorization from CPBAO ($350 initial, $250/year renewal) — on top of Ontario incorporation. All shareholders, officers, and directors must be current CPBAO registrants. Non-registrant spouses cannot hold shares. The corporation name must follow strict CPBAO naming rules (surname + "Applied Behaviour Analysis Professional Corporation"). These rules are similar to physician and dentist PCs. Getting the structure wrong puts your Certificate of Authorization at risk.',
   },
   {
     question: 'Am I classified correctly by CRA — self-employed or employed?',
@@ -43,16 +43,16 @@ const painPoints = [
 
 const services = [
   {
-    name: 'PC Incorporation',
+    name: 'CPBAO-Compliant Incorporation',
     price: '$299 + gov fees',
-    description: 'We handle your Ontario incorporation from start to finish. Articles of incorporation, minute book, CRA Business Number, HST/payroll accounts, and guidance on share structure for ABA practices.',
+    description: 'Full CPBAO professional corporation setup — OBCA incorporation plus Certificate of Authorization support. Gov fees include ~$326 for filing + NUANS, plus the $350 CPBAO CoA application fee (separate). We handle every step.',
     includes: [
-      'NUANS name search',
-      'Articles of incorporation',
-      'Corporate minute book',
-      'CRA Business Number (BN)',
-      'HST & payroll account setup',
-      'Share structure consultation',
+      'NUANS name search (CPBAO naming rules)',
+      'OBCA articles of incorporation',
+      'CPBAO-compliant share structure',
+      'Certificate of Authorization application support',
+      'CRA accounts: corporate tax, HST, payroll',
+      'OAP provider transition support',
     ],
     highlight: false,
   },
