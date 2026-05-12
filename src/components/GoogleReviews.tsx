@@ -76,7 +76,7 @@ export default function GoogleReviews() {
             <span className="text-gray-500 text-sm">· 8 reviews on Google</span>
           </div>
           <a
-            href="https://www.google.com/maps/search/Adapt+Accounting+Services+Orangeville+ON"
+            href="https://share.google/97D3wcC2GXMyTj4nI"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gold hover:text-gold-hover font-semibold transition-colors"
@@ -110,7 +110,7 @@ export default function GoogleReviews() {
 
         <div className="text-center mt-10">
           <a
-            href="https://www.google.com/maps/search/Adapt+Accounting+Services+Orangeville+ON"
+            href="https://share.google/97D3wcC2GXMyTj4nI"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-navy text-navy hover:bg-navy hover:text-white font-semibold px-6 py-3 transition-colors text-sm"
