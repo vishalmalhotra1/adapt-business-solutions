@@ -191,9 +191,9 @@ export default function BlogPostPage() {
                 <p className="text-navy-100 text-sm mb-6">
                   Adapt Business Solutions analyzes HST for Ontario ABA practices — OAP-funded, private pay, and mixed. We give you a clear, defensible position and set up your invoicing correctly. Book a free consultation.
                 </p>
-                <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
-                  Get a Free Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                <a href="https://calendly.com/accountant-brhd/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
+                  Book Free Consultation <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </div>
             </div>
           </div>
