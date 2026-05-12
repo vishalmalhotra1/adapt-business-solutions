@@ -184,7 +184,7 @@ export default function ABAPage() {
                 </a>
               </div>
               <div className="mt-12 pt-8 border-t border-white/10 flex flex-wrap gap-8 text-sm text-navy-100">
-                <div><span className="text-gold font-semibold">Vishal Devgun</span><span className="ml-2">CPA Ontario · Rep ID V64F78X</span></div>
+                <div><span className="text-gold font-semibold">Vishal Malhotra</span><span className="ml-2">CPA Ontario · Rep ID V64F78X</span></div>
                 <div><span className="text-gold font-semibold">EFILE</span><span className="ml-2">Certified</span></div>
                 <div><span className="text-gold font-semibold">Virtual</span><span className="ml-2">Canada-Wide</span></div>
                 <div><span className="text-gold font-semibold">$299</span><span className="ml-2">Incorporation</span></div>
@@ -399,7 +399,7 @@ export default function ABAPage() {
               <div className="md:col-span-2">
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Your CPA</p>
                 <h2 className="font-serif text-2xl font-bold text-navy mb-4">
-                  Vishal Devgun, CPA Ontario
+                  Vishal Malhotra, CPA Ontario
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   CPA Ontario · Rep ID V64F78X · EFILE Certified · Master&apos;s in Data Analytics

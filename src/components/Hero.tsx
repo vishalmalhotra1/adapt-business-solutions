@@ -27,7 +27,7 @@ export default function Hero() {
             Cheap incorporation. Clear taxes. No surprises. Virtual CPA services for ABA practitioners, small business owners, contractors, and healthcare professionals across Canada.
           </p>
           <p className="text-gold font-semibold mb-10">
-            Incorporation from $299 + gov fees · Bookkeeping from $399/mo · Virtual Canada-Wide
+            Incorporation from $299 + gov fees · Bookkeeping from $100/mo · Virtual Canada-Wide
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

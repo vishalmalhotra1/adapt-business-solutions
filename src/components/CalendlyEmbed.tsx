@@ -14,7 +14,7 @@ export default function CalendlyEmbed({ className = '', height = 650 }: Calendly
         height={height}
         frameBorder="0"
         style={{ borderRadius: '8px', display: 'block' }}
-        title="Book a free CPA consultation with Vishal Devgun, CPA Ontario"
+        title="Book a free CPA consultation with Vishal Malhotra, CPA Ontario"
         loading="lazy"
       />
     </div>
