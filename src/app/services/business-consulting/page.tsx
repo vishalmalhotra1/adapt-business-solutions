@@ -41,10 +41,10 @@ export default function BusinessConsultingPage() {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-white">
+      <div id="main-content" className="min-h-screen bg-white">
 
         {/* Hero */}
-        <section className="hero-pattern pt-16 text-white py-20">
+        <section className="hero-pattern pt-20 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="bg-gold bg-opacity-20 w-16 h-16 flex items-center justify-center mx-auto mb-6">
               <PieChart className="h-8 w-8 text-gold" />

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Small Business Tax Deductions in Ontario: The Complete 2025 Guide | Adapt Accounting Services',
-  description: 'A comprehensive guide to every major tax deduction available to Ontario small business owners in 2025 — home office, vehicle, meals, equipment, professional fees, and more.',
+  description: 'A comprehensive guide to every major tax deduction available to Ontario small business owners in 2025, home office, vehicle, meals, equipment, professional fees, and more.',
   keywords: 'Ontario small business tax deductions 2025, home office deduction Canada, vehicle expense CRA, CCA deductions Ontario, HST input tax credits',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/ontario-small-business-tax-deductions-2025' },
   openGraph: {
     title: 'Small Business Tax Deductions in Ontario: The Complete 2025 Guide',
-    description: 'Every major deduction available to Ontario small business owners — maximize your refund and stay CRA-compliant.',
+    description: 'Every major deduction available to Ontario small business owners, maximize your refund and stay CRA-compliant.',
     url: 'https://adaptbusinesssolutions.com/blog/ontario-small-business-tax-deductions-2025',
     type: 'article',
   },
@@ -47,7 +47,7 @@ export default function OntarioTaxDeductionsPage() {
               Small Business Tax Deductions in Ontario: The Complete 2025 Guide
             </h1>
             <p className="text-navy-100 text-lg">
-              A comprehensive walkthrough of every major deduction available to Ontario small business owners — from home office to vehicle expenses, meals, and professional fees.
+              A comprehensive walkthrough of every major deduction available to Ontario small business owners, from home office to vehicle expenses, meals, and professional fees.
             </p>
             <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 10 min read · By Adapt Accounting Services CPA</p>
           </div>
@@ -68,7 +68,7 @@ export default function OntarioTaxDeductionsPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                As a small business owner in Ontario, understanding which expenses you can deduct from your taxable income is one of the most powerful tools you have to reduce your tax bill. The CRA allows businesses to deduct &quot;reasonable expenses incurred to earn business income&quot; — but the details matter significantly. This guide covers the major deduction categories for 2025.
+                As a small business owner in Ontario, understanding which expenses you can deduct from your taxable income is one of the most powerful tools you have to reduce your tax bill. The CRA allows businesses to deduct &quot;reasonable expenses incurred to earn business income&quot;, but the details matter significantly. This guide covers the major deduction categories for 2025.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">1. Home Office Deduction</h2>
@@ -84,7 +84,7 @@ export default function OntarioTaxDeductionsPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">2. Vehicle and Travel Expenses</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Vehicle expenses are one of the most significant deductions for many Ontario business owners — and one of the most commonly audited. You can deduct the business-use portion of your vehicle expenses.
+                Vehicle expenses are one of the most significant deductions for many Ontario business owners, and one of the most commonly audited. You can deduct the business-use portion of your vehicle expenses.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Eligible expenses include: fuel and oil, insurance, maintenance and repairs, license and registration, and capital cost allowance (CCA) on the vehicle&apos;s purchase price.
@@ -103,7 +103,7 @@ export default function OntarioTaxDeductionsPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">4. Equipment and Capital Cost Allowance (CCA)</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                When you purchase equipment for your business — computers, tools, machinery, furniture — you typically cannot deduct the full cost in the year of purchase. Instead, you claim CCA (depreciation) over the useful life of the asset according to CRA classes.
+                When you purchase equipment for your business, computers, tools, machinery, furniture, you typically cannot deduct the full cost in the year of purchase. Instead, you claim CCA (depreciation) over the useful life of the asset according to CRA classes.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Common CCA classes for Ontario small businesses include: Class 10 (30% declining balance) for vehicles, Class 8 (20%) for general equipment, and Class 50 (55%) for computers. The Immediate Expensing Incentive allows certain eligible businesses to deduct up to $1.5 million in eligible property in the year of acquisition.
@@ -114,7 +114,7 @@ export default function OntarioTaxDeductionsPage() {
                 Fees paid to accountants, lawyers, consultants, and other professionals for business purposes are fully deductible. This includes your accounting and bookkeeping fees, legal fees for business matters, and consulting fees.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Business-related subscriptions — industry publications, software subscriptions (QuickBooks, accounting tools), and professional memberships — are also deductible.
+                Business-related subscriptions, industry publications, software subscriptions (QuickBooks, accounting tools), and professional memberships, are also deductible.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">6. Advertising and Marketing</h2>
@@ -135,7 +135,7 @@ export default function OntarioTaxDeductionsPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">8. Salaries, Wages, and Benefits</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                If you employ staff, their wages, salaries, bonuses, and employee benefits are fully deductible as business expenses. This includes your employer contributions to CPP and EI. If you pay yourself as a sole proprietor, you cannot deduct a salary — your business profit is your income.
+                If you employ staff, their wages, salaries, bonuses, and employee benefits are fully deductible as business expenses. This includes your employer contributions to CPP and EI. If you pay yourself as a sole proprietor, you cannot deduct a salary, your business profit is your income.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">9. Insurance Premiums</h2>
@@ -154,9 +154,9 @@ export default function OntarioTaxDeductionsPage() {
               <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Maximize every deduction with a CPA</li>
-                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Organized records for audit-proof filings</li>
-                  <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link> — Understand your true profit after deductions</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link>, Maximize every deduction with a CPA</li>
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link>, Organized records for audit-proof filings</li>
+                  <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link>, Understand your true profit after deductions</li>
                 </ul>
               </div>
 

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Accounting Services or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Accounting Services or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">The CRA sends installment reminders in February and August each year. Receiving a reminder means you likely owe installments — but you are not required to use the CRA&apos;s suggested amounts.</p>
+                <p className="text-sm text-gray-700">The CRA sends installment reminders in February and August each year. Receiving a reminder means you likely owe installments, but you are not required to use the CRA&apos;s suggested amounts.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Four Installment Due Dates</h2>
@@ -133,7 +133,7 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Three Methods to Calculate Your Installments</h2>
-              <p className="text-gray-700 leading-relaxed">The CRA gives you three calculation methods. You are free to use whichever results in the lowest required payment — as long as you avoid interest.</p>
+              <p className="text-gray-700 leading-relaxed">The CRA gives you three calculation methods. You are free to use whichever results in the lowest required payment, as long as you avoid interest.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -149,7 +149,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Best strategy: if your income is declining year-over-year, use the current-year method to pay less. If income is rising, use the prior-year or no-calculation method — you will owe a balance at April 30 but avoid installment interest.</p>
+                <p className="text-sm text-gray-700">Best strategy: if your income is declining year-over-year, use the current-year method to pay less. If income is rising, use the prior-year or no-calculation method, you will owe a balance at April 30 but avoid installment interest.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Installment Interest and Penalties</h2>
@@ -195,8 +195,8 @@ export default function BlogPostPage() {
               <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — CRA instalment planning tailored to your income</li>
-                  <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link> — Cash flow forecasting so instalments never catch you off guard</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link>, CRA instalment planning tailored to your income</li>
+                  <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link>, Cash flow forecasting so instalments never catch you off guard</li>
                 </ul>
               </div>
 

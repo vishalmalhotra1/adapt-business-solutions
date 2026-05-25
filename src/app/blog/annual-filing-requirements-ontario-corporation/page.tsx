@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Annual Filing Requirements for Ontario Corporations | Adapt Accounting',
-  description: 'Complete list of annual filing obligations for Ontario corporations — T2 corporate tax return, annual return to ServiceOntario, HST, payroll, and minute book requirements.',
+  description: 'Complete list of annual filing obligations for Ontario corporations, T2 corporate tax return, annual return to ServiceOntario, HST, payroll, and minute book requirements.',
   keywords: 'annual return Ontario corporation, Ontario corporation annual filing requirements, T2 filing deadline Ontario, annual return ServiceOntario cost, corporation compliance Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/annual-filing-requirements-ontario-corporation' },
   openGraph: {
     title: 'Annual Filing Requirements for Ontario Corporations',
-    description: 'Complete annual compliance checklist for Ontario corporations — T2, annual return, HST, payroll, and more.',
+    description: 'Complete annual compliance checklist for Ontario corporations, T2, annual return, HST, payroll, and more.',
     url: 'https://adaptbusinesssolutions.com/blog/annual-filing-requirements-ontario-corporation',
     type: 'article',
   },
@@ -21,7 +21,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Annual Filing Requirements for Ontario Corporations',
-  description: 'Annual compliance checklist for Ontario corporations — T2, annual return, HST, and minute book requirements.',
+  description: 'Annual compliance checklist for Ontario corporations, T2, annual return, HST, and minute book requirements.',
   datePublished: '2026-05-06',
   dateModified: '2026-05-06',
   author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
@@ -67,10 +67,10 @@ const filings = [
   },
   {
     title: 'Minute Book Update (not a CRA filing)',
-    deadline: 'Annually — no statutory deadline but best practice',
+    deadline: 'Annually, no statutory deadline but best practice',
     cost: '$200–$500 if CPA-assisted',
     detail: 'Your corporate minute book must reflect annual meetings (at least one annual meeting of shareholders is required under the OBCA), director resolutions, and any changes to directors or officers.',
-    penalty: 'No CRA penalty — but outdated minute books create problems on sale or audit',
+    penalty: 'No CRA penalty, but outdated minute books create problems on sale or audit',
   },
 ]
 
@@ -97,7 +97,7 @@ export default function AnnualFilingsPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Incorporating is step one. Staying compliant is an ongoing responsibility. Many new corporation owners are surprised to learn that a T2 is not the only annual obligation — here&apos;s everything your corporation needs to do each year.
+                Incorporating is step one. Staying compliant is an ongoing responsibility. Many new corporation owners are surprised to learn that a T2 is not the only annual obligation, here&apos;s everything your corporation needs to do each year.
               </p>
 
               <div className="space-y-6 mb-10">
@@ -133,9 +133,9 @@ export default function AnnualFilingsPage() {
               </p>
               <ul className="space-y-2 mb-8">
                 {[
-                  'December 31 — aligns with personal tax year, simplifies salary/dividend planning',
-                  'March 31 or June 30 — spreads CPA workload away from personal tax season (T1 season is Feb–April)',
-                  'Anniversary of incorporation — some choose this for simplicity',
+                  'December 31, aligns with personal tax year, simplifies salary/dividend planning',
+                  'March 31 or June 30, spreads CPA workload away from personal tax season (T1 season is Feb–April)',
+                  'Anniversary of incorporation, some choose this for simplicity',
                 ].map(item => (
                   <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
                     <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -146,7 +146,7 @@ export default function AnnualFilingsPage() {
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">We Handle All of This For You</h3>
-                <p className="text-navy-100 text-sm mb-6">Our service packages include T2 preparation, T4/T5 filings, HST returns, and annual compliance — so you never miss a deadline.</p>
+                <p className="text-navy-100 text-sm mb-6">Our service packages include T2 preparation, T4/T5 filings, HST returns, and annual compliance, so you never miss a deadline.</p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                     View Service Packages <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

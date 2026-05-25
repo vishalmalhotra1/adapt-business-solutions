@@ -1,16 +1,16 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle, ArrowRight, Building2, FileText, Clock, DollarSign, Shield, Users } from 'lucide-react'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Incorporate in Ontario — $299 + Gov Fees | Adapt Accounting Services CPA',
+  title: 'Incorporate in Ontario, $299 + Gov Fees | Adapt Accounting Services CPA',
   description: 'Incorporate your Ontario business for $299 + government fees. Real CPA, not a search house. Includes articles of incorporation, minute book setup, and CRA account registration. Named or numbered corporation.',
-  keywords: 'incorporate in Ontario, Ontario incorporation cost, incorporation services Ontario, incorporate a business Canada, online incorporation Ontario, cheap incorporation Ontario, CPA incorporation Ontario, incorporate small business Canada',
+  keywords: 'incorporate in Ontario, Ontario incorporation cost, incorporation services Ontario, incorporate a business Canada, online incorporation Ontario, affordable incorporation Ontario, CPA incorporation Ontario, incorporate small business Canada',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/incorporation' },
   openGraph: {
-    title: 'Incorporate Your Ontario Business — $299 + Government Fees',
+    title: 'Incorporate Your Ontario Business, $299 + Government Fees',
     description: 'Real CPA incorporation service. Articles of incorporation, minute book, CRA Business Number setup. Named or numbered corporation. Serving all of Ontario.',
     url: 'https://adaptbusinesssolutions.com/services/incorporation',
     type: 'website',
@@ -86,7 +86,7 @@ const faqJsonLd = {
       name: 'Can a CPA incorporate my business?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. CPAs regularly handle business incorporations in Ontario. Unlike online search houses, a CPA also advises on share structure, tax implications, and sets you up for ongoing compliance — not just the filing.',
+        text: 'Yes. CPAs regularly handle business incorporations in Ontario. Unlike online search houses, a CPA also advises on share structure, tax implications, and sets you up for ongoing compliance, not just the filing.',
       },
     },
   ],
@@ -98,11 +98,11 @@ const included = [
   { icon: Shield, title: 'Minute Book Setup', desc: 'Share certificates, organizational resolutions, director and officer records.' },
   { icon: Users, title: 'CRA Business Number', desc: 'Corporate account registration with CRA, including HST (if applicable).' },
   { icon: Clock, title: 'Share Structure Design', desc: 'Guidance on share classes for income splitting and future flexibility.' },
-  { icon: DollarSign, title: 'Ongoing CPA Relationship', desc: 'Direct access to your CPA for T2, bookkeeping, and tax planning — not a ticket queue.' },
+  { icon: DollarSign, title: 'Ongoing CPA Relationship', desc: 'Direct access to your CPA for T2, bookkeeping, and tax planning, not a ticket queue.' },
 ]
 
 const steps = [
-  { num: '01', title: 'Book a Free Call', desc: 'We discuss your situation — named vs numbered, federal vs provincial, share structure, and whether incorporation makes financial sense for your income level.' },
+  { num: '01', title: 'Book a Free Call', desc: 'We discuss your situation, named vs numbered, federal vs provincial, share structure, and whether incorporation makes financial sense for your income level.' },
   { num: '02', title: 'We Prepare the Documents', desc: 'We prepare your Articles of Incorporation, conduct the NUANS search (if needed), and design a share structure tailored to your goals.' },
   { num: '03', title: 'Government Filing', desc: 'We file with ServiceOntario or Corporations Canada on your behalf. Processing typically takes 5–10 business days.' },
   { num: '04', title: 'Post-Incorporation Setup', desc: 'We set up your minute book, issue share certificates, register your CRA Business Number, and help you open a corporate bank account.' },
@@ -117,12 +117,12 @@ const costs = [
 ]
 
 const differentiation = [
-  'Real CPA — not a search house or document mill',
+  'Real CPA, not a search house or document mill',
   'Transparent pricing with government fees broken out',
   'Share structure advice included (most online services skip this)',
-  'Pathway to T2, bookkeeping, and payroll — one relationship',
+  'Pathway to T2, bookkeeping, and payroll, one relationship',
   'Cross-border and professional corporation expertise',
-  'CRA Rep ID V64F78X — authorized to represent you at CRA',
+  'CRA Rep ID V64F78X, authorized to represent you at CRA',
 ]
 
 export default function IncorporationPage() {
@@ -131,10 +131,10 @@ export default function IncorporationPage() {
       <Navigation />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <div className="min-h-screen bg-white">
+      <div id="main-content" className="min-h-screen bg-white">
 
         {/* Hero */}
-        <section className="hero-pattern pt-16 text-white py-24">
+        <section className="hero-pattern pt-20 text-white py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Incorporation Services Ontario</p>
@@ -143,7 +143,7 @@ export default function IncorporationPage() {
                 <span className="text-gold block mt-1">$299 + Government Fees</span>
               </h1>
               <p className="text-navy-100 text-lg mb-8 leading-relaxed">
-                A real CPA handles your entire incorporation — articles of incorporation, NUANS name search, minute book setup, and CRA account registration. Named or numbered corporation, federal or provincial.
+                A real CPA handles your entire incorporation, articles of incorporation, NUANS name search, minute book setup, and CRA account registration. Named or numbered corporation, federal or provincial.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -185,7 +185,7 @@ export default function IncorporationPage() {
             <div className="text-center mb-14">
               <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">Everything Covered</p>
               <h2 className="font-serif text-3xl font-bold text-navy">What&apos;s Included in Your $299</h2>
-              <p className="text-gray-600 mt-3 max-w-xl mx-auto">One flat fee covers all professional work. Government filing fees are paid directly and itemized separately — no bundling.</p>
+              <p className="text-gray-600 mt-3 max-w-xl mx-auto">One flat fee covers all professional work. Government filing fees are paid directly and itemized separately, no bundling.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {included.map(({ icon: Icon, title, desc }) => (
@@ -283,7 +283,7 @@ export default function IncorporationPage() {
                 <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Why Adapt</p>
                 <h2 className="font-serif text-3xl font-bold text-navy mb-5">A Real CPA, Not a Document Mill</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Most online incorporation services are search houses — they file documents and disappear. We&apos;re a CPA Ontario-registered firm. That means you get professional advice on share structure, tax implications, and a CPA you can actually talk to when you have questions after.
+                  Most online incorporation services are search houses, they file documents and disappear. We&apos;re a CPA Ontario-registered firm. That means you get professional advice on share structure, tax implications, and a CPA you can actually talk to when you have questions after.
                 </p>
                 <ul className="space-y-3">
                   {differentiation.map(item => (
@@ -297,7 +297,7 @@ export default function IncorporationPage() {
               <div className="space-y-4">
                 <div className="bg-white border border-gray-100 shadow-sm p-6">
                   <h3 className="font-semibold text-navy mb-1 text-sm">Professional Corporations</h3>
-                  <p className="text-gray-600 text-sm">Regulated professionals — realtors (PREC), healthcare practitioners, lawyers — have specific PC rules. We handle them all.</p>
+                  <p className="text-gray-600 text-sm">Regulated professionals, realtors (PREC), healthcare practitioners, lawyers, have specific PC rules. We handle them all.</p>
                   <Link href="/blog/professional-corporations-ontario" className="text-gold text-sm font-medium mt-2 inline-block hover:text-gold-hover">Learn about professional corporations →</Link>
                 </div>
                 <div className="bg-white border border-gray-100 shadow-sm p-6">

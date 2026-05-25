@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'CPA Brampton | Professional Accounting & Tax Services | Adapt Accounting Services',
-  description: 'Expert CPA services in Brampton, Ontario. Professional accounting, tax preparation, bookkeeping, and business consulting for Brampton businesses. Virtual CPA — serving all of Brampton.',
+  description: 'Expert CPA services in Brampton, Ontario. Professional accounting, tax preparation, bookkeeping, and business consulting for Brampton businesses. Virtual CPA, serving all of Brampton.',
   keywords: 'CPA Brampton, accountant Brampton, tax preparation Brampton, bookkeeping Brampton',
   openGraph: {
     title: 'Professional CPA Services in Brampton, Ontario',
@@ -39,7 +39,7 @@ export default function BramptonPage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">

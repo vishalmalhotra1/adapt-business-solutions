@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Many Ontario business owners incorporate their company and then stall on the next steps — registering with the CRA, setting up proper accounts, and getting compliant before doing any business. This guide walks through every CRA account you need after incorporation, in the right order, so you start on solid footing.
+                Many Ontario business owners incorporate their company and then stall on the next steps, registering with the CRA, setting up proper accounts, and getting compliant before doing any business. This guide walks through every CRA account you need after incorporation, in the right order, so you start on solid footing.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Step 1: Obtain Your Business Number</h2>
@@ -88,7 +88,7 @@ export default function BlogPostPage() {
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  BN is automatically assigned after provincial incorporation — usually within 1–5 business days
+                  BN is automatically assigned after provincial incorporation, usually within 1–5 business days
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -126,7 +126,7 @@ export default function BlogPostPage() {
               </ul>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Step 3: Register for HST (RT Account)</h2>
-              <p className="text-gray-700 leading-relaxed">If your corporation will be making taxable supplies of goods or services, you must register for HST once revenues exceed $30,000 — or you can register voluntarily from day one (recommended for most businesses).</p>
+              <p className="text-gray-700 leading-relaxed">If your corporation will be making taxable supplies of goods or services, you must register for HST once revenues exceed $30,000, or you can register voluntarily from day one (recommended for most businesses).</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -149,8 +149,8 @@ export default function BlogPostPage() {
                 <p className="text-sm text-gray-700">Voluntary registration tip: Register from day one if you will have startup expenses with HST. You can claim input tax credits on your first HST return for HST paid on incorporation fees, equipment, software, and other pre-revenue expenses.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Step 4: Register for a Payroll Account (RP) — If You Have Employees</h2>
-              <p className="text-gray-700 leading-relaxed">If your corporation will be paying salaries — including to yourself as the incorporated owner — you need a payroll account before the first payroll is processed.</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Step 4: Register for a Payroll Account (RP), If You Have Employees</h2>
+              <p className="text-gray-700 leading-relaxed">If your corporation will be paying salaries, including to yourself as the incorporated owner, you need a payroll account before the first payroll is processed.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -194,7 +194,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Review all CRA mail online — paper notices may still be sent to your registered address
+                  Review all CRA mail online, paper notices may still be sent to your registered address
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
@@ -203,7 +203,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Post-incorporation CRA setup takes a few hours but is foundational to your corporation&apos;s compliance. The most common mistakes are registering for HST too late (missing startup ITCs) and setting up payroll after the first payroll has already been processed. Do this setup before your first transaction — not after.
+                Post-incorporation CRA setup takes a few hours but is foundational to your corporation&apos;s compliance. The most common mistakes are registering for HST too late (missing startup ITCs) and setting up payroll after the first payroll has already been processed. Do this setup before your first transaction, not after.
               </p>
 
               <div className="bg-navy p-8 mt-10">

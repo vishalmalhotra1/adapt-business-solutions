@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Setting Up CRA Business Accounts After Incorporation | Adapt Accounting',
-  description: 'Step-by-step guide to registering CRA business accounts after incorporating in Ontario — Business Number, corporate income tax (RT), HST (RC), payroll (RP), and My Business Account access.',
+  description: 'Step-by-step guide to registering CRA business accounts after incorporating in Ontario, Business Number, corporate income tax (RT), HST (RC), payroll (RP), and My Business Account access.',
   keywords: 'CRA business accounts after incorporation, CRA Business Number registration, HST registration after incorporation, My Business Account CRA, corporate income tax account CRA',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/setup-cra-business-accounts-after-incorporation' },
   openGraph: {
@@ -21,7 +21,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Setting Up CRA Business Accounts After Incorporation',
-  description: 'How to register CRA business accounts after incorporating — Business Number, HST, payroll, and corporate income tax.',
+  description: 'How to register CRA business accounts after incorporating, Business Number, HST, payroll, and corporate income tax.',
   datePublished: '2026-05-06',
   dateModified: '2026-05-06',
   author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
@@ -35,7 +35,7 @@ const accounts = [
     name: 'Business Number (BN)',
     required: 'Always',
     detail: 'The 9-digit root number for your corporation. All other program accounts are extensions of the BN. You need a BN before you can register for any other program. CRA automatically issues a BN when they receive your first T2.',
-    when: 'Immediately after incorporation — we handle this as part of our service',
+    when: 'Immediately after incorporation, we handle this as part of our service',
   },
   {
     code: 'RC',
@@ -140,12 +140,12 @@ export default function CRAAccountsPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Happens If You Don&apos;t Register for HST on Time?</h2>
               <div className="bg-red-50 border border-red-200 p-5 mb-8">
-                <p className="text-sm text-gray-700">If you pass the $30,000 threshold and don&apos;t register, CRA can assess HST as if you had been registered — meaning you become retroactively liable for HST you didn&apos;t collect. You may also face interest and penalties. Voluntary registration before the threshold avoids this and lets you claim ITCs on business purchases immediately.</p>
+                <p className="text-sm text-gray-700">If you pass the $30,000 threshold and don&apos;t register, CRA can assess HST as if you had been registered, meaning you become retroactively liable for HST you didn&apos;t collect. You may also face interest and penalties. Voluntary registration before the threshold avoids this and lets you claim ITCs on business purchases immediately.</p>
               </div>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">We Handle the CRA Setup For You</h3>
-                <p className="text-navy-100 text-sm mb-6">Our incorporation service includes CRA Business Number registration, HST registration (if applicable), and My Business Account setup guidance — so you&apos;re operational from day one.</p>
+                <p className="text-navy-100 text-sm mb-6">Our incorporation service includes CRA Business Number registration, HST registration (if applicable), and My Business Account setup guidance, so you&apos;re operational from day one.</p>
                 <Link href="/services/incorporation" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   View Incorporation Service <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>

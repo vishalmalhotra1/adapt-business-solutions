@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Federal vs Ontario Incorporation: Which Should You Choose? | Adapt Accounting',
-  description: 'Federal (CBCA) vs Ontario (OBCA) incorporation compared — costs, name protection, compliance requirements, and which is right for your business in 2026.',
+  description: 'Federal (CBCA) vs Ontario (OBCA) incorporation compared, costs, name protection, compliance requirements, and which is right for your business in 2026.',
   keywords: 'federal vs Ontario incorporation, CBCA vs OBCA, federal incorporation Ontario, provincial incorporation Ontario, incorporate federally Canada, federal vs provincial corporation',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/federal-vs-ontario-incorporation' },
   openGraph: {
     title: 'Federal vs Ontario Incorporation: Which Should You Choose?',
-    description: 'Clear comparison of federal (CBCA) and Ontario (OBCA) incorporation — costs, name protection, compliance, and how to decide.',
+    description: 'Clear comparison of federal (CBCA) and Ontario (OBCA) incorporation, costs, name protection, compliance, and how to decide.',
     url: 'https://adaptbusinesssolutions.com/blog/federal-vs-ontario-incorporation',
     type: 'article',
   },
@@ -21,7 +21,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Federal vs Ontario Incorporation: Which Should You Choose?',
-  description: 'Federal (CBCA) vs Ontario (OBCA) incorporation compared — costs, name protection, and compliance requirements.',
+  description: 'Federal (CBCA) vs Ontario (OBCA) incorporation compared, costs, name protection, and compliance requirements.',
   datePublished: '2026-05-06',
   dateModified: '2026-05-06',
   author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
@@ -69,7 +69,7 @@ export default function FederalVsOntarioPage() {
                     {[
                       ['Filing Authority', 'Corporations Canada (federal)', 'ServiceOntario (provincial)'],
                       ['Government Filing Fee', '$200 (online)', '$300'],
-                      ['Extra-Provincial Registration in ON', '$60 (required)', 'Not required — already in ON'],
+                      ['Extra-Provincial Registration in ON', '$60 (required)', 'Not required, already in ON'],
                       ['Total Government Cost', '~$260', '$300'],
                       ['Name Protection Scope', 'All provinces & territories', 'Ontario only'],
                       ['Annual Return', 'Federal annual return required', 'Ontario annual return ($12/yr)'],
@@ -89,9 +89,9 @@ export default function FederalVsOntarioPage() {
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Case for Ontario (Provincial) Incorporation</h2>
               <ul className="space-y-2 mb-8">
                 {[
-                  'You only operate in Ontario — no need to pay for cross-province name protection you won\'t use.',
-                  'No Canadian director residency requirement — relevant if you have non-resident directors.',
-                  'Simpler annual compliance — one set of filings with ServiceOntario.',
+                  'You only operate in Ontario, no need to pay for cross-province name protection you won\'t use.',
+                  'No Canadian director residency requirement, relevant if you have non-resident directors.',
+                  'Simpler annual compliance, one set of filings with ServiceOntario.',
                   'Slightly higher government fee ($300 vs $260 for federal), but one less registration step.',
                   'Most Ontario small businesses are provincially incorporated.',
                 ].map(item => (
@@ -105,11 +105,11 @@ export default function FederalVsOntarioPage() {
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Case for Federal Incorporation</h2>
               <ul className="space-y-2 mb-8">
                 {[
-                  'You plan to operate in multiple provinces — federal incorporation gives you the right to register in any province.',
-                  'Your corporate name needs national protection — a federal name is protected across Canada.',
+                  'You plan to operate in multiple provinces, federal incorporation gives you the right to register in any province.',
+                  'Your corporate name needs national protection, a federal name is protected across Canada.',
                   'You have non-Canadian clients or investors who may prefer the "Canada" designation in your name.',
                   'You plan to raise investment or want to position the corporation for eventual national scale.',
-                  'Director residency rules allow non-residents — but this applies either way with provincial incorporation.',
+                  'Director residency rules allow non-residents, but this applies either way with provincial incorporation.',
                 ].map(item => (
                   <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
                     <CheckCircle className="h-4 w-4 text-gold mt-0.5 flex-shrink-0" />
@@ -133,7 +133,7 @@ export default function FederalVsOntarioPage() {
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">We Help You Choose and Execute</h3>
-                <p className="text-navy-100 text-sm mb-6">Our free consultation covers federal vs provincial, named vs numbered, and share structure — before you commit. Flat $299 + government fees.</p>
+                <p className="text-navy-100 text-sm mb-6">Our free consultation covers federal vs provincial, named vs numbered, and share structure, before you commit. Flat $299 + government fees.</p>
                 <Link href="/services/incorporation" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   View Incorporation Service <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>

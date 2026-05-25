@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Of all the decisions made at incorporation, the share structure is the most consequential and the most commonly under-thought. The share structure determines who owns the corporation, who receives dividends, how voting control works, and whether you can split income with family members or bring in investors later. Changing the share structure after incorporation is possible but expensive and complex — getting it right at the start costs nothing extra.
+                Of all the decisions made at incorporation, the share structure is the most consequential and the most commonly under-thought. The share structure determines who owns the corporation, who receives dividends, how voting control works, and whether you can split income with family members or bring in investors later. Changing the share structure after incorporation is possible but expensive and complex, getting it right at the start costs nothing extra.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Basic Structure: One Class of Common Shares</h2>
@@ -108,8 +108,8 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Multiple Share Classes: Enabling Income Splitting</h2>
-              <p className="text-gray-700 leading-relaxed">The most common reason Ontario incorporated owners want multiple share classes is income splitting — the ability to pay dividends to a spouse or adult children who are in lower tax brackets, reducing the family&apos;s overall tax burden.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">To enable this, your articles of incorporation should authorize multiple classes of shares — typically common shares (voting, participating) and one or more classes of non-voting or discretionary dividend shares.</p>
+              <p className="text-gray-700 leading-relaxed">The most common reason Ontario incorporated owners want multiple share classes is income splitting, the ability to pay dividends to a spouse or adult children who are in lower tax brackets, reducing the family&apos;s overall tax burden.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">To enable this, your articles of incorporation should authorize multiple classes of shares, typically common shares (voting, participating) and one or more classes of non-voting or discretionary dividend shares.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -133,7 +133,7 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Preferred Shares: For Investments and Estate Freezes</h2>
-              <p className="text-gray-700 leading-relaxed">Preferred shares have a fixed redemption value and priority on dividends — they do not participate in future growth of the corporation. They are used primarily for estate freezes and investment structuring.</p>
+              <p className="text-gray-700 leading-relaxed">Preferred shares have a fixed redemption value and priority on dividends, they do not participate in future growth of the corporation. They are used primarily for estate freezes and investment structuring.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -154,7 +154,7 @@ export default function BlogPostPage() {
               </ul>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Founder Shares: Planning for Future Investors</h2>
-              <p className="text-gray-700 leading-relaxed">If you anticipate bringing in outside investors — whether angel investors, venture capital, or business partners — your initial share structure should be designed with this in mind from the start.</p>
+              <p className="text-gray-700 leading-relaxed">If you anticipate bringing in outside investors, whether angel investors, venture capital, or business partners, your initial share structure should be designed with this in mind from the start.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -174,7 +174,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Subscription price matters: Founders should subscribe for their shares at a nominal price (e.g., $0.001 or $1 per share). If the company grows significantly, later shares sold to investors at $1,000 per share creates a stark value difference — exactly the intent.</p>
+                <p className="text-sm text-gray-700">Subscription price matters: Founders should subscribe for their shares at a nominal price (e.g., $0.001 or $1 per share). If the company grows significantly, later shares sold to investors at $1,000 per share creates a stark value difference, exactly the intent.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How to Change Your Share Structure Later</h2>
@@ -190,7 +190,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Share reorganizations may trigger tax consequences — CRA section 86 or 51 rollover rules
+                  Share reorganizations may trigger tax consequences, CRA section 86 or 51 rollover rules
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -207,7 +207,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Your share structure is the DNA of your corporation — it shapes every major decision about dividends, ownership, and value for the life of the business. Spend an extra hour with your CPA or lawyer designing a structure that anticipates your likely needs over the next 10 years. The cost is zero; the benefit can be significant.
+                Your share structure is the DNA of your corporation, it shapes every major decision about dividends, ownership, and value for the life of the business. Spend an extra hour with your CPA or lawyer designing a structure that anticipates your likely needs over the next 10 years. The cost is zero; the benefit can be significant.
               </p>
 
               <div className="bg-navy p-8 mt-10">

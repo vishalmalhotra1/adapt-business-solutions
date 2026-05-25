@@ -1,4 +1,4 @@
-export interface AutoBlogPost {
+﻿export interface AutoBlogPost {
   id: string
   title: string
   excerpt: string
@@ -8,7 +8,7 @@ export interface AutoBlogPost {
 }
 
 // This file is updated automatically by scripts/generate-blog.mjs
-// Do not edit the array manually — add entries via the GitHub Actions workflow
+// Do not edit the array manually, add entries via the GitHub Actions workflow
 import postsData from './auto-blog-posts.json'
 
 export const autoBlogPosts: AutoBlogPost[] = postsData as AutoBlogPost[]

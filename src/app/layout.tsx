@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/next"
 import './globals.css'
@@ -18,9 +18,9 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://adaptbusinesssolutions.com'),
-  title: 'Adapt Accounting Services — CPA for ABA Practitioners & Ontario Businesses',
+  title: 'Adapt Accounting Services, CPA for ABA Practitioners & Ontario Businesses',
   description: 'CPA services for ABA practitioners, small business owners, and Ontario professionals. Incorporate for $299 + gov fees. Bookkeeping, T1/T2 tax, CPBAO compliance, OAP payroll. Virtual, Canada-wide.',
-  keywords: 'CPA for ABA practitioners, BCBA incorporation Canada, behavior analyst CPA, CPBAO compliance, ABA tax strategy, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, professional corporation Ontario, incorporate Ontario $299',
+  keywords: 'CPA for ABA practitioners, RBA incorporation Canada, behavior analyst CPA, CPBAO compliance, ABA tax strategy, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, professional corporation Ontario, incorporate Ontario $299',
   authors: [{ name: 'Adapt Accounting Services' }],
   creator: 'Adapt Accounting Services',
   publisher: 'Adapt Accounting Services',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_CA',
     url: 'https://adaptbusinesssolutions.com',
-    title: 'Adapt Accounting Services — CPA for ABA Practitioners & Ontario Businesses',
+    title: 'Adapt Accounting Services, CPA for ABA Practitioners & Ontario Businesses',
     description: 'CPA for ABA practitioners, small business owners, and Ontario professionals. Incorporate for $299. Bookkeeping, tax, CPBAO compliance, virtual Canada-wide.',
     siteName: 'Adapt Accounting Services',
     images: [
@@ -137,6 +137,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         {children}
         <Analytics />
       </body>

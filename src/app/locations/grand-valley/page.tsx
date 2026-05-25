@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -37,7 +37,7 @@ export default function GrandValleyPage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">
@@ -45,7 +45,7 @@ export default function GrandValleyPage() {
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Grand Valley, ON</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Professional CPA Services in Grand Valley</h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto mb-8">
-              Expert virtual CPA services for Grand Valley and East Luther Grand Valley Township — professional accounting, local knowledge.
+              Expert virtual CPA services for Grand Valley and East Luther Grand Valley Township, professional accounting, local knowledge.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:437-772-9598" className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">

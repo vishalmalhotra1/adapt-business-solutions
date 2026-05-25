@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Ontario Payroll Source Deductions Guide 2025 | Adapt Business Solutions',
-  description: 'Complete guide to payroll source deductions for Ontario small businesses. CPP, EI, income tax remittances — deadlines, calculations, and CRA compliance tips.',
+  description: 'Complete guide to payroll source deductions for Ontario small businesses. CPP, EI, income tax remittances, deadlines, calculations, and CRA compliance tips.',
   keywords: 'payroll source deductions Ontario, CPP EI remittance CRA, T4 payroll Ontario, employer payroll obligations Canada',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/ontario-payroll-source-deductions-guide' },
   openGraph: {
     title: 'Ontario Payroll Source Deductions: What Every Small Business Must Know',
-    description: 'Complete guide to payroll source deductions for Ontario small businesses. CPP, EI, income tax remittances — deadlines, calculations, and CRA compliance tips.',
+    description: 'Complete guide to payroll source deductions for Ontario small businesses. CPP, EI, income tax remittances, deadlines, calculations, and CRA compliance tips.',
     url: 'https://adaptbusinesssolutions.com/blog/ontario-payroll-source-deductions-guide',
     type: 'article',
     publishedTime: '2026-05-11',
@@ -22,7 +22,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Ontario Payroll Source Deductions: What Every Small Business Must Know',
-  description: 'Complete guide to payroll source deductions for Ontario small businesses. CPP, EI, income tax remittances — deadlines, calculations, and CRA compliance tips.',
+  description: 'Complete guide to payroll source deductions for Ontario small businesses. CPP, EI, income tax remittances, deadlines, calculations, and CRA compliance tips.',
   datePublished: '2026-05-11',
   dateModified: '2026-05-11',
   author: {
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                If you have even one employee in Ontario, you are legally required to deduct and remit payroll source deductions to the Canada Revenue Agency. Missing a deadline — even by a single day — triggers automatic penalties starting at 3% and escalating to 10% or more. This guide covers everything you need to stay compliant.
+                If you have even one employee in Ontario, you are legally required to deduct and remit payroll source deductions to the Canada Revenue Agency. Missing a deadline, even by a single day, triggers automatic penalties starting at 3% and escalating to 10% or more. This guide covers everything you need to stay compliant.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Three Source Deductions Every Employer Must Withhold</h2>
@@ -153,15 +153,15 @@ export default function BlogPostPage() {
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  TD1 Personal Tax Credits Return — collected from each employee at hire
+                  TD1 Personal Tax Credits Return, collected from each employee at hire
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Record of Employment (ROE) — issued within 5 calendar days of an interruption
+                  Record of Employment (ROE), issued within 5 calendar days of an interruption
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  T4 slips — issued to employees and filed with CRA by the last day of February
+                  T4 slips, issued to employees and filed with CRA by the last day of February
                 </li>
               </ul>
 
@@ -195,7 +195,7 @@ export default function BlogPostPage() {
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Outsource Your Payroll to a CPA</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Let Adapt Business Solutions handle your payroll processing, remittances, and T4 filing — so you never miss a deadline.
+                  Let Adapt Business Solutions handle your payroll processing, remittances, and T4 filing, so you never miss a deadline.
                 </p>
                 <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   Get a Free Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

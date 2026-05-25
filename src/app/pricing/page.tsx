@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect, useCallback } from 'react'
 import { CheckCircle, ArrowRight, Info } from 'lucide-react'
@@ -103,10 +103,10 @@ export default function PricingPage() {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-white">
+      <div id="main-content" className="min-h-screen bg-white">
 
         {/* Hero */}
-        <section className="hero-pattern pt-16 text-white py-20">
+        <section className="hero-pattern pt-20 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Transparent Pricing</p>
             <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">Honest, Flat-Fee Pricing</h1>
@@ -121,7 +121,7 @@ export default function PricingPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div>
-                <p className="font-serif text-2xl font-bold text-navy">Incorporate Your Ontario Business — $299 + Gov Fees</p>
+                <p className="font-serif text-2xl font-bold text-navy">Incorporate Your Ontario Business, $299 + Gov Fees</p>
                 <p className="text-navy text-sm mt-1 opacity-80">Articles of incorporation · Minute book · CRA Business Number · Named or numbered · Federal or provincial</p>
               </div>
               <Link
@@ -197,7 +197,7 @@ export default function PricingPage() {
                 {/* Included Services */}
                 <div className="border border-gray-100 shadow-sm p-8">
                   <h3 className="font-serif text-xl font-bold text-navy mb-6">
-                    What&apos;s Included — {serviceTiers[selectedTier as keyof typeof serviceTiers].name}
+                    What&apos;s Included, {serviceTiers[selectedTier as keyof typeof serviceTiers].name}
                   </h3>
                   <div className="space-y-5">
                     {Object.entries(services).map(([key, service]) => {

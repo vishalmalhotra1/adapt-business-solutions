@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/what-is-nuans-report' },
   openGraph: {
     title: 'What Is a NUANS Report and Do You Need One?',
-    description: 'NUANS reports explained simply — cost, validity window, when you need one, and when you can skip it entirely.',
+    description: 'NUANS reports explained simply, cost, validity window, when you need one, and when you can skip it entirely.',
     url: 'https://adaptbusinesssolutions.com/blog/what-is-nuans-report',
     type: 'article',
   },
@@ -44,7 +44,7 @@ export default function NuansReportPage() {
             <h1 className="font-serif text-3xl lg:text-4xl font-bold mb-4 leading-tight">
               What Is a NUANS Report and Do You Need One?
             </h1>
-            <p className="text-navy-100 text-lg">The plain-English explanation of NUANS reports — what they cost, how long they last, and when you can skip one entirely.</p>
+            <p className="text-navy-100 text-lg">The plain-English explanation of NUANS reports, what they cost, how long they last, and when you can skip one entirely.</p>
             <p className="text-navy-100 text-sm mt-4">Published May 6, 2026 · 5 min read · By Adapt Accounting Services CPA</p>
           </div>
         </section>
@@ -92,7 +92,7 @@ export default function NuansReportPage() {
                   <h3 className="font-semibold text-green-800 mb-3">You do NOT need a NUANS if:</h3>
                   <ul className="space-y-2 text-sm text-green-700">
                     <li>• You&apos;re using a <strong>numbered corporation</strong> (e.g., &ldquo;1234567 Ontario Inc.&rdquo;)</li>
-                    <li>• The government assigns the number — no name conflict possible</li>
+                    <li>• The government assigns the number, no name conflict possible</li>
                   </ul>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function NuansReportPage() {
                 The report is valid for <strong>90 days</strong>. Your Articles of Incorporation must be filed within that 90-day window, or you&apos;ll need a fresh report.
               </p>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Named vs Numbered Corporation — Which Should You Choose?</h2>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Named vs Numbered Corporation, Which Should You Choose?</h2>
               <div className="overflow-x-auto mb-8">
                 <table className="w-full text-sm border border-gray-200">
                   <thead>
@@ -135,7 +135,7 @@ export default function NuansReportPage() {
               </div>
 
               <div className="bg-gold-50 border-l-4 border-gold p-5 mb-8">
-                <p className="text-sm text-gray-700"><strong>Practical tip:</strong> Many business owners incorporate as a numbered company first (faster and cheaper), then operate under a registered business trade name. For example, &ldquo;1234567 Ontario Inc. carrying on business as Acme Consulting.&rdquo; You can always apply to amend your corporation name later.</p>
+                <p className="text-sm text-gray-700"><strong>Practical tip:</strong> Many business owners incorporate as a numbered company first (faster and more affordable), then operate under a registered business trade name. For example, &ldquo;1234567 Ontario Inc. carrying on business as Acme Consulting.&rdquo; You can always apply to amend your corporation name later.</p>
               </div>
 
               <div className="bg-navy p-8 mt-10">

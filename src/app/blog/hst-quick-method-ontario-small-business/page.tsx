@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Accounting Services or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Accounting Services or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How the Quick Method Works</h2>
               <p className="text-gray-700 leading-relaxed">Under the regular HST method, you collect 13% HST on sales, claim input tax credits (ITCs) on business purchases, and remit the net difference to the CRA.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">Under the Quick Method, you collect 13% HST as normal, but remit only a fixed percentage of your gross sales including HST. The difference between what you collected and what you remit is yours to keep — it compensates for the ITCs you give up.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">Under the Quick Method, you collect 13% HST as normal, but remit only a fixed percentage of your gross sales including HST. The difference between what you collected and what you remit is yours to keep, it compensates for the ITCs you give up.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -125,11 +125,11 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Note: Certain professional services are excluded from Quick Method eligibility. This includes accounting and bookkeeping firms — which is why we always recommend this to clients but cannot use it ourselves.</p>
+                <p className="text-sm text-gray-700">Note: Certain professional services are excluded from Quick Method eligibility. This includes accounting and bookkeeping firms, which is why we always recommend this to clients but cannot use it ourselves.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Quick Method vs Regular Method: When Does It Save You Money?</h2>
-              <p className="text-gray-700 leading-relaxed">The Quick Method is most advantageous for service businesses with low input costs — consultants, freelancers, coaches, IT professionals. It is less beneficial for businesses with significant HST-taxable purchases.</p>
+              <p className="text-gray-700 leading-relaxed">The Quick Method is most advantageous for service businesses with low input costs, consultants, freelancers, coaches, IT professionals. It is less beneficial for businesses with significant HST-taxable purchases.</p>
               <p className="text-gray-700 leading-relaxed mt-3">The break-even point is roughly when your HST-eligible expenses equal about 45% of your revenue. If your expenses are lower than that, Quick Method likely saves money.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
@@ -174,8 +174,8 @@ export default function BlogPostPage() {
               <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — HST filings and Quick Method elections</li>
-                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Monthly records to support your HST remittances</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link>, HST filings and Quick Method elections</li>
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link>, Monthly records to support your HST remittances</li>
                 </ul>
               </div>
 

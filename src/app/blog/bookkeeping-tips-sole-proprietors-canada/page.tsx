@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/bookkeeping-tips-sole-proprietors-canada' },
   openGraph: {
     title: 'Bookkeeping Tips for Sole Proprietors in Canada',
-    description: 'Practical bookkeeping habits for self-employed Canadians — separate accounts, expense tracking, HST, and software.',
+    description: 'Practical bookkeeping habits for self-employed Canadians, separate accounts, expense tracking, HST, and software.',
     url: 'https://adaptbusinesssolutions.com/blog/bookkeeping-tips-sole-proprietors-canada',
     type: 'article',
   },
@@ -21,7 +21,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Bookkeeping Tips for Sole Proprietors in Canada',
-  description: 'The most practical bookkeeping habits for self-employed Canadians — separate accounts, expense tracking, HST, and software.',
+  description: 'The most practical bookkeeping habits for self-employed Canadians, separate accounts, expense tracking, HST, and software.',
   datePublished: '2025-08-05',
   dateModified: '2025-08-05',
   author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
@@ -47,7 +47,7 @@ export default function BookkeepingTipsSoleProprietorsPage() {
               Bookkeeping Tips for Sole Proprietors in Canada
             </h1>
             <p className="text-navy-100 text-lg">
-              The most practical bookkeeping habits for self-employed Canadians — from separating your accounts to understanding the HST threshold and choosing the right software.
+              The most practical bookkeeping habits for self-employed Canadians, from separating your accounts to understanding the HST threshold and choosing the right software.
             </p>
             <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 7 min read · By Adapt Accounting Services CPA</p>
           </div>
@@ -68,7 +68,7 @@ export default function BookkeepingTipsSoleProprietorsPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                As a sole proprietor in Canada, you are the business — which means bookkeeping responsibility falls entirely on you. Good bookkeeping is not just about staying CRA-compliant; it gives you the financial visibility to make smarter decisions, price your services correctly, and grow with confidence. These are the foundational habits every self-employed Canadian should adopt.
+                As a sole proprietor in Canada, you are the business, which means bookkeeping responsibility falls entirely on you. Good bookkeeping is not just about staying CRA-compliant; it gives you the financial visibility to make smarter decisions, price your services correctly, and grow with confidence. These are the foundational habits every self-employed Canadian should adopt.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">1. Separate Your Personal and Business Finances</h2>
@@ -76,7 +76,7 @@ export default function BookkeepingTipsSoleProprietorsPage() {
                 This is the single most important step you can take. Open a dedicated business chequing account and, if you accept credit cards, a business credit card. Use these exclusively for business transactions and never mix personal and business spending.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                When your accounts are mixed, every single transaction needs to be categorized manually at year-end — a time-consuming, error-prone process that significantly increases your accounting costs. With separate accounts, your bookkeeping takes a fraction of the time.
+                When your accounts are mixed, every single transaction needs to be categorized manually at year-end, a time-consuming, error-prone process that significantly increases your accounting costs. With separate accounts, your bookkeeping takes a fraction of the time.
               </p>
               <div className="bg-gold-50 border-l-4 border-gold p-4 mb-6">
                 <p className="text-sm text-gray-700"><strong>Pro tip:</strong> Pay yourself a regular &quot;salary&quot; transfer from your business account to your personal account. This makes it much clearer what money belongs to the business versus your personal finances.</p>
@@ -98,7 +98,7 @@ export default function BookkeepingTipsSoleProprietorsPage() {
                 Many sole proprietors wait too long to register, resulting in penalties and interest when the CRA catches up. If you are approaching $30,000 in annual revenue, register proactively.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Once registered, you collect HST from clients and remit it to the CRA, but you can also claim input tax credits (ITCs) on HST you paid on business expenses — which can result in a net refund if your business has significant expenses.
+                Once registered, you collect HST from clients and remit it to the CRA, but you can also claim input tax credits (ITCs) on HST you paid on business expenses, which can result in a net refund if your business has significant expenses.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">4. Maintain a Vehicle Logbook</h2>
@@ -106,7 +106,7 @@ export default function BookkeepingTipsSoleProprietorsPage() {
                 If you use your personal vehicle for business, you can deduct the business-use percentage of your vehicle expenses. To prove this percentage, the CRA requires a logbook documenting every business trip: date, destination, purpose, and kilometres driven.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Apps like MileIQ or TripLog can automate this by tracking trips via GPS. This is one of the easiest ways to avoid a CRA audit adjustment — and one of the most commonly missed deductions when records are not kept.
+                Apps like MileIQ or TripLog can automate this by tracking trips via GPS. This is one of the easiest ways to avoid a CRA audit adjustment, and one of the most commonly missed deductions when records are not kept.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">5. Choose the Right Accounting Software</h2>
@@ -131,7 +131,7 @@ export default function BookkeepingTipsSoleProprietorsPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">6. Set Aside Money for Taxes</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                As a sole proprietor, taxes are not automatically withheld from your income. You are responsible for paying income tax and CPP contributions on your net business income at the end of the year — or quarterly through the CRA&apos;s instalment payment system if you owe more than $3,000 in taxes.
+                As a sole proprietor, taxes are not automatically withheld from your income. You are responsible for paying income tax and CPP contributions on your net business income at the end of the year, or quarterly through the CRA&apos;s instalment payment system if you owe more than $3,000 in taxes.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 A common guideline is to set aside 25–30% of every client payment into a separate savings account designated for taxes. This prevents the year-end shock of a large unexpected tax bill.
@@ -154,9 +154,9 @@ export default function BookkeepingTipsSoleProprietorsPage() {
               <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Monthly bookkeeping handled for you</li>
-                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — HST filings and T1 returns</li>
-                  <li><Link href="/services/payroll" className="text-gold hover:text-gold-hover font-medium">→ Payroll Services</Link> — CPP remittances and payroll management</li>
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link>, Monthly bookkeeping handled for you</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link>, HST filings and T1 returns</li>
+                  <li><Link href="/services/payroll" className="text-gold hover:text-gold-hover font-medium">→ Payroll Services</Link>, CPP remittances and payroll management</li>
                 </ul>
               </div>
 

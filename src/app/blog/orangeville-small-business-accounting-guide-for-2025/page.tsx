@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ export default function ArticlePage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
         <header className="bg-gray-50 py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Link
@@ -439,10 +439,10 @@ export default function ArticlePage() {
             <div className="bg-gray-50 border border-gray-200 p-6 my-8">
               <h3 className="font-semibold text-navy mb-4">Our Services for Orangeville Businesses</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Monthly bookkeeping for Orangeville businesses</li>
-                <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — T1, T2, and HST filings</li>
-                <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link> — Financial reporting and business insights</li>
-                <li><Link href="/locations/orangeville" className="text-gold hover:text-gold-hover font-medium">→ CPA Services in Orangeville</Link> — Your local Orangeville CPA</li>
+                <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link>, Monthly bookkeeping for Orangeville businesses</li>
+                <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link>, T1, T2, and HST filings</li>
+                <li><Link href="/services/financial-analysis" className="text-gold hover:text-gold-hover font-medium">→ Financial Analysis</Link>, Financial reporting and business insights</li>
+                <li><Link href="/locations/orangeville" className="text-gold hover:text-gold-hover font-medium">→ CPA Services in Orangeville</Link>, Your local Orangeville CPA</li>
               </ul>
             </div>
 

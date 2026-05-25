@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -29,7 +29,7 @@ const services = [
 const whyUs = [
   { title: 'GTA Business Expertise', desc: 'Deep understanding of the Mississauga and GTA business landscape across all major industries.' },
   { title: 'Corporate Focus', desc: 'Specialized experience with Mississauga corporations and the unique tax considerations of the GTA business district.' },
-  { title: 'Virtual Efficiency', desc: 'Save time with secure online document sharing and virtual consultations — no traffic, no wait.' },
+  { title: 'Virtual Efficiency', desc: 'Save time with secure online document sharing and virtual consultations, no traffic, no wait.' },
   { title: 'Transparent Flat Fees', desc: 'Predictable monthly pricing with no surprise invoices or hourly billing.' },
 ]
 
@@ -39,7 +39,7 @@ export default function MississaugaPage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">
@@ -47,7 +47,7 @@ export default function MississaugaPage() {
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Mississauga, ON</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Professional CPA Services in Mississauga</h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto mb-8">
-              Expert virtual CPA services for Mississauga businesses and individuals — from Square One to Port Credit and beyond.
+              Expert virtual CPA services for Mississauga businesses and individuals, from Square One to Port Credit and beyond.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:437-772-9598" className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">

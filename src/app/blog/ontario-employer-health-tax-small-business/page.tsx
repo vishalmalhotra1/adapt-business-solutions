@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Paid by the employer — not deducted from employees
+                  Paid by the employer, not deducted from employees
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -106,7 +106,7 @@ export default function BlogPostPage() {
               </ul>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The $1,000,000 Exemption for Small Businesses</h2>
-              <p className="text-gray-700 leading-relaxed">Private sector employers with annual Ontario remuneration of $1,000,000 or less are fully exempt from EHT — they owe $0. This exemption was permanently increased from $490,000 to $1,000,000 in 2020.</p>
+              <p className="text-gray-700 leading-relaxed">Private sector employers with annual Ontario remuneration of $1,000,000 or less are fully exempt from EHT, they owe $0. This exemption was permanently increased from $490,000 to $1,000,000 in 2020.</p>
               <p className="text-gray-700 leading-relaxed mt-3">Employers with remuneration between $1,000,000 and $5,000,000 get a partial exemption and pay at a reduced rate. Only employers with remuneration over $5,000,000 pay EHT on their full payroll.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
@@ -180,7 +180,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Penalty for late EHT filing: 5% of the balance owing, plus 1% per month for up to 12 months. Always file on time even if you cannot pay — the filing penalty is separate from the payment interest.</p>
+                <p className="text-sm text-gray-700">Penalty for late EHT filing: 5% of the balance owing, plus 1% per month for up to 12 months. Always file on time even if you cannot pay, the filing penalty is separate from the payment interest.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>

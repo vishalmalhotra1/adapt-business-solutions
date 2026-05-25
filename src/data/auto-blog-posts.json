@@ -1,8 +1,8 @@
-[
+﻿[
   {
     "id": "hst-quick-method-ontario-small-business",
     "title": "HST Quick Method: Save Time and Possibly Money on Your HST Returns",
-    "excerpt": "Most Ontario businesses registered for HST collect 13% and remit the difference after input tax credits. The Quick Method lets you remit a flat percentage of your gross sales instead — saving bookkeeping time and sometimes real money.",
+    "excerpt": "Most Ontario businesses registered for HST collect 13% and remit the difference after input tax credits. The Quick Method lets you remit a flat percentage of your gross sales instead, saving bookkeeping time and sometimes real money.",
     "category": "HST & GST",
     "readTime": "7 min read",
     "date": "2026-04-16"
@@ -10,7 +10,7 @@
   {
     "id": "cra-installment-payments-ontario-guide",
     "title": "CRA Installment Payments: Who Owes Them and How to Calculate",
-    "excerpt": "If your net tax owing exceeded $3,000 in either of the past two years, the CRA requires quarterly installment payments. Missing them costs you interest — even if you pay in full at year-end. Here is how to handle them correctly.",
+    "excerpt": "If your net tax owing exceeded $3,000 in either of the past two years, the CRA requires quarterly installment payments. Missing them costs you interest, even if you pay in full at year-end. Here is how to handle them correctly.",
     "category": "Tax Planning",
     "readTime": "7 min read",
     "date": "2026-04-16"
@@ -18,7 +18,7 @@
   {
     "id": "rrsp-vs-tfsa-self-employed-ontario",
     "title": "RRSP vs TFSA for Self-Employed Canadians: Which Comes First?",
-    "excerpt": "For employees, the RRSP vs TFSA question has a standard answer. For self-employed Canadians whose income swings year to year, the optimal strategy is more nuanced — and potentially worth thousands more in lifetime tax savings.",
+    "excerpt": "For employees, the RRSP vs TFSA question has a standard answer. For self-employed Canadians whose income swings year to year, the optimal strategy is more nuanced, and potentially worth thousands more in lifetime tax savings.",
     "category": "Tax Planning",
     "readTime": "8 min read",
     "date": "2026-05-07"
@@ -26,7 +26,7 @@
   {
     "id": "ontario-employer-health-tax-small-business",
     "title": "Ontario Employer Health Tax: Exemptions, Rates, and Filing for Small Business",
-    "excerpt": "Most Ontario employers pay the Employer Health Tax (EHT) on total payroll — but many small businesses qualify for an exemption on the first $1,000,000 of remuneration. Here is how to calculate your EHT and whether you qualify.",
+    "excerpt": "Most Ontario employers pay the Employer Health Tax (EHT) on total payroll, but many small businesses qualify for an exemption on the first $1,000,000 of remuneration. Here is how to calculate your EHT and whether you qualify.",
     "category": "Payroll",
     "readTime": "6 min read",
     "date": "2026-05-07"
@@ -34,7 +34,7 @@
   {
     "id": "hst-registration-new-ontario-business",
     "title": "HST Registration for New Ontario Businesses: What You Need to Know",
-    "excerpt": "HST registration is mandatory once you hit $30,000 in revenue — but voluntarily registering earlier can actually save you money. Here is everything a new Ontario business needs to know.",
+    "excerpt": "HST registration is mandatory once you hit $30,000 in revenue, but voluntarily registering earlier can actually save you money. Here is everything a new Ontario business needs to know.",
     "category": "HST & GST",
     "readTime": "8 min read",
     "date": "2026-05-07"
@@ -42,7 +42,7 @@
   {
     "id": "incorporating-aba-practice-ontario-behaviour-analysts",
     "title": "Incorporating Your ABA Practice in Ontario: What Behaviour Analysts Need to Know",
-    "excerpt": "Running an ABA therapy practice as a sole proprietor in Ontario leaves significant tax savings on the table. Here is exactly what incorporating means for behaviour analysts — the benefits, the structure, and what Adapt Business Solutions does for ABA owners.",
+    "excerpt": "Running an ABA therapy practice as a sole proprietor in Ontario leaves significant tax savings on the table. Here is exactly what incorporating means for behaviour analysts, the benefits, the structure, and what Adapt Business Solutions does for ABA owners.",
     "category": "ABA Practices",
     "readTime": "9 min read",
     "date": "2026-05-07"
@@ -50,7 +50,7 @@
   {
     "id": "hst-aba-therapy-services-ontario",
     "title": "HST and ABA Therapy Services in Ontario: What Is Taxable and What Is Not",
-    "excerpt": "HST on ABA therapy is one of the most misunderstood tax issues for Ontario behaviour analysts. Getting it wrong — either charging HST when you should not, or not charging when you should — creates significant CRA liability. Here is how to get it right.",
+    "excerpt": "HST on ABA therapy is one of the most misunderstood tax issues for Ontario behaviour analysts. Getting it wrong, either charging HST when you should not, or not charging when you should, creates significant CRA liability. Here is how to get it right.",
     "category": "ABA Practices",
     "readTime": "8 min read",
     "date": "2026-05-07"
@@ -58,15 +58,15 @@
   {
     "id": "tax-deductions-aba-business-owners-ontario",
     "title": "Tax Deductions for Ontario ABA Business Owners: Every Legitimate Claim",
-    "excerpt": "ABA practice owners have a wide range of legitimate business deductions that most general accountants miss. This guide covers every major expense category specific to the ABA industry — so you never leave money on the table.",
+    "excerpt": "ABA practice owners have a wide range of legitimate business deductions that most general accountants miss. This guide covers every major expense category specific to the ABA industry, so you never leave money on the table.",
     "category": "ABA Practices",
     "readTime": "8 min read",
     "date": "2026-05-07"
   },
   {
     "id": "payroll-aba-practice-ontario-bcba-rbt",
-    "title": "Payroll for Ontario ABA Practices: BCBAs, RBTs, and Managing OAP Funding",
-    "excerpt": "Payroll is one of the most operationally complex parts of running an ABA practice in Ontario — especially when you mix employees, contractors, OAP-funded hours, and private pay clients. Here is how to get it right.",
+    "title": "Payroll for Ontario ABA Practices: BCBAs, Supervisees, and Managing OAP Funding",
+    "excerpt": "Payroll is one of the most operationally complex parts of running an ABA practice in Ontario, especially when you mix employees, contractors, OAP-funded hours, and private pay clients. Here is how to get it right.",
     "category": "ABA Practices",
     "readTime": "9 min read",
     "date": "2026-05-07"
@@ -74,7 +74,7 @@
   {
     "id": "ontario-incorporation-share-structure-guide",
     "title": "Ontario Incorporation: Choosing the Right Share Structure from Day One",
-    "excerpt": "Most online incorporation services create a simple one-class share structure that works for a single owner — but leaves valuable options on the table. Here is what you should actually be thinking about.",
+    "excerpt": "Most online incorporation services create a simple one-class share structure that works for a single owner, but leaves valuable options on the table. Here is what you should actually be thinking about.",
     "category": "Incorporation",
     "readTime": "8 min read",
     "date": "2026-05-07"
@@ -82,7 +82,7 @@
   {
     "id": "cra-business-account-setup-after-incorporation-ontario",
     "title": "CRA Business Account Setup After Incorporating in Ontario: Step-by-Step",
-    "excerpt": "Incorporating is step one. Setting up your CRA accounts correctly is step two — and getting it wrong creates problems that follow your corporation for years. Here is the complete post-incorporation CRA setup guide.",
+    "excerpt": "Incorporating is step one. Setting up your CRA accounts correctly is step two, and getting it wrong creates problems that follow your corporation for years. Here is the complete post-incorporation CRA setup guide.",
     "category": "Post-Incorporation",
     "readTime": "7 min read",
     "date": "2026-05-08"
@@ -106,7 +106,7 @@
   {
     "id": "ontario-payroll-source-deductions-guide",
     "title": "Ontario Payroll Source Deductions: What Every Small Business Must Know",
-    "excerpt": "Every Ontario employer must withhold CPP contributions, EI premiums, and income tax from employee pay — and remit them to the CRA on time. Missing a remittance deadline triggers penalties that compound fast. Here is what you need to know.",
+    "excerpt": "Every Ontario employer must withhold CPP contributions, EI premiums, and income tax from employee pay, and remit them to the CRA on time. Missing a remittance deadline triggers penalties that compound fast. Here is what you need to know.",
     "category": "Payroll",
     "readTime": "8 min read",
     "date": "2026-05-11"
@@ -114,7 +114,7 @@
   {
     "id": "shareholder-loans-tax-rules-ontario",
     "title": "Shareholder Loans in Ontario: Tax Rules Every Business Owner Must Know",
-    "excerpt": "Withdrawing money from your corporation as a loan rather than salary or dividends seems simple — but the CRA has strict rules. Get it wrong and the entire loan becomes taxable income. Here is what every Ontario business owner needs to know.",
+    "excerpt": "Withdrawing money from your corporation as a loan rather than salary or dividends seems simple, but the CRA has strict rules. Get it wrong and the entire loan becomes taxable income. Here is what every Ontario business owner needs to know.",
     "category": "Corporate Services",
     "readTime": "9 min read",
     "date": "2026-05-12"

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -80,12 +80,12 @@ export default function BlogPostPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Self-employed Canadians face a unique retirement savings challenge: no employer pension plan, no matching contributions, and often significant income variability. The decision between RRSP and TFSA contributions — or how to split between them — can have a major impact on your lifetime tax bill. This guide walks through the key factors specific to Ontario business owners.
+                Self-employed Canadians face a unique retirement savings challenge: no employer pension plan, no matching contributions, and often significant income variability. The decision between RRSP and TFSA contributions, or how to split between them, can have a major impact on your lifetime tax bill. This guide walks through the key factors specific to Ontario business owners.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How RRSP Contributions Work for Self-Employed Individuals</h2>
               <p className="text-gray-700 leading-relaxed">RRSP contributions reduce your current year&apos;s taxable income, creating an immediate tax refund. The contribution grows tax-free until withdrawal, at which point it is taxed as ordinary income.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">For self-employed individuals, RRSP contribution room is 18% of prior year earned income, up to the annual maximum ($31,560 for 2025). Note: business income earned through a corporation does NOT generate RRSP room — only salary, self-employment income from a sole proprietorship, or partnership income.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">For self-employed individuals, RRSP contribution room is 18% of prior year earned income, up to the annual maximum ($31,560 for 2025). Note: business income earned through a corporation does NOT generate RRSP room, only salary, self-employment income from a sole proprietorship, or partnership income.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -110,7 +110,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How TFSA Contributions Work</h2>
               <p className="text-gray-700 leading-relaxed">TFSA contributions are made with after-tax dollars (no tax deduction), but all growth and withdrawals are completely tax-free. The cumulative TFSA contribution room for someone eligible since 2009 is $95,000 as of 2025.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">Unlike the RRSP, TFSA room is not based on income — every adult Canadian gets the same contribution room each year ($7,000 in 2025). Withdrawals in any year add back to your room the following January 1.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">Unlike the RRSP, TFSA room is not based on income, every adult Canadian gets the same contribution room each year ($7,000 in 2025). Withdrawals in any year add back to your room the following January 1.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -122,7 +122,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  No income requirement — even people with zero income get TFSA room
+                  No income requirement, even people with zero income get TFSA room
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -167,7 +167,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  You want flexibility — TFSA withdrawals are accessible at any time without tax
+                  You want flexibility, TFSA withdrawals are accessible at any time without tax
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -183,7 +183,7 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Incorporated Business Owner&apos;s Optimal Strategy</h2>
-              <p className="text-gray-700 leading-relaxed">If you operate through a corporation, you have an additional &quot;third account&quot; — the corporation itself — as a tax-deferred investment vehicle. This changes the optimal RRSP/TFSA strategy.</p>
+              <p className="text-gray-700 leading-relaxed">If you operate through a corporation, you have an additional &quot;third account&quot;, the corporation itself, as a tax-deferred investment vehicle. This changes the optimal RRSP/TFSA strategy.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -208,7 +208,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                For self-employed Canadians, the RRSP vs TFSA question does not have a single right answer — it depends on your current income, expected retirement income, and whether you operate through a corporation. The key principle is to match deductions to your highest-tax years and accumulate tax-free or tax-deferred growth for retirement.
+                For self-employed Canadians, the RRSP vs TFSA question does not have a single right answer, it depends on your current income, expected retirement income, and whether you operate through a corporation. The key principle is to match deductions to your highest-tax years and accumulate tax-free or tax-deferred growth for retirement.
               </p>
 
               <div className="bg-navy p-8 mt-10">

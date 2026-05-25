@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Tax Deductions for ABA Business Owners Ontario 2025 | Adapt Business Solutions CPA',
-  description: 'Running an ABA therapy practice in Ontario? Here are every major tax deduction available — from therapy materials and clinical software to vehicle costs, home office, and CE expenses.',
-  keywords: 'tax deductions ABA practice Ontario, ABA therapy business expenses CRA, behaviour analyst tax write-offs Ontario, BCBA business deductions Canada',
+  description: 'Running an ABA therapy practice in Ontario? Here are every major tax deduction available, from therapy materials and clinical software to vehicle costs, home office, and CE expenses.',
+  keywords: 'tax deductions ABA practice Ontario, ABA therapy business expenses CRA, behaviour analyst tax write-offs Ontario, RBA business deductions Canada',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/tax-deductions-aba-business-owners-ontario' },
   openGraph: {
     title: 'Tax Deductions for Ontario ABA Business Owners: Every Legitimate Claim',
-    description: 'Running an ABA therapy practice in Ontario? Here are every major tax deduction available — from therapy materials and clinical software to vehicle costs, home office, and CE expenses.',
+    description: 'Running an ABA therapy practice in Ontario? Here are every major tax deduction available, from therapy materials and clinical software to vehicle costs, home office, and CE expenses.',
     url: 'https://adaptbusinesssolutions.com/blog/tax-deductions-aba-business-owners-ontario',
     type: 'article',
     publishedTime: '2026-05-07',
@@ -22,7 +22,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Tax Deductions for Ontario ABA Business Owners: Every Legitimate Claim',
-  description: 'Running an ABA therapy practice in Ontario? Here are every major tax deduction available — from therapy materials and clinical software to vehicle costs, home office, and CE expenses.',
+  description: 'Running an ABA therapy practice in Ontario? Here are every major tax deduction available, from therapy materials and clinical software to vehicle costs, home office, and CE expenses.',
   datePublished: '2026-05-07',
   dateModified: '2026-05-07',
   author: { '@type': 'Organization', name: 'Adapt Business Solutions', url: 'https://adaptbusinesssolutions.com' },
@@ -51,7 +51,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -59,11 +59,11 @@ export default function BlogPostPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Running an ABA therapy business involves a very specific set of expenses — clinical materials, assessment tools, supervision hours, professional development, and often significant vehicle use for in-home or community-based therapy. Many of these costs are fully deductible against your business income, but only if they are categorized and documented correctly. This guide walks through the most important deduction categories for Ontario ABA practice owners — both incorporated and sole proprietor.
+                Running an ABA therapy business involves a very specific set of expenses, clinical materials, assessment tools, supervision hours, professional development, and often significant vehicle use for in-home or community-based therapy. Many of these costs are fully deductible against your business income, but only if they are categorized and documented correctly. This guide walks through the most important deduction categories for Ontario ABA practice owners, both incorporated and sole proprietor.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">CPBAO Fees and Professional Dues</h2>
-              <p className="text-gray-700 leading-relaxed">Regulatory fees paid to maintain your ability to practice are among the most clearly deductible expenses for a CPBAO-registered behaviour analyst. These are professional dues directly required to earn your income.</p>
+              <p className="text-gray-700 leading-relaxed">Regulatory fees paid to maintain your ability to practice are among the most clearly deductible expenses for RBAs. These are professional dues directly required to earn your income.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -87,7 +87,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Categorize all regulatory and professional dues separately in your bookkeeping. CRA allows a deduction for dues paid to maintain professional status — these are clean, well-supported deductions that should never be missed.</p>
+                <p className="text-sm text-gray-700">Categorize all regulatory and professional dues separately in your bookkeeping. CRA allows a deduction for dues paid to maintain professional status, these are clean, well-supported deductions that should never be missed.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Clinical Materials, Assessments, and Therapy Supplies</h2>
@@ -144,7 +144,7 @@ export default function BlogPostPage() {
               </ul>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Vehicle Expenses for In-Home and Community-Based ABA</h2>
-              <p className="text-gray-700 leading-relaxed">ABA therapy is frequently delivered in clients&apos; homes, schools, community settings, and day programs. Travel between your home office (or clinic base) and client locations is a legitimate deduction — but CRA rules on documentation are strict.</p>
+              <p className="text-gray-700 leading-relaxed">ABA therapy is frequently delivered in clients&apos; homes, schools, community settings, and day programs. Travel between your home office (or clinic base) and client locations is a legitimate deduction, but CRA rules on documentation are strict.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -160,7 +160,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Travel from home to a fixed clinic is NOT deductible — only travel between work locations or to client sites
+                  Travel from home to a fixed clinic is NOT deductible, only travel between work locations or to client sites
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
@@ -168,7 +168,7 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Professional Development, Supervision, and Continuing Education</h2>
-              <p className="text-gray-700 leading-relaxed">BCBAs and behaviour technicians require ongoing CEUs to maintain certification. These costs are directly tied to your ability to earn income and are fully deductible.</p>
+              <p className="text-gray-700 leading-relaxed">RBAs require ongoing CEs to maintain certification. These costs are directly tied to your ability to earn income and are fully deductible.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -180,7 +180,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Clinical supervision costs paid to a supervising BCBA: deductible as professional fees
+                  Clinical supervision costs paid to a supervising RBA: deductible as professional fees
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -188,11 +188,11 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  BCBA exam prep materials and exam fees: deductible
+                  RBA exam prep materials and exam fees: deductible
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">BACB CE tracking: Keep your BACB CE transcript as backup documentation. If CRA ever audits your professional development deductions, a detailed CE record showing what courses were taken and why they relate to your practice is strong supporting evidence.</p>
+                <p className="text-sm text-gray-700">BACB CE tracking: Keep your BACB and College CE transcript as backup documentation. If CRA ever audits your professional development deductions, a detailed CE record showing what courses were taken and why they relate to your practice is strong supporting evidence.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Home Office and Staff Costs</h2>
@@ -200,7 +200,7 @@ export default function BlogPostPage() {
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Home office: deduct the percentage of your home (by area) used regularly and exclusively for business — applied to rent, utilities, internet, and insurance
+                  Home office: deduct the percentage of your home (by area) used regularly and exclusively for business, applied to rent, utilities, internet, and insurance
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -220,11 +220,11 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">RBT contractor risk: CRA frequently reclassifies RBTs as employees when they work exclusively for one practice, follow your protocols, and use your materials. Misclassification triggers back CPP, EI, and penalties. Have a CPA review your RBT arrangements before an audit raises the issue.</p>
+                <p className="text-sm text-gray-700">Supervisee contractor risk: CRA frequently reclassifies Supervisees as employees when they work exclusively for one practice, follow your protocols, and use your materials. Misclassification triggers back CPP, EI, and penalties. Have a CPA review your Supervisee arrangements before an audit raises the issue.</p>
               </div>
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                ABA practice owners have a rich and specific set of legitimate deductions — CPBAO fees, clinical software, mileage, CE costs, and staff expenses. The key is tracking them all year round in a bookkeeping system designed for your practice, not a generic one. Work with a CPA who knows what ABA businesses spend money on so nothing is missed at tax time.
+                ABA practice owners have a rich and specific set of legitimate deductions, CPBAO fees, clinical software, mileage, CE costs, and staff expenses. The key is tracking them all year round in a bookkeeping system designed for your practice, not a generic one. Work with a CPA who knows what ABA businesses spend money on so nothing is missed at tax time.
               </p>
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Stop Missing Deductions in Your ABA Practice</h3>

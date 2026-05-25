@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
 import { Phone, Mail, MapPin, Clock, Send, Calculator, ArrowRight } from 'lucide-react'
@@ -80,10 +80,10 @@ export default function ContactPage() {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-white">
+      <div id="main-content" className="min-h-screen bg-white">
 
         {/* Hero */}
-        <section className="hero-pattern pt-16 text-white py-20">
+        <section className="hero-pattern pt-20 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Get Started</p>
             <h1 className="font-serif text-4xl lg:text-5xl font-bold mb-4">Complete Your Quote Request</h1>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 {[
                   { icon: Phone, title: 'Phone', main: '(437) 772-9598', sub: 'Monday–Friday, 5 PM – 10 PM EST', href: 'tel:437-772-9598' },
                   { icon: Mail, title: 'Email', main: 'accountant@adaptbusinesssolutions.com', sub: 'We respond within 24 hours', href: 'mailto:accountant@adaptbusinesssolutions.com' },
-                  { icon: MapPin, title: 'Service Area', main: 'Virtual Practice — All of Canada', sub: 'Secure video consultations available', href: null },
+                  { icon: MapPin, title: 'Service Area', main: 'Virtual Practice, All of Canada', sub: 'Secure video consultations available', href: null },
                   { icon: Clock, title: 'Business Hours', main: 'Mon–Fri: 5:00 PM – 10:00 PM EST', sub: 'Saturday & Sunday: Closed', href: null },
                 ].map(({ icon: Icon, title, main, sub, href }) => (
                   <div key={title} className="flex items-start gap-4">
@@ -124,7 +124,7 @@ export default function ContactPage() {
 
                 <div className="bg-gold-50 border border-gold p-5">
                   <h4 className="font-semibold text-navy mb-2">Virtual Consultations</h4>
-                  <p className="text-sm text-gray-600">Secure video consultations via Zoom or Teams at your convenience — available Canada-Wide.</p>
+                  <p className="text-sm text-gray-600">Secure video consultations via Zoom or Teams at your convenience, available Canada-Wide.</p>
                 </div>
               </div>
 
@@ -165,7 +165,7 @@ export default function ContactPage() {
                     {submitStatus === 'success' && (
                       <div className="mb-5 p-4 bg-green-50 border border-green-200">
                         <p className="text-sm font-semibold text-green-800">Message sent successfully!</p>
-                        <p className="text-sm text-green-700 mt-1">Thank you — we will contact you within 24 hours with a detailed proposal.</p>
+                        <p className="text-sm text-green-700 mt-1">Thank you, we will contact you within 24 hours with a detailed proposal.</p>
                       </div>
                     )}
                     {submitStatus === 'error' && (

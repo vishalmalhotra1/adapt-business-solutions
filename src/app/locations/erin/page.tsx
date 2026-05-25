@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -28,7 +28,7 @@ const services = [
 
 const whyUs = [
   { title: 'Rural Ontario Expertise', desc: 'Understanding of the unique business environment in small-town and rural Wellington County.' },
-  { title: 'Virtual Convenience', desc: 'Full-service CPA support without the need to travel to a city — everything handled online.' },
+  { title: 'Virtual Convenience', desc: 'Full-service CPA support without the need to travel to a city, everything handled online.' },
   { title: 'Affordable Flat Fees', desc: 'Transparent monthly pricing starting at $100/month, designed for small businesses.' },
   { title: 'Personalized Attention', desc: 'Unlike large accounting firms, you get direct access to your CPA every time.' },
 ]
@@ -37,7 +37,7 @@ export default function ErinPage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">
@@ -45,7 +45,7 @@ export default function ErinPage() {
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Erin, ON</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Professional CPA Services in Erin</h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto mb-8">
-              Expert virtual accounting and tax services for Erin and Wellington County businesses — professional CPA support without the city commute.
+              Expert virtual accounting and tax services for Erin and Wellington County businesses, professional CPA support without the city commute.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:437-772-9598" className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">

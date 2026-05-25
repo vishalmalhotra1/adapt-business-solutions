@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Sole Proprietor vs Corporation Canada: Tax Math at $50K, $100K, $150K | Adapt Accounting',
-  description: 'Real numbers comparing sole proprietorship vs incorporation tax burden in Canada at different income levels. See exactly when incorporating saves money — with actual tax calculations.',
+  description: 'Real numbers comparing sole proprietorship vs incorporation tax burden in Canada at different income levels. See exactly when incorporating saves money, with actual tax calculations.',
   keywords: 'sole proprietor vs corporation Canada, should I incorporate Canada, incorporation tax savings Ontario, is incorporating worth it, corporation vs sole proprietor tax Canada',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/sole-proprietor-vs-corporation-canada' },
   openGraph: {
@@ -33,7 +33,7 @@ const incomeScenarios = [
   {
     income: '$50,000 Net Income',
     soleProp: { tax: '~$11,000', effectiveRate: '22%', notes: 'Federal + Ontario personal tax. No CPP on self-employment portion is separate.' },
-    corp: { tax: '~$5,500 corp + tax on salary/dividend', effectiveRate: '11% (retained)', notes: 'Corp tax at ~11% on retained income. If you withdraw all $50K, personal tax applies — no savings.' },
+    corp: { tax: '~$5,500 corp + tax on salary/dividend', effectiveRate: '11% (retained)', notes: 'Corp tax at ~11% on retained income. If you withdraw all $50K, personal tax applies, no savings.' },
     verdict: 'Likely not worth it',
     verdictColor: 'text-red-600',
     explanation: 'At $50K, if you need all the money to live on, there\'s no deferral benefit. The $1,500–$3,000/year in extra accounting costs (T2, bookkeeping) wipe out any advantage. Exception: if you have other T4 income and don\'t need the business income, a corporation can defer tax.',
@@ -74,7 +74,7 @@ export default function SolePropVsCorpPage() {
               Sole Proprietor vs Corporation Canada: The Real Tax Math at $50K, $100K, and $150K
             </h1>
             <p className="text-navy-100 text-lg">
-              Exact numbers, not generalizations. See when incorporating saves money in Canada — and when it doesn&apos;t.
+              Exact numbers, not generalizations. See when incorporating saves money in Canada, and when it doesn&apos;t.
             </p>
             <p className="text-navy-100 text-sm mt-4">Published May 6, 2026 · 10 min read · By Adapt Accounting Services CPA</p>
           </div>
@@ -100,7 +100,7 @@ export default function SolePropVsCorpPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Core Concept: Tax Deferral, Not Tax Elimination</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Incorporating doesn&apos;t make income disappear. It creates a tax deferral: your corporation pays a lower rate on retained earnings now, and you pay personal tax when you eventually withdraw those earnings as salary or dividends. The benefit comes from the time value of money — the tax you don&apos;t pay today compounds inside your corporation.
+                Incorporating doesn&apos;t make income disappear. It creates a tax deferral: your corporation pays a lower rate on retained earnings now, and you pay personal tax when you eventually withdraw those earnings as salary or dividends. The benefit comes from the time value of money, the tax you don&apos;t pay today compounds inside your corporation.
               </p>
               <div className="bg-gold-50 border-l-4 border-gold p-5 mb-8">
                 <p className="text-sm text-gray-700"><strong>Key insight:</strong> The incorporation benefit only materializes if you <em>don&apos;t need all the money to live on</em>. If you withdraw 100% of business profits personally, incorporation adds cost without adding savings.</p>
@@ -139,7 +139,7 @@ export default function SolePropVsCorpPage() {
                 {[
                   { title: 'Liability protection', desc: 'A corporation shields personal assets from business debts and lawsuits. A sole proprietor has no such shield.' },
                   { title: 'Credibility and contracts', desc: 'Many enterprise clients and government contracts require or prefer dealing with an incorporated entity.' },
-                  { title: 'Income splitting (careful)', desc: 'With proper share structure, dividends can be paid to a spouse or adult children in lower tax brackets. TOSI rules (Tax on Split Income) limit this — talk to a CPA.' },
+                  { title: 'Income splitting (careful)', desc: 'With proper share structure, dividends can be paid to a spouse or adult children in lower tax brackets. TOSI rules (Tax on Split Income) limit this, talk to a CPA.' },
                   { title: 'Lifetime Capital Gains Exemption (LCGE)', desc: 'If you sell a qualifying small business corporation, you may shelter up to $1.25M in capital gains. This exemption is only available to incorporated businesses.' },
                   { title: 'Retirement and exit planning', desc: 'Retaining earnings inside a corporation and investing through a holding company builds a tax-sheltered investment portfolio.' },
                 ].map(item => (
@@ -188,7 +188,7 @@ export default function SolePropVsCorpPage() {
                   { q: 'Do you earn less than $80K net and need all of it?', a: 'Stay sole prop. The math doesn\'t work yet.' },
                   { q: 'Do you earn $80K–$100K and can leave some in the business?', a: 'Borderline. Run the numbers with a CPA for your situation.' },
                   { q: 'Do you earn $100K+ and only need part personally?', a: 'Strong candidate for incorporation. The tax deferral compounds significantly.' },
-                  { q: 'Do you have significant liability exposure?', a: 'Incorporate regardless of income — the liability shield alone may be worth it.' },
+                  { q: 'Do you have significant liability exposure?', a: 'Incorporate regardless of income, the liability shield alone may be worth it.' },
                   { q: 'Are you planning to sell the business?', a: 'Incorporate now so you can qualify for the $1.25M Lifetime Capital Gains Exemption.' },
                 ].map(({ q, a }) => (
                   <div key={q} className="bg-gray-50 border border-gray-100 p-4">
@@ -201,7 +201,7 @@ export default function SolePropVsCorpPage() {
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Get Your Personal Incorporation Analysis</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Every situation is different. We&apos;ll model the actual tax impact for your income level, withdrawal needs, and business type — before you pay anything.
+                  Every situation is different. We&apos;ll model the actual tax impact for your income level, withdrawal needs, and business type, before you pay anything.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link href="/services/incorporation" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">

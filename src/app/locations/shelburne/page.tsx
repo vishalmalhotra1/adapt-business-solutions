@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -28,16 +28,16 @@ const services = [
 
 const whyUs = [
   { title: 'Shelburne & Dufferin Expertise', desc: 'Based in Orangeville, we know the Shelburne and Dufferin County business community.' },
-  { title: 'Virtual Convenience', desc: 'Full CPA services delivered online — no need to travel to a larger city for professional accounting.' },
+  { title: 'Virtual Convenience', desc: 'Full CPA services delivered online, no need to travel to a larger city for professional accounting.' },
   { title: 'Transparent Pricing', desc: 'Clear, flat-fee monthly packages starting at $100/month. No billable hours, no surprises.' },
-  { title: 'Personalized Service', desc: 'Direct access to your CPA — not a junior associate or call centre.' },
+  { title: 'Personalized Service', desc: 'Direct access to your CPA, not a junior associate or call centre.' },
 ]
 
 export default function ShelburnePage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">
@@ -45,7 +45,7 @@ export default function ShelburnePage() {
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Shelburne, ON</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Professional CPA Services in Shelburne</h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto mb-8">
-              Expert virtual accounting and tax services for Shelburne and Dufferin County — professional CPA support, no city commute required.
+              Expert virtual accounting and tax services for Shelburne and Dufferin County, professional CPA support, no city commute required.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:437-772-9598" className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">

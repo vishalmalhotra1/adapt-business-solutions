@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -28,7 +28,7 @@ const services = [
 
 const whyUs = [
   { title: 'Local Market Knowledge', desc: 'Understanding of the Orangeville business environment and Dufferin County economy.' },
-  { title: 'Virtual Convenience', desc: 'Secure online services — no need to drive downtown for every meeting.' },
+  { title: 'Virtual Convenience', desc: 'Secure online services, no need to drive downtown for every meeting.' },
   { title: 'Competitive Pricing', desc: '20–30% more cost-effective than traditional Orangeville accounting firms.' },
   { title: 'Responsive Service', desc: 'Fast response times and personalized attention from a dedicated CPA.' },
 ]
@@ -37,7 +37,7 @@ export default function OrangevillePage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">
@@ -45,7 +45,7 @@ export default function OrangevillePage() {
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Orangeville, ON</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Professional CPA Services in Orangeville</h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto mb-8">
-              Serving Orangeville businesses with expert virtual CPA services — bookkeeping, tax preparation, financial analysis, and more.
+              Serving Orangeville businesses with expert virtual CPA services, bookkeeping, tax preparation, financial analysis, and more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:437-772-9598" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">

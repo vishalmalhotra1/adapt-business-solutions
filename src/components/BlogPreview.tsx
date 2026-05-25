@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { ArrowRight, Clock, Calendar } from 'lucide-react'
 import { autoBlogPosts } from '@/data/auto-blog-posts'
 
@@ -15,7 +15,7 @@ const pinnedPosts = [
   {
     id: 'sole-proprietor-vs-corporation-canada',
     title: 'Sole Proprietor vs Corporation Canada: The Real Tax Math at $50K, $100K, $150K',
-    excerpt: 'Exact numbers comparing sole proprietorship and incorporation tax burden in Canada. See when incorporating saves money — and when it doesn\'t.',
+    excerpt: 'Exact numbers comparing sole proprietorship and incorporation tax burden in Canada. See when incorporating saves money, and when it doesn\'t.',
     category: 'Tax Strategy',
     readTime: '10 min read',
     date: '2026-05-06',

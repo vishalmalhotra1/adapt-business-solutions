@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'T1135 Foreign Property Explained: Robinhood, Coinbase, US Rentals | Adapt Accounting',
-  description: 'T1135 Foreign Income Verification Statement guide for Canadians — who must file, what counts as foreign property, Robinhood and Coinbase reporting, US rental income, and penalties for non-filing.',
+  description: 'T1135 Foreign Income Verification Statement guide for Canadians, who must file, what counts as foreign property, Robinhood and Coinbase reporting, US rental income, and penalties for non-filing.',
   keywords: 'T1135 foreign property Canada, T1135 Robinhood Canada, Coinbase Canada T1135, US rental property Canadian tax, T1135 filing CPA, US dividends Canadian tax, foreign income verification statement',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/t1135-foreign-property-explained' },
   openGraph: {
     title: 'T1135 Foreign Property Explained: Robinhood, Coinbase, US Rentals',
-    description: 'Complete guide to T1135 for Canadians — who needs to file, what counts as foreign property, and how to report US brokerage accounts and rental income.',
+    description: 'Complete guide to T1135 for Canadians, who needs to file, what counts as foreign property, and how to report US brokerage accounts and rental income.',
     url: 'https://adaptbusinesssolutions.com/blog/t1135-foreign-property-explained',
     type: 'article',
   },
@@ -62,7 +62,7 @@ export default function T1135Page() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                If you hold foreign investments, a US brokerage account, cryptocurrency on a foreign exchange, or real estate outside Canada worth more than $100,000 CAD at any point during the year — you almost certainly need to file a T1135. Many Canadians don&apos;t realize this, and CRA&apos;s penalties for late or non-filing are steep.
+                If you hold foreign investments, a US brokerage account, cryptocurrency on a foreign exchange, or real estate outside Canada worth more than $100,000 CAD at any point during the year, you almost certainly need to file a T1135. Many Canadians don&apos;t realize this, and CRA&apos;s penalties for late or non-filing are steep.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-8 mb-4">What Is the T1135?</h2>
@@ -76,7 +76,7 @@ export default function T1135Page() {
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Who Must File T1135?</h2>
               <p className="text-gray-700 leading-relaxed mb-4">Canadian residents (individuals, corporations, and trusts) who at any point during the year held specified foreign property with a total <strong>cost exceeding $100,000 CAD</strong>.</p>
               <div className="bg-gold-50 border-l-4 border-gold p-5 mb-6">
-                <p className="text-sm text-gray-700"><strong>The threshold is based on cost — not market value.</strong> If you invested $110,000 CAD in US stocks and they dropped to $80,000 by year-end, you still need to file because the original cost exceeded $100,000.</p>
+                <p className="text-sm text-gray-700"><strong>The threshold is based on cost, not market value.</strong> If you invested $110,000 CAD in US stocks and they dropped to $80,000 by year-end, you still need to file because the original cost exceeded $100,000.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Counts as &ldquo;Specified Foreign Property&rdquo;?</h2>
@@ -111,7 +111,7 @@ export default function T1135Page() {
 
               <h3 className="font-serif text-xl font-bold text-navy mt-6 mb-3">US Rental Properties</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Canadians owning rental properties in the US face a multi-layered filing obligation: T1135 in Canada (if cost &gt; $100K), T1 foreign rental income reporting, potential US Form 1040-NR filing, and FIRPTA considerations on eventual sale. This is one of the most complex cross-border tax situations — professional advice is essential.
+                Canadians owning rental properties in the US face a multi-layered filing obligation: T1135 in Canada (if cost &gt; $100K), T1 foreign rental income reporting, potential US Form 1040-NR filing, and FIRPTA considerations on eventual sale. This is one of the most complex cross-border tax situations, professional advice is essential.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Penalties for Non-Filing</h2>
@@ -121,7 +121,7 @@ export default function T1135Page() {
                   <li>• Late filing: $25/day up to $2,500 per year</li>
                   <li>• Knowingly failing to file or gross negligence: $500/month up to 24 months ($12,000)</li>
                   <li>• Where property wasn&apos;t reported on T1: additional penalty of 5% of the cost of unreported property</li>
-                  <li>• CRA has a voluntary disclosure program — but it requires coming forward before CRA contacts you</li>
+                  <li>• CRA has a voluntary disclosure program, but it requires coming forward before CRA contacts you</li>
                 </ul>
               </div>
 

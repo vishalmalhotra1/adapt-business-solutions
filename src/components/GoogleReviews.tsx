@@ -53,9 +53,9 @@ const reviews = [
 
 function StarRating({ count }: { count: number }) {
   return (
-    <div className="flex gap-0.5">
+    <div className="flex gap-0.5" role="img" aria-label={`${count} out of 5 stars`}>
       {Array.from({ length: count }).map((_, i) => (
-        <Star key={i} className="h-4 w-4 fill-gold text-gold" />
+        <Star key={i} className="h-4 w-4 fill-gold text-gold" aria-hidden="true" />
       ))}
     </div>
   )
@@ -63,50 +63,52 @@ function StarRating({ count }: { count: number }) {
 
 export default function GoogleReviews() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50" aria-labelledby="reviews-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Client Reviews</p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-4">
+          <p className="text-xs font-semibold tracking-widest uppercase mb-3" style={{ color: 'var(--gold-accessible)' }}>Client Reviews</p>
+          <h2 id="reviews-heading" className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-4">
             What Our Clients Say
           </h2>
           <div className="flex items-center justify-center gap-3 mb-2">
             <StarRating count={5} />
             <span className="font-bold text-navy text-lg">4.9</span>
-            <span className="text-gray-500 text-sm">· 8 reviews on Google</span>
+            <span className="text-gray-600 text-sm">· 8 reviews on Google</span>
           </div>
           <a
             href="https://share.google/97D3wcC2GXMyTj4nI"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-gold hover:text-gold-hover font-semibold transition-colors"
+            className="text-sm font-semibold transition-colors hover:underline underline-offset-4"
+            style={{ color: 'var(--gold-accessible)' }}
+            aria-label="See all reviews on Google (opens in new tab)"
           >
-            See all reviews on Google →
+            See all reviews on Google
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
           {reviews.slice(0, 6).map((review) => (
-            <div
+            <li
               key={review.name}
               className="bg-white border border-gray-100 shadow-sm p-6 flex flex-col"
             >
               <div className="flex items-center justify-between mb-3">
                 <StarRating count={review.rating} />
-                <span className="text-xs text-gray-400">{review.date}</span>
+                <time className="text-xs text-gray-400">{review.date}</time>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed flex-1 mb-4">
+              <blockquote className="text-gray-700 text-sm leading-relaxed flex-1 mb-4">
                 &ldquo;{review.text}&rdquo;
-              </p>
+              </blockquote>
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-                <div className="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+                <div className="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-xs font-bold flex-shrink-0" aria-hidden="true">
                   {review.name.charAt(0)}
                 </div>
-                <span className="font-semibold text-navy text-sm">{review.name}</span>
+                <cite className="font-semibold text-navy text-sm not-italic">{review.name}</cite>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
 
         <div className="text-center mt-10">
           <a
@@ -114,6 +116,7 @@ export default function GoogleReviews() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border-2 border-navy text-navy hover:bg-navy hover:text-white font-semibold px-6 py-3 transition-colors text-sm"
+            aria-label="See all reviews on Google (opens in new tab)"
           >
             See All Reviews on Google
           </a>

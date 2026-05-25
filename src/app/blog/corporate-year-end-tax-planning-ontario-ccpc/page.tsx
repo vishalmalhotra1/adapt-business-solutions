@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Corporate year-end tax planning is not just for big companies. Ontario CCPCs of all sizes can take meaningful steps in the final weeks of their fiscal year to reduce both corporate and personal tax. This checklist covers the high-impact decisions that should happen before your year-end — not after.
+                Corporate year-end tax planning is not just for big companies. Ontario CCPCs of all sizes can take meaningful steps in the final weeks of their fiscal year to reduce both corporate and personal tax. This checklist covers the high-impact decisions that should happen before your year-end, not after.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">1. Salary vs Dividend Decision</h2>
@@ -104,7 +104,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Year-end salary bonus: you can declare a salary bonus before year-end to reduce corporate income — but it must be paid within 180 days of year-end to be deductible in the current year. Book the accrual and pay on time.</p>
+                <p className="text-sm text-gray-700">Year-end salary bonus: you can declare a salary bonus before year-end to reduce corporate income, but it must be paid within 180 days of year-end to be deductible in the current year. Book the accrual and pay on time.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">2. Bonus Accrual Timing</h2>
@@ -220,7 +220,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Corporate year-end tax planning requires timely action — most strategies cannot be implemented retroactively after year-end. The earlier in your fiscal year you begin planning, the more options you have. Even businesses in their first year of operation can benefit from reviewing these items with a CPA before closing their books.
+                Corporate year-end tax planning requires timely action, most strategies cannot be implemented retroactively after year-end. The earlier in your fiscal year you begin planning, the more options you have. Even businesses in their first year of operation can benefit from reviewing these items with a CPA before closing their books.
               </p>
 
               <div className="bg-navy p-8 mt-10">

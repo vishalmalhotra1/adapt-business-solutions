@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Ontario Corporation Annual Filing Requirements 2025 | Adapt Business Solutions',
-  description: 'Every Ontario corporation has annual filing obligations — T2 corporate tax, Ontario annual return, HST, and minute book updates. Missing any one of them triggers penalties.',
+  description: 'Every Ontario corporation has annual filing obligations, T2 corporate tax, Ontario annual return, HST, and minute book updates. Missing any one of them triggers penalties.',
   keywords: 'Ontario corporation annual filing requirements, T2 corporate tax return deadline, Ontario annual return corporation, OBCA annual filing obligations',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/ontario-corporation-annual-filing-requirements' },
   openGraph: {
     title: 'Annual Filing Requirements for Ontario Corporations: What You Must Do Every Year',
-    description: 'Every Ontario corporation has annual filing obligations — T2 corporate tax, Ontario annual return, HST, and minute book updates. Missing any one of them triggers penalties.',
+    description: 'Every Ontario corporation has annual filing obligations, T2 corporate tax, Ontario annual return, HST, and minute book updates. Missing any one of them triggers penalties.',
     url: 'https://adaptbusinesssolutions.com/blog/ontario-corporation-annual-filing-requirements',
     type: 'article',
     publishedTime: '2026-05-09',
@@ -22,7 +22,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Annual Filing Requirements for Ontario Corporations: What You Must Do Every Year',
-  description: 'Every Ontario corporation has annual filing obligations — T2 corporate tax, Ontario annual return, HST, and minute book updates. Missing any one of them triggers penalties.',
+  description: 'Every Ontario corporation has annual filing obligations, T2 corporate tax, Ontario annual return, HST, and minute book updates. Missing any one of them triggers penalties.',
   datePublished: '2026-05-09',
   dateModified: '2026-05-09',
   author: {
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -80,11 +80,11 @@ export default function BlogPostPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                When you incorporate in Ontario, you take on a set of recurring obligations that continue for the life of the corporation. These are not optional — they are legal requirements under the Ontario Business Corporations Act, the Income Tax Act, and the Excise Tax Act. This guide covers every major annual filing your Ontario corporation must complete and the consequences of missing them.
+                When you incorporate in Ontario, you take on a set of recurring obligations that continue for the life of the corporation. These are not optional, they are legal requirements under the Ontario Business Corporations Act, the Income Tax Act, and the Excise Tax Act. This guide covers every major annual filing your Ontario corporation must complete and the consequences of missing them.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">1. T2 Corporate Income Tax Return</h2>
-              <p className="text-gray-700 leading-relaxed">Every Ontario corporation must file a T2 corporate income tax return every year — even if the corporation had no income, no activity, or is dormant. There are no exceptions.</p>
+              <p className="text-gray-700 leading-relaxed">Every Ontario corporation must file a T2 corporate income tax return every year, even if the corporation had no income, no activity, or is dormant. There are no exceptions.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -100,7 +100,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Corporations with no activity: file a &quot;nil return&quot; — T2 with nil income
+                  Corporations with no activity: file a &quot;nil return&quot;, T2 with nil income
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
@@ -128,11 +128,11 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Dissolution risk: Failure to file annual returns for two consecutive years triggers a notice from the province, and continued non-filing can result in the corporation being dissolved. A dissolved corporation loses its legal status — a costly problem if it holds assets or ongoing contracts.</p>
+                <p className="text-sm text-gray-700">Dissolution risk: Failure to file annual returns for two consecutive years triggers a notice from the province, and continued non-filing can result in the corporation being dissolved. A dissolved corporation loses its legal status, a costly problem if it holds assets or ongoing contracts.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">3. HST Returns</h2>
-              <p className="text-gray-700 leading-relaxed">If your corporation is registered for HST, you must file HST returns on schedule — annually, quarterly, or monthly depending on your assigned filing frequency.</p>
+              <p className="text-gray-700 leading-relaxed">If your corporation is registered for HST, you must file HST returns on schedule, annually, quarterly, or monthly depending on your assigned filing frequency.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -153,7 +153,7 @@ export default function BlogPostPage() {
               </ul>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">4. T4 Payroll Slips (If You Have Employees or Pay Salary)</h2>
-              <p className="text-gray-700 leading-relaxed">If your corporation paid salary to anyone — including yourself as the incorporated owner — during the calendar year, T4 slips must be issued to each recipient and filed with the CRA.</p>
+              <p className="text-gray-700 leading-relaxed">If your corporation paid salary to anyone, including yourself as the incorporated owner, during the calendar year, T4 slips must be issued to each recipient and filed with the CRA.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -182,7 +182,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Required for dividends paid — even to the sole shareholder-owner
+                  Required for dividends paid, even to the sole shareholder-owner
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -194,7 +194,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Common oversight: Many small business owners pay themselves dividends informally throughout the year and forget to prepare T5 slips. CRA audits frequently uncover unreported dividends — which can be reclassified as shareholder benefits with adverse tax consequences.</p>
+                <p className="text-sm text-gray-700">Common oversight: Many small business owners pay themselves dividends informally throughout the year and forget to prepare T5 slips. CRA audits frequently uncover unreported dividends, which can be reclassified as shareholder benefits with adverse tax consequences.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">6. Minute Book Update</h2>
@@ -220,13 +220,13 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Ontario corporations carry more administrative overhead than sole proprietorships — but all of these obligations are manageable with the right systems. A CPA who handles your corporate year-end will typically file the T2, prepare your T4s and T5s, and update your minutes as part of an integrated annual package. The goal is to never miss a deadline.
+                Ontario corporations carry more administrative overhead than sole proprietorships, but all of these obligations are manageable with the right systems. A CPA who handles your corporate year-end will typically file the T2, prepare your T4s and T5s, and update your minutes as part of an integrated annual package. The goal is to never miss a deadline.
               </p>
 
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Never Miss a Corporate Filing Deadline</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Adapt Business Solutions manages all annual corporate filings for Ontario corporations — T2, T4, T5, HST, minutes, and Ontario annual returns. Ask about our annual compliance package.
+                  Adapt Business Solutions manages all annual corporate filings for Ontario corporations, T2, T4, T5, HST, minutes, and Ontario annual returns. Ask about our annual compliance package.
                 </p>
                 <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   Get a Free Quote <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

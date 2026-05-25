@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import CalendlyEmbed from '@/components/CalendlyEmbed'
@@ -6,13 +6,13 @@ import Link from 'next/link'
 import { ArrowRight, CheckCircle, AlertCircle, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'CPA for ABA Practitioners in Canada — Incorporation & Tax Strategy | Adapt',
-  description: 'Expert CPA services for behavior analysts. CPBAO-compliant professional corporation, Certificate of Authorization support, ABA tax deductions, OAP payroll. Virtual, Canada-wide.',
-  keywords: 'ABA practitioner CPA, BCBA incorporation Canada, behavior analyst accounting, CPBAO compliance, Ontario ABA tax, RBT payroll, OAP funding accounting, professional corporation BCBA',
+  title: 'CPA for ABA Practitioners in Ontario, Incorporation & Tax Strategy | Adapt',
+  description: 'Expert CPA services for behavior analysts. CPBAO-compliant professional corporation, Certificate of Authorization support, ABA tax deductions, OAP payroll. Virtual, Ontario-wide.',
+  keywords: 'ABA practitioner CPA, RBA incorporation Ontario, behavior analyst accounting, CPBAO compliance, Ontario ABA tax, Supervisee payroll, OAP funding accounting, professional corporation RBA',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/services/aba-practitioners' },
   openGraph: {
-    title: 'CPA for ABA Practitioners in Canada — Adapt Accounting Services',
-    description: 'The CPA firm that understands CPBAO, OAP funding, contractor classification, and ABA-specific tax deductions. $299 incorporation. Virtual, Canada-wide.',
+    title: 'CPA for ABA Practitioners in Ontario, Adapt Accounting Services',
+    description: 'The CPA firm that understands CPBAO, OAP funding, contractor classification, and ABA-specific tax deductions. $299 incorporation. Virtual, Ontario-wide.',
     url: 'https://adaptbusinesssolutions.com/services/aba-practitioners',
     type: 'website',
   },
@@ -21,23 +21,23 @@ export const metadata: Metadata = {
 const painPoints = [
   {
     question: 'Should I incorporate as a Professional Corporation?',
-    answer: 'Probably yes — but the threshold depends on your income. Most BCBAs earning $80K+ save thousands annually through tax deferral. Income left inside the corporation is taxed at ~12.2% vs. your personal marginal rate of up to 53.5%. Note: unlike general corporations, ABA professional corporations cannot split income with a non-registrant spouse — all shareholders must be CPBAO registrants.',
+    answer: 'Probably yes, but the threshold depends on your income. Most RBAs earning $80K+ save thousands annually through tax deferral. Income left inside the corporation is taxed at ~12.2% vs. your personal marginal rate of up to 53.5%. Note: unlike general corporations, ABA professional corporations cannot split income with a non-registrant spouse, all shareholders must be CPBAO registrants.',
   },
   {
     question: 'What exactly is CPBAO compliance for a professional corporation?',
-    answer: 'CPBAO-registered behaviour analysts who want to practice through a corporation must obtain a Certificate of Authorization from CPBAO ($350 initial, $250/year renewal) — on top of Ontario incorporation. All shareholders, officers, and directors must be current CPBAO registrants. Non-registrant spouses cannot hold shares. The corporation name must follow strict CPBAO naming rules (surname + "Applied Behaviour Analysis Professional Corporation"). These rules are similar to physician and dentist PCs. Getting the structure wrong puts your Certificate of Authorization at risk.',
+    answer: 'CPBAO-registered behaviour analysts who want to practice through a corporation must obtain a Certificate of Authorization from CPBAO ($350 initial, $250/year renewal), on top of Ontario incorporation. All shareholders, officers, and directors must be current CPBAO registrants. Non-registrant spouses cannot hold shares. The corporation name must follow strict CPBAO naming rules (surname + "Applied Behaviour Analysis Professional Corporation"). These rules are similar to physician and dentist PCs. Getting the structure wrong puts your Certificate of Authorization at risk.',
   },
   {
-    question: 'Am I classified correctly by CRA — self-employed or employed?',
+    question: 'Am I classified correctly by CRA, self-employed or employed?',
     answer: 'If you work for a clinic but you\'re paid as a contractor, CRA may reclassify you as an employee. That means back taxes, CPP, and EI. We review your arrangement and flag the risk before CRA does.',
   },
   {
     question: 'What can I actually deduct as an ABA practitioner?',
-    answer: 'BACB certification fees, CPBAO dues, clinical software (Catalyst, CentralReach), mileage for home visits, home office, CE conferences, RBT training and supervision costs, professional liability insurance, and more.',
+    answer: 'BACB certification fees, CPBAO dues, clinical software (Catalyst, CentralReach), mileage for home visits, home office, CE conferences, Supervisee training and supervision costs, professional liability insurance, and more.',
   },
   {
     question: 'Is my ABA revenue subject to HST?',
-    answer: 'It depends on who you\'re treating and how you\'re funded. OAP-funded services have different HST rules than private-pay. Getting this wrong creates CRA liability — in both directions.',
+    answer: 'It depends on who you\'re serving and how you\'re funded. Autism services have different HST rules than private-pay. Getting this wrong creates CRA liability, in both directions.',
   },
 ]
 
@@ -47,7 +47,6 @@ const incorporationIncludes = [
   'CPBAO-compliant share structure (registrant-only)',
   'Certificate of Authorization application support',
   'CRA accounts: corporate tax (RC), HST (RT), payroll (RP)',
-  'OAP provider transition support',
   'Corporate minute book',
 ]
 
@@ -62,7 +61,7 @@ const abaBlogPosts = [
   {
     id: 'incorporating-aba-practice-ontario-behaviour-analysts',
     title: 'Incorporating Your ABA Practice in Ontario',
-    description: 'Why BCBAs can incorporate, real tax savings at different income levels, OAP funding implications, and how we handle the setup.',
+    description: 'Why RBAs can incorporate, real tax savings at different income levels, OAP funding implications, and how we handle the setup.',
     tag: 'Incorporation',
     readTime: '9 min',
     emoji: '🏢',
@@ -78,15 +77,15 @@ const abaBlogPosts = [
   {
     id: 'tax-deductions-aba-business-owners-ontario',
     title: 'Tax Deductions for ABA Business Owners',
-    description: 'Every legitimate deduction for ABA practice owners — clinical software, mileage, BACB fees, CE conferences, RBT costs, and home office.',
+    description: 'Every legitimate deduction for ABA practice owners, clinical software, mileage, BACB fees, CE conferences, Supervisee costs, and home office.',
     tag: 'Tax Planning',
     readTime: '8 min',
     emoji: '💰',
   },
   {
     id: 'payroll-aba-practice-ontario-bcba-rbt',
-    title: 'Payroll: BCBAs, RBTs & OAP Funding',
-    description: 'Employee vs contractor for RBTs, OAP funding flow, CRA remittance obligations, and the director liability risk most ABA owners miss.',
+    title: 'Payroll: RBAs, Supervisees & OAP Funding',
+    description: 'Employee vs contractor for Supervisees, OAP funding flow, CRA remittance obligations, and the director liability risk most ABA owners miss.',
     tag: 'Payroll',
     readTime: '9 min',
     emoji: '👥',
@@ -97,7 +96,7 @@ const howItWorks = [
   {
     step: '01',
     title: 'Book a free 30-min call',
-    desc: 'Tell us about your practice — solo contractor, small clinic, or somewhere in between. We listen before we recommend anything.',
+    desc: 'Tell us about your practice, solo contractor, small clinic, or somewhere in between. We listen before we recommend anything.',
   },
   {
     step: '02',
@@ -151,20 +150,20 @@ export default function ABAPage() {
       <main className="min-h-screen bg-white">
 
         {/* Hero */}
-        <section className="hero-pattern pt-16 text-white" style={{ background: 'linear-gradient(135deg, #0d2d3a 0%, #0d1b2a 70%)' }}>
+        <section className="hero-pattern pt-20 text-white" style={{ background: 'linear-gradient(135deg, #0d2d3a 0%, #0d1b2a 70%)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
             <div className="max-w-3xl">
               <span className="inline-block bg-teal-500/20 text-teal-300 text-xs font-bold px-3 py-1.5 tracking-widest uppercase mb-6">
                 Specialty CPA Practice
               </span>
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
-                CPA for ABA Practitioners in Canada
+                CPA for ABA Practitioners in Ontario
               </h1>
               <p className="text-lg text-navy-100 leading-relaxed mb-8 max-w-2xl">
-                Professional corporation incorporation. CPBAO compliance. Contractor classification expertise. Tax deductions specific to your practice. We understand your world — most CPAs don&apos;t.
+                CPBAO-compliant professional corporation. Contractor classification expertise. Tax deductions specific to your practice. We understand your world, most CPAs don&apos;t.
               </p>
               <p className="text-gold font-semibold text-lg mb-10">
-                Cheap incorporation. Clear taxes. No surprises.
+                Affordable incorporation. Clear taxes. No surprises.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -186,7 +185,7 @@ export default function ABAPage() {
               <div className="mt-12 pt-8 border-t border-white/10 flex flex-wrap gap-8 text-sm text-navy-100">
                 <div><span className="text-gold font-semibold">Vishal Malhotra</span><span className="ml-2">CPA Ontario · Rep ID V64F78X</span></div>
                 <div><span className="text-gold font-semibold">EFILE</span><span className="ml-2">Certified</span></div>
-                <div><span className="text-gold font-semibold">Virtual</span><span className="ml-2">Canada-Wide</span></div>
+                <div><span className="text-gold font-semibold">Virtual</span><span className="ml-2">Ontario-Wide</span></div>
                 <div><span className="text-gold font-semibold">$299</span><span className="ml-2">Incorporation</span></div>
               </div>
             </div>
@@ -205,7 +204,7 @@ export default function ABAPage() {
                 Running an ABA practice as a sole proprietor costs you thousands in unnecessary taxes
               </h2>
               <p className="text-gray-600 text-lg">
-                You&apos;re great at what you do clinically. The tax and compliance side is a different world — and most general accountants don&apos;t know ABA-specific rules any better than you do.
+                You&apos;re great at what you do clinically. The tax and compliance side is a different world, and most general accountants don&apos;t know the college&apos;s rules any better than you do.
               </p>
             </div>
 
@@ -237,20 +236,20 @@ export default function ABAPage() {
                 What We Do for ABA Practices
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-                We&apos;ve incorporated ABA businesses, handled OAP funding payroll, filed HST for therapy practices, and optimized tax strategy for behaviour analysts across Canada. No learning curve on our end.
+                We&apos;ve incorporated ABA businesses, filed HST for therapy practices, and optimized tax strategy for behaviour analysts across Ontario. No learning curve on our end.
               </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
 
-              {/* Incorporation card — ABA-specific, full detail */}
+              {/* Incorporation card, ABA-specific, full detail */}
               <div className="bg-white border-t-4 border-t-teal-500 shadow-sm p-8 flex flex-col">
                 <span className="inline-block bg-teal-500 text-white text-xs font-bold px-3 py-1 mb-4 self-start">ABA-Specific</span>
                 <h3 className="font-serif text-2xl font-bold text-navy mb-1">CPBAO-Compliant Incorporation</h3>
                 <p className="text-3xl font-bold text-gold mb-1">$299 <span className="text-base font-normal text-gray-500">Adapt fee</span></p>
                 <p className="text-sm text-gray-500 mb-5">+ government &amp; CPBAO fees (see breakdown below)</p>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                  Full CPBAO professional corporation setup — OBCA incorporation, Certificate of Authorization application, CRA accounts, and OAP provider transition. We handle every step so nothing falls through.
+                  Full CPBAO professional corporation setup, OBCA incorporation, Certificate of Authorization application, CRA accounts. We handle every step so nothing falls through.
                 </p>
 
                 {/* What&apos;s included */}
@@ -286,18 +285,18 @@ export default function ABAPage() {
                 </a>
               </div>
 
-              {/* Ongoing services — link to pricing page */}
+              {/* Ongoing services, link to pricing page */}
               <div className="flex flex-col gap-6">
                 <div className="bg-navy text-white p-8">
                   <h3 className="font-serif text-xl font-bold mb-2">Ongoing Bookkeeping &amp; Tax</h3>
                   <p className="text-navy-100 text-sm leading-relaxed mb-6">
-                    After incorporation, we offer monthly bookkeeping packages and annual T2/T1 tax filing — all tailored to ABA practices (OAP revenue, RBT payroll, ABA-specific deductions). Pricing is based on your business size and the services you need.
+                    After incorporation, we offer monthly bookkeeping packages and annual T2/T1 tax filing, all tailored to ABA practices (OAP revenue, Supervisee payroll, ABA-specific deductions). Pricing is based on your business size and the services you need.
                   </p>
                   <ul className="space-y-2 mb-7 text-sm text-navy-100">
                     {[
                       'Monthly bookkeeping from $100/mo',
                       'ABA-specific expense categorization',
-                      'RBT payroll &amp; OAP revenue tracking',
+                      'Supervisee payroll &amp; OAP revenue tracking',
                       'HST/GST filing',
                       'Annual T2 corporate + T1 personal tax',
                       'T4/T5 slips, CRA correspondence',
@@ -318,9 +317,9 @@ export default function ABAPage() {
                 </div>
 
                 <div className="bg-gold-50 border border-gold/30 p-6">
-                  <p className="font-semibold text-navy text-sm mb-2">Annual CPBAO renewal — we remind you</p>
+                  <p className="font-semibold text-navy text-sm mb-2">Annual CPBAO renewal, we remind you</p>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Your corporation&apos;s Certificate of Authorization renews every year ($250). As an ongoing client, we track your renewal date and remind you before it lapses — because a lapsed CoA means your corporation cannot legally practice ABA in Ontario.
+                    Your corporation&apos;s Certificate of Authorization renews every year ($250). As an ongoing client, we track your renewal date and remind you before it lapses, because a lapsed CoA means your corporation cannot legally practice ABA in Ontario.
                   </p>
                 </div>
               </div>
@@ -335,10 +334,10 @@ export default function ABAPage() {
             <div className="mb-12">
               <p className="text-teal-400 text-sm font-semibold tracking-widest uppercase mb-3">Free Resources</p>
               <h2 className="font-serif text-3xl font-bold text-white mb-3">
-                ABA Accounting Guides — Written by Your CPA
+                ABA Accounting Guides, Written by Your CPA
               </h2>
               <p className="text-navy-100 max-w-2xl">
-                Plain-language guides written specifically for Ontario behaviour analysts. No jargon, no generic advice — just the real answers to the questions ABA practitioners actually have.
+                Plain-language guides written specifically for Ontario behaviour analysts. No jargon, no generic advice, just the real answers to the questions ABA practitioners actually have.
               </p>
             </div>
 
@@ -376,7 +375,7 @@ export default function ABAPage() {
                 How It Works for ABA Practitioners
               </h2>
               <p className="text-gray-600 max-w-xl mx-auto">
-                From first call to fully incorporated and compliant — most clients are set up within 2 weeks.
+                From first call to fully incorporated and compliant, most clients are set up within 2 weeks.
               </p>
             </div>
 
@@ -408,7 +407,7 @@ export default function ABAPage() {
                   Adapt Accounting Services was built to bring affordable, transparent CPA services to small business owners and professionals who deserve better than a big firm that doesn&apos;t know their industry.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  We specialize in ABA practitioners because we&apos;ve done the work — incorporated ABA businesses, navigated HST on therapy services, handled OAP funding payroll, and structured ABA practices for maximum tax efficiency.
+                  We specialize in ABA practitioners because we&apos;ve done the work, incorporated ABA businesses, navigated HST on therapy services, and structured ABA practices for maximum tax efficiency.
                 </p>
               </div>
               <div className="bg-navy text-white p-6">
@@ -418,7 +417,7 @@ export default function ABAPage() {
                     'CPA Ontario · Rep ID V64F78X',
                     'EFILE Certified (CRA)',
                     'Master\'s in Data Analytics',
-                    'Virtual, Canada-Wide',
+                    'Virtual, Ontario-Wide',
                     '30+ clients served',
                     'Orangeville, ON based',
                   ].map(c => (
@@ -480,7 +479,7 @@ export default function ABAPage() {
                 Schedule Your Free 30-Minute Consultation
               </h2>
               <p className="text-gray-600 max-w-xl mx-auto">
-                Tell us about your ABA practice. No obligation — just a real conversation with your CPA about your tax situation and what we can do for you.
+                Tell us about your ABA practice. No obligation, just a real conversation with your CPA about your tax situation and what we can do for you.
               </p>
             </div>
             <CalendlyEmbed height={700} className="shadow-lg" />
@@ -494,7 +493,7 @@ export default function ABAPage() {
               Ready to Optimize Your ABA Practice?
             </h2>
             <p className="text-navy-100 text-lg mb-8 max-w-2xl mx-auto">
-              Incorporate for $299, get your books in order, and start keeping more of what you earn. We handle the accounting — you handle the clinical work.
+              Incorporate for $299, get your books in order, and start keeping more of what you earn. We handle the accounting, you handle the clinical work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -503,7 +502,7 @@ export default function ABAPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-teal-500 hover:bg-teal-400 text-white font-semibold px-8 py-4 transition-colors group"
               >
-                Book Now — It&apos;s Free
+                Book Now, It&apos;s Free
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'How to Avoid a CRA Audit: What Ontario Business Owners Need to Know | Adapt Accounting Services',
-  description: 'CRA audits are avoidable. Learn the most common audit triggers — unreported income, excessive expenses, repeated losses — and the record-keeping practices that protect your Ontario business.',
+  description: 'CRA audits are avoidable. Learn the most common audit triggers, unreported income, excessive expenses, repeated losses, and the record-keeping practices that protect your Ontario business.',
   keywords: 'CRA audit Ontario, how to avoid CRA audit, CRA audit triggers Canada, record keeping CRA, business audit Canada',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/how-to-avoid-cra-audit-ontario' },
   openGraph: {
@@ -68,7 +68,7 @@ export default function CRAAuditPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                The Canada Revenue Agency audits a relatively small percentage of business tax returns each year — but the consequences of an audit can be significant, including back taxes, interest, and penalties. Understanding what triggers an audit and how to protect yourself is a fundamental part of running a business in Ontario.
+                The Canada Revenue Agency audits a relatively small percentage of business tax returns each year, but the consequences of an audit can be significant, including back taxes, interest, and penalties. Understanding what triggers an audit and how to protect yourself is a fundamental part of running a business in Ontario.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Triggers a CRA Audit?</h2>
@@ -81,7 +81,7 @@ export default function CRAAuditPage() {
                 The CRA cross-references information from multiple sources: T4 slips from employers, T5 slips from financial institutions, T4A slips from contractors, and HST return data. Significant discrepancies between what third parties report paying you and what you report earning are a major red flag.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                For cash-heavy businesses (restaurants, trades, retail), the CRA uses ratio analysis — comparing your reported gross margin to industry averages. If your margins are significantly below the industry norm, it may suggest unreported cash income.
+                For cash-heavy businesses (restaurants, trades, retail), the CRA uses ratio analysis, comparing your reported gross margin to industry averages. If your margins are significantly below the industry norm, it may suggest unreported cash income.
               </p>
 
               <h3 className="font-serif text-xl font-bold text-navy mt-6 mb-3">2. Excessive or Inconsistent Expense Deductions</h3>
@@ -91,7 +91,7 @@ export default function CRAAuditPage() {
 
               <h3 className="font-serif text-xl font-bold text-navy mt-6 mb-3">3. Repeated Business Losses</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Claiming business losses year after year — especially losses that offset employment or investment income — is a well-known audit trigger. The CRA requires that a business activity have a genuine profit-seeking motive. Consistently losing money may lead them to reclassify your activity as a &quot;hobby&quot; and disallow the losses.
+                Claiming business losses year after year, especially losses that offset employment or investment income, is a well-known audit trigger. The CRA requires that a business activity have a genuine profit-seeking motive. Consistently losing money may lead them to reclassify your activity as a &quot;hobby&quot; and disallow the losses.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 If your business is legitimately in a startup phase with expected early losses, document your business plan and the commercial reasons for the losses.
@@ -157,12 +157,12 @@ export default function CRAAuditPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What to Do If You Are Audited</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Even with excellent records, some businesses get audited — it is not always a sign that something is wrong. If you receive a letter from the CRA:
+                Even with excellent records, some businesses get audited, it is not always a sign that something is wrong. If you receive a letter from the CRA:
               </p>
               <ul className="space-y-2 mb-6">
                 {[
-                  'Do not ignore it — respond within the requested timeframe',
-                  'Contact your CPA immediately — do not communicate with the CRA on your own',
+                  'Do not ignore it, respond within the requested timeframe',
+                  'Contact your CPA immediately, do not communicate with the CRA on your own',
                   'Gather all documentation requested before responding',
                   'Be cooperative but do not volunteer information beyond what is requested',
                   'Know that your CPA can represent you throughout the audit process',
@@ -177,8 +177,8 @@ export default function CRAAuditPage() {
               <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — CRA-compliant filings that reduce audit risk</li>
-                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link> — Clean records that hold up under CRA scrutiny</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link>, CRA-compliant filings that reduce audit risk</li>
+                  <li><Link href="/services/bookkeeping-compilations" className="text-gold hover:text-gold-hover font-medium">→ Bookkeeping &amp; Compilations</Link>, Clean records that hold up under CRA scrutiny</li>
                 </ul>
               </div>
 

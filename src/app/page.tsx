@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
@@ -11,11 +11,11 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Adapt Accounting Services — CPA for ABA Practitioners & Ontario Businesses | Incorporate $299',
+  title: 'Adapt Accounting Services, CPA for ABA Practitioners & Ontario Businesses | Incorporate $299',
   description: 'CPA services for ABA practitioners, small business owners, and Ontario professionals. Incorporate for $299 + gov fees. Bookkeeping, T1/T2 tax, CPBAO compliance, OAP payroll. Virtual, Canada-wide.',
-  keywords: 'CPA for ABA practitioners, BCBA incorporation Canada, ABA accountant Ontario, incorporate in Ontario, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, professional corporation Ontario, CPBAO compliance',
+  keywords: 'CPA for ABA practitioners, RBA incorporation Ontario, ABA accountant Ontario, incorporate in Ontario, CPA Orangeville, accountant Brampton, bookkeeping Mississauga, professional corporation Ontario, CPBAO compliance',
   openGraph: {
-    title: 'Adapt Accounting Services — Professional CPA Services Ontario',
+    title: 'Adapt Accounting Services, Professional CPA Services Ontario',
     description: 'Expert virtual CPA services for Ontario businesses. Tax planning, bookkeeping, financial consulting. Serving the GTA and surrounding communities.',
     url: 'https://adaptbusinesssolutions.com',
     type: 'website',
@@ -34,17 +34,17 @@ export default function HomePage() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-white">
+      <main id="main-content" className="min-h-screen bg-white">
         <Hero />
 
         {/* Stats Bar */}
-        <section className="bg-navy-light py-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <section className="bg-white border-y border-gray-200 py-10">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-gray-200">
               {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="font-serif text-3xl font-bold text-gold mb-1">{stat.value}</div>
-                  <div className="text-navy-100 text-sm">{stat.label}</div>
+                <div key={stat.label} className="bg-white text-center py-8 px-4">
+                  <div className="font-serif text-3xl font-bold text-navy mb-1">{stat.value}</div>
+                  <div className="text-xs font-semibold tracking-widest uppercase text-gray-400">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -59,12 +59,14 @@ export default function HomePage() {
         <GoogleReviews />
 
         {/* CTA Banner */}
-        <section className="bg-navy py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-gold mb-4">
-              Ready to Incorporate or Take Control of Your Finances?
+        <section className="bg-navy py-24">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-6">Take the Next Step</p>
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+              Ready to Incorporate or<br />Take Control of Your Finances?
             </h2>
-            <p className="text-navy-100 text-lg mb-8 leading-relaxed">
+            <div className="w-10 h-px bg-gold mx-auto mb-8" />
+            <p className="text-gray-400 text-base mb-10 leading-relaxed max-w-2xl mx-auto">
               Incorporate your Ontario business for $299 + government fees, or join over 30 business owners who trust Adapt Accounting Services for bookkeeping, tax, and financial strategy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -72,16 +74,16 @@ export default function HomePage() {
                 href="https://calendly.com/accountant-brhd/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors"
+                className="inline-block bg-gold text-navy text-xs font-semibold tracking-widest uppercase px-10 py-4 hover:bg-white transition-colors"
               >
                 Book Free Consultation
               </a>
-              <a
-                href="tel:437-772-9598"
-                className="inline-block border-2 border-white text-white hover:bg-white hover:text-navy font-semibold px-8 py-4 transition-colors"
+              <Link
+                href="/pricing"
+                className="inline-block border border-white text-white text-xs font-semibold tracking-widest uppercase px-10 py-4 hover:bg-white hover:text-navy transition-colors"
               >
-                Call (437) 772-9598
-              </a>
+                View Pricing
+              </Link>
             </div>
           </div>
         </section>

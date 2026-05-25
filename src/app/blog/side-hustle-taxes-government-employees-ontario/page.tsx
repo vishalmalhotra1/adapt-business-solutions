@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -52,7 +52,7 @@ export default function SideHustleGovEmployeePage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Disclaimer:</strong> Conflict of interest rules vary by government employer, bargaining unit, and level of government. Always review your specific employment agreement, code of conduct, and consult HR before starting or expanding a side business. This article covers tax treatment — not legal employment obligations.
+              <strong>Disclaimer:</strong> Conflict of interest rules vary by government employer, bargaining unit, and level of government. Always review your specific employment agreement, code of conduct, and consult HR before starting or expanding a side business. This article covers tax treatment, not legal employment obligations.
             </p>
           </div>
         </div>
@@ -62,12 +62,12 @@ export default function SideHustleGovEmployeePage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Government employees across Canada are increasingly running side businesses — consulting, coaching, tutoring, e-commerce, ABA therapy, accounting, and dozens of other pursuits. The tax rules are clear. The conflict of interest rules are what trip people up. Here&apos;s how to navigate both.
+                Government employees across Canada are increasingly running side businesses, consulting, coaching, tutoring, e-commerce, ABA therapy, accounting, and dozens of other pursuits. The tax rules are clear. The conflict of interest rules are what trip people up. Here&apos;s how to navigate both.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-8 mb-4">Can Government Employees Run a Side Business?</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Generally, yes — with conditions. The key rules vary by employer:
+                Generally, yes, with conditions. The key rules vary by employer:
               </p>
               <div className="space-y-4 mb-8">
                 {[
@@ -77,7 +77,7 @@ export default function SideHustleGovEmployeePage() {
                   },
                   {
                     level: 'Ontario Provincial Government',
-                    rule: 'The Public Service of Ontario Act requires disclosure of private interests that conflict with official duties. Employees submit a Confidential Disclosure Statement. Approval is not automatic — it depends on your role and the nature of the business.',
+                    rule: 'The Public Service of Ontario Act requires disclosure of private interests that conflict with official duties. Employees submit a Confidential Disclosure Statement. Approval is not automatic, it depends on your role and the nature of the business.',
                   },
                   {
                     level: 'Municipalities and Agencies',
@@ -98,10 +98,10 @@ export default function SideHustleGovEmployeePage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How Is Side Business Income Taxed?</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Self-employment income from a side business is taxed just like any other income — it gets added to your T4 employment income and taxed at your marginal rate. There is no separate &ldquo;side hustle&rdquo; tax rate.
+                Self-employment income from a side business is taxed just like any other income, it gets added to your T4 employment income and taxed at your marginal rate. There is no separate &ldquo;side hustle&rdquo; tax rate.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                For most government employees with good salaries, this means your side business income is taxed starting at your marginal rate — often 33–43% in Ontario for income between $100K–$150K, or up to 53.5% above $220K.
+                For most government employees with good salaries, this means your side business income is taxed starting at your marginal rate, often 33–43% in Ontario for income between $100K–$150K, or up to 53.5% above $220K.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
                 You report self-employment income on <strong>T2125 (Statement of Business or Professional Activities)</strong>, which is attached to your T1 personal return.
@@ -110,8 +110,8 @@ export default function SideHustleGovEmployeePage() {
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Deductions for Government Employee Side Businesses</h2>
               <ul className="space-y-2 mb-8">
                 {[
-                  { d: 'Home office expenses', note: 'If you work from home — proportional heat, hydro, internet, rent/mortgage interest.' },
-                  { d: 'Vehicle expenses', note: 'If you use your car for business (track your km!) — gas, insurance, repairs, depreciation.' },
+                  { d: 'Home office expenses', note: 'If you work from home, proportional heat, hydro, internet, rent/mortgage interest.' },
+                  { d: 'Vehicle expenses', note: 'If you use your car for business (track your km!), gas, insurance, repairs, depreciation.' },
                   { d: 'Equipment and supplies', note: 'Computers, software, office supplies used for the business.' },
                   { d: 'Professional development', note: 'Courses, certifications, and training directly related to your business.' },
                   { d: 'Professional fees', note: 'Accounting, legal, and consulting fees for the business.' },
@@ -150,10 +150,10 @@ export default function SideHustleGovEmployeePage() {
               </div>
 
               <div className="bg-gold-50 border-l-4 border-gold p-5 mb-8">
-                <p className="text-sm text-gray-700"><strong>Important check:</strong> Some government conflict of interest regimes specifically address being a director or officer of a private corporation. Verify with your employer before incorporating — you may need approval to be a director even if the business itself is approved.</p>
+                <p className="text-sm text-gray-700"><strong>Important check:</strong> Some government conflict of interest regimes specifically address being a director or officer of a private corporation. Verify with your employer before incorporating, you may need approval to be a director even if the business itself is approved.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">HST Registration — Don&apos;t Forget This</h2>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">HST Registration, Don&apos;t Forget This</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Once your side business gross revenue exceeds $30,000 in any rolling 12-month period, you must register for HST, charge it on your services, and remit to CRA. This applies even if you&apos;re also a T4 employee. Missing this is one of the most common compliance errors we see. The good news: you can claim Input Tax Credits on HST you pay for business expenses.
               </p>
@@ -161,7 +161,7 @@ export default function SideHustleGovEmployeePage() {
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">We Understand the Government Employee Situation</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  We have direct experience with the specific tax and compliance requirements for government employees running side businesses — including T2125, HST registration, and incorporation decisions.
+                  We have direct experience with the specific tax and compliance requirements for government employees running side businesses, including T2125, HST registration, and incorporation decisions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link href="/contact" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">

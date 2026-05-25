@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -28,16 +28,16 @@ const services = [
 
 const whyUs = [
   { title: 'Dufferin County Expertise', desc: 'Familiarity with the Mono Township and Dufferin County business community and local economy.' },
-  { title: 'Virtual First Practice', desc: 'Secure online document sharing and video consultations — professional CPA support from your home or office.' },
+  { title: 'Virtual First Practice', desc: 'Secure online document sharing and video consultations, professional CPA support from your home or office.' },
   { title: 'Flat-Fee Transparency', desc: 'No hourly billing surprises. Clear monthly packages starting at $100/month.' },
-  { title: 'Local CPA Roots', desc: 'Based in Orangeville — your neighbouring town — we understand the rural Ontario business environment.' },
+  { title: 'Local CPA Roots', desc: 'Based in Orangeville, your neighbouring town, we understand the rural Ontario business environment.' },
 ]
 
 export default function MonoPage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">
@@ -45,7 +45,7 @@ export default function MonoPage() {
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Mono, ON</p>
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Professional CPA Services in Mono</h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto mb-8">
-              Expert virtual CPA services for Mono Township and Dufferin County businesses — professional accounting without the commute.
+              Expert virtual CPA services for Mono Township and Dufferin County businesses, professional accounting without the commute.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:437-772-9598" className="inline-block bg-gold hover:bg-gold-hover text-navy font-semibold px-8 py-4 transition-colors">

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'How to Incorporate a Business in Ontario: Step-by-Step | Adapt Accounting Services',
-  description: 'Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense.',
+  description: 'Everything you need to know about incorporating in Ontario, federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense.',
   keywords: 'how to incorporate Ontario, business incorporation Ontario, federal vs provincial incorporation, articles of incorporation Ontario, CCPC Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/how-to-incorporate-business-ontario' },
   openGraph: {
@@ -21,7 +21,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'How to Incorporate a Business in Ontario: Step-by-Step',
-  description: 'Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, and timelines.',
+  description: 'Everything you need to know about incorporating in Ontario, federal vs. provincial, articles of incorporation, costs, and timelines.',
   datePublished: '2025-08-05',
   dateModified: '2025-08-05',
   author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
@@ -47,7 +47,7 @@ export default function IncorporateOntarioPage() {
               How to Incorporate a Business in Ontario: Step-by-Step
             </h1>
             <p className="text-navy-100 text-lg">
-              Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense.
+              Everything you need to know about incorporating in Ontario, federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense.
             </p>
             <p className="text-navy-100 text-sm mt-4">Published August 5, 2025 · 8 min read · By Adapt Accounting Services CPA</p>
           </div>
@@ -68,7 +68,7 @@ export default function IncorporateOntarioPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Incorporating a business is one of the most significant financial and legal decisions you will make as an Ontario entrepreneur. It affects your taxes, your liability, and how your business is perceived by clients and lenders. This guide walks you through the entire process — from deciding whether to incorporate, to the step-by-step mechanics of actually doing it.
+                Incorporating a business is one of the most significant financial and legal decisions you will make as an Ontario entrepreneur. It affects your taxes, your liability, and how your business is perceived by clients and lenders. This guide walks you through the entire process, from deciding whether to incorporate, to the step-by-step mechanics of actually doing it.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Should You Incorporate? The Financial Case</h2>
@@ -123,7 +123,7 @@ export default function IncorporateOntarioPage() {
 
               <h3 className="font-serif text-xl font-bold text-navy mt-6 mb-3">Step 1: Choose a Corporate Name</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Your corporation needs a unique name that includes a legal element (Inc., Ltd., Corp., Limited, Incorporated, or Corporation). You can search the NUANS (Newly Upgraded Automated Name Search) database to check name availability. A NUANS report costs approximately $13.80 for a 5-day window. Alternatively, you can use a numbered company (e.g., 1234567 Ontario Inc.) which is faster and cheaper.
+                Your corporation needs a unique name that includes a legal element (Inc., Ltd., Corp., Limited, Incorporated, or Corporation). You can search the NUANS (Newly Upgraded Automated Name Search) database to check name availability. A NUANS report costs approximately $13.80 for a 5-day window. Alternatively, you can use a numbered company (e.g., 1234567 Ontario Inc.) which is faster and more affordable.
               </p>
 
               <h3 className="font-serif text-xl font-bold text-navy mt-6 mb-3">Step 2: Prepare Articles of Incorporation</h3>
@@ -149,15 +149,15 @@ export default function IncorporateOntarioPage() {
                 Incorporating is not free after the initial setup. Annual costs include: corporate tax return (T2) preparation ($800–$2,500+ per year through a CPA), annual return filing with ServiceOntario ($12/year), and potentially more complex bookkeeping requirements.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                These costs need to be weighed against the tax savings. At modest income levels, the accounting costs may outweigh the tax benefits — which is why the $80,000–$100,000 net income threshold is often cited as the breakeven point.
+                These costs need to be weighed against the tax savings. At modest income levels, the accounting costs may outweigh the tax benefits, which is why the $80,000–$100,000 net income threshold is often cited as the breakeven point.
               </p>
 
               <div className="bg-gray-50 border border-gray-200 p-6 mt-10 mb-6">
                 <h3 className="font-serif text-lg font-bold text-navy mb-4">Related Services</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/services/corporate-services" className="text-gold hover:text-gold-hover font-medium">→ Corporate Services</Link> — Incorporation, minute books, and annual filings</li>
-                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link> — Corporate T2 returns and tax planning</li>
-                  <li><Link href="/services/business-consulting" className="text-gold hover:text-gold-hover font-medium">→ Business Consulting</Link> — Is incorporation right for you?</li>
+                  <li><Link href="/services/corporate-services" className="text-gold hover:text-gold-hover font-medium">→ Corporate Services</Link>, Incorporation, minute books, and annual filings</li>
+                  <li><Link href="/services/tax-preparation" className="text-gold hover:text-gold-hover font-medium">→ Tax Preparation &amp; Planning</Link>, Corporate T2 returns and tax planning</li>
+                  <li><Link href="/services/business-consulting" className="text-gold hover:text-gold-hover font-medium">→ Business Consulting</Link>, Is incorporation right for you?</li>
                 </ul>
               </div>
 

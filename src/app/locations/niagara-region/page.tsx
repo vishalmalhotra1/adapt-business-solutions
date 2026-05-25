@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { CheckCircle, ArrowRight } from 'lucide-react'
@@ -22,15 +22,15 @@ const services = [
   { label: 'Bookkeeping Services', href: '/services/bookkeeping-compilations', desc: 'Monthly bookkeeping and financial statements for hospitality, tourism, and wine industry businesses.' },
   { label: 'Corporate Services', href: '/services/corporate-services', desc: 'Incorporation, compliance, and annual corporate filings for Niagara businesses.' },
   { label: 'Financial Analysis', href: '/services/financial-analysis', desc: 'Seasonal cash flow analysis and forecasting for Niagara\'s unique economic cycles.' },
-  { label: 'Payroll Services', href: '/services/payroll', desc: 'Payroll management for Niagara businesses — including seasonal staff considerations.' },
+  { label: 'Payroll Services', href: '/services/payroll', desc: 'Payroll management for Niagara businesses, including seasonal staff considerations.' },
   { label: 'Business Consulting', href: '/services/business-consulting', desc: 'Strategic business planning and growth consulting for Niagara entrepreneurs.' },
 ]
 
 const whyUs = [
   { title: 'Niagara Industry Knowledge', desc: 'Experience with the unique accounting needs of hospitality, tourism, wine, and agricultural businesses.' },
   { title: 'Seasonal Business Expertise', desc: 'We understand the seasonal cash flow patterns that define Niagara Region business cycles.' },
-  { title: 'Virtual Convenience', desc: 'No need to drive into the city — secure online services from St. Catharines to Niagara-on-the-Lake.' },
-  { title: 'Competitive Pricing', desc: 'Transparent flat-fee packages starting from $100/month — no surprise bills.' },
+  { title: 'Virtual Convenience', desc: 'No need to drive into the city, secure online services from St. Catharines to Niagara-on-the-Lake.' },
+  { title: 'Competitive Pricing', desc: 'Transparent flat-fee packages starting from $100/month, no surprise bills.' },
 ]
 
 const areas = ['St. Catharines', 'Niagara Falls', 'Welland', 'Niagara-on-the-Lake', 'Fort Erie', 'Grimsby', 'Lincoln', 'Thorold']
@@ -39,7 +39,7 @@ export default function NiagaraRegionPage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">

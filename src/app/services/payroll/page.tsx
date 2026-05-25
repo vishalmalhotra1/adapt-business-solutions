@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Users, CheckCircle, Calendar, Shield } from 'lucide-react'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
@@ -28,10 +28,10 @@ export default function PayrollPage() {
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-white">
+      <div id="main-content" className="min-h-screen bg-white">
 
         {/* Hero */}
-        <section className="hero-pattern pt-16 text-white py-20">
+        <section className="hero-pattern pt-20 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="bg-gold bg-opacity-20 w-16 h-16 flex items-center justify-center mx-auto mb-6">
               <Users className="h-8 w-8 text-gold" />
@@ -92,7 +92,7 @@ export default function PayrollPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { title: 'Save Time', desc: 'Free up hours every pay period — focus on running your business instead of payroll admin.' },
+                { title: 'Save Time', desc: 'Free up hours every pay period, focus on running your business instead of payroll admin.' },
                 { title: 'Avoid Penalties', desc: 'Late or incorrect CRA remittances carry steep penalties. We handle it accurately, every time.' },
                 { title: 'Stay Compliant', desc: 'Employment standards evolve. We keep your payroll current with the latest CRA and provincial rules.' },
               ].map(({ title, desc }) => (

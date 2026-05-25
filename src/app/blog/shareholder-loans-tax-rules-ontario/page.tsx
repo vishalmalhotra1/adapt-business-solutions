@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Shareholder Loans Tax Rules Ontario 2025 | Adapt Business Solutions',
-  description: 'Shareholder loans are one of the most common — and most misunderstood — tax issues for Ontario corporations. Learn the one-year rule, interest requirements, and how to avoid taxable benefits.',
+  description: 'Shareholder loans are one of the most common, and most misunderstood, tax issues for Ontario corporations. Learn the one-year rule, interest requirements, and how to avoid taxable benefits.',
   keywords: 'shareholder loans Ontario, shareholder loan one year rule CRA, corporate loan to shareholder taxable benefit, Section 80.4 Income Tax Act',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/shareholder-loans-tax-rules-ontario' },
   openGraph: {
     title: 'Shareholder Loans in Ontario: Tax Rules Every Business Owner Must Know',
-    description: 'Shareholder loans are one of the most common — and most misunderstood — tax issues for Ontario corporations. Learn the one-year rule, interest requirements, and how to avoid taxable benefits.',
+    description: 'Shareholder loans are one of the most common, and most misunderstood, tax issues for Ontario corporations. Learn the one-year rule, interest requirements, and how to avoid taxable benefits.',
     url: 'https://adaptbusinesssolutions.com/blog/shareholder-loans-tax-rules-ontario',
     type: 'article',
     publishedTime: '2026-05-12',
@@ -22,7 +22,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Shareholder Loans in Ontario: Tax Rules Every Business Owner Must Know',
-  description: 'Shareholder loans are one of the most common — and most misunderstood — tax issues for Ontario corporations. Learn the one-year rule, interest requirements, and how to avoid taxable benefits.',
+  description: 'Shareholder loans are one of the most common, and most misunderstood, tax issues for Ontario corporations. Learn the one-year rule, interest requirements, and how to avoid taxable benefits.',
   datePublished: '2026-05-12',
   dateModified: '2026-05-12',
   author: {
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
             <div className="prose prose-lg max-w-none">
 
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Many Ontario business owners use shareholder loans to move money between themselves and their corporations — taking advances when needed and repaying later. While this is legitimate tax planning, the Income Tax Act contains strict rules that, if violated, can result in the entire loan amount being added to your personal taxable income.
+                Many Ontario business owners use shareholder loans to move money between themselves and their corporations, taking advances when needed and repaying later. While this is legitimate tax planning, the Income Tax Act contains strict rules that, if violated, can result in the entire loan amount being added to your personal taxable income.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Is a Shareholder Loan?</h2>
@@ -103,7 +103,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The One-Year Rule: The Most Important Shareholder Loan Rule</h2>
               <p className="text-gray-700 leading-relaxed">Under Section 15(2) of the Income Tax Act, any amount owing to a corporation by a shareholder must be repaid within one year after the end of the corporation&apos;s tax year in which the loan was made.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">If the loan is not repaid within this window, the ENTIRE loan balance is included in your personal taxable income for the year the loan was made — on top of any other income you earned that year.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">If the loan is not repaid within this window, the ENTIRE loan balance is included in your personal taxable income for the year the loan was made, on top of any other income you earned that year.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -111,7 +111,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Partial repayments do not save you — the full outstanding balance is taxable if any remains
+                  Partial repayments do not save you, the full outstanding balance is taxable if any remains
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -119,7 +119,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Critical: The one-year rule is absolute. There are no extensions and no CRA discretion. If the loan is still outstanding after the deadline, it becomes income — even if you repay it the next day.</p>
+                <p className="text-sm text-gray-700">Critical: The one-year rule is absolute. There are no extensions and no CRA discretion. If the loan is still outstanding after the deadline, it becomes income, even if you repay it the next day.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Deemed Interest Benefit Under Section 80.4</h2>
@@ -177,7 +177,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Track the loan balance monthly — never let it grow unnoticed
+                  Track the loan balance monthly, never let it grow unnoticed
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -190,7 +190,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Shareholder loans are a legitimate and useful tool for managing cash flow between you and your corporation — but only when managed properly. The one-year repayment rule and deemed interest benefit rules are non-negotiable. Review your shareholder loan balance at every corporate year-end with your CPA.
+                Shareholder loans are a legitimate and useful tool for managing cash flow between you and your corporation, but only when managed properly. The one-year repayment rule and deemed interest benefit rules are non-negotiable. Review your shareholder loan balance at every corporate year-end with your CPA.
               </p>
 
               <div className="bg-navy p-8 mt-10">

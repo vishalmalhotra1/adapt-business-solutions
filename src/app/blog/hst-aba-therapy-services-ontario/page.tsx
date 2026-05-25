@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -51,7 +51,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -59,12 +59,12 @@ export default function BlogPostPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                HST on ABA therapy is one of the most misunderstood tax issues for Ontario behaviour analysts. Many practitioners either charge 13% HST when they do not have to — passing an unnecessary cost to families — or fail to analyze their position at all and run the risk of CRA liability. The good news: the CRA has issued specific guidance on ABA and autism therapy in GI-113, and most direct ABA therapy for autism qualifies for HST exemption. Here is what that actually means for your practice.
+                HST for ABA therapy is one of the most misunderstood tax issues for RBAs. Many practitioners either charge 13% HST when they do not have to, passing an unnecessary cost to families, or fail to analyze their position at all and run the risk of CRA liability. The good news: the CRA has issued specific guidance on ABA and autism therapy in GI-113, and most direct ABA therapy for autism qualifies for HST exemption. Here is what that actually means for your practice.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The CRA&apos;s Specific Exemption: GI-113 and Autism Training</h2>
               <p className="text-gray-700 leading-relaxed">The CRA published GST/HST Info Sheet GI-113 specifically addressing ABA and Intensive Behavioural Intervention (IBI) therapy for autism. Under Section 14 of Part II of Schedule V of the Excise Tax Act, supplies of training services specially designed to assist individuals with autism are exempt from HST.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">Critically, the exemption does not require the provider to be a physician, psychologist, or any specific regulated health professional. BCBAs and ABA practitioners can qualify.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">Critically, the exemption does not require the provider to be a physician, psychologist, or any specific regulated health professional. RBAs and ABA practitioners can qualify.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -76,39 +76,39 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Provider requirement: none — does not need to be a regulated health professional
+                  Provider requirement: none, does not need to be a regulated health professional
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Scope: covers the entire package of services — therapy, assessment, program development, and supervision are treated as one supply
+                  Scope: covers the entire package of services, therapy, assessment, program development, and supervision are treated as one supply
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Key rule: The training must not be similar to training ordinarily given to persons who do not have autism. Standard educational or recreational programming does not qualify — ABA/IBI designed specifically for autism does.</p>
+                <p className="text-sm text-gray-700">Key rule: The training must not be similar to training ordinarily given to persons who do not have autism. Standard educational or recreational programming does not qualify, ABA/IBI designed specifically for autism does.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Three Pathways to HST Exemption</h2>
-              <p className="text-gray-700 leading-relaxed">To claim the exemption, one of three conditions must be satisfied. Most ABA practices will qualify through at least one of these pathways — and OAP-funded practices often qualify automatically through the third.</p>
+              <p className="text-gray-700 leading-relaxed">To claim the exemption, one of three conditions must be satisfied. Most ABA practices will qualify through at least one of these pathways, and OAP-funded practices often qualify automatically through the third.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Pathway 1 — Professional certification: A practitioner, medical practitioner, social worker, or registered nurse certifies in writing that the ABA training is appropriate for the individual. BCBAs can certify as practitioners.
+                  Pathway 1, Professional certification: A practitioner, medical practitioner, social worker, or registered nurse certifies in writing that the ABA training is appropriate for the individual. RBAs can certify as practitioners.
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Pathway 2 — Prescribed person certification: A prescribed person or class member certifies appropriateness under prescribed conditions.
+                  Pathway 2, Prescribed person certification: A prescribed person or class member certifies appropriateness under prescribed conditions.
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Pathway 3 — Government funding evidence: The provider receives satisfactory evidence that payment comes from a government or organization administering a disability assistance program. OAP funding qualifies here.
+                  Pathway 3, Government funding evidence: The provider receives satisfactory evidence that payment comes from a government or organization administering a disability assistance program. OAP funding qualifies here.
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">OAP-funded practices: If your revenue comes from OAP funding, Pathway 3 applies — the government funding itself is satisfactory evidence of the exemption. This means OAP-funded ABA therapy is HST-exempt without needing any additional written certification.</p>
+                <p className="text-sm text-gray-700">OAP-funded practices: If your revenue comes from OAP funding, Pathway 3 applies, the government funding itself is satisfactory evidence of the exemption. This means OAP-funded ABA therapy is HST-exempt without needing any additional written certification.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Is Included in the Exempt Supply</h2>
-              <p className="text-gray-700 leading-relaxed">A key ruling from the CRA is that the entire package of ABA services — not just direct therapy hours — is treated as a single supply for HST purposes. This means ancillary elements are also exempt when the main service qualifies.</p>
+              <p className="text-gray-700 leading-relaxed">A key ruling from the CRA is that the entire package of ABA services, not just direct therapy hours, is treated as a single supply for HST purposes. This means ancillary elements are also exempt when the main service qualifies.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -128,7 +128,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Practical implication: You do not need to split your invoice into &quot;exempt therapy&quot; and &quot;taxable supervision.&quot; The CRA treats it all as one supply — if the conditions are met for the therapy, the whole invoice is exempt.</p>
+                <p className="text-sm text-gray-700">Practical implication: You do not need to split your invoice into &quot;exempt therapy&quot; and &quot;taxable supervision.&quot; The CRA treats it all as one supply, if the conditions are met for the therapy, the whole invoice is exempt.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Remains Taxable at 13% HST</h2>
@@ -140,7 +140,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Staff training and RBT supervision billed to an employer (not a client): taxable
+                  Staff training and Supervisee supervision billed to an employer (not a client): taxable
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -160,7 +160,7 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What This Means for HST Registration and Invoicing</h2>
-              <p className="text-gray-700 leading-relaxed">If all or most of your revenue is from exempt ABA therapy for autism, you may not need to register for HST at all — even if revenues exceed $30,000. Exempt suppliers do not charge HST, but they also cannot claim input tax credits on their business expenses.</p>
+              <p className="text-gray-700 leading-relaxed">If all or most of your revenue is from exempt ABA therapy for autism, you may not need to register for HST at all, even if revenues exceed $30,000. Exempt suppliers do not charge HST, but they also cannot claim input tax credits on their business expenses.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -176,20 +176,20 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Invoices for exempt services: do not include HST — show $0 HST or note &quot;HST exempt under Schedule V&quot;
+                  Invoices for exempt services: do not include HST, show $0 HST or note &quot;HST exempt under Schedule V&quot;
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">We handle HST position analysis for ABA practices across a range of structures — OAP-only, private pay only, and mixed. We determine whether registration is required, set up your invoicing correctly, and ensure your position is defensible if CRA ever reviews it.</p>
+                <p className="text-sm text-gray-700">We handle HST position analysis for ABA practices across a range of structures, OAP-only, private pay only, and mixed. We determine whether registration is required, set up your invoicing correctly, and ensure your position is defensible if CRA ever reviews it.</p>
               </div>
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                The CRA has specifically addressed ABA and autism therapy in GI-113 — and the answer is more favourable than most practitioners realize. Direct ABA therapy for autism is exempt from HST under three clear pathways, OAP funding automatically satisfies the government evidence pathway, and the entire service package (therapy, assessments, supervision) is treated as one exempt supply. Understanding this correctly saves your clients money and keeps your practice compliant.
+                The CRA has specifically addressed ABA and autism therapy in GI-113, and the answer is more favourable than most practitioners realize. Direct ABA therapy for autism is exempt from HST under three clear pathways, OAP funding automatically satisfies the government evidence pathway, and the entire service package (therapy, assessments, supervision) is treated as one exempt supply. Understanding this correctly saves your clients money and keeps your practice compliant.
               </p>
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Get Your ABA Practice HST Position Right</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Adapt Business Solutions analyzes HST for Ontario ABA practices — OAP-funded, private pay, and mixed. We give you a clear, defensible position and set up your invoicing correctly. Book a free consultation.
+                  Adapt Business Solutions analyzes HST for RBAs in Ontario, OAP-funded, private pay, and mixed. We give you a clear, defensible position and set up your invoicing correctly. Book a free consultation.
                 </p>
                 <a href="https://calendly.com/accountant-brhd/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   Book Free Consultation <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

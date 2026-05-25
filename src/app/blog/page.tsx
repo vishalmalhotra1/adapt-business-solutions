@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const featuredPost: BlogPostEntry = {
   id: 'ontario-small-business-tax-deductions-2025',
   title: 'Small Business Tax Deductions in Ontario: The Complete 2025 Guide',
-  excerpt: 'A comprehensive walkthrough of every major deduction available to Ontario small business owners — from home office to vehicle expenses, meals, and professional fees. Maximize your refund and stay CRA-compliant.',
+  excerpt: 'A comprehensive walkthrough of every major deduction available to Ontario small business owners, from home office to vehicle expenses, meals, and professional fees. Maximize your refund and stay CRA-compliant.',
   category: 'Tax Planning',
   readTime: '10 min read',
   date: '2025-08-05',
@@ -27,7 +27,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'sole-proprietor-vs-corporation-canada',
     title: 'Sole Proprietor vs Corporation Canada: The Real Tax Math at $50K, $100K, $150K',
-    excerpt: 'Exact numbers comparing sole proprietorship and incorporation tax burden in Canada. See when incorporating saves money — and when it doesn\'t — with real calculations for three income levels.',
+    excerpt: 'Exact numbers comparing sole proprietorship and incorporation tax burden in Canada. See when incorporating saves money, and when it doesn\'t, with real calculations for three income levels.',
     category: 'Tax Strategy',
     readTime: '10 min read',
     date: '2026-05-06',
@@ -42,7 +42,7 @@ const manualPosts: BlogPostEntry[] = [
   },
   {
     id: 't1135-foreign-property-explained',
-    title: 'T1135 Explained: Robinhood, Coinbase, US Rentals — Who Needs to File',
+    title: 'T1135 Explained: Robinhood, Coinbase, US Rentals, Who Needs to File',
     excerpt: 'Complete guide to the T1135 Foreign Income Verification Statement for Canadians with US brokerage accounts, cryptocurrency on foreign exchanges, and US rental properties. Penalties for non-filing are steep.',
     category: 'Cross-Border Tax',
     readTime: '8 min read',
@@ -59,7 +59,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'federal-vs-ontario-incorporation',
     title: 'Federal vs Ontario Incorporation: Which Should You Choose?',
-    excerpt: 'Clear breakdown of the real differences between federal (CBCA) and Ontario (OBCA) incorporation — costs, name protection scope, director residency rules, and how to decide.',
+    excerpt: 'Clear breakdown of the real differences between federal (CBCA) and Ontario (OBCA) incorporation, costs, name protection scope, director residency rules, and how to decide.',
     category: 'Incorporation',
     readTime: '6 min read',
     date: '2026-05-06',
@@ -67,7 +67,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'what-is-nuans-report',
     title: 'What Is a NUANS Report and Do You Need One?',
-    excerpt: 'NUANS reports explained simply — what they cost, how long they\'re valid, when you need one for your incorporation, and when you can skip it entirely with a numbered corporation.',
+    excerpt: 'NUANS reports explained simply, what they cost, how long they\'re valid, when you need one for your incorporation, and when you can skip it entirely with a numbered corporation.',
     category: 'Incorporation',
     readTime: '5 min read',
     date: '2026-05-06',
@@ -75,7 +75,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'named-vs-numbered-corporation',
     title: 'Named vs Numbered Corporation Ontario: The Real Trade-offs',
-    excerpt: 'Named corporation or numbered corporation? Real differences in cost, speed, branding, and NUANS requirements — plus the trade name strategy most business owners don\'t know about.',
+    excerpt: 'Named corporation or numbered corporation? Real differences in cost, speed, branding, and NUANS requirements, plus the trade name strategy most business owners don\'t know about.',
     category: 'Incorporation',
     readTime: '5 min read',
     date: '2026-05-06',
@@ -83,7 +83,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'annual-filing-requirements-ontario-corporation',
     title: 'Annual Filing Requirements for Ontario Corporations',
-    excerpt: 'Complete annual compliance checklist for Ontario corporations — T2, Ontario annual return, HST, T4/T5 slips, minute book, and deadlines. Know what\'s due and when, with penalties for missing each.',
+    excerpt: 'Complete annual compliance checklist for Ontario corporations, T2, Ontario annual return, HST, T4/T5 slips, minute book, and deadlines. Know what\'s due and when, with penalties for missing each.',
     category: 'Corporate Compliance',
     readTime: '6 min read',
     date: '2026-05-06',
@@ -91,7 +91,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'setup-cra-business-accounts-after-incorporation',
     title: 'Setting Up CRA Business Accounts After Incorporation',
-    excerpt: 'Every CRA account you need to register after incorporating — Business Number, HST (RT), payroll (RP), corporate income tax (RC) — with when to register each and what happens if you miss the HST deadline.',
+    excerpt: 'Every CRA account you need to register after incorporating, Business Number, HST (RT), payroll (RP), corporate income tax (RC), with when to register each and what happens if you miss the HST deadline.',
     category: 'Post-Incorporation',
     readTime: '5 min read',
     date: '2026-05-06',
@@ -99,7 +99,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'how-much-does-cpa-charge-t2',
     title: 'How Much Does a CPA Charge for a T2 Corporate Tax Return in Canada?',
-    excerpt: 'Honest pricing breakdown for T2 corporate tax returns in Ontario — typical ranges by complexity, what drives the cost up, and how to keep your T2 fees as low as possible.',
+    excerpt: 'Honest pricing breakdown for T2 corporate tax returns in Ontario, typical ranges by complexity, what drives the cost up, and how to keep your T2 fees as low as possible.',
     category: 'Corporate Tax',
     readTime: '6 min read',
     date: '2026-05-06',
@@ -107,7 +107,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'how-to-incorporate-business-ontario',
     title: 'How to Incorporate a Business in Ontario: Step-by-Step',
-    excerpt: 'Everything you need to know about incorporating in Ontario — federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense to incorporate.',
+    excerpt: 'Everything you need to know about incorporating in Ontario, federal vs. provincial, articles of incorporation, costs, timelines, and when it actually makes financial sense to incorporate.',
     category: 'Corporate Services',
     readTime: '8 min read',
     date: '2025-08-05',
@@ -123,7 +123,7 @@ const manualPosts: BlogPostEntry[] = [
   {
     id: 'how-to-avoid-cra-audit-ontario',
     title: 'How to Avoid a CRA Audit: What Ontario Business Owners Need to Know',
-    excerpt: 'CRA audits are avoidable. Learn the most common audit triggers — unreported income, excessive expenses, repeated losses — and the record-keeping practices that keep your business protected.',
+    excerpt: 'CRA audits are avoidable. Learn the most common audit triggers, unreported income, excessive expenses, repeated losses, and the record-keeping practices that keep your business protected.',
     category: 'Tax Planning',
     readTime: '9 min read',
     date: '2025-08-05',
@@ -213,7 +213,7 @@ export default function BlogPage() {
   return (
     <>
       <Navigation />
-      <div className="pt-16">
+      <div id="main-content" className="pt-20">
 
         {/* Hero */}
         <section className="hero-pattern text-white py-20">
@@ -225,7 +225,7 @@ export default function BlogPage() {
               CPA Insights &amp; Tax Tips
             </h1>
             <p className="text-navy-100 text-lg max-w-2xl mx-auto">
-              Practical accounting and tax advice for Ontario business owners — from a certified CPA.
+              Practical accounting and tax advice for Ontario business owners, from a certified CPA.
             </p>
           </div>
         </section>
@@ -234,12 +234,12 @@ export default function BlogPage() {
         <div className="bg-gray-50 border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <p className="text-xs text-gray-500">
-              <strong>Professional Disclaimer:</strong> Articles are for educational purposes only and do not constitute professional accounting, tax, or legal advice. Consult a qualified CPA for advice specific to your situation. Tax laws change frequently — content may not reflect the most current updates.
+              <strong>Professional Disclaimer:</strong> Articles are for educational purposes only and do not constitute professional accounting, tax, or legal advice. Consult a qualified CPA for advice specific to your situation. Tax laws change frequently, content may not reflect the most current updates.
             </p>
           </div>
         </div>
 
-        {/* Latest Auto Post — shown at the top when available */}
+        {/* Latest Auto Post, shown at the top when available */}
         {latestAutoPost && (
           <section className="py-12 bg-white border-b border-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -277,7 +277,7 @@ export default function BlogPage() {
                 <div className="bg-white border border-gold/20 p-6">
                   <p className="text-xs font-semibold text-navy uppercase tracking-wider mb-3">New articles published daily</p>
                   <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                    We publish a new CPA guide every day covering Ontario tax law, CRA compliance, bookkeeping, payroll, and more — all written by our professional accounting team.
+                    We publish a new CPA guide every day covering Ontario tax law, CRA compliance, bookkeeping, payroll, and more, all written by our professional accounting team.
                   </p>
                   <div className="flex flex-col gap-2">
                     {autoBlogPosts.slice().reverse().slice(0, 4).map(p => (
@@ -359,14 +359,14 @@ export default function BlogPage() {
             </div>
             <h2 className="font-serif text-3xl font-bold text-white mb-2">ABA Practice Accounting</h2>
             <p className="text-navy-100 text-base mb-10 max-w-2xl">
-              CPA guides written specifically for Ontario behaviour analysts, BCBA practice owners, and ABA therapy businesses — covering incorporation, HST, tax deductions, payroll, and OAP funding.
+              CPA guides written specifically for Ontario behaviour analysts, ABA practice owners, and ABA therapy businesses, covering incorporation, HST, tax deductions, payroll, and OAP funding.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
                   id: 'incorporating-aba-practice-ontario-behaviour-analysts',
                   title: 'Incorporating Your ABA Practice',
-                  excerpt: 'Why BCBAs can incorporate as standard Ontario corporations, the real tax savings, OAP funding implications, and what we do for ABA owners.',
+                  excerpt: 'Why RBAs can incorporate as standard Ontario corporations, the real tax savings, OAP funding implications, and what we do for ABA owners.',
                   icon: '🏢',
                   tag: 'Incorporation',
                 },
@@ -380,14 +380,14 @@ export default function BlogPage() {
                 {
                   id: 'tax-deductions-aba-business-owners-ontario',
                   title: 'Tax Deductions for ABA Owners',
-                  excerpt: 'Every legitimate deduction for ABA practice owners — clinical software, mileage for home visits, BACB fees, CE conferences, RBT costs, and home office strategies.',
+                  excerpt: 'Every legitimate deduction for ABA practice owners, clinical software, mileage for home visits, BACB fees, CE conferences, Supervisee costs, and home office strategies.',
                   icon: '💰',
                   tag: 'Tax Planning',
                 },
                 {
                   id: 'payroll-aba-practice-ontario-bcba-rbt',
-                  title: 'Payroll: BCBAs, RBTs & OAP',
-                  excerpt: 'The employee vs contractor question for RBTs, OAP funding flow, CRA remittance obligations, and the director liability risk most ABA owners do not know about.',
+                  title: 'Payroll: RBAs, Supervisees & OAP',
+                  excerpt: 'The employee vs contractor question for Supervisees, OAP funding flow, CRA remittance obligations, and the director liability risk most ABA owners do not know about.',
                   icon: '👥',
                   tag: 'Payroll',
                 },
@@ -405,7 +405,7 @@ export default function BlogPage() {
             </div>
             <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-navy-100 text-sm">
-                We are the CPA firm that understands your practice — OAP funding, BACB requirements, RBT payroll, and ABA-specific tax strategy.
+                We are the CPA firm that understands your practice, OAP funding, BACB requirements, Supervisee payroll, and ABA-specific tax strategy.
               </p>
               <Link href="/pricing" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors whitespace-nowrap group">
                 Book ABA Consultation <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -414,7 +414,7 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* All Articles — filterable, paginated */}
+        {/* All Articles, filterable, paginated */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-2">Browse All</p>
@@ -432,7 +432,7 @@ export default function BlogPage() {
               Want Personalized Tax Advice for Your Business?
             </h2>
             <p className="text-navy-100 mb-6">
-              General articles are helpful — but nothing replaces a conversation with your own CPA.
+              General articles are helpful, but nothing replaces a conversation with your own CPA.
             </p>
             <Link
               href="/pricing"

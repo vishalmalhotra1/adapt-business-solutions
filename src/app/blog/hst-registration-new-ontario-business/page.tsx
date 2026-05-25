@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -69,7 +69,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Failure to register and collect HST does not eliminate your liability — you still owe the HST you should have collected
+                  Failure to register and collect HST does not eliminate your liability, you still owe the HST you should have collected
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -104,11 +104,11 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">The $30,000 threshold counts total taxable revenues before expenses — not net profit. If you invoice $30,001 in total revenue, you are over the threshold and must register, regardless of how much you spent.</p>
+                <p className="text-sm text-gray-700">The $30,000 threshold counts total taxable revenues before expenses, not net profit. If you invoice $30,001 in total revenue, you are over the threshold and must register, regardless of how much you spent.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Benefits of Voluntary Registration (Before $30,000)</h2>
-              <p className="text-gray-700 leading-relaxed">You can register for HST voluntarily even if your revenues are below $30,000. Many new businesses should do this immediately — here is why.</p>
+              <p className="text-gray-700 leading-relaxed">You can register for HST voluntarily even if your revenues are below $30,000. Many new businesses should do this immediately, here is why.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -132,7 +132,7 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Is Taxable vs Exempt from HST?</h2>
-              <p className="text-gray-700 leading-relaxed">Most goods and services sold in Ontario are subject to 13% HST. But there are important categories that are exempt or zero-rated — meaning you do not charge HST and may not claim all ITCs.</p>
+              <p className="text-gray-700 leading-relaxed">Most goods and services sold in Ontario are subject to 13% HST. But there are important categories that are exempt or zero-rated, meaning you do not charge HST and may not claim all ITCs.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -169,7 +169,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  You can elect to file more frequently than required — many businesses prefer quarterly to spread cash flow
+                  You can elect to file more frequently than required, many businesses prefer quarterly to spread cash flow
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
@@ -177,7 +177,7 @@ export default function BlogPostPage() {
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Your First HST Return: What to Prepare</h2>
-              <p className="text-gray-700 leading-relaxed">Filing your HST return requires reconciling the HST collected from customers against the ITCs you are claiming on business expenses. The difference is either remitted to CRA (if you collected more than you paid) or refunded to you (if you paid more than you collected — common in early months).</p>
+              <p className="text-gray-700 leading-relaxed">Filing your HST return requires reconciling the HST collected from customers against the ITCs you are claiming on business expenses. The difference is either remitted to CRA (if you collected more than you paid) or refunded to you (if you paid more than you collected, common in early months).</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -193,7 +193,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Keep all receipts showing HST paid — required to support ITC claims
+                  Keep all receipts showing HST paid, required to support ITC claims
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -206,7 +206,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                HST registration is a straightforward process that most Ontario businesses should complete at or before the $30,000 threshold — and many should complete voluntarily from day one. The key is to set up proper invoicing habits, keep all HST-bearing receipts, and file your returns on time. A CPA can set up your HST account, configure your invoicing, and handle annual filings as part of an integrated accounting package.
+                HST registration is a straightforward process that most Ontario businesses should complete at or before the $30,000 threshold, and many should complete voluntarily from day one. The key is to set up proper invoicing habits, keep all HST-bearing receipts, and file your returns on time. A CPA can set up your HST account, configure your invoicing, and handle annual filings as part of an integrated accounting package.
               </p>
 
               <div className="bg-navy p-8 mt-10">

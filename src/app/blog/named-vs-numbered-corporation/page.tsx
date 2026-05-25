@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Named vs Numbered Corporation Ontario: Real Trade-offs | Adapt Accounting',
-  description: 'Named corporation vs numbered corporation in Ontario — real differences, costs, and which one is right for your business. Includes NUANS, trade names, and how to change later.',
+  description: 'Named corporation vs numbered corporation in Ontario, real differences, costs, and which one is right for your business. Includes NUANS, trade names, and how to change later.',
   keywords: 'named vs numbered corporation Ontario, numbered corporation Ontario, named corporation Canada, NUANS named corporation, trade name Ontario corporation, how to name a corporation Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/named-vs-numbered-corporation' },
   openGraph: {
     title: 'Named vs Numbered Corporation Ontario: Real Trade-offs',
-    description: 'The actual differences between naming your Ontario corporation vs taking a number — costs, speed, branding, and how to switch later.',
+    description: 'The actual differences between naming your Ontario corporation vs taking a number, costs, speed, branding, and how to switch later.',
     url: 'https://adaptbusinesssolutions.com/blog/named-vs-numbered-corporation',
     type: 'article',
   },
@@ -21,7 +21,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Named vs Numbered Corporation Ontario: Real Trade-offs',
-  description: 'Named corporation vs numbered corporation in Ontario — differences, costs, and which one is right.',
+  description: 'Named corporation vs numbered corporation in Ontario, differences, costs, and which one is right.',
   datePublished: '2026-05-06',
   dateModified: '2026-05-06',
   author: { '@type': 'Organization', name: 'Adapt Accounting Services', url: 'https://adaptbusinesssolutions.com' },
@@ -69,9 +69,9 @@ export default function NamedVsNumberedPage() {
                       ['Example', '"Acme Consulting Inc."', '"1234567 Ontario Inc."'],
                       ['NUANS Required', 'Yes (~$14 + our fee)', 'No'],
                       ['Processing Time', 'Slightly longer', 'Faster'],
-                      ['Brand Recognition', 'Yes (in the legal name)', 'No — use a registered trade name'],
+                      ['Brand Recognition', 'Yes (in the legal name)', 'No, use a registered trade name'],
                       ['Name Protection in Ontario', 'Yes', 'N/A (numbered)'],
-                      ['Can Operate Under a Trade Name', 'Yes', 'Yes — most do'],
+                      ['Can Operate Under a Trade Name', 'Yes', 'Yes, most do'],
                       ['Can Change Name Later', 'Yes (articles amendment)', 'Yes (add a name)'],
                       ['Tax Treatment', 'Identical', 'Identical'],
                     ].map(([factor, named, numbered], i) => (
@@ -87,13 +87,13 @@ export default function NamedVsNumberedPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Trade Name Strategy</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Numbered corporations don&apos;t have to operate as &ldquo;1234567 Ontario Inc.&rdquo; on their business cards. You can register a business trade name (also called a business name or DBA — &ldquo;doing business as&rdquo;) under the numbered corporation.
+                Numbered corporations don&apos;t have to operate as &ldquo;1234567 Ontario Inc.&rdquo; on their business cards. You can register a business trade name (also called a business name or DBA, &ldquo;doing business as&rdquo;) under the numbered corporation.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
                 So in practice: &ldquo;1234567 Ontario Inc. carrying on business as Acme Consulting.&rdquo; Your clients see &ldquo;Acme Consulting.&rdquo; Contracts and invoices can show the trade name. Your incorporation documentation shows the numbered corp.
               </p>
               <div className="bg-gold-50 border-l-4 border-gold p-5 mb-8">
-                <p className="text-sm text-gray-700"><strong>Trade name registration in Ontario</strong> costs $60 and gives you the right to use the name in Ontario — without the $14 NUANS search or the name protection limitations of a numbered corp. Most service businesses choose this route.</p>
+                <p className="text-sm text-gray-700"><strong>Trade name registration in Ontario</strong> costs $60 and gives you the right to use the name in Ontario, without the $14 NUANS search or the name protection limitations of a numbered corp. Most service businesses choose this route.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">When Should You Choose a Named Corporation?</h2>
@@ -101,7 +101,7 @@ export default function NamedVsNumberedPage() {
                 {[
                   'Your profession requires a named corporation (e.g., physician PCs must include the doctor\'s surname)',
                   'You want name protection in the corporate registry so no one else can incorporate with your name',
-                  'You plan to raise investment — named corporations look more established to investors',
+                  'You plan to raise investment, named corporations look more established to investors',
                   'Your branding is inseparable from the legal entity name (less common)',
                 ].map(item => (
                   <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
@@ -120,7 +120,7 @@ export default function NamedVsNumberedPage() {
               </p>
 
               <div className="bg-nav py-8 mt-10 bg-navy p-8">
-                <h3 className="font-serif text-xl font-bold text-white mb-3">Incorporate Today — Named or Numbered</h3>
+                <h3 className="font-serif text-xl font-bold text-white mb-3">Incorporate Today, Named or Numbered</h3>
                 <p className="text-navy-100 text-sm mb-6">We advise on the right choice for your situation and handle the full incorporation for $299 + government fees.</p>
                 <Link href="/services/incorporation" className="inline-flex items-center bg-gold hover:bg-gold-hover text-navy font-semibold px-6 py-3 transition-colors group">
                   View Incorporation Service <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

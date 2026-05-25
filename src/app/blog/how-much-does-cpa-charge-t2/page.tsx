@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,12 +6,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'How Much Does a CPA Charge for a T2 Corporate Tax Return in Canada? | Adapt Accounting',
-  description: 'Honest breakdown of T2 corporate tax return costs in Canada — what factors affect price, typical ranges, and how to get the best value for your corporate tax filing.',
+  description: 'Honest breakdown of T2 corporate tax return costs in Canada, what factors affect price, typical ranges, and how to get the best value for your corporate tax filing.',
   keywords: 'how much does CPA charge T2, T2 corporate tax return cost Canada, T2 tax return Ontario price, corporation tax return cost CPA, T2 filing fee Ontario',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/how-much-does-cpa-charge-t2' },
   openGraph: {
     title: 'How Much Does a CPA Charge for a T2 in Canada?',
-    description: 'Honest breakdown of T2 corporate tax return pricing — typical ranges, what drives cost up, and how to evaluate quotes.',
+    description: 'Honest breakdown of T2 corporate tax return pricing, typical ranges, what drives cost up, and how to evaluate quotes.',
     url: 'https://adaptbusinesssolutions.com/blog/how-much-does-cpa-charge-t2',
     type: 'article',
   },

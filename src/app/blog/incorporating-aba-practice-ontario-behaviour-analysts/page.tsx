@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Incorporating an ABA Practice in Ontario 2025 | Adapt Business Solutions CPA',
   description: 'CPBAO-compliant incorporation for Ontario ABA practice owners. Learn the Certificate of Authorization requirement, shareholder rules, tax deferral benefits, and OAP funding considerations.',
-  keywords: 'incorporating ABA practice Ontario, CPBAO professional corporation behaviour analyst, ABA therapy business incorporation Ontario, BCBA corporation Ontario tax',
+  keywords: 'incorporating ABA practice Ontario, CPBAO professional corporation behaviour analyst, ABA therapy business incorporation Ontario, RBA corporation Ontario tax',
   alternates: { canonical: 'https://adaptbusinesssolutions.com/blog/incorporating-aba-practice-ontario-behaviour-analysts' },
   openGraph: {
     title: 'Incorporating Your ABA Practice in Ontario: CPBAO Rules, Tax Benefits, and How to Do It Right',
@@ -51,7 +51,7 @@ export default function BlogPostPage() {
         <div className="bg-amber-50 border-b border-amber-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <p className="text-xs text-amber-800">
-              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently — verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
+              <strong>Professional Disclaimer:</strong> This article is for educational purposes only and does not constitute professional accounting, tax, or legal advice. Tax laws change frequently, verify current rules with a qualified CPA. Consult Adapt Business Solutions or another licensed CPA for advice specific to your situation.
             </p>
           </div>
         </div>
@@ -59,12 +59,12 @@ export default function BlogPostPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                ABA therapy practices in Ontario are among the fastest-growing healthcare-adjacent businesses in the province. As of July 1, 2024, Applied Behaviour Analysis is a regulated health profession in Ontario — which means incorporating as an ABA practitioner regulated by the College of Psychologists and Behaviour Analysts of Ontario (CPBAO) is meaningfully different from incorporating a regular small business. There are specific professional corporation rules you must follow — and getting them wrong can put your Certificate of Authorization at risk. This guide covers the real rules, the real tax benefits, and exactly what the process looks like.
+                Applied Behaviour Analytic (ABA) therapy in Ontario is a fast growing human service in the province. As of July 1, 2024, behaviour analysts became a regulated health profession in Ontario, which means incorporating as an ABA practitioner regulated by the College of Psychologists and Behaviour Analysts of Ontario (CPBAO) is meaningfully different from incorporating a regular small business. There are specific professional corporation rules you must follow, and getting them wrong can put your Certificate of Authorization at risk. This guide covers the real rules, the real tax benefits, and exactly what the process looks like.
               </p>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The CPBAO Professional Corporation Requirement</h2>
-              <p className="text-gray-700 leading-relaxed">CPBAO-registered behaviour analysts who want to practice through a corporation must obtain a Certificate of Authorization from the CPBAO. This is a regulatory requirement — not optional. The corporation is incorporated under the Ontario Business Corporations Act, but it must also be authorized by the college to practice.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">This is similar to the professional corporation rules for physicians and dentists — not the same as a standard small business corporation.</p>
+              <p className="text-gray-700 leading-relaxed">CPBAO-registered behaviour analysts who want to practice through a corporation must obtain a Certificate of Authorization from the CPBAO. This is a regulatory requirement, not optional. The corporation is incorporated under the Ontario Business Corporations Act, but it must also be authorized by the college to practice.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">This is similar to the professional corporation rules for physicians and dentists, not the same as a standard small business corporation.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -88,11 +88,11 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">The corporation can only provide psychology or ABA services, plus activities that directly and ancillarily support those services. It cannot provide services from other regulated professions, even related ones.</p>
+                <p className="text-sm text-gray-700">The corporation can only provide ABA services, plus activities that directly and ancillarily support those services. It cannot provide services from other regulated professions, even related ones. This includes psychological services.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Shareholder Rule: Only CPBAO Registrants</h2>
-              <p className="text-gray-700 leading-relaxed">This is the most important structural rule — and the one most commonly misunderstood. All shareholders, officers, and directors of a CPBAO professional corporation must be registrants of the CPBAO. A non-registrant spouse, parent, or adult child cannot hold shares in your professional corporation.</p>
+              <p className="text-gray-700 leading-relaxed">This is the most important structural rule, and the one most commonly misunderstood. All shareholders, officers, and directors of a CPBAO professional corporation must be registrants of the CPBAO. A non-registrant spouse, parent, or adult child cannot hold shares in your professional corporation.</p>
               <p className="text-gray-700 leading-relaxed mt-3">This is a fundamental difference from a regular Ontario business corporation. The typical income-splitting strategy of issuing shares to a lower-income spouse does not apply here.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
@@ -105,7 +105,7 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Non-registrant family members cannot hold shares — even non-voting shares
+                  Non-registrant family members cannot hold shares, even non-voting shares
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -113,7 +113,7 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Holding companies: A holding company can be a shareholder of your professional corporation — but only if ALL of the holding company&apos;s shareholders, officers, and directors are also CPBAO registrants. This significantly limits the typical holdco income-splitting strategy available to general business owners.</p>
+                <p className="text-sm text-gray-700">Holding companies: A holding company can be a shareholder of your professional corporation, but only if ALL of the holding company&apos;s shareholders, officers, and directors are also CPBAO registrants. This significantly limits the typical holdco income-splitting strategy available to general business owners.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">CPBAO Naming Rules: Your Corporation Name Must Follow Strict Guidelines</h2>
@@ -150,11 +150,11 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Valid example: &quot;[Your Surname] Applied Behaviour Analysis Professional Corporation.&quot; NUANS name search (~$13.80) is required before filing Articles. Results are valid for 90 days. Confirm the exact spelling of your name in the CPBAO register before filing — it must match precisely.</p>
+                <p className="text-sm text-gray-700">Valid example: &quot;[Your Surname] Applied Behaviour Analysis Professional Corporation.&quot; NUANS name search (~$13.80) is required before filing Articles. Results are valid for 90 days. Confirm the exact spelling of your name in the CPBAO register before filing, it must match precisely.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Real Cost Breakdown: What Incorporation Actually Costs</h2>
-              <p className="text-gray-700 leading-relaxed">The total cost to properly incorporate an ABA professional corporation in Ontario — including the CPBAO Certificate of Authorization — is modest compared to the tax savings available. Here is what to expect.</p>
+              <p className="text-gray-700 leading-relaxed">The total cost to properly incorporate an ABA professional corporation in Ontario, including the CPBAO Certificate of Authorization, is modest compared to the tax savings available. Here is what to expect.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -191,7 +191,7 @@ export default function BlogPostPage() {
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">The Tax Case for Incorporating Despite the Restrictions</h2>
               <p className="text-gray-700 leading-relaxed">Even without the income-splitting flexibility of a general corporation, the tax deferral benefits of incorporating your ABA practice are very real and very significant. The key benefit is the difference between the corporate tax rate and your personal marginal rate.</p>
-              <p className="text-gray-700 leading-relaxed mt-3">An Ontario sole proprietor ABA practitioner earning $150,000 in net income pays approximately $55,000–$62,000 in personal tax. The same income earned through a CCPC and left inside the corporation is taxed at only 12.2%.</p>
+              <p className="text-gray-700 leading-relaxed mt-3">An Ontario sole proprietor RBA earning $150,000 in net income pays approximately $55,000–$62,000 in personal tax. The same income earned through a CCPC and left inside the corporation is taxed at only 12.2%.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -211,23 +211,23 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">Real example: An ABA practice owner billing $200,000 with $80,000 in expenses has $120,000 net. If they need only $85,000 personally, the $35,000 left in the corporation is taxed at 12.2% vs their personal rate of ~43%. That is roughly $10,850 in deferred tax per year — $108,500 over a decade, before investment returns.</p>
+                <p className="text-sm text-gray-700">Real example: An ABA practice owner billing $200,000 with $80,000 in expenses has $120,000 net. If they need only $85,000 personally, the $35,000 left in the corporation is taxed at 12.2% vs their personal rate of ~43%. That is roughly $10,850 in deferred tax per year, $108,500 over a decade, before investment returns.</p>
               </div>
 
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">How OAP Funding Interacts with Your Professional Corporation</h2>
-              <p className="text-gray-700 leading-relaxed">Many Ontario ABA practices receive funding through the Ontario Autism Program (OAP). Once you incorporate, the corporation — not you personally — becomes the OAP-registered service provider. OAP payments and invoices flow through the corporation.</p>
+              <p className="text-gray-700 leading-relaxed">Many clients receive funding through the Ontario Autism Program (OAP). The individual clinician remains the OAP-registered service provider — the corporation does not replace you as the registered provider. OAP invoices list ABA services delivered by you, and that revenue flows into the corporation.</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  The incorporated practice applies to be an OAP-registered service provider as a corporation
+                  The individual clinician is the OAP-registered service provider, not the corporation
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  OAP invoices are issued by the corporation, and payments go to the corporate bank account
+                  OAP invoices list the services delivered; payments flow to the corporate bank account
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  Revenue is corporate revenue — not personal income until you draw salary or dividends
+                  Revenue is corporate revenue, not personal income until you draw salary or dividends
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -235,11 +235,11 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">OAP registration: When you incorporate, notify the Ministry of Children, Community and Social Services of the change in service provider entity. There may be a new registration or amendment required to reflect the corporation as the provider of record.</p>
+                <p className="text-sm text-gray-700">OAP registration: When you incorporate, notify the Ministry of Children, Community and Social Services of the change. OAP just needs your new company name (if changed). If you receive a complaint, note that any penalty comes from the college itself, not from a government audit of OAP providers.</p>
               </div>
 
-              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Adapt Business Solutions Does for ABA Practice Owners</h2>
-              <p className="text-gray-700 leading-relaxed">We work specifically with Ontario ABA practice owners navigating the CPBAO professional corporation rules. Our incorporation engagement for a new ABA practice corporation includes:</p>
+              <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">What Adapt Business Solutions Does for RBAs</h2>
+              <p className="text-gray-700 leading-relaxed">We work specifically with RBAs navigating the CPBAO professional corporation rules. Our incorporation engagement for a new ABA practice corporation includes:</p>
               <ul className="space-y-2 my-4">
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
@@ -255,10 +255,6 @@ export default function BlogPostPage() {
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
-                  OAP provider transition support — updating service provider registration to the corporation
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-gold rounded-full mt-2 flex-shrink-0" />
                   Ongoing bookkeeping: tracking OAP revenue, private pay, and contractor vs employee classification
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
@@ -267,16 +263,16 @@ export default function BlogPostPage() {
                 </li>
               </ul>
               <div className="bg-gold-50 border-l-4 border-gold p-4 my-4">
-                <p className="text-sm text-gray-700">We know CPBAO rules. We know OAP funding. We know the RBT classification risks. You should not have to explain your practice to your accountant — we have done this before.</p>
+                <p className="text-sm text-gray-700">We know CPBAO rules. We know OAP funding. We know the Supervisee classification risks. You should not have to explain your practice to your accountant, we have done this before.</p>
               </div>
               <h2 className="font-serif text-2xl font-bold text-navy mt-10 mb-4">Key Takeaways</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Incorporating your ABA practice is a high-value decision — but it must be done in compliance with CPBAO professional corporation rules. The shareholder restrictions are real: only CPBAO registrants can hold shares. The tax deferral benefits are also real: up to $28,000+ per year in deferred tax depending on your income level. Getting the structure right from the start — OBCA incorporation, CPBAO Certificate of Authorization, proper share structure, and CRA accounts — is what we do for Ontario ABA practice owners.
+                Incorporating your ABA practice is a high-value decision, but it must be done in compliance with CPBAO professional corporation rules. The shareholder restrictions are real: only CPBAO registrants can hold shares. The tax deferral benefits are also real: up to $28,000+ per year in deferred tax depending on your income level. Getting the structure right from the start, OBCA incorporation, CPBAO Certificate of Authorization, proper share structure, and CRA accounts, is what we do for RBAs.
               </p>
               <div className="bg-navy p-8 mt-10">
                 <h3 className="font-serif text-xl font-bold text-white mb-3">Ready to Incorporate Your ABA Practice the Right Way?</h3>
                 <p className="text-navy-100 text-sm mb-6">
-                  Adapt Business Solutions handles CPBAO-compliant incorporation for Ontario behaviour analysts — share structure, Certificate of Authorization support, CRA setup, and OAP transition. Book a free consultation.
+                  Adapt Business Solutions handles CPBAO-compliant incorporation for RBAs in Ontario, share structure, Certificate of Authorization support, and CRA setup. Book a free consultation.
                 </p>
                 <a
                   href="https://calendly.com/accountant-brhd/30min"

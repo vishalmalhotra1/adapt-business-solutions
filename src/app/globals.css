@@ -8,6 +8,8 @@
   --gold: #c9a84c;
   --gold-hover: #b8973b;
   --gold-light: #f5edda;
+  /* AODA AA-compliant gold for text on white (4.67:1 contrast ratio) */
+  --gold-accessible: #8b6914;
   --white: #ffffff;
   --text: #1a1a2e;
   --subtle: #f8f9fa;
@@ -24,6 +26,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ── Skip link (AODA/WCAG 2.4.1) ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background: #0d1b2a;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  transition: top 0.1s;
+}
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid #c9a84c;
+  outline-offset: 2px;
+}
+
 /* Subtle geometric grid pattern for hero sections */
 .hero-pattern {
   background-color: #0d1b2a;
@@ -33,9 +55,13 @@ body {
   background-size: 64px 64px;
 }
 
+/* ── Focus indicators (AODA/WCAG 2.4.7) — 3px minimum ── */
 a:focus-visible,
-button:focus-visible {
-  outline: 2px solid #c9a84c;
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #8b6914;
   outline-offset: 2px;
 }
 

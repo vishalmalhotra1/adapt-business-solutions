@@ -1,39 +1,32 @@
-import { Calculator, FileText, TrendingUp, Users, PieChart, Briefcase } from 'lucide-react'
-import Link from 'next/link'
+﻿import Link from 'next/link'
 
 const services = [
   {
-    icon: Calculator,
     title: 'Bookkeeping & Compilations',
     description: 'Professional bookkeeping and compilation engagements performed to CPA Canada standards, keeping your records accurate and compliant.',
     link: '/services/bookkeeping-compilations',
   },
   {
-    icon: FileText,
     title: 'Tax Preparation & Planning',
     description: 'Strategic tax preparation for individuals and corporations, minimizing liability while ensuring full CRA compliance.',
     link: '/services/tax-preparation',
   },
   {
-    icon: TrendingUp,
     title: 'Financial Analysis',
     description: 'Data-driven financial analysis, budgeting, and forecasting to help you make informed business decisions and drive growth.',
     link: '/services/financial-analysis',
   },
   {
-    icon: Users,
     title: 'Payroll Services',
     description: 'Full payroll management including processing, CRA remittances, T4s, and compliance with Ontario employment standards.',
     link: '/services/payroll',
   },
   {
-    icon: PieChart,
     title: 'Business Consulting',
     description: 'Strategic advisory to optimize your operations, improve profitability, and build a clear financial roadmap for growth.',
     link: '/services/business-consulting',
   },
   {
-    icon: Briefcase,
     title: 'Corporate Services',
     description: 'Complete incorporation, annual filings, corporate compliance, and ongoing governance for federally and provincially registered corporations.',
     link: '/services/corporate-services',
@@ -42,54 +35,52 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-4">
-            Comprehensive Financial Services
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            From daily bookkeeping to complex corporate tax strategy — everything your Ontario
-            business needs under one roof.
-          </p>
+    <section id="services" className="py-16 lg:py-24 bg-white" aria-labelledby="services-heading">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+        {/* Section header */}
+        <div className="mb-16">
+          <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: 'var(--gold-accessible)' }}>What We Offer</p>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <h2 id="services-heading" className="font-serif text-4xl sm:text-5xl font-bold text-navy leading-tight max-w-lg">
+              Comprehensive<br />Financial Services.
+            </h2>
+            <p className="text-gray-600 max-w-sm text-sm leading-relaxed md:text-right">
+              From daily bookkeeping to complex corporate tax strategy, everything your Ontario business needs under one roof.
+            </p>
+          </div>
+          <div className="mt-8 h-px bg-gray-200" aria-hidden="true" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => {
-            const Icon = service.icon
-            return (
-              <div
-                key={service.title}
-                className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow p-8 group border-t-2 border-t-gold"
+        {/* 1px-gap grid */}
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200" role="list">
+          {services.map((service) => (
+            <li key={service.title} className="bg-white p-10 group hover:bg-gray-50 transition-colors">
+              <h3 className="font-serif text-xl font-bold text-navy mb-4 leading-tight">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                {service.description}
+              </p>
+              <Link
+                href={service.link}
+                className="text-xs font-semibold tracking-widest uppercase transition-colors inline-flex items-center gap-2 underline-offset-4 hover:underline"
+                style={{ color: 'var(--gold-accessible)' }}
+                aria-label={`Learn more about ${service.title}`}
               >
-                <div className="bg-gold-50 w-12 h-12 flex items-center justify-center mb-5">
-                  <Icon className="h-6 w-6 text-gold" />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-navy mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5">
-                  {service.description}
-                </p>
-                <Link
-                  href={service.link}
-                  className="text-gold hover:text-gold-hover font-semibold text-sm transition-colors inline-flex items-center"
-                >
-                  Learn More
-                  <span className="ml-1 group-hover:translate-x-1 transition-transform inline-block">→</span>
-                </Link>
-              </div>
-            )
-          })}
-        </div>
+                Learn More
+                <span aria-hidden="true" className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-        <div className="text-center mt-12">
+        <div className="mt-12 text-center">
           <Link
             href="/pricing"
-            className="inline-block bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 transition-colors"
+            className="inline-block bg-navy text-white text-xs font-semibold tracking-widest uppercase px-10 py-4 hover:bg-gold hover:text-navy transition-colors"
           >
-            Get Your Free Estimate
+            View Pricing
           </Link>
         </div>
       </div>
